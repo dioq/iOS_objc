@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Web2App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <style>
+            #buttonid {
+                width: 320px;
+                height: 45px;
+                font-size: 15px;
+                text-align: center;
+                line-height: 45px;
+                margin-bottom: 10px;
+            }
+            #inputtext {
+                width: 300px;
+                height: 40px;
+                font-size: 15px;
+                text-align: left;
+                line-height: 45px;
+                margin-bottom: 10px;
+            }
+        </style>
+        <script>
+            
+            //调用APP的扫描方法   h5->app
+            function scan(){
+                document.getElementById("buttonid").style.backgroundColor = '#cccc00';
+                window.webkit.messageHandlers.callNativeFunc.postMessage("msg from web js");//向 app 发送消息
+            }
+            // 扫描结果回调方法    app->h5
+            function scanResult(result){
+                document.getElementById("showid").innerHTML = 'app回调结果:' + result;
+                return "从js来的返回值";
+            }
+            
+        </script>
+    </head>
+    
+    <body>
+        <p>1.app里通过js获取 h5 里的内容,并改变</p>
+        <input id="inputtext" type="text" style="display:inline;" name="input"  value='a test string'/>
+        <p>2.h5 调用 app 里的方法,调用完成后 app 回调 h5 里的方法</p>
+        <button id="buttonid" style="background-color: pink;" onclick="scan()" >扫描</button>
+        <p id="showid" style="color: red; font-size: 25px;">显示app回调内容...</p>
+    </body>
+    
+</html>

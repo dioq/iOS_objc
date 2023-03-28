@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioPlayerVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUy-Ke-BNh">
+                    <rect key="frame" x="117" y="64" width="180" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7My-Sa-aZm"/>
+                        <constraint firstAttribute="width" constant="180" id="XY3-dI-PW2"/>
+                    </constraints>
+                    <state key="normal" title="play"/>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="PZr-Fl-Qyk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcs-zA-Sil">
+                    <rect key="frame" x="117" y="124" width="180" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="play2"/>
+                    <connections>
+                        <action selector="play2:" destination="-1" eventType="touchUpInside" id="xIy-zw-egO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncz-3y-pbb">
+                    <rect key="frame" x="334" y="59" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="3v2-XW-mCI"/>
+                        <constraint firstAttribute="height" constant="60" id="Zbd-6z-vKF"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="music_on.png"/>
+                    <connections>
+                        <action selector="goPlay:" destination="-1" eventType="touchUpInside" id="mGu-3I-hkZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi3-Uf-D8A">
+                    <rect key="frame" x="334" y="134" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="ekd-Cj-wIf"/>
+                        <constraint firstAttribute="height" constant="60" id="lFa-WZ-98k"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="music_off.png"/>
+                    <connections>
+                        <action selector="goStop:" destination="-1" eventType="touchUpInside" id="g6t-kA-552"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGU-p9-ctv">
+                    <rect key="frame" x="334" y="209" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="9pT-47-pgt"/>
+                        <constraint firstAttribute="height" constant="60" id="zRv-i6-a5u"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="paihangbang_anniu.png"/>
+                    <connections>
+                        <action selector="goPlause:" destination="-1" eventType="touchUpInside" id="bAF-QR-xSC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ncz-3y-pbb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="15" id="5xN-yn-LkR"/>
+                <constraint firstItem="bcs-zA-Sil" firstAttribute="width" secondItem="JUy-Ke-BNh" secondAttribute="width" id="9hU-EG-8PM"/>
+                <constraint firstItem="zi3-Uf-D8A" firstAttribute="top" secondItem="Ncz-3y-pbb" secondAttribute="bottom" constant="15" id="9wA-Vk-VqJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ncz-3y-pbb" secondAttribute="trailing" constant="20" id="A3p-eK-9Jc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="SGU-p9-ctv" secondAttribute="trailing" constant="20" id="J8p-SX-Trn"/>
+                <constraint firstItem="JUy-Ke-BNh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="UwF-ST-JNt"/>
+                <constraint firstItem="bcs-zA-Sil" firstAttribute="top" secondItem="JUy-Ke-BNh" secondAttribute="bottom" constant="20" id="VPH-78-b33"/>
+                <constraint firstItem="bcs-zA-Sil" firstAttribute="height" secondItem="JUy-Ke-BNh" secondAttribute="height" id="Vcf-zm-3ey"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="zi3-Uf-D8A" secondAttribute="trailing" constant="20" id="WFc-op-umz"/>
+                <constraint firstItem="SGU-p9-ctv" firstAttribute="top" secondItem="zi3-Uf-D8A" secondAttribute="bottom" constant="15" id="Z59-ul-2KQ"/>
+                <constraint firstItem="bcs-zA-Sil" firstAttribute="centerX" secondItem="JUy-Ke-BNh" secondAttribute="centerX" id="cot-gH-j3L"/>
+                <constraint firstItem="JUy-Ke-BNh" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="jnr-7g-KGb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="music_off.png" width="109" height="113"/>
+        <image name="music_on.png" width="109" height="113"/>
+        <image name="paihangbang_anniu.png" width="109" height="113"/>
+    </resources>
+</document>

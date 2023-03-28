@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpeechViewController">
+            <connections>
+                <outlet property="myTextView" destination="fJm-hq-rRs" id="oI6-hp-alR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fJm-hq-rRs">
+                    <rect key="frame" x="10" y="54" width="394" height="250"/>
+                    <color key="backgroundColor" red="0.89581265340000005" green="1" blue="0.86455859339999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="6hT-TA-x9v"/>
+                    </constraints>
+                    <string key="text">太平洋之名称起源自拉丁文“Mare Pacificum”，意为“平静的海洋”，是由一名受雇于西班牙的葡萄牙航海家—麦哲伦命名。麦哲伦于1520年10月，率领5艘船从大西洋找到了一个西南出口（此后称为麦哲伦海峡）向西航行，经过38天的惊涛骇浪后到达一个平静的洋面，他因称之为太平洋。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-8W-kAf">
+                    <rect key="frame" x="10" y="314" width="394" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAk-Pg-gzj">
+                            <rect key="frame" x="0.0" y="0.0" width="124.5" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="文字转语音"/>
+                            <connections>
+                                <action selector="toSpeech:" destination="-1" eventType="touchUpInside" id="1yd-CL-gIG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftZ-la-fLu">
+                            <rect key="frame" x="134.5" y="0.0" width="125" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="语音转文字"/>
+                            <connections>
+                                <action selector="toWords:" destination="-1" eventType="touchUpInside" id="4Uz-aU-eXq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZh-iO-wJB">
+                            <rect key="frame" x="269.5" y="0.0" width="124.5" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="eiD-px-45O"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vuv-8W-kAf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="0eX-h3-gW1"/>
+                <constraint firstItem="fJm-hq-rRs" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="5kz-or-7ZN"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fJm-hq-rRs" secondAttribute="trailing" constant="10" id="ZoC-Q4-K3a"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Vuv-8W-kAf" secondAttribute="trailing" constant="10" id="cGD-Rc-GKF"/>
+                <constraint firstItem="fJm-hq-rRs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="khW-pB-XGO"/>
+                <constraint firstItem="Vuv-8W-kAf" firstAttribute="top" secondItem="fJm-hq-rRs" secondAttribute="bottom" constant="10" id="weW-71-wW0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

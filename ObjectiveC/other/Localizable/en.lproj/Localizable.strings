@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  ObjectiveC
+
+  Created by hello on 2019/3/31.
+  Copyright © 2019 William. All rights reserved.
+*/
+
+"mainText" = "English";
+"mainImage" = "mainImage_en";

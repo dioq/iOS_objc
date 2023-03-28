@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  ObjectiveC
+
+  Created by hello on 2019/3/31.
+  Copyright © 2019 William. All rights reserved.
+*/
+
+CFBundleDisplayName = "OC 中文";
+
+NSLocationWhenInUseUsageDescription = "需要位置权限";
+NSMicrophoneUsageDescription = "需要麦克风权限";
+NSCameraUsageDescription = "需要相机权限";
+NSPhotoLibraryUsageDescription = "需要相册权限";

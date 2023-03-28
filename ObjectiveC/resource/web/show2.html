@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Web2App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <style>
+            .btnClass {
+                width: 100%;
+                height: 45px;
+                font-size: 15px;
+                text-align: center;
+                line-height: 45px;
+                margin-bottom: 10px;
+            }
+        </style>
+        <script>
+            
+            function asyncAlert(content) {
+                setTimeout(function(){
+                    alert(content);
+                },1);
+            }
+            
+            function alertWithMessage(content) {
+                asyncAlert(content);
+                document.getElementById("returnValue").value = content;
+            }
+            
+            function showAlert() {
+                window.webkit.messageHandlers.showAlert.postMessage("msg from web js");
+            }
+            
+            function postString() {
+                window.webkit.messageHandlers.postString.postMessage('r=10,g=170,b=250,a=0.5');
+            }
+            
+            function postArray() {
+                window.webkit.messageHandlers.postArray.
+                postMessage([Math.floor(Math.random()*255),
+                             Math.floor(Math.random()*255),
+                             Math.floor(Math.random()*255),0.5]);
+            }
+            
+            function postDictionary() {
+                window.webkit.messageHandlers.postDictionary.
+                postMessage({red: Math.floor(Math.random()*255),
+                    green: Math.floor(Math.random()*255),
+                    blue: Math.floor(Math.random()*255),
+                    alpha: 0.5});
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p>js 调用 app里的方法,传入4种不同类型的参数</p>
+        <!--   从js往 app里传入不同类型的参数     -->
+        <input class="btnClass" type="button" value="OC调用JS方法" onclick="showAlert()"/>
+        <br/>
+        <input class="btnClass" type="button" value="JS传字符串" onclick="postString()"/>
+        <br/>
+        <input class="btnClass" type="button" value="JS传数组" onclick="postArray()"/>
+        <br/>
+        <input class="btnClass" type="button" value="JS传字典" onclick="postDictionary()"/>
+    </body>
+    
+</html>
