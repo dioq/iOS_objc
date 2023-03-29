@@ -20,10 +20,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(refresh)];
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+    
     [self.btn1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btn1 setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
     [self.btn1 addTarget:self action:@selector(action1:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)refresh {
+    NSLog(@"导航栏上的按钮被点了");
 }
 
 -(void)action1:(UIButton *)sender {

@@ -33,6 +33,25 @@
     NSLog(@"data:%@",data);
 }
 
+-(void)test002 {
+    NSMutableString *testStr = [NSMutableString string];
+    [testStr appendString:@"/var/mobile/Containers/Data/Application/AF53C4B6-E80C-4B7A-9CCF-82DEDF2595CC/Library/WechatPrivate/text.txt,"];
+    [testStr deleteCharactersInRange:NSMakeRange(testStr.length - 1, 1)];
+    NSLog(@"%@",testStr);
+}
+
+-(void)test003 {
+    NSString *sql1 = @"update app_data set phone_num = 't', passwords = 't', remark = 't', keychain_data = 'test', files_data = 'test02',";
+    NSMutableString *sql = [NSMutableString string];
+    [sql appendString:sql1];
+    NSLog(@"%d,%@",__LINE__,sql);
+    if([sql hasSuffix:@","]) {
+        [sql deleteCharactersInRange:NSMakeRange(sql.length - 1, 1)];
+        NSLog(@"%d,%@",__LINE__,sql);
+    }
+    NSLog(@"%d,%@",__LINE__,sql);
+}
+
 -(void)test001 {
     UIView *v = [UIView new];
     v.backgroundColor = [UIColor orangeColor];
