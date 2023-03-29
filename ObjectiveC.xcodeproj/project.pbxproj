@@ -391,7 +391,6 @@
 		3A687333286B7E6C00951BEE /* SimulateIDFA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateIDFA.m; sourceTree = "<group>"; };
 		3A687334286B7E6C00951BEE /* SimulateIDFA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateIDFA.h; sourceTree = "<group>"; };
 		3A70007629D32930008C5099 /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A70007729D32930008C5099 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/dio/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		3A72D485291F82A4002A70A1 /* ProxyCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyCheckViewController.h; sourceTree = "<group>"; };
 		3A72D486291F82A4002A70A1 /* ProxyCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyCheckViewController.m; sourceTree = "<group>"; };
 		3A72D487291F82A4002A70A1 /* ProxyCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProxyCheckViewController.xib; sourceTree = "<group>"; };
@@ -461,6 +460,7 @@
 		3ADD774B286AE5C300451603 /* DeviceIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceIDViewController.h; sourceTree = "<group>"; };
 		3ADD774C286AE5C300451603 /* DeviceIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceIDViewController.m; sourceTree = "<group>"; };
 		3ADD774D286AE5C300451603 /* DeviceIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceIDViewController.xib; sourceTree = "<group>"; };
+		3ADD94BE29D4407100AFA781 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/dio/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		3AE3AA0929AA213E005998B1 /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		3AE3AA0A29AA213E005998B1 /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		3AE3AA0B29AA213E005998B1 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
@@ -2265,7 +2265,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 3A70007729D32930008C5099 /* ObjectiveCTests.xctest */;
+			productReference = 3ADD94BE29D4407100AFA781 /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
