@@ -111,8 +111,8 @@
 		3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CB8217DBF8F00E3799F /* AppDelegate.m */; };
 		3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CC0217DBF9000E3799F /* Assets.xcassets */; };
 		3D220CC7217DBF9000E3799F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CC6217DBF9000E3799F /* main.m */; };
-		3D220CE5217DC1E300E3799F /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CE3217DC1E300E3799F /* LanguageViewController.m */; };
-		3D220CE6217DC1E300E3799F /* LanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CE4217DC1E300E3799F /* LanguageViewController.xib */; };
+		3D220CE5217DC1E300E3799F /* SystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CE3217DC1E300E3799F /* SystemViewController.m */; };
+		3D220CE6217DC1E300E3799F /* SystemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CE4217DC1E300E3799F /* SystemViewController.xib */; };
 		3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CE8217DC1F700E3799F /* MyUIViewController.m */; };
 		3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D220CE9217DC1F700E3799F /* MyUIViewController.xib */; };
 		3D220CEF217DC20200E3799F /* VenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CED217DC20200E3799F /* VenderViewController.m */; };
@@ -249,9 +249,6 @@
 		CE7D1BDA2255C8B900DEE23E /* language.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1BD92255C8B900DEE23E /* language.json */; };
 		CE7D1BE0225626C500DEE23E /* JumpAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D1BDE225626C500DEE23E /* JumpAppViewController.m */; };
 		CE7D1BE1225626C500DEE23E /* JumpAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1BDF225626C500DEE23E /* JumpAppViewController.xib */; };
-		CE7D1D37225741EB00DEE23E /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D1D36225741EB00DEE23E /* AudioPlayer.m */; };
-		CE7D1D3B2257421300DEE23E /* AudioPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D1D392257421300DEE23E /* AudioPlayerVC.m */; };
-		CE7D1D3C2257421300DEE23E /* AudioPlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3A2257421300DEE23E /* AudioPlayerVC.xib */; };
 		CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3D2257453300DEE23E /* rock_clash.wav */; };
 		CE7D1D402257453300DEE23E /* shot.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE7D1D3E2257453300DEE23E /* shot.wav */; };
 		CE7D20332259E44900DEE23E /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7D20312259E44900DEE23E /* LottieViewController.m */; };
@@ -444,6 +441,7 @@
 		3AB12A7F292E8F7700ABC707 /* HTTPSPing02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSPing02ViewController.h; sourceTree = "<group>"; };
 		3AB2288D2934BB1900DCA181 /* pkg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pkg.html; sourceTree = "<group>"; };
 		3ABF6A2D2877585300CEE7F2 /* client.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = client.p12; sourceTree = "<group>"; };
+		3AC4D7B929D71BE8000FBFDC /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC6B3BE28E99B74003C8103 /* SingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
 		3AC6B3BF28E99B74003C8103 /* SingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
 		3AC6B3C028E99B74003C8103 /* SingletonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingletonViewController.xib; sourceTree = "<group>"; };
@@ -460,7 +458,6 @@
 		3ADD774B286AE5C300451603 /* DeviceIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceIDViewController.h; sourceTree = "<group>"; };
 		3ADD774C286AE5C300451603 /* DeviceIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceIDViewController.m; sourceTree = "<group>"; };
 		3ADD774D286AE5C300451603 /* DeviceIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceIDViewController.xib; sourceTree = "<group>"; };
-		3ADD94BE29D4407100AFA781 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/dio/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		3AE3AA0929AA213E005998B1 /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		3AE3AA0A29AA213E005998B1 /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		3AE3AA0B29AA213E005998B1 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
@@ -481,9 +478,9 @@
 		3D220CC0217DBF9000E3799F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D220CC5217DBF9000E3799F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D220CC6217DBF9000E3799F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3D220CE2217DC1E300E3799F /* LanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageViewController.h; sourceTree = "<group>"; };
-		3D220CE3217DC1E300E3799F /* LanguageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageViewController.m; sourceTree = "<group>"; };
-		3D220CE4217DC1E300E3799F /* LanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageViewController.xib; sourceTree = "<group>"; };
+		3D220CE2217DC1E300E3799F /* SystemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemViewController.h; sourceTree = "<group>"; };
+		3D220CE3217DC1E300E3799F /* SystemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemViewController.m; sourceTree = "<group>"; };
+		3D220CE4217DC1E300E3799F /* SystemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SystemViewController.xib; sourceTree = "<group>"; };
 		3D220CE7217DC1F700E3799F /* MyUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUIViewController.h; sourceTree = "<group>"; };
 		3D220CE8217DC1F700E3799F /* MyUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUIViewController.m; sourceTree = "<group>"; };
 		3D220CE9217DC1F700E3799F /* MyUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyUIViewController.xib; sourceTree = "<group>"; };
@@ -693,11 +690,6 @@
 		CE7D1BDD225626C500DEE23E /* JumpAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpAppViewController.h; sourceTree = "<group>"; };
 		CE7D1BDE225626C500DEE23E /* JumpAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpAppViewController.m; sourceTree = "<group>"; };
 		CE7D1BDF225626C500DEE23E /* JumpAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JumpAppViewController.xib; sourceTree = "<group>"; };
-		CE7D1D35225741EB00DEE23E /* AudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
-		CE7D1D36225741EB00DEE23E /* AudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
-		CE7D1D382257421300DEE23E /* AudioPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayerVC.h; sourceTree = "<group>"; };
-		CE7D1D392257421300DEE23E /* AudioPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerVC.m; sourceTree = "<group>"; };
-		CE7D1D3A2257421300DEE23E /* AudioPlayerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerVC.xib; sourceTree = "<group>"; };
 		CE7D1D3D2257453300DEE23E /* rock_clash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rock_clash.wav; sourceTree = "<group>"; };
 		CE7D1D3E2257453300DEE23E /* shot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shot.wav; sourceTree = "<group>"; };
 		CE7D20302259E44900DEE23E /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieViewController.h; sourceTree = "<group>"; };
@@ -1184,6 +1176,7 @@
 				3A82A84D29C2F0730028CC6D /* ObjectiveCTests */,
 				C4D6CDCE02EE24808DF8D56A /* Frameworks */,
 				3A70007629D32930008C5099 /* ObjectiveC.app */,
+				3AC4D7B929D71BE8000FBFDC /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1193,7 +1186,7 @@
 				CEC9EE3A22294C71006E2064 /* other */,
 				3D220CD0217DC19F00E3799F /* vender */,
 				3D220CCF217DC19700E3799F /* ui */,
-				3D220CCE217DC17A00E3799F /* language */,
+				3D220CCE217DC17A00E3799F /* system */,
 				CECFB03521D38BD200CB737F /* navigation */,
 				CE40E2D5221BDE6D0072CF9E /* utils */,
 				CE40E2C6221BDAAE0072CF9E /* lib */,
@@ -1206,9 +1199,10 @@
 			path = ObjectiveC;
 			sourceTree = "<group>";
 		};
-		3D220CCE217DC17A00E3799F /* language */ = {
+		3D220CCE217DC17A00E3799F /* system */ = {
 			isa = PBXGroup;
 			children = (
+				CE7386D5224108F4004C7239 /* audio */,
 				3A65ACA629AE035F003C4C92 /* CFDataType */,
 				3A65AC9629ADD61A003C4C92 /* notification */,
 				3AE3AA0829AA212E005998B1 /* category */,
@@ -1228,7 +1222,7 @@
 				CE80B8DB21B3FE4300E4748F /* Singleton */,
 				3DB19AFB217DC4AB00CD9E24 /* lazyload */,
 			);
-			path = language;
+			path = system;
 			sourceTree = "<group>";
 		};
 		3D220CCF217DC19700E3799F /* ui */ = {
@@ -1247,7 +1241,6 @@
 				CED3B95B22674A3C008988CE /* photo */,
 				5FF96AD42226E20C0094DF79 /* view */,
 				5FF96AC12226D0630094DF79 /* collectionview */,
-				CE7386D5224108F4004C7239 /* Audio */,
 				CE3D1E0A21A7F1B800015F2B /* video */,
 				3DB19B05217DC59600CD9E24 /* tableview */,
 				3DB19B08217DC59600CD9E24 /* webview */,
@@ -1861,14 +1854,14 @@
 			path = modal;
 			sourceTree = "<group>";
 		};
-		CE7386D5224108F4004C7239 /* Audio */ = {
+		CE7386D5224108F4004C7239 /* audio */ = {
 			isa = PBXGroup;
 			children = (
 				CE7386D622410957004C7239 /* AVPlayerViewController.h */,
 				CE7386D722410957004C7239 /* AVPlayerViewController.m */,
 				CE7386D822410957004C7239 /* AVPlayerViewController.xib */,
 			);
-			path = Audio;
+			path = audio;
 			sourceTree = "<group>";
 		};
 		CE7386E822425068004C7239 /* sound */ = {
@@ -1904,18 +1897,6 @@
 				CE7D1BDF225626C500DEE23E /* JumpAppViewController.xib */,
 			);
 			path = jumpToApp;
-			sourceTree = "<group>";
-		};
-		CE7D1D34225741CE00DEE23E /* audioPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				CE7D1D35225741EB00DEE23E /* AudioPlayer.h */,
-				CE7D1D36225741EB00DEE23E /* AudioPlayer.m */,
-				CE7D1D382257421300DEE23E /* AudioPlayerVC.h */,
-				CE7D1D392257421300DEE23E /* AudioPlayerVC.m */,
-				CE7D1D3A2257421300DEE23E /* AudioPlayerVC.xib */,
-			);
-			path = audioPlayer;
 			sourceTree = "<group>";
 		};
 		CE7D202F2259E42B00DEE23E /* lottie */ = {
@@ -2010,7 +1991,6 @@
 				9321B19A23A26E700028B245 /* crypto */,
 				CE17E4C323547D41004A7AA2 /* changeIcon */,
 				CEFA19D822657263002C245A /* paraseJSON */,
-				CE7D1D34225741CE00DEE23E /* audioPlayer */,
 				CE7D1BDC225626B200DEE23E /* jumpToApp */,
 				CE7D1BCD2255C1DB00DEE23E /* speech */,
 				CE0277D72250DB1400BA7A88 /* Orientation */,
@@ -2041,9 +2021,9 @@
 				3D220CF3217DC23B00E3799F /* MyNavgationController.m */,
 				3D220CF1217DC23B00E3799F /* MyTabBarController.h */,
 				3D220CF4217DC23C00E3799F /* MyTabBarController.m */,
-				3D220CE2217DC1E300E3799F /* LanguageViewController.h */,
-				3D220CE3217DC1E300E3799F /* LanguageViewController.m */,
-				3D220CE4217DC1E300E3799F /* LanguageViewController.xib */,
+				3D220CE2217DC1E300E3799F /* SystemViewController.h */,
+				3D220CE3217DC1E300E3799F /* SystemViewController.m */,
+				3D220CE4217DC1E300E3799F /* SystemViewController.xib */,
 				3D220CE7217DC1F700E3799F /* MyUIViewController.h */,
 				3D220CE8217DC1F700E3799F /* MyUIViewController.m */,
 				3D220CE9217DC1F700E3799F /* MyUIViewController.xib */,
@@ -2265,7 +2245,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 3ADD94BE29D4407100AFA781 /* ObjectiveCTests.xctest */;
+			productReference = 3AC4D7B929D71BE8000FBFDC /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
@@ -2443,7 +2423,6 @@
 				3A2F7B4029939B6100679555 /* show.html in Resources */,
 				CE287AAF2265B70C00B6C517 /* test2.json in Resources */,
 				3A2F7C09299BCAB800679555 /* NSTimerViewController.xib in Resources */,
-				CE7D1D3C2257421300DEE23E /* AudioPlayerVC.xib in Resources */,
 				3AA0F2E12881DA54006B6222 /* ResignViewController.xib in Resources */,
 				CE34E749228BC3520042C323 /* NSURLSessionVC.xib in Resources */,
 				3AA56A8828AFCF2500940DEF /* SliderViewController.xib in Resources */,
@@ -2456,7 +2435,7 @@
 				3AB12A81292E8F7700ABC707 /* HTTPSPing02ViewController.xib in Resources */,
 				CE17E4F023548C2A004A7AA2 /* iWiBi-orange-blank@2x.png in Resources */,
 				3A32A95228EF10450067F2E8 /* 2d.jpeg in Resources */,
-				3D220CE6217DC1E300E3799F /* LanguageViewController.xib in Resources */,
+				3D220CE6217DC1E300E3799F /* SystemViewController.xib in Resources */,
 				3A2F7C14299CCC6500679555 /* RegularViewController.xib in Resources */,
 				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
 				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
@@ -2562,7 +2541,6 @@
 				3AA0F2EA2881E058006B6222 /* JailbreakTool.m in Sources */,
 				3A15D33128A6AD1800C62036 /* LJPerson.m in Sources */,
 				3A82A85829C41E550028CC6D /* HandleCellVC.m in Sources */,
-				CE7D1D3B2257421300DEE23E /* AudioPlayerVC.m in Sources */,
 				3A61024828D491A300CE986D /* SystemFileViewController.m in Sources */,
 				CE17E4C723547F3C004A7AA2 /* ChangeIconViewController.m in Sources */,
 				3A2E7B8F29CC091900408AC2 /* MyAlertViewController.m in Sources */,
@@ -2583,9 +2561,8 @@
 				CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */,
 				CE1CBAB12322469200D3AE39 /* MyFontViewController.m in Sources */,
 				3A15D32E28A6AD1800C62036 /* LJPeoplePickerDelegate.m in Sources */,
-				CE7D1D37225741EB00DEE23E /* AudioPlayer.m in Sources */,
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
-				3D220CE5217DC1E300E3799F /* LanguageViewController.m in Sources */,
+				3D220CE5217DC1E300E3799F /* SystemViewController.m in Sources */,
 				3ADD7747286AE41100451603 /* SerializeViewController.m in Sources */,
 				CE7D1BD12255C1F300DEE23E /* SpeechViewController.m in Sources */,
 				CEFA19C822648744002C245A /* DLFixedTabbarView.m in Sources */,
@@ -2739,7 +2716,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5YBWG2X244;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -2762,7 +2739,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5YBWG2X244;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.ObjectiveCTests;
@@ -2826,7 +2803,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2879,7 +2856,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -2900,7 +2877,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/ObjectiveC/utils/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2929,7 +2906,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/ObjectiveC/utils/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

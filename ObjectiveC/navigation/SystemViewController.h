@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LanguageViewController : UIViewController
+@interface SystemViewController : UIViewController
 
 @end

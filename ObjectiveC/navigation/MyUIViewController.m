@@ -11,7 +11,6 @@
 #import "WKWebViewDelegateVC.h"
 #import "WebViewJSCode.h"
 #import "WebViewJSCode2.h"
-#import "AVPlayerViewController.h"
 #import "MyVideoViewController.h"
 #import "MyCollectionViewVC.h"
 #import "NibCollectionViewVC.h"
@@ -104,10 +103,6 @@
     MyVideoViewController *videoVC = [MyVideoViewController new];
     videoVC.title = @"Video";
     [self.dataArray addObject:videoVC];
-    
-    AVPlayerViewController *audioVC = [AVPlayerViewController new];
-    audioVC.title = @"音频播放";
-    [self.dataArray addObject:audioVC];
     
     WebViewJSCode2 *jscodeVC2 = [WebViewJSCode2 new];
     jscodeVC2.title = @"webview js往 app 传不同的参数";

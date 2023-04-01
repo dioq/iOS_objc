@@ -6,7 +6,7 @@
 //  Copyright © 2018年 William. All rights reserved.
 //
 
-#import "LanguageViewController.h"
+#import "SystemViewController.h"
 #import "LazyloadViewController.h"
 #import "SingletonViewController.h"
 #import "GCDViewController.h"
@@ -29,18 +29,23 @@
 #import "CategoryViewController.h"
 #import "NotificationVC.h"
 #import "CFObjectViewController.h"
+#import "AVPlayerViewController.h"
 
-@interface LanguageViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface SystemViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property (nonatomic,strong) NSMutableArray *dataArray;
 
 @end
 
-@implementation LanguageViewController
+@implementation SystemViewController
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    AVPlayerViewController *playerVC = [AVPlayerViewController new];
+    playerVC.title = @"音频播放";
+    [self.dataArray addObject:playerVC];
     
     CFObjectViewController *cfVC = [CFObjectViewController new];
     cfVC.title = @"Core Foundation 数据类型";

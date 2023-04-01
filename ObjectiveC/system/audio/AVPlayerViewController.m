@@ -21,7 +21,7 @@
     if (!_player) {
         // 1. 创建播放器对象
         // 虽然传递的参数是NSURL地址, 但是只支持播放本地文件, 远程音乐文件路径不支持
-        NSURL *url = [[NSBundle mainBundle]URLForResource:@"back02.mp3" withExtension:nil];
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"back02" withExtension:@"mp3"];
         _player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
         
         //允许调整速率,此设置必须在prepareplay 之前
@@ -40,6 +40,15 @@
 
 - (IBAction)startPlay:(UIButton *)sender {
     [self.player play];
+}
+
+- (IBAction)playInbackground:(UIButton *)sender {
+    [self.player play];
+    
+    // 进程进入后台后音乐播放不会暂停
+    AVAudioSession  *session = [AVAudioSession  sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
 }
 
 - (IBAction)pause:(UIButton *)sender {

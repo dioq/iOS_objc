@@ -13,7 +13,6 @@
 #import "OrientationVC.h"
 #import "SpeechViewController.h"
 #import "JumpAppViewController.h"
-#import "AudioPlayerVC.h"
 #import "ParseViewController.h"
 #import "ChangeIconViewController.h"
 #import "CryptoViewController.h"
@@ -106,10 +105,6 @@
     ParseViewController *parseVC = [ParseViewController new];
     parseVC.title = @"解析JSON";
     [self.dataArray addObject:parseVC];
-    
-    AudioPlayerVC *audioVC = [AudioPlayerVC new];
-    audioVC.title = @"封装一个音频播放器";
-    [self.dataArray addObject:audioVC];
     
     JumpAppViewController *messageVC = [JumpAppViewController new];
     messageVC.title = @"App间跳转";
