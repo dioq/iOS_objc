@@ -58,32 +58,34 @@
 }
 
 - (IBAction)clearSandbox:(UIButton *)sender {
-    NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *libDir = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *homeDir = NSHomeDirectory();
     NSString *tmpDir = NSTemporaryDirectory();
-    [self clearDir:docDir];
-    [self clearDir:libDir];
-    [self clearDir:tmpDir];
+    [self emptyDir:homeDir];
+    [self emptyDir:tmpDir];
 }
-
--(void)clearDir:(NSString *)path {
+-(void)emptyDir:(NSString *)path {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     // 获取目录下的所有内容(文件和目录)
     NSError *error;
     NSArray *contents = [fileManager contentsOfDirectoryAtPath:path error:&error];
     if(error) {
-        NSLog(@"%@",[error localizedDescription]);
+        NSLog(@"%@:%@",path,[error localizedFailureReason]);
         return;
     }
     for (int i = 0; i < contents.count; i++) {
         NSString *filename = [contents objectAtIndex:i];
-//        NSLog(@"%@", filename);
-        BOOL suc = [fileManager removeItemAtPath:[path stringByAppendingPathComponent:filename] error:NULL];
-        if (suc) {
-            NSLog(@"%@ 删除成功", filename);
-        }else {
-            NSLog(@"%@ 删除失败", filename);
-        }
+        NSString *current_path = [path stringByAppendingPathComponent:filename];
+        [self deleteFile:current_path];
+    }
+}
+-(void)deleteFile:(NSString *)path {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    BOOL suc = [fileManager removeItemAtPath:path error:&error];
+    if (suc) {
+        NSLog(@"%@:删除成功",path);
+    }else {
+        NSLog(@"%@:删除失败,%@",path,[error localizedFailureReason]);
     }
 }
 

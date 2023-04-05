@@ -441,7 +441,7 @@
 		3AB12A7F292E8F7700ABC707 /* HTTPSPing02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSPing02ViewController.h; sourceTree = "<group>"; };
 		3AB2288D2934BB1900DCA181 /* pkg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pkg.html; sourceTree = "<group>"; };
 		3ABF6A2D2877585300CEE7F2 /* client.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = client.p12; sourceTree = "<group>"; };
-		3AC4D7B929D71BE8000FBFDC /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC4D7B929D71BE8000FBFDC /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/dio/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		3AC6B3BE28E99B74003C8103 /* SingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
 		3AC6B3BF28E99B74003C8103 /* SingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
 		3AC6B3C028E99B74003C8103 /* SingletonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingletonViewController.xib; sourceTree = "<group>"; };
@@ -1176,7 +1176,6 @@
 				3A82A84D29C2F0730028CC6D /* ObjectiveCTests */,
 				C4D6CDCE02EE24808DF8D56A /* Frameworks */,
 				3A70007629D32930008C5099 /* ObjectiveC.app */,
-				3AC4D7B929D71BE8000FBFDC /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};

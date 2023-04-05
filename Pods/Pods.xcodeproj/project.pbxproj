@@ -506,6 +506,7 @@
 		391E2CBEBB6E246BF2646827BF0B0E6E /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		39D465DAF9DF2791EF1FA1C9861EF4A3 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		3A1D13B53622D5779E27CB95A5DFA447 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		3A5E775229DC131300641BA5 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjectiveC.a"; path = "/Users/dio/Repository/iOS_objc/Pods/../build/Debug-iphoneos/libPods-ObjectiveC.a"; sourceTree = "<absolute>"; };
 		3ADD94B329D4407100AFA781 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADD94B429D4407100AFA781 /* libColor-Picker-for-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libColor-Picker-for-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADD94B529D4407100AFA781 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -514,7 +515,6 @@
 		3ADD94B829D4407100AFA781 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADD94B929D4407100AFA781 /* libMMKV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMKV.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADD94BA29D4407100AFA781 /* libMMKVCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMKVCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94BB29D4407100AFA781 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjectiveC.a"; path = "/Users/dio/Repository/iOS_objc/Pods/../build/Debug-iphoneos/libPods-ObjectiveC.a"; sourceTree = "<absolute>"; };
 		3ADD94BC29D4407100AFA781 /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADD94BD29D4407100AFA781 /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1AC5EBB1F17C6049468D2E35CBA633 /* MiniPBCoder_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MiniPBCoder_OSX.cpp; path = Core/MiniPBCoder_OSX.cpp; sourceTree = "<group>"; };
@@ -1835,7 +1835,7 @@
 			);
 			name = "Pods-ObjectiveC";
 			productName = "Pods-ObjectiveC";
-			productReference = 3ADD94BB29D4407100AFA781 /* libPods-ObjectiveC.a */;
+			productReference = 3A5E775229DC131300641BA5 /* libPods-ObjectiveC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		44CA85B9068A41C746742D5576314D0A /* Color-Picker-for-iOS */ = {
