@@ -54,8 +54,6 @@
 		3A65ACAB29AE037E003C4C92 /* CFObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65ACA929AE037E003C4C92 /* CFObjectViewController.xib */; };
 		3A687332286B791300951BEE /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A687330286B791300951BEE /* KeychainItemWrapper.m */; };
 		3A687335286B7E6C00951BEE /* SimulateIDFA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A687333286B7E6C00951BEE /* SimulateIDFA.m */; };
-		3A72D488291F82A4002A70A1 /* ProxyCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72D486291F82A4002A70A1 /* ProxyCheckViewController.m */; };
-		3A72D489291F82A4002A70A1 /* ProxyCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A72D487291F82A4002A70A1 /* ProxyCheckViewController.xib */; };
 		3A72D499291FDA44002A70A1 /* AES256Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72D498291FDA44002A70A1 /* AES256Util.m */; };
 		3A811581288E96600011AA45 /* DataTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A81157F288E96600011AA45 /* DataTypeViewController.m */; };
 		3A811582288E96600011AA45 /* DataTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A811580288E96600011AA45 /* DataTypeViewController.xib */; };
@@ -64,19 +62,12 @@
 		3A82A85929C41E550028CC6D /* HandleCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A82A85729C41E550028CC6D /* HandleCellVC.xib */; };
 		3A82A8F429C5CE190028CC6D /* WindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A82A8F229C5CE190028CC6D /* WindowViewController.m */; };
 		3A82A8F529C5CE190028CC6D /* WindowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A82A8F329C5CE190028CC6D /* WindowViewController.xib */; };
-		3A99085729252FBB009C139D /* AntiDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A99085529252FBB009C139D /* AntiDebugViewController.m */; };
-		3A99085829252FBB009C139D /* AntiDebugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A99085629252FBB009C139D /* AntiDebugViewController.xib */; };
 		3A9908B8292749C6009C139D /* HTTPS1WayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9908B6292749C6009C139D /* HTTPS1WayViewController.m */; };
 		3A9908B9292749C6009C139D /* HTTPS1WayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9908B7292749C6009C139D /* HTTPS1WayViewController.xib */; };
 		3A9908BD292749F5009C139D /* HTTPSPing01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9908BB292749F5009C139D /* HTTPSPing01ViewController.m */; };
 		3A9908BE292749F5009C139D /* HTTPSPing01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9908BC292749F5009C139D /* HTTPSPing01ViewController.xib */; };
 		3A9908C229274A0E009C139D /* HTTPS2WayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9908C029274A0E009C139D /* HTTPS2WayViewController.m */; };
 		3A9908C329274A0E009C139D /* HTTPS2WayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A9908C129274A0E009C139D /* HTTPS2WayViewController.xib */; };
-		3AA0F2E02881DA54006B6222 /* ResignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0F2DE2881DA54006B6222 /* ResignViewController.m */; };
-		3AA0F2E12881DA54006B6222 /* ResignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA0F2DF2881DA54006B6222 /* ResignViewController.xib */; };
-		3AA0F2E82881E058006B6222 /* JailbreakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0F2E32881E058006B6222 /* JailbreakViewController.m */; };
-		3AA0F2E92881E058006B6222 /* JailbreakViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA0F2E52881E058006B6222 /* JailbreakViewController.xib */; };
-		3AA0F2EA2881E058006B6222 /* JailbreakTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0F2E72881E058006B6222 /* JailbreakTool.m */; };
 		3AA56A4028AF8AD000940DEF /* ScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA56A3E28AF8AD000940DEF /* ScreenshotViewController.m */; };
 		3AA56A4128AF8AD000940DEF /* ScreenshotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA56A3F28AF8AD000940DEF /* ScreenshotViewController.xib */; };
 		3AA56A8728AFCF2500940DEF /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA56A8528AFCF2500940DEF /* SliderViewController.m */; };
@@ -387,10 +378,6 @@
 		3A687331286B791300951BEE /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		3A687333286B7E6C00951BEE /* SimulateIDFA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateIDFA.m; sourceTree = "<group>"; };
 		3A687334286B7E6C00951BEE /* SimulateIDFA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateIDFA.h; sourceTree = "<group>"; };
-		3A70007629D32930008C5099 /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A72D485291F82A4002A70A1 /* ProxyCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyCheckViewController.h; sourceTree = "<group>"; };
-		3A72D486291F82A4002A70A1 /* ProxyCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyCheckViewController.m; sourceTree = "<group>"; };
-		3A72D487291F82A4002A70A1 /* ProxyCheckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProxyCheckViewController.xib; sourceTree = "<group>"; };
 		3A72D497291FDA44002A70A1 /* AES256Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AES256Util.h; sourceTree = "<group>"; };
 		3A72D498291FDA44002A70A1 /* AES256Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES256Util.m; sourceTree = "<group>"; };
 		3A81157E288E96600011AA45 /* DataTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataTypeViewController.h; sourceTree = "<group>"; };
@@ -403,10 +390,6 @@
 		3A82A8F129C5CE190028CC6D /* WindowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowViewController.h; sourceTree = "<group>"; };
 		3A82A8F229C5CE190028CC6D /* WindowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowViewController.m; sourceTree = "<group>"; };
 		3A82A8F329C5CE190028CC6D /* WindowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindowViewController.xib; sourceTree = "<group>"; };
-		3A99085429252FBB009C139D /* AntiDebugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AntiDebugViewController.h; sourceTree = "<group>"; };
-		3A99085529252FBB009C139D /* AntiDebugViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiDebugViewController.m; sourceTree = "<group>"; };
-		3A99085629252FBB009C139D /* AntiDebugViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AntiDebugViewController.xib; sourceTree = "<group>"; };
-		3A99087A29253168009C139D /* MyPtrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPtrace.h; sourceTree = "<group>"; };
 		3A9908B5292749C6009C139D /* HTTPS1WayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPS1WayViewController.h; sourceTree = "<group>"; };
 		3A9908B6292749C6009C139D /* HTTPS1WayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPS1WayViewController.m; sourceTree = "<group>"; };
 		3A9908B7292749C6009C139D /* HTTPS1WayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTTPS1WayViewController.xib; sourceTree = "<group>"; };
@@ -416,14 +399,6 @@
 		3A9908BF29274A0E009C139D /* HTTPS2WayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPS2WayViewController.h; sourceTree = "<group>"; };
 		3A9908C029274A0E009C139D /* HTTPS2WayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPS2WayViewController.m; sourceTree = "<group>"; };
 		3A9908C129274A0E009C139D /* HTTPS2WayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTTPS2WayViewController.xib; sourceTree = "<group>"; };
-		3AA0F2DD2881DA54006B6222 /* ResignViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResignViewController.h; sourceTree = "<group>"; };
-		3AA0F2DE2881DA54006B6222 /* ResignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResignViewController.m; sourceTree = "<group>"; };
-		3AA0F2DF2881DA54006B6222 /* ResignViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResignViewController.xib; sourceTree = "<group>"; };
-		3AA0F2E32881E058006B6222 /* JailbreakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailbreakViewController.m; sourceTree = "<group>"; };
-		3AA0F2E42881E058006B6222 /* JailbreakTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailbreakTool.h; sourceTree = "<group>"; };
-		3AA0F2E52881E058006B6222 /* JailbreakViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JailbreakViewController.xib; sourceTree = "<group>"; };
-		3AA0F2E62881E058006B6222 /* JailbreakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailbreakViewController.h; sourceTree = "<group>"; };
-		3AA0F2E72881E058006B6222 /* JailbreakTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailbreakTool.m; sourceTree = "<group>"; };
 		3AA56A3D28AF8AD000940DEF /* ScreenshotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotViewController.h; sourceTree = "<group>"; };
 		3AA56A3E28AF8AD000940DEF /* ScreenshotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenshotViewController.m; sourceTree = "<group>"; };
 		3AA56A3F28AF8AD000940DEF /* ScreenshotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenshotViewController.xib; sourceTree = "<group>"; };
@@ -441,7 +416,8 @@
 		3AB12A7F292E8F7700ABC707 /* HTTPSPing02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSPing02ViewController.h; sourceTree = "<group>"; };
 		3AB2288D2934BB1900DCA181 /* pkg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pkg.html; sourceTree = "<group>"; };
 		3ABF6A2D2877585300CEE7F2 /* client.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = client.p12; sourceTree = "<group>"; };
-		3AC4D7B929D71BE8000FBFDC /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/dio/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
+		3AC05B3029E58C440002C598 /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3129E58C440002C598 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/dio/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		3AC6B3BE28E99B74003C8103 /* SingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
 		3AC6B3BF28E99B74003C8103 /* SingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
 		3AC6B3C028E99B74003C8103 /* SingletonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingletonViewController.xib; sourceTree = "<group>"; };
@@ -962,27 +938,6 @@
 			path = CFDataType;
 			sourceTree = "<group>";
 		};
-		3A72D481291F825A002A70A1 /* proxyCheck */ = {
-			isa = PBXGroup;
-			children = (
-				3A72D485291F82A4002A70A1 /* ProxyCheckViewController.h */,
-				3A72D486291F82A4002A70A1 /* ProxyCheckViewController.m */,
-				3A72D487291F82A4002A70A1 /* ProxyCheckViewController.xib */,
-			);
-			path = proxyCheck;
-			sourceTree = "<group>";
-		};
-		3A72D48D291F9F89002A70A1 /* security */ = {
-			isa = PBXGroup;
-			children = (
-				3A99085329252F98009C139D /* antidebug */,
-				3A72D481291F825A002A70A1 /* proxyCheck */,
-				3AA0F2E22881E058006B6222 /* jailbreakCheck */,
-				3AA0F2DC2881DA03006B6222 /* resignCheck */,
-			);
-			path = security;
-			sourceTree = "<group>";
-		};
 		3A82A84D29C2F0730028CC6D /* ObjectiveCTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -999,39 +954,6 @@
 				3A82A8F329C5CE190028CC6D /* WindowViewController.xib */,
 			);
 			path = window;
-			sourceTree = "<group>";
-		};
-		3A99085329252F98009C139D /* antidebug */ = {
-			isa = PBXGroup;
-			children = (
-				3A99085429252FBB009C139D /* AntiDebugViewController.h */,
-				3A99085529252FBB009C139D /* AntiDebugViewController.m */,
-				3A99085629252FBB009C139D /* AntiDebugViewController.xib */,
-				3A99087A29253168009C139D /* MyPtrace.h */,
-			);
-			path = antidebug;
-			sourceTree = "<group>";
-		};
-		3AA0F2DC2881DA03006B6222 /* resignCheck */ = {
-			isa = PBXGroup;
-			children = (
-				3AA0F2DD2881DA54006B6222 /* ResignViewController.h */,
-				3AA0F2DE2881DA54006B6222 /* ResignViewController.m */,
-				3AA0F2DF2881DA54006B6222 /* ResignViewController.xib */,
-			);
-			path = resignCheck;
-			sourceTree = "<group>";
-		};
-		3AA0F2E22881E058006B6222 /* jailbreakCheck */ = {
-			isa = PBXGroup;
-			children = (
-				3AA0F2E62881E058006B6222 /* JailbreakViewController.h */,
-				3AA0F2E32881E058006B6222 /* JailbreakViewController.m */,
-				3AA0F2E52881E058006B6222 /* JailbreakViewController.xib */,
-				3AA0F2E42881E058006B6222 /* JailbreakTool.h */,
-				3AA0F2E72881E058006B6222 /* JailbreakTool.m */,
-			);
-			path = jailbreakCheck;
 			sourceTree = "<group>";
 		};
 		3AA56A3C28AF8A9000940DEF /* screenshot */ = {
@@ -1175,7 +1097,7 @@
 				BBEEFED4BB651D1A5F8E0205 /* Pods */,
 				3A82A84D29C2F0730028CC6D /* ObjectiveCTests */,
 				C4D6CDCE02EE24808DF8D56A /* Frameworks */,
-				3A70007629D32930008C5099 /* ObjectiveC.app */,
+				3AC05B3029E58C440002C598 /* ObjectiveC.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1981,7 +1903,6 @@
 			children = (
 				3A2E7B8B29CC090400408AC2 /* customalert */,
 				3A2F7C0F299CCC3800679555 /* regular */,
-				3A72D48D291F9F89002A70A1 /* security */,
 				3AA56A3C28AF8A9000940DEF /* screenshot */,
 				3A15D31C28A6A4CD00C62036 /* contacts */,
 				3AEF9DC828A038B400ACB99A /* mynetwork */,
@@ -2244,7 +2165,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 3AC4D7B929D71BE8000FBFDC /* ObjectiveCTests.xctest */;
+			productReference = 3AC05B3129E58C440002C598 /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
@@ -2263,7 +2184,7 @@
 			);
 			name = ObjectiveC;
 			productName = ObjectiveC;
-			productReference = 3A70007629D32930008C5099 /* ObjectiveC.app */;
+			productReference = 3AC05B3029E58C440002C598 /* ObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2324,14 +2245,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA0F2E92881E058006B6222 /* JailbreakViewController.xib in Resources */,
 				CE757CD1237E6EC20039C29D /* zhanbi.ttf in Resources */,
 				CE757CCE237E6EC20039C29D /* kangti.ttf in Resources */,
 				CE17E4EB23548C2A004A7AA2 /* AppIcon-default@3x.png in Resources */,
 				3A65AC9B29ADD657003C4C92 /* NotificationVC.xib in Resources */,
 				CE17E4EF23548C2A004A7AA2 /* iWiBi-orange-blank@3x.png in Resources */,
 				CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */,
-				3A99085829252FBB009C139D /* AntiDebugViewController.xib in Resources */,
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
 				CE4187A6228E71DC00A3A8ED /* paihangbang_anniu.png in Resources */,
 				CE17E4ED23548C2A004A7AA2 /* iWiBi-orange-icon@3x.png in Resources */,
@@ -2422,7 +2341,6 @@
 				3A2F7B4029939B6100679555 /* show.html in Resources */,
 				CE287AAF2265B70C00B6C517 /* test2.json in Resources */,
 				3A2F7C09299BCAB800679555 /* NSTimerViewController.xib in Resources */,
-				3AA0F2E12881DA54006B6222 /* ResignViewController.xib in Resources */,
 				CE34E749228BC3520042C323 /* NSURLSessionVC.xib in Resources */,
 				3AA56A8828AFCF2500940DEF /* SliderViewController.xib in Resources */,
 				CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */,
@@ -2447,7 +2365,6 @@
 				CE7D20392259E4F700DEE23E /* Boat_Loader.json in Resources */,
 				3AEF9DCD28A038E700ACB99A /* MyNetworkViewController.xib in Resources */,
 				3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */,
-				3A72D489291F82A4002A70A1 /* ProxyCheckViewController.xib in Resources */,
 				CED3B96022674A52008988CE /* PhotoViewController.xib in Resources */,
 				CE17E4EE23548C2A004A7AA2 /* iWiBi-orange-icon-light@3x.png in Resources */,
 				3ACA4C1C28D6FC9A003169E4 /* CheckboxViewController.xib in Resources */,
@@ -2520,7 +2437,6 @@
 				CEE43DE12330F306008FA43C /* CHPerson.m in Sources */,
 				CE40E2CE221BDB7E0072CF9E /* HQFlowView.m in Sources */,
 				93EFF45C23BB3F1300A4BC67 /* Modal1ViewController.m in Sources */,
-				3A99085729252FBB009C139D /* AntiDebugViewController.m in Sources */,
 				CE287AE92265CEB500B6C517 /* YYEatModel.m in Sources */,
 				CE287AE62265CE9900B6C517 /* YYPersonModel2.m in Sources */,
 				5FF96ADF2226E2670094DF79 /* MyView.m in Sources */,
@@ -2537,14 +2453,12 @@
 				CEFA19C922648744002C245A /* DLUtility.m in Sources */,
 				3A65ACAA29AE037E003C4C92 /* CFObjectViewController.m in Sources */,
 				CE427A39236D8772001A90B4 /* BlockViewController.m in Sources */,
-				3AA0F2EA2881E058006B6222 /* JailbreakTool.m in Sources */,
 				3A15D33128A6AD1800C62036 /* LJPerson.m in Sources */,
 				3A82A85829C41E550028CC6D /* HandleCellVC.m in Sources */,
 				3A61024828D491A300CE986D /* SystemFileViewController.m in Sources */,
 				CE17E4C723547F3C004A7AA2 /* ChangeIconViewController.m in Sources */,
 				3A2E7B8F29CC091900408AC2 /* MyAlertViewController.m in Sources */,
 				5F2F0F2B2592691E00197207 /* CryptoUtil.m in Sources */,
-				3A72D488291F82A4002A70A1 /* ProxyCheckViewController.m in Sources */,
 				CE34E748228BC3520042C323 /* NSURLSessionVC.m in Sources */,
 				5FF96AD92226E2430094DF79 /* CustomViewVC.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
@@ -2598,7 +2512,6 @@
 				CE2EF18922D4446200C09B22 /* BrowerViewController.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
 				CED3B8BF2265F3CF008988CE /* DelegateView.m in Sources */,
-				3AA0F2E82881E058006B6222 /* JailbreakViewController.m in Sources */,
 				CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */,
 				3ADD7748286AE41100451603 /* Person.m in Sources */,
 				3ACA4C1B28D6FC9A003169E4 /* CheckboxViewController.m in Sources */,
@@ -2608,7 +2521,6 @@
 				CE7165B02380016C00D476C3 /* EndModalViewController.m in Sources */,
 				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
 				CE193C08222BB61B002F670B /* KKColor.m in Sources */,
-				3AA0F2E02881DA54006B6222 /* ResignViewController.m in Sources */,
 				3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */,
 				3A9908B8292749C6009C139D /* HTTPS1WayViewController.m in Sources */,
 				5FF96AC82226D49C0094DF79 /* MyCollectionViewCell.m in Sources */,
@@ -2871,7 +2783,7 @@
 				CODE_SIGN_ENTITLEMENTS = ObjectiveC/ObjectiveC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.2.2;
-				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DEVELOPMENT_TEAM = 38D3676P2T;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/ObjectiveC/utils/PrefixHeader.pch";
@@ -2900,7 +2812,7 @@
 				CODE_SIGN_ENTITLEMENTS = ObjectiveC/ObjectiveC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.2.2;
-				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DEVELOPMENT_TEAM = 38D3676P2T;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/ObjectiveC/utils/PrefixHeader.pch";

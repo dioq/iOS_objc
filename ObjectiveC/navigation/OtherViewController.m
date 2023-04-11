@@ -20,13 +20,9 @@
 #import "SystemFileViewController.h"
 #import "FilesystemViewController.h"
 #import "DeviceIDViewController.h"
-#import "ResignViewController.h"
-#import "JailbreakViewController.h"
 #import "MyNetworkViewController.h"
 #import "ContactsViewController.h"
 #import "ScreenshotViewController.h"
-#import "ProxyCheckViewController.h"
-#import "AntiDebugViewController.h"
 #import "RegularViewController.h"
 #import "MyAlertViewController.h"
 
@@ -61,22 +57,6 @@
     MyNetworkViewController *myNet = [MyNetworkViewController new];
     myNet.title = @"自己封装的网络工具";
     [self.dataArray addObject:myNet];
-    
-    AntiDebugViewController *antiVC = [AntiDebugViewController new];
-    antiVC.title = @"反调试";
-    [self.dataArray addObject:antiVC];
-    
-    ProxyCheckViewController *proxyVC = [ProxyCheckViewController new];
-    proxyVC.title = @"抓包代理检测";
-    [self.dataArray addObject:proxyVC];
-    
-    JailbreakViewController *jailbreakVC = [JailbreakViewController new];
-    jailbreakVC.title = @"判断是否越狱";
-    [self.dataArray addObject:jailbreakVC];
-    
-    ResignViewController *resignVC = [ResignViewController new];
-    resignVC.title = @"判断是否重签名过";
-    [self.dataArray addObject:resignVC];
     
     DeviceIDViewController *deviceUUID = [DeviceIDViewController new];
     deviceUUID.title = @"设备唯一标识符";

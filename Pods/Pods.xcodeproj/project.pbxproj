@@ -506,17 +506,17 @@
 		391E2CBEBB6E246BF2646827BF0B0E6E /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		39D465DAF9DF2791EF1FA1C9861EF4A3 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		3A1D13B53622D5779E27CB95A5DFA447 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		3A5E775229DC131300641BA5 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjectiveC.a"; path = "/Users/dio/Repository/iOS_objc/Pods/../build/Debug-iphoneos/libPods-ObjectiveC.a"; sourceTree = "<absolute>"; };
-		3ADD94B329D4407100AFA781 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94B429D4407100AFA781 /* libColor-Picker-for-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libColor-Picker-for-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94B529D4407100AFA781 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94B629D4407100AFA781 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94B729D4407100AFA781 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94B829D4407100AFA781 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94B929D4407100AFA781 /* libMMKV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMKV.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94BA29D4407100AFA781 /* libMMKVCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMKVCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94BC29D4407100AFA781 /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ADD94BD29D4407100AFA781 /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3229E58C440002C598 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3329E58C440002C598 /* libColor-Picker-for-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libColor-Picker-for-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3429E58C440002C598 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3529E58C440002C598 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3629E58C440002C598 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3729E58C440002C598 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3829E58C440002C598 /* libMMKV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMKV.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3929E58C440002C598 /* libMMKVCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMKVCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3A29E58C440002C598 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjectiveC.a"; path = "/Users/dio/Repository/iOS_objc/Pods/../build/Debug-iphoneos/libPods-ObjectiveC.a"; sourceTree = "<absolute>"; };
+		3AC05B3B29E58C440002C598 /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC05B3C29E58C440002C598 /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1AC5EBB1F17C6049468D2E35CBA633 /* MiniPBCoder_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MiniPBCoder_OSX.cpp; path = Core/MiniPBCoder_OSX.cpp; sourceTree = "<group>"; };
 		3BBC0E5605CEC8D32312C2574D6B6912 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
 		3C4F9B4AD4F02783B0053872341574EA /* LOTInterpolatorCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTInterpolatorCallback.h; path = "lottie-ios/Classes/PublicHeaders/LOTInterpolatorCallback.h"; sourceTree = "<group>"; };
@@ -1349,16 +1349,16 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D7BE8477BFFA9F05C1E7DFAC6DCECE07 /* Pods */,
 				CCC253FAD6D7B2A9A6A1505EE778B9BC /* Targets Support Files */,
-				3ADD94B329D4407100AFA781 /* libAFNetworking.a */,
-				3ADD94B429D4407100AFA781 /* libColor-Picker-for-iOS.a */,
-				3ADD94B529D4407100AFA781 /* liblottie-ios.a */,
-				3ADD94B629D4407100AFA781 /* libMasonry.a */,
-				3ADD94B729D4407100AFA781 /* libMBProgressHUD.a */,
-				3ADD94B829D4407100AFA781 /* libMJRefresh.a */,
-				3ADD94B929D4407100AFA781 /* libMMKV.a */,
-				3ADD94BA29D4407100AFA781 /* libMMKVCore.a */,
-				3ADD94BC29D4407100AFA781 /* libSDAutoLayout.a */,
-				3ADD94BD29D4407100AFA781 /* libYYModel.a */,
+				3AC05B3229E58C440002C598 /* libAFNetworking.a */,
+				3AC05B3329E58C440002C598 /* libColor-Picker-for-iOS.a */,
+				3AC05B3429E58C440002C598 /* liblottie-ios.a */,
+				3AC05B3529E58C440002C598 /* libMasonry.a */,
+				3AC05B3629E58C440002C598 /* libMBProgressHUD.a */,
+				3AC05B3729E58C440002C598 /* libMJRefresh.a */,
+				3AC05B3829E58C440002C598 /* libMMKV.a */,
+				3AC05B3929E58C440002C598 /* libMMKVCore.a */,
+				3AC05B3B29E58C440002C598 /* libSDAutoLayout.a */,
+				3AC05B3C29E58C440002C598 /* libYYModel.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1774,7 +1774,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = 3ADD94B329D4407100AFA781 /* libAFNetworking.a */;
+			productReference = 3AC05B3229E58C440002C598 /* libAFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		03932C47FBFD347205B2F367F78E9B63 /* SDAutoLayout */ = {
@@ -1791,7 +1791,7 @@
 			);
 			name = SDAutoLayout;
 			productName = SDAutoLayout;
-			productReference = 3ADD94BC29D4407100AFA781 /* libSDAutoLayout.a */;
+			productReference = 3AC05B3B29E58C440002C598 /* libSDAutoLayout.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		0B967D7F8561D42493EE289EC8D450D1 /* lottie-ios */ = {
@@ -1808,7 +1808,7 @@
 			);
 			name = "lottie-ios";
 			productName = "lottie-ios";
-			productReference = 3ADD94B529D4407100AFA781 /* liblottie-ios.a */;
+			productReference = 3AC05B3429E58C440002C598 /* liblottie-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1A309BC1817F061288A1C9578DF98D55 /* Pods-ObjectiveC */ = {
@@ -1835,7 +1835,7 @@
 			);
 			name = "Pods-ObjectiveC";
 			productName = "Pods-ObjectiveC";
-			productReference = 3A5E775229DC131300641BA5 /* libPods-ObjectiveC.a */;
+			productReference = 3AC05B3A29E58C440002C598 /* libPods-ObjectiveC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		44CA85B9068A41C746742D5576314D0A /* Color-Picker-for-iOS */ = {
@@ -1852,7 +1852,7 @@
 			);
 			name = "Color-Picker-for-iOS";
 			productName = "Color-Picker-for-iOS";
-			productReference = 3ADD94B429D4407100AFA781 /* libColor-Picker-for-iOS.a */;
+			productReference = 3AC05B3329E58C440002C598 /* libColor-Picker-for-iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
@@ -1869,7 +1869,7 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 3ADD94B629D4407100AFA781 /* libMasonry.a */;
+			productReference = 3AC05B3529E58C440002C598 /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */ = {
@@ -1886,7 +1886,7 @@
 			);
 			name = MJRefresh;
 			productName = MJRefresh;
-			productReference = 3ADD94B829D4407100AFA781 /* libMJRefresh.a */;
+			productReference = 3AC05B3729E58C440002C598 /* libMJRefresh.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
@@ -1903,7 +1903,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 3ADD94B729D4407100AFA781 /* libMBProgressHUD.a */;
+			productReference = 3AC05B3629E58C440002C598 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		84B44807A12996D487A4A591A481D6A0 /* YYModel */ = {
@@ -1920,7 +1920,7 @@
 			);
 			name = YYModel;
 			productName = YYModel;
-			productReference = 3ADD94BD29D4407100AFA781 /* libYYModel.a */;
+			productReference = 3AC05B3C29E58C440002C598 /* libYYModel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		91A6826828CB9FCD0169A7547E8A79EA /* MMKV */ = {
@@ -1938,7 +1938,7 @@
 			);
 			name = MMKV;
 			productName = MMKV;
-			productReference = 3ADD94B929D4407100AFA781 /* libMMKV.a */;
+			productReference = 3AC05B3829E58C440002C598 /* libMMKV.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		AC8AE887C706A43711D115E69B9D988A /* MMKVCore */ = {
@@ -1955,7 +1955,7 @@
 			);
 			name = MMKVCore;
 			productName = MMKVCore;
-			productReference = 3ADD94BA29D4407100AFA781 /* libMMKVCore.a */;
+			productReference = 3AC05B3929E58C440002C598 /* libMMKVCore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
