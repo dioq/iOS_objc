@@ -62,7 +62,7 @@
         NSLog(@"%@",error);
         return;
     }
-    NSLog(@"字符串反序列化:\n%@", arr);
+    NSLog(@"NSArray 反序列化:\n%@", arr);
 }
 
 - (IBAction)serialize2:(UIButton *)sender {

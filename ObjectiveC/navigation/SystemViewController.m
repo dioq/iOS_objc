@@ -30,6 +30,8 @@
 #import "NotificationVC.h"
 #import "CFObjectViewController.h"
 #import "AVPlayerViewController.h"
+#import "SetViewController.h"
+
 
 @interface SystemViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -50,6 +52,10 @@
     CFObjectViewController *cfVC = [CFObjectViewController new];
     cfVC.title = @"Core Foundation 数据类型";
     [self.dataArray addObject:cfVC];
+    
+    SetViewController *setVC = [SetViewController new];
+    setVC.title = @"集合";
+    [self.dataArray addObject:setVC];
     
     DataTypeViewController *dataTypeVC = [DataTypeViewController new];
     dataTypeVC.title = @"objc Foundation 数据类型";

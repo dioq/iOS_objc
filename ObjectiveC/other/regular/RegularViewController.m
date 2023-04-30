@@ -7,6 +7,7 @@
 //
 
 #import "RegularViewController.h"
+#import <mach-o/dyld.h>
 
 @interface RegularViewController ()
 
@@ -102,6 +103,66 @@
     }else{
         NSLog(@"not is right file");
     }
+}
+
+- (IBAction)matchUUID:(UIButton *)sender {
+    // 匹配字符串包含uuid
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @".*[0-9A-Z]{8}[-][0-9A-Z]{4}[-][0-9A-Z]{4}[-][0-9A-Z]{4}[-][0-9A-Z]{12}.*"];
+    uint32_t count = _dyld_image_count();
+    for (uint32_t i = 0 ; i < count; ++i) {
+        const char *image_name = _dyld_get_image_name(i);
+        //        printf("%s\n",name);
+        NSString *image_name2 = [NSString stringWithUTF8String:image_name];
+        //        NSLog(@"%@",image_name2);
+        BOOL match = [predicate evaluateWithObject:image_name2];
+        if(match) {
+            NSLog(@"%@",image_name2);
+        }
+    }
+}
+
+- (IBAction)matchAndReplace:(UIButton *)sender {
+    NSString *searchText = @"/private/var/containers/Bundle/Application/45FCC9B5-BB4C-4776-93D0-E5712AA01D57/ObjectiveC.app/ObjectiveC";
+    NSError *error = NULL;
+    
+    // 创建一个正则
+    NSString *pattern = @"[0-9A-Z]{8}[-][0-9A-Z]{4}[-][0-9A-Z]{4}[-][0-9A-Z]{4}[-][0-9A-Z]{12}";
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
+    if(error) {
+        NSLog(@"%@",[error localizedFailureReason]);
+        return;
+    }
+    
+    /********************** 匹配方法 ************************/
+    //仅取出第一条匹配记录
+    NSTextCheckingResult *firstResult = [regex firstMatchInString:searchText options:0 range:NSMakeRange(0, [searchText length])];
+    if (firstResult) {
+        NSLog(@"firstResult:%@", [searchText substringWithRange:firstResult.range]);
+    }
+    
+    //遍历所有匹配记录
+    NSArray *matches = [regex matchesInString:searchText options:0 range:NSMakeRange(0, searchText.length)];
+    for (int i = 0; i < matches.count; i++) {
+        NSTextCheckingResult *match = [matches objectAtIndex:i];
+        NSRange range = [match range];
+        NSString *mStr = [searchText substringWithRange:range];
+        NSLog(@"matches[%d]: %@",i,mStr);
+    }
+    
+    // 返回匹配总数
+    NSUInteger count = [regex numberOfMatchesInString:searchText options:0 range:NSMakeRange(0,searchText.length)];
+    NSLog(@"count:%lu",count);
+    
+    
+    /********************** 替换方法 ************************/
+    // 返回替换后的新字符串, 源字符串不变
+    NSString *newString = [regex stringByReplacingMatchesInString:searchText options:0 range:NSMakeRange(0,searchText.length) withTemplate:@"XX"];
+    NSLog(@"newString: %@",newString);
+    
+    // 直接在源字符串里替换
+    NSMutableString *tmp_str = [searchText mutableCopy];
+    [regex replaceMatchesInString:tmp_str options:0 range:NSMakeRange(0,searchText.length) withTemplate:@"XXX"];
+    NSLog(@"searchText:%@",tmp_str);
 }
 
 @end

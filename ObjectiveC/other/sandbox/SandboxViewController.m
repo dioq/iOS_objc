@@ -55,8 +55,6 @@
     NSLog(@"tmpDir:\n%@",tmpDir);
     
     // 获取应用程序程序包中资源文件路径的方法：
-    appPath = [[NSBundle mainBundle] bundlePath];
-    //    NSLog(@"appPath:\n%@",appPath);
     NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
     NSLog(@"bundlePath:\n%@",bundlePath);
     NSString *resourcePath = [[NSBundle mainBundle] resourcePath];

@@ -33,6 +33,19 @@
     NSLog(@"data:%@",data);
 }
 
+-(void)test005 {
+    NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
+    NSString *another_exec_file = [NSString stringWithFormat:@"%@/target",bundlePath];
+    NSLog(@"%@",another_exec_file);
+    const char * another_exec_file2 = [another_exec_file UTF8String];
+    printf("another_exec_file2:%s\n",another_exec_file2);
+}
+
+-(void)test004 {
+    NSString *uuid = @"AF53C4B6-E80C-4B7A-9CCF-82DEDF2595CC";
+    NSLog(@"%@,%lu",uuid,uuid.length);
+}
+
 -(void)test002 {
     NSMutableString *testStr = [NSMutableString string];
     [testStr appendString:@"/var/mobile/Containers/Data/Application/AF53C4B6-E80C-4B7A-9CCF-82DEDF2595CC/Library/WechatPrivate/text.txt,"];

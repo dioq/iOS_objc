@@ -27,6 +27,8 @@
 #import "ToolBarViewController.h"
 #import "HandleCellVC.h"
 #import "WindowViewController.h"
+#import "PasteboardViewController.h"
+
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -39,6 +41,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    PasteboardViewController *pasteboardVC = [PasteboardViewController new];
+    pasteboardVC.title = @"粘贴板";
+    [self.dataArray addObject:pasteboardVC];
     
     WindowViewController *windowVC = [WindowViewController new];
     windowVC.title = @"window 研究";
