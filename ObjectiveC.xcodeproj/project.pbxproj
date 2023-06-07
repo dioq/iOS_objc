@@ -28,7 +28,6 @@
 		3A2F7B472993D11500679555 /* WebViewJSCode2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F7B452993D11500679555 /* WebViewJSCode2.m */; };
 		3A2F7B482993D11500679555 /* WebViewJSCode2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F7B462993D11500679555 /* WebViewJSCode2.xib */; };
 		3A2F7B4A2993D1F700679555 /* show2.html in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F7B492993D1F700679555 /* show2.html */; };
-		3A2F7BCC299A72C000679555 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F7BCB299A72C000679555 /* WebKit.framework */; };
 		3A2F7C08299BCAB800679555 /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F7C06299BCAB800679555 /* NSTimerViewController.m */; };
 		3A2F7C09299BCAB800679555 /* NSTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F7C07299BCAB800679555 /* NSTimerViewController.xib */; };
 		3A2F7C13299CCC6500679555 /* RegularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F7C11299CCC6500679555 /* RegularViewController.m */; };
@@ -342,7 +341,6 @@
 		3A2F7B452993D11500679555 /* WebViewJSCode2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJSCode2.m; sourceTree = "<group>"; };
 		3A2F7B462993D11500679555 /* WebViewJSCode2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewJSCode2.xib; sourceTree = "<group>"; };
 		3A2F7B492993D1F700679555 /* show2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = show2.html; sourceTree = "<group>"; };
-		3A2F7BCB299A72C000679555 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3A2F7C05299BCAB800679555 /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		3A2F7C06299BCAB800679555 /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		3A2F7C07299BCAB800679555 /* NSTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSTimerViewController.xib; sourceTree = "<group>"; };
@@ -352,7 +350,7 @@
 		3A2F7C80299F56CF00679555 /* ToolBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBarViewController.h; sourceTree = "<group>"; };
 		3A2F7C81299F56CF00679555 /* ToolBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolBarViewController.m; sourceTree = "<group>"; };
 		3A2F7C82299F56CF00679555 /* ToolBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolBarViewController.xib; sourceTree = "<group>"; };
-		3A3240B429F63B4E000773C3 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3240B429F63B4E000773C3 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/dio/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		3A3240B829F63C00000773C3 /* PasteboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteboardViewController.h; sourceTree = "<group>"; };
 		3A3240B929F63C00000773C3 /* PasteboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteboardViewController.m; sourceTree = "<group>"; };
 		3A3240BA29F63C00000773C3 /* PasteboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasteboardViewController.xib; sourceTree = "<group>"; };
@@ -370,6 +368,7 @@
 		3A61024528D491A300CE986D /* SystemFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemFileViewController.h; sourceTree = "<group>"; };
 		3A61024628D491A300CE986D /* SystemFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemFileViewController.m; sourceTree = "<group>"; };
 		3A61024728D491A300CE986D /* SystemFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SystemFileViewController.xib; sourceTree = "<group>"; };
+		3A6279E02A30649D007592F5 /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ObjectiveC.app; path = "/Users/dio/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveC.app"; sourceTree = "<absolute>"; };
 		3A63EE9D28B0E05700ABD1CD /* WKWebViewDelegateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewDelegateVC.h; sourceTree = "<group>"; };
 		3A63EE9E28B0E05700ABD1CD /* WKWebViewDelegateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewDelegateVC.m; sourceTree = "<group>"; };
 		3A65AC9729ADD657003C4C92 /* NotificationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationVC.h; sourceTree = "<group>"; };
@@ -427,7 +426,6 @@
 		3AB12A7F292E8F7700ABC707 /* HTTPSPing02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSPing02ViewController.h; sourceTree = "<group>"; };
 		3AB2288D2934BB1900DCA181 /* pkg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pkg.html; sourceTree = "<group>"; };
 		3ABF6A2D2877585300CEE7F2 /* client.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = client.p12; sourceTree = "<group>"; };
-		3AC05B3029E58C440002C598 /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC6B3BE28E99B74003C8103 /* SingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
 		3AC6B3BF28E99B74003C8103 /* SingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
 		3AC6B3C028E99B74003C8103 /* SingletonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingletonViewController.xib; sourceTree = "<group>"; };
@@ -781,7 +779,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2F7BCC299A72C000679555 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1119,9 +1116,6 @@
 				3D220CB6217DBF8F00E3799F /* ObjectiveC */,
 				BBEEFED4BB651D1A5F8E0205 /* Pods */,
 				3A82A84D29C2F0730028CC6D /* ObjectiveCTests */,
-				C4D6CDCE02EE24808DF8D56A /* Frameworks */,
-				3AC05B3029E58C440002C598 /* ObjectiveC.app */,
-				3A3240B429F63B4E000773C3 /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1401,14 +1395,6 @@
 				D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C4D6CDCE02EE24808DF8D56A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3A2F7BCB299A72C000679555 /* WebKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CE027745225075BC00BA7A88 /* Localizable */ = {
@@ -2209,7 +2195,7 @@
 			);
 			name = ObjectiveC;
 			productName = ObjectiveC;
-			productReference = 3AC05B3029E58C440002C598 /* ObjectiveC.app */;
+			productReference = 3A6279E02A30649D007592F5 /* ObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2662,6 +2648,9 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.ObjectiveCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObjectiveC";
@@ -2684,6 +2673,9 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.ObjectiveCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObjectiveC";
