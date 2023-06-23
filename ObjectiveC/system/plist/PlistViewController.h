@@ -1,8 +1,8 @@
 //
-//  PasteboardViewController.h
+//  PlistViewController.h
 //  ObjectiveC
 //
-//  Created by Dio Brand on 2023/4/24.
+//  Created by zd on 19/6/2023.
 //  Copyright © 2023 my. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PasteboardViewController : UIViewController
+@interface PlistViewController : UIViewController
 
 @end
 

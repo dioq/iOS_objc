@@ -2,7 +2,7 @@
 //  ObjectiveCTests.m
 //  ObjectiveCTests
 //
-//  Created by Dio Brand on 2023/3/16.
+//  Created by zd on 24/6/2023.
 //  Copyright © 2023 my. All rights reserved.
 //
 
@@ -26,62 +26,12 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    NSData *dataFromHexString = [CryptoUtil hexDecode:@"5308f5a2a893cd444946cab7aec4ab2eb4821aeb"];
-    NSString *stringFromBase64Data = [dataFromHexString base64EncodedStringWithOptions:0];
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:stringFromBase64Data options:0];
-    NSLog(@"\n\nstringFromBase64Data:\n%@\n\n", stringFromBase64Data);
-    NSLog(@"data:%@",data);
 }
 
--(void)test005 {
-    NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
-    NSString *another_exec_file = [NSString stringWithFormat:@"%@/target",bundlePath];
-    NSLog(@"%@",another_exec_file);
-    const char * another_exec_file2 = [another_exec_file UTF8String];
-    printf("another_exec_file2:%s\n",another_exec_file2);
-}
-
--(void)test004 {
-    NSString *uuid = @"AF53C4B6-E80C-4B7A-9CCF-82DEDF2595CC";
-    NSLog(@"%@,%lu",uuid,uuid.length);
-}
-
--(void)test002 {
-    NSMutableString *testStr = [NSMutableString string];
-    [testStr appendString:@"/var/mobile/Containers/Data/Application/AF53C4B6-E80C-4B7A-9CCF-82DEDF2595CC/Library/WechatPrivate/text.txt,"];
-    [testStr deleteCharactersInRange:NSMakeRange(testStr.length - 1, 1)];
-    NSLog(@"%@",testStr);
-}
-
--(void)test003 {
-    NSString *sql1 = @"update app_data set phone_num = 't', passwords = 't', remark = 't', keychain_data = 'test', files_data = 'test02',";
-    NSMutableString *sql = [NSMutableString string];
-    [sql appendString:sql1];
-    NSLog(@"%d,%@",__LINE__,sql);
-    if([sql hasSuffix:@","]) {
-        [sql deleteCharactersInRange:NSMakeRange(sql.length - 1, 1)];
-        NSLog(@"%d,%@",__LINE__,sql);
-    }
-    NSLog(@"%d,%@",__LINE__,sql);
-}
-
--(void)test001 {
-    UIView *v = [UIView new];
-    v.backgroundColor = [UIColor orangeColor];
-}
-
--(void)test02 {
-    NSString *hexStr = @"6c6f67";
-    NSData *data = [CryptoUtil hexDecode:hexStr];
-    NSString *value = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"=========================\n%@",value);
-}
-
--(void)test03 {
-    NSString *path = @"/var/mobile/Containers/Data/Application/AF53C4B6-E80C-4B7A-9CCF-82DEDF2595CC/Library/WechatPrivate/text.txt";
-    NSArray<NSString *> *strArr = [path componentsSeparatedByString:@"/"];
-    NSString *dirPath = [path stringByReplacingOccurrencesOfString:[strArr lastObject] withString:@""];
-    NSLog(@"path:%@\ndirPath:%@",path,dirPath);
+-(void)testSha256 {
+    NSString *plaintext = @"MIIDdjCCAl4CCQDpeD5eFazlfjANBgkqhkiG9w0BAQsFADB7MQswCQYDVQQGEwJDTjELMAkGA1UECAwCU0QxCzAJBgNVBAcMAkpOMQ0wCwYDVQQKDARRRFpZMREwDwYDVQQLDAhqb2JzOC5jbjELMAkGA1UEAwwCQ0ExIzAhBgkqhkiG9w0BCQEWFHpoZW5kb25nMjAxMUBsaXZlLmNuMB4XDTIyMTEyMjE4MzQwOFoXDTMyMTExOTE4MzQwOFowfzELMAkGA1UEBhMCQ04xCzAJBgNVBAgMAlNEMQswCQYDVQQHDAJKTjENMAsGA1UECgwEUURaWTERMA8GA1UECwwIam9iczguY24xDzANBgNVBAMMBlNFUlZFUjEjMCEGCSqGSIb3DQEJARYUemhlbmRvbmcyMDExQGxpdmUuY24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCwYqk7CzCVBRw2QLO0WTu0R+D06o47BjlLviNSj7K/Q06CUKmuGBBHlQ+9Til+aCBae0px1iFVSVDl803zNMmN+5OVwPRSdtbMQUznVbyjVCVFPzkGlKgL7T/jm7kpDXoafu1S3Q4hoK+TlJEXNTvy8xHA+JY87LFE227U/I+8Jn2ZZPEmY8TcHsO3zbC3+wrB3V/jiodPjJXifm3qGB/PSnPRNXF1/MzuNzAUWYo2/Ye2ORLspjuCz2YMFB+KQRqK3fnicbsRDyss3AK9a+Qj2VYM9ZE+Da8vAvOD9J6r3FXB+9Z5mIWY081jwFz0V/Maz8QnsTLpJ9SYIdZuBa7HAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAIi30qCI60WmdZL2NYyIxnvqVMJPTLn+jh4blrgVizCwp2S0FDbs2OByjfja4GnWnbK/Cdz0zSzcQAJSvpVouPFh8H+kDXD7JfSc+9VGwJ8jbCz/oOYMGYC7KjqEYj6ovkTD26wzCDfcbYj80cE8i2MxgTP6H78uSwcYJojND2ygkUZjE1tnSPMBs+xzV2VHSCYYozvn0McIoBo4Psnf3yYFVFDpRYFYUgM+A9O+3iXzTBCGwzie6+WgqsJrNrzNfcXM6b9m6NOMmaUGHo05Cq+RMd70OK70jOwct7vWUudRtwUk3mvnyrL6DW9xIl0VL704ZUFMWCLG/HNNRsbUPV0=";
+    NSString *ciphext = [CryptoUtil sha256:plaintext];
+    NSLog(@"=======%@\n",ciphext);
 }
 
 - (void)testPerformanceExample {

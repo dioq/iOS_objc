@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,84 +19,68 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYe-jn-nyW">
-                    <rect key="frame" x="100" y="20" width="175" height="40"/>
-                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="cHu-mZ-5Ya"/>
-                    </constraints>
-                    <state key="normal" title="AFNetworking"/>
-                    <connections>
-                        <action selector="judgeAF:" destination="-1" eventType="touchUpInside" id="a26-NH-PcR"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6P-Uw-OTP">
-                    <rect key="frame" x="100" y="85" width="175" height="40"/>
-                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="5ro-Zf-tBZ"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="bYJ-yG-qv0"/>
-                    </constraints>
-                    <state key="normal" title="原生"/>
-                    <connections>
-                        <action selector="reachability:" destination="-1" eventType="touchUpInside" id="sDv-kA-UXt"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBR-2L-xKR">
-                    <rect key="frame" x="100" y="145" width="175" height="40"/>
-                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="geD-zN-ykC"/>
-                        <constraint firstAttribute="height" constant="40" id="yJu-Fg-bMb"/>
-                    </constraints>
-                    <state key="normal" title="系统API"/>
-                    <connections>
-                        <action selector="sysAPI:" destination="-1" eventType="touchUpInside" id="0K2-rU-dq8"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B78-gY-vg8">
-                    <rect key="frame" x="50" y="210" width="275" height="40"/>
-                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="MGF-gl-d8D"/>
-                    </constraints>
-                    <state key="normal" title="SCNetworkReachabilityRef"/>
-                    <connections>
-                        <action selector="SCNetwork:" destination="-1" eventType="touchUpInside" id="lLZ-JR-xNe"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31q-W5-bRP">
-                    <rect key="frame" x="100" y="270" width="175" height="40"/>
-                    <color key="backgroundColor" red="0.96668727570000001" green="1" blue="0.57867484589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="B4b-o9-5HO"/>
-                    </constraints>
-                    <state key="normal" title="判断运营"/>
-                    <connections>
-                        <action selector="judeWhichNet:" destination="-1" eventType="touchUpInside" id="i8r-Nj-Vut"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vgp-VU-RZo">
+                    <rect key="frame" x="10" y="25" width="355" height="245"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6P-Uw-OTP">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="lDi-Fp-aba"/>
+                            </constraints>
+                            <state key="normal" title="原生"/>
+                            <connections>
+                                <action selector="reachability:" destination="-1" eventType="touchUpInside" id="sDv-kA-UXt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBR-2L-xKR">
+                            <rect key="frame" x="0.0" y="50" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="系统API"/>
+                            <connections>
+                                <action selector="sysAPI:" destination="-1" eventType="touchUpInside" id="0K2-rU-dq8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYe-jn-nyW">
+                            <rect key="frame" x="0.0" y="100" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="AFNetworking"/>
+                            <connections>
+                                <action selector="judgeAF:" destination="-1" eventType="touchUpInside" id="a26-NH-PcR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B78-gY-vg8">
+                            <rect key="frame" x="0.0" y="150" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="SCNetworkReachabilityRef"/>
+                            <connections>
+                                <action selector="SCNetwork:" destination="-1" eventType="touchUpInside" id="lLZ-JR-xNe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31q-W5-bRP">
+                            <rect key="frame" x="0.0" y="200" width="355" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="判断运营"/>
+                            <connections>
+                                <action selector="judeWhichNet:" destination="-1" eventType="touchUpInside" id="i8r-Nj-Vut"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="T6P-Uw-OTP" firstAttribute="top" secondItem="RYe-jn-nyW" secondAttribute="bottom" constant="25" id="0ZL-M8-5Dd"/>
-                <constraint firstItem="RYe-jn-nyW" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="CoY-zU-yQp"/>
-                <constraint firstItem="iBR-2L-xKR" firstAttribute="top" secondItem="T6P-Uw-OTP" secondAttribute="bottom" constant="20" id="F7S-2s-mUA"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="iBR-2L-xKR" secondAttribute="trailing" constant="100" id="GSN-wo-79F"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="T6P-Uw-OTP" secondAttribute="trailing" constant="100" id="K4f-VV-Z3S"/>
-                <constraint firstItem="RYe-jn-nyW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="MM1-Wg-lJe"/>
-                <constraint firstItem="T6P-Uw-OTP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="RYq-oY-31p"/>
-                <constraint firstItem="31q-W5-bRP" firstAttribute="top" secondItem="B78-gY-vg8" secondAttribute="bottom" constant="20" id="Sdy-0v-TBV"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="B78-gY-vg8" secondAttribute="trailing" constant="50" id="TDy-Zg-2gb"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="31q-W5-bRP" secondAttribute="trailing" constant="100" id="WT5-Sl-NqR"/>
-                <constraint firstItem="B78-gY-vg8" firstAttribute="top" secondItem="iBR-2L-xKR" secondAttribute="bottom" constant="25" id="bcF-E3-YfI"/>
-                <constraint firstItem="iBR-2L-xKR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="dOR-EN-37D"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RYe-jn-nyW" secondAttribute="trailing" constant="100" id="ehQ-0O-SQr"/>
-                <constraint firstItem="B78-gY-vg8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="j64-dc-V2f"/>
-                <constraint firstItem="31q-W5-bRP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="wXU-nn-pxP"/>
+                <constraint firstItem="Vgp-VU-RZo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="1OA-Pu-4fB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Vgp-VU-RZo" secondAttribute="trailing" constant="10" id="DNa-fP-zDR"/>
+                <constraint firstItem="Vgp-VU-RZo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="5" id="MbA-DE-q15"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="140" y="154"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

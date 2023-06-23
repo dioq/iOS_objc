@@ -73,7 +73,6 @@
     NSUInteger index = 0x100;
     NSData *payload = [NSData dataWithBytes:&index length:sizeof(index)];
     NSLog(@"payload:%@",payload);
-    
 }
 
 // NSData 转 NSString

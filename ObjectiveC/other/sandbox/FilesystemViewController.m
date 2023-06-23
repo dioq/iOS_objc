@@ -9,6 +9,12 @@
 #import "FilesystemViewController.h"
 
 @interface FilesystemViewController ()
+{
+    NSString *docDir;
+    NSString *libDir;
+    NSString *cachesDir;
+    NSString *tmpDir;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *show;
 
@@ -19,6 +25,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    // 获取Documents目录路径
+    docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+    NSLog(@"docDir:\n%@",docDir);
+    
+    //获取Library的目录路径
+    libDir = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,NSUserDomainMask,YES) firstObject];
+    NSLog(@"libDir:\n%@",libDir);
+    
+    // 获取cache目录路径
+    cachesDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask,YES) firstObject];
+    NSLog(@"cachesDir:\n%@",cachesDir);
+    
+    // 获取tmp目录路径
+    tmpDir = NSTemporaryDirectory();
+    NSLog(@"tmpDir:\n%@",tmpDir);
 }
 
 - (IBAction)createAction:(UIButton *)sender {
@@ -58,9 +80,14 @@
 }
 
 - (IBAction)clearSandbox:(UIButton *)sender {
-    NSString *homeDir = NSHomeDirectory();
-    NSString *tmpDir = NSTemporaryDirectory();
-    [self emptyDir:homeDir];
+    NSString *lib_cache_path = [NSString stringWithFormat:@"%@/Caches",libDir];
+    NSString *lib_preferences_path = [NSString stringWithFormat:@"%@/Preferences",libDir];
+    
+    [self emptyDir:docDir];
+    [self emptyDir:libDir];
+    [self emptyDir:lib_cache_path];
+    [self emptyDir:lib_preferences_path];
+    [self emptyDir:cachesDir];
     [self emptyDir:tmpDir];
 }
 -(void)emptyDir:(NSString *)path {

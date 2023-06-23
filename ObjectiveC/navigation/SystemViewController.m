@@ -31,7 +31,8 @@
 #import "CFObjectViewController.h"
 #import "AVPlayerViewController.h"
 #import "SetViewController.h"
-
+#import "PlistViewController.h"
+#import "PasteboardViewController.h"
 
 @interface SystemViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -44,6 +45,14 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    PasteboardViewController *pasteboardVC = [PasteboardViewController new];
+    pasteboardVC.title = @"Pasteboard";
+    [self.dataArray addObject:pasteboardVC];
+    
+    PlistViewController *plistVC = [PlistViewController new];
+    plistVC.title = @"处理 plist 配置文件";
+    [self.dataArray addObject:plistVC];
     
     AVPlayerViewController *playerVC = [AVPlayerViewController new];
     playerVC.title = @"音频播放";

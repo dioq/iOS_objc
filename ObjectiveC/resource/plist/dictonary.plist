@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.tencent.xin</key>
+	<dict>
+		<key>version</key>
+		<string>8.0.38</string>
+		<key>backup_files</key>
+		<dict>
+			<key>path</key>
+			<array>
+				<string>/Documents/LocalInfo.data</string>
+				<string>/Documents/LoginInfo2.dat</string>
+				<string>/Library/Preferences/com.tencent.xin.plist</string>
+				<string>/Library/Preferences/group.com.tencent.xin.plist</string>
+				<string>/Library/WechatPrivate/wx.dat</string>
+			</array>
+			<key>searchFile</key>
+			<array>
+				<dict>
+					<key>path</key>
+					<string>/Documents/</string>
+					<key>fileName</key>
+					<string>WCDB_Contact.sqlite</string>
+				</dict>
+				<dict>
+					<key>path</key>
+					<string>/Documents/MMappedKV/</string>
+					<key>fileName</key>
+					<string>mmsetting.archive.wxid_.+</string>
+				</dict>
+				<dict>
+					<key>path</key>
+					<string>/Library/WechatPrivate/host/</string>
+					<key>fileName</key>
+					<string>.+</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

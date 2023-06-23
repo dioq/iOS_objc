@@ -45,11 +45,20 @@
     dispatch_queue_t queue = dispatch_queue_create("a different name", DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(queue, ^{
         [NSThread sleepForTimeInterval:6];
-        NSLog(@"out:    %@", [NSThread currentThread]);
-        NSLog(@"target is finished!");
+        NSLog(@"%d out:    %@",__LINE__, [NSThread currentThread]);
+        NSLog(@"%d target is finished!",__LINE__);
     });
-    NSLog(@"out:    %@", [NSThread currentThread]);
-    NSLog(@"the last line! ==== go here!");
+    NSLog(@"%d out:    %@",__LINE__, [NSThread currentThread]);
+    NSLog(@"%d ==== go here!",__LINE__);
+    
+    // 常用全局并发队列实现异步
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        [NSThread sleepForTimeInterval:6];
+        NSLog(@"%d out:    %@",__LINE__, [NSThread currentThread]);
+        NSLog(@"%d target is finished!",__LINE__);
+    });
+    NSLog(@"%d out:    %@",__LINE__, [NSThread currentThread]);
+    NSLog(@"%d ==== go here!",__LINE__);
 }
 
 //同步
@@ -116,39 +125,39 @@
 
 - (IBAction)notify2Action:(UIButton *)sender {
     //创建一个并发队列
-//    dispatch_queue_t queue = dispatch_queue_create("a different name", DISPATCH_QUEUE_CONCURRENT);
+    //    dispatch_queue_t queue = dispatch_queue_create("a different name", DISPATCH_QUEUE_CONCURRENT);
     //创建一个队列组
     dispatch_group_t group = dispatch_group_create();
     //获取全局并发队列
     dispatch_queue_t global_queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
     
     //任务1
-//    dispatch_group_async(group, queue, ^{
-        dispatch_group_enter(group);
-        dispatch_async(global_queue, ^{
-            [NSThread sleepForTimeInterval:10];
-            NSLog(@"target1 is finished!");
-            dispatch_group_leave(group);
-        });
-//    });
+    //    dispatch_group_async(group, queue, ^{
+    dispatch_group_enter(group);
+    dispatch_async(global_queue, ^{
+        [NSThread sleepForTimeInterval:10];
+        NSLog(@"target1 is finished!");
+        dispatch_group_leave(group);
+    });
+    //    });
     //任务2
     dispatch_group_enter(group);
-//    dispatch_group_async(group, queue, ^{
-        dispatch_async(global_queue, ^{
-            [NSThread sleepForTimeInterval:6];
-            NSLog(@"target2 is finished!");
-            dispatch_group_leave(group);
-        });
-//    });
+    //    dispatch_group_async(group, queue, ^{
+    dispatch_async(global_queue, ^{
+        [NSThread sleepForTimeInterval:6];
+        NSLog(@"target2 is finished!");
+        dispatch_group_leave(group);
+    });
+    //    });
     //任务3
-//    dispatch_group_async(group, queue, ^{
-        dispatch_async(global_queue, ^{
-            dispatch_group_enter(group);
-            [NSThread sleepForTimeInterval:3];
-            NSLog(@"target3 is finished!");
-            dispatch_group_leave(group);
-        });
-//    });
+    //    dispatch_group_async(group, queue, ^{
+    dispatch_async(global_queue, ^{
+        dispatch_group_enter(group);
+        [NSThread sleepForTimeInterval:3];
+        NSLog(@"target3 is finished!");
+        dispatch_group_leave(group);
+    });
+    //    });
     
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         NSLog(@"done");
