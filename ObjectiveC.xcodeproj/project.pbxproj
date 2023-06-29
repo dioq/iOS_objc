@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0212BA1D2859A847005822C8 /* SandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0212BA1B2859A847005822C8 /* SandboxViewController.m */; };
 		0212BA1E2859A847005822C8 /* SandboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0212BA1C2859A847005822C8 /* SandboxViewController.xib */; };
+		241258E22A4956DE00FF0A01 /* CompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241258E02A4956DE00FF0A01 /* CompressViewController.m */; };
+		241258E32A4956DE00FF0A01 /* CompressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241258E12A4956DE00FF0A01 /* CompressViewController.xib */; };
 		245AACBB2A46074700DFA706 /* ObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 245AACBA2A46074700DFA706 /* ObjectiveCUITests.m */; };
 		245AACBD2A46074700DFA706 /* ObjectiveCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 245AACBC2A46074700DFA706 /* ObjectiveCUITestsLaunchTests.m */; };
 		245AACCA2A46078100DFA706 /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 245AACC92A46078100DFA706 /* ObjectiveCTests.m */; };
@@ -323,10 +325,13 @@
 		0212BA1B2859A847005822C8 /* SandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxViewController.m; sourceTree = "<group>"; };
 		0212BA1C2859A847005822C8 /* SandboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SandboxViewController.xib; sourceTree = "<group>"; };
 		0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
-		245AACB82A46074700DFA706 /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCUITests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCUITests.xctest"; sourceTree = "<absolute>"; };
+		241258DC2A494F5E00FF0A01 /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCUITests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCUITests.xctest"; sourceTree = "<absolute>"; };
+		241258DD2A494F5E00FF0A01 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
+		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
+		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
+		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
 		245AACBA2A46074700DFA706 /* ObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCUITests.m; sourceTree = "<group>"; };
 		245AACBC2A46074700DFA706 /* ObjectiveCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCUITestsLaunchTests.m; sourceTree = "<group>"; };
-		245AACC72A46078100DFA706 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		245AACC92A46078100DFA706 /* ObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTests.m; sourceTree = "<group>"; };
 		2478B2D72A406A3F0094C0DD /* array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = array.plist; sourceTree = "<group>"; };
 		2478B2D82A406A3F0094C0DD /* dictonary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dictonary.plist; sourceTree = "<group>"; };
@@ -827,6 +832,16 @@
 				0212BA1C2859A847005822C8 /* SandboxViewController.xib */,
 			);
 			path = sandbox;
+			sourceTree = "<group>";
+		};
+		241258DE2A4956B800FF0A01 /* compress */ = {
+			isa = PBXGroup;
+			children = (
+				241258DF2A4956DE00FF0A01 /* CompressViewController.h */,
+				241258E02A4956DE00FF0A01 /* CompressViewController.m */,
+				241258E12A4956DE00FF0A01 /* CompressViewController.xib */,
+			);
+			path = compress;
 			sourceTree = "<group>";
 		};
 		245AACB92A46074700DFA706 /* ObjectiveCUITests */ = {
@@ -1971,6 +1986,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				241258DE2A4956B800FF0A01 /* compress */,
 				3A2E7B8B29CC090400408AC2 /* customalert */,
 				3A2F7C0F299CCC3800679555 /* regular */,
 				3AA56A3C28AF8A9000940DEF /* screenshot */,
@@ -2236,7 +2252,7 @@
 			);
 			name = ObjectiveCUITests;
 			productName = ObjectiveCUITests;
-			productReference = 245AACB82A46074700DFA706 /* ObjectiveCUITests.xctest */;
+			productReference = 241258DC2A494F5E00FF0A01 /* ObjectiveCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		245AACC62A46078100DFA706 /* ObjectiveCTests */ = {
@@ -2254,7 +2270,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 245AACC72A46078100DFA706 /* ObjectiveCTests.xctest */;
+			productReference = 241258DD2A494F5E00FF0A01 /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
@@ -2355,6 +2371,7 @@
 				CE3D1E1021A7F23500015F2B /* m3u8.m3u in Resources */,
 				CE4187A6228E71DC00A3A8ED /* paihangbang_anniu.png in Resources */,
 				CE17E4ED23548C2A004A7AA2 /* iWiBi-orange-icon@3x.png in Resources */,
+				241258E32A4956DE00FF0A01 /* CompressViewController.xib in Resources */,
 				5FF96ACE2226DBC70094DF79 /* NibCollectionViewVC.xib in Resources */,
 				CE17E4C823547F3C004A7AA2 /* ChangeIconViewController.xib in Resources */,
 				936DCCB323B0CFC300E38DB5 /* LabelViewController.xib in Resources */,
@@ -2603,6 +2620,7 @@
 				3A82A8F429C5CE190028CC6D /* WindowViewController.m in Sources */,
 				5FF96ACD2226DBC70094DF79 /* NibCollectionViewVC.m in Sources */,
 				3AA56A8D28AFD6FF00940DEF /* TouchViewController.m in Sources */,
+				241258E22A4956DE00FF0A01 /* CompressViewController.m in Sources */,
 				3A2F7C83299F56CF00679555 /* ToolBarViewController.m in Sources */,
 				CE287AB32265B74400B6C517 /* Author.m in Sources */,
 				CEFA19CA22648744002C245A /* DLCustomSlideView.m in Sources */,
@@ -2957,7 +2975,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectc;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectc2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -2987,7 +3005,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectc;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectc2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

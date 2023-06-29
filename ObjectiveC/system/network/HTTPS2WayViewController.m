@@ -165,7 +165,7 @@
 - (OSStatus)extractIdentity:(CFDataRef)inP12Data toIdentity:(SecIdentityRef*)identity {
     NSLog(@"%s",__FUNCTION__);
     OSStatus securityError = errSecSuccess;
-    CFStringRef password = CFSTR("zxcvbnm,.");
+    CFStringRef password = CFSTR("27662AB51A814E99");
     const void *keys[] = { kSecImportExportPassphrase };
     const void *values[] = { password };
     CFDictionaryRef options = CFDictionaryCreate(NULL, keys, values, 1, NULL, NULL);

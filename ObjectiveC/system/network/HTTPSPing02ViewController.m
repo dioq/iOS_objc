@@ -130,7 +130,7 @@
         NSString *remoteCertificateSha256 = [CryptoUtil sha256:remoteCertificateBase64];
         
         // SSL Ping 本地不存放证书,获取服务器传来的证书后 直接base64再sha256 再对这个值做唯一性判断
-        if ([remoteCertificateSha256 isEqual:@"b562609ad94eddce1995f97250c310d50bec14eadf08741a04506c9f18171780"]) {
+        if ([remoteCertificateSha256 isEqual:@"cf8656402438db6bc81d427fba1a5ae3406a588e36ed86eef34557ce53e15343"]) {
             NSLog(@"SSL ping is pass!");
             NSURLCredential *credential = [NSURLCredential credentialForTrust:serverTrust];
             completionHandler(NSURLSessionAuthChallengeUseCredential,credential);

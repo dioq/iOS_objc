@@ -25,6 +25,7 @@
 #import "ScreenshotViewController.h"
 #import "RegularViewController.h"
 #import "MyAlertViewController.h"
+#import "CompressViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -37,6 +38,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    CompressViewController *compressVC = [CompressViewController new];
+    compressVC.title = @"数据的压缩和解压";
+    [self.dataArray addObject:compressVC];
     
     MyAlertViewController *alertVC = [MyAlertViewController new];
     alertVC.title = @"自定义提示框";
