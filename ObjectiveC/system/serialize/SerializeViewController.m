@@ -29,7 +29,7 @@
     NSError *error;
     self.serializeData = [NSKeyedArchiver archivedDataWithRootObject:str requiringSecureCoding:YES error:&error];
     if (error) {
-        NSLog(@"%@",error);
+        NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
     NSLog(@"字符串序列化完成");
@@ -39,7 +39,7 @@
     NSError *error;
     NSString *str = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSString class] fromData:self.serializeData error:&error];
     if (error) {
-        NSLog(@"%@",error);
+        NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
     NSLog(@"字符串反序列化:%@",str);
@@ -50,7 +50,7 @@
     NSError *error;
     self.serializeNSArrayData = [NSKeyedArchiver archivedDataWithRootObject:array requiringSecureCoding:YES error:&error];
     if (error) {
-        NSLog(@"%@",error);
+        NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
     NSLog(@"NSArray 已经序列化完成!");
@@ -59,7 +59,7 @@
     NSError *error;
     NSArray *arr = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSArray class] fromData:self.serializeNSArrayData error:&error];
     if (error) {
-        NSLog(@"%@",error);
+        NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
     NSLog(@"NSArray 反序列化:\n%@", arr);
@@ -74,7 +74,7 @@
     NSError *error;
     self.serializeNSObjectData = [NSKeyedArchiver archivedDataWithRootObject:person requiringSecureCoding:YES error:&error];
     if (error) {
-        NSLog(@"%@",error);
+        NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
     NSLog(@"Person 对象 已经序列化完成!");
@@ -84,7 +84,7 @@
     NSError *error;
     Person *person = [NSKeyedUnarchiver unarchivedObjectOfClass:[Person class] fromData:self.serializeNSObjectData error:&error];
     if (error) {
-        NSLog(@"%@",error);
+        NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
     NSLog(@"person 反序列化:\n%@", person.description);
@@ -94,7 +94,7 @@
     NSError *error;
     NSObject *obj = [NSKeyedUnarchiver unarchiveObjectWithData:self.serializeData];
     if (error) {
-        NSLog(@"%@",error);
+        NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
     NSLog(@"字符串反序列化:%@",obj);
