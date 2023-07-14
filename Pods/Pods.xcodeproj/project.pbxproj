@@ -470,17 +470,17 @@
 		2050F75400A0FD8C7E54909D06969BF6 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		227E2D683E33D728DC1182EC8E11189D /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		22EA5D349E683FF7B808D5C08623CDD5 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		2478B2C92A406A010094C0DD /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<absolute>"; };
-		2478B2CA2A406A010094C0DD /* libColor-Picker-for-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libColor-Picker-for-iOS.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/Color-Picker-for-iOS/libColor-Picker-for-iOS.a"; sourceTree = "<absolute>"; };
-		2478B2CB2A406A010094C0DD /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-ios.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/lottie-ios/liblottie-ios.a"; sourceTree = "<absolute>"; };
-		2478B2CC2A406A010094C0DD /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/Masonry/libMasonry.a"; sourceTree = "<absolute>"; };
-		2478B2CD2A406A010094C0DD /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MBProgressHUD/libMBProgressHUD.a"; sourceTree = "<absolute>"; };
-		2478B2CE2A406A010094C0DD /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MJRefresh/libMJRefresh.a"; sourceTree = "<absolute>"; };
-		2478B2CF2A406A010094C0DD /* libMMKV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMKV.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MMKV/libMMKV.a"; sourceTree = "<absolute>"; };
-		2478B2D02A406A010094C0DD /* libMMKVCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMKVCore.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MMKVCore/libMMKVCore.a"; sourceTree = "<absolute>"; };
-		2478B2D12A406A010094C0DD /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjectiveC.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/libPods-ObjectiveC.a"; sourceTree = "<absolute>"; };
-		2478B2D22A406A010094C0DD /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDAutoLayout.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/SDAutoLayout/libSDAutoLayout.a"; sourceTree = "<absolute>"; };
-		2478B2D32A406A010094C0DD /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYModel.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/YYModel/libYYModel.a"; sourceTree = "<absolute>"; };
+		24808EA62A61069600FBF58A /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<absolute>"; };
+		24808EA72A61069600FBF58A /* libColor-Picker-for-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libColor-Picker-for-iOS.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/Color-Picker-for-iOS/libColor-Picker-for-iOS.a"; sourceTree = "<absolute>"; };
+		24808EA82A61069600FBF58A /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-ios.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/lottie-ios/liblottie-ios.a"; sourceTree = "<absolute>"; };
+		24808EA92A61069600FBF58A /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/Masonry/libMasonry.a"; sourceTree = "<absolute>"; };
+		24808EAA2A61069600FBF58A /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MBProgressHUD/libMBProgressHUD.a"; sourceTree = "<absolute>"; };
+		24808EAB2A61069600FBF58A /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MJRefresh/libMJRefresh.a"; sourceTree = "<absolute>"; };
+		24808EAC2A61069600FBF58A /* libMMKV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMKV.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MMKV/libMMKV.a"; sourceTree = "<absolute>"; };
+		24808EAD2A61069600FBF58A /* libMMKVCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMKVCore.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MMKVCore/libMMKVCore.a"; sourceTree = "<absolute>"; };
+		24808EAE2A61069600FBF58A /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjectiveC.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/libPods-ObjectiveC.a"; sourceTree = "<absolute>"; };
+		24808EAF2A61069600FBF58A /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDAutoLayout.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/SDAutoLayout/libSDAutoLayout.a"; sourceTree = "<absolute>"; };
+		24808EB02A61069600FBF58A /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYModel.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/YYModel/libYYModel.a"; sourceTree = "<absolute>"; };
 		24CA2C51F3A9EE555D9D70A3CDDFFFDB /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		250156C28DCCB2908054B590498F5F49 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
 		264848DA4D77816FC85AD91E667F9C65 /* LOTPathInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTPathInterpolator.m; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTPathInterpolator.m"; sourceTree = "<group>"; };
@@ -1764,7 +1764,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = 2478B2C92A406A010094C0DD /* libAFNetworking.a */;
+			productReference = 24808EA62A61069600FBF58A /* libAFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		03932C47FBFD347205B2F367F78E9B63 /* SDAutoLayout */ = {
@@ -1781,7 +1781,7 @@
 			);
 			name = SDAutoLayout;
 			productName = SDAutoLayout;
-			productReference = 2478B2D22A406A010094C0DD /* libSDAutoLayout.a */;
+			productReference = 24808EAF2A61069600FBF58A /* libSDAutoLayout.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		0B967D7F8561D42493EE289EC8D450D1 /* lottie-ios */ = {
@@ -1798,7 +1798,7 @@
 			);
 			name = "lottie-ios";
 			productName = "lottie-ios";
-			productReference = 2478B2CB2A406A010094C0DD /* liblottie-ios.a */;
+			productReference = 24808EA82A61069600FBF58A /* liblottie-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1A309BC1817F061288A1C9578DF98D55 /* Pods-ObjectiveC */ = {
@@ -1825,7 +1825,7 @@
 			);
 			name = "Pods-ObjectiveC";
 			productName = "Pods-ObjectiveC";
-			productReference = 2478B2D12A406A010094C0DD /* libPods-ObjectiveC.a */;
+			productReference = 24808EAE2A61069600FBF58A /* libPods-ObjectiveC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		44CA85B9068A41C746742D5576314D0A /* Color-Picker-for-iOS */ = {
@@ -1842,7 +1842,7 @@
 			);
 			name = "Color-Picker-for-iOS";
 			productName = "Color-Picker-for-iOS";
-			productReference = 2478B2CA2A406A010094C0DD /* libColor-Picker-for-iOS.a */;
+			productReference = 24808EA72A61069600FBF58A /* libColor-Picker-for-iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
@@ -1859,7 +1859,7 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 2478B2CC2A406A010094C0DD /* libMasonry.a */;
+			productReference = 24808EA92A61069600FBF58A /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */ = {
@@ -1876,7 +1876,7 @@
 			);
 			name = MJRefresh;
 			productName = MJRefresh;
-			productReference = 2478B2CE2A406A010094C0DD /* libMJRefresh.a */;
+			productReference = 24808EAB2A61069600FBF58A /* libMJRefresh.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
@@ -1893,7 +1893,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 2478B2CD2A406A010094C0DD /* libMBProgressHUD.a */;
+			productReference = 24808EAA2A61069600FBF58A /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		84B44807A12996D487A4A591A481D6A0 /* YYModel */ = {
@@ -1910,7 +1910,7 @@
 			);
 			name = YYModel;
 			productName = YYModel;
-			productReference = 2478B2D32A406A010094C0DD /* libYYModel.a */;
+			productReference = 24808EB02A61069600FBF58A /* libYYModel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		91A6826828CB9FCD0169A7547E8A79EA /* MMKV */ = {
@@ -1928,7 +1928,7 @@
 			);
 			name = MMKV;
 			productName = MMKV;
-			productReference = 2478B2CF2A406A010094C0DD /* libMMKV.a */;
+			productReference = 24808EAC2A61069600FBF58A /* libMMKV.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		AC8AE887C706A43711D115E69B9D988A /* MMKVCore */ = {
@@ -1945,7 +1945,7 @@
 			);
 			name = MMKVCore;
 			productName = MMKVCore;
-			productReference = 2478B2D02A406A010094C0DD /* libMMKVCore.a */;
+			productReference = 24808EAD2A61069600FBF58A /* libMMKVCore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
