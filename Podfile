@@ -17,5 +17,6 @@ target 'ObjectiveC' do
   pod 'YYModel', '1.0.4'
   pod 'MJRefresh', '3.2.0'
   pod 'MMKV', '~> 1.2.14'
+  pod 'Protobuf', '~> 3.23.3'
   
 end

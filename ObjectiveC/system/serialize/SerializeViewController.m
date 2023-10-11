@@ -7,7 +7,7 @@
 //
 
 #import "SerializeViewController.h"
-#import "Person.h"
+#import "Student.h"
 
 @interface SerializeViewController ()
 
@@ -55,9 +55,14 @@
     }
     NSLog(@"NSArray 已经序列化完成!");
 }
+
 - (IBAction)deserialize:(UIButton *)sender {
     NSError *error;
-    NSArray *arr = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSArray class] fromData:self.serializeNSArrayData error:&error];
+    NSMutableSet *set = [NSMutableSet set]; // 待解析的数据中存在的OC数据类型
+    [set addObject:[NSArray class]];
+    [set addObject:[NSNumber class]];
+    
+    NSArray *arr = [NSKeyedUnarchiver unarchivedObjectOfClasses:[set copy] fromData:self.serializeNSArrayData error:&error];
     if (error) {
         NSLog(@"%@",[error localizedFailureReason]);
         return;
@@ -66,12 +71,12 @@
 }
 
 - (IBAction)serialize2:(UIButton *)sender {
-    Person *person = [[Person alloc]init];
+    NSError *error;
+    Student *person = [[Student alloc]init];
     person.name = @"BigBaby";
     person.age = 16;
     person.gender = @"男";
     
-    NSError *error;
     self.serializeNSObjectData = [NSKeyedArchiver archivedDataWithRootObject:person requiringSecureCoding:YES error:&error];
     if (error) {
         NSLog(@"%@",[error localizedFailureReason]);
@@ -82,22 +87,16 @@
 
 - (IBAction)deserialize2:(UIButton *)sender {
     NSError *error;
-    Person *person = [NSKeyedUnarchiver unarchivedObjectOfClass:[Person class] fromData:self.serializeNSObjectData error:&error];
+    
+    NSMutableSet *set = [NSMutableSet set]; // 待解析的数据中存在的OC数据类型
+    [set addObject:[Student class]];
+    [set addObject:[NSString class]];
+    Student *person = [NSKeyedUnarchiver unarchivedObjectOfClasses:[set copy] fromData:self.serializeNSObjectData error:&error];
     if (error) {
         NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
     NSLog(@"person 反序列化:\n%@", person.description);
-}
-
-- (IBAction)oldMethod:(UIButton *)sender {
-    NSError *error;
-    NSObject *obj = [NSKeyedUnarchiver unarchiveObjectWithData:self.serializeData];
-    if (error) {
-        NSLog(@"%@",[error localizedFailureReason]);
-        return;
-    }
-    NSLog(@"字符串反序列化:%@",obj);
 }
 
 @end

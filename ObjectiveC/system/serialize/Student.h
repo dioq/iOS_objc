@@ -11,11 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // 给自定义类归档，首先要遵守NSCoding协议。
-@interface Person : NSObject<NSCopying,NSSecureCoding>
+@interface Student : NSObject<NSCopying,NSSecureCoding>
 
-@property (nonatomic,strong) NSString *name;
+@property (nonatomic,copy) NSString *name;
 @property (nonatomic,assign) NSInteger age;
-@property (nonatomic,strong) NSString *gender;
+@property (nonatomic,copy) NSString *gender;
 
 - (NSString *)description;
 

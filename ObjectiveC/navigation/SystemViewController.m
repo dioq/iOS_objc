@@ -115,7 +115,7 @@
     [self.dataArray addObject:networkVC];
     
     SerializeViewController *serializeVC = [SerializeViewController new];
-    serializeVC.title = @"序列化";
+    serializeVC.title = @"Archiver 序列化";
     [self.dataArray addObject:serializeVC];
     
     BlockViewController *blockVC = [[BlockViewController alloc] init];

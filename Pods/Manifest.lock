@@ -22,6 +22,7 @@ PODS:
   - MMKV (1.2.14):
     - MMKVCore (~> 1.2.14)
   - MMKVCore (1.2.14)
+  - Protobuf (3.23.3)
   - SDAutoLayout (2.2.1)
   - YYModel (1.0.4)
 
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - MBProgressHUD (= 1.1.0)
   - MJRefresh (= 3.2.0)
   - MMKV (~> 1.2.14)
+  - Protobuf (~> 3.23.3)
   - SDAutoLayout (= 2.2.1)
   - YYModel (= 1.0.4)
 
@@ -46,11 +48,12 @@ SPEC REPOS:
     - MJRefresh
     - MMKV
     - MMKVCore
+    - Protobuf
     - SDAutoLayout
     - YYModel
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
   Color-Picker-for-iOS: 2988926c7a3ceb6f472d6c3c225cbc88d4be3635
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -58,9 +61,10 @@ SPEC CHECKSUMS:
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
   MMKVCore: 89f5c8a66bba2dcd551779dea4d412eeec8ff5bb
+  Protobuf: d9c3d7e5a3574aa6a5d521f2d9f733c76d294be8
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 9044a97520ea4f83913100ee82bfef963f21adfa
+PODFILE CHECKSUM: 47da0db1a240b65cbb29ae3057e001484c664e52
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

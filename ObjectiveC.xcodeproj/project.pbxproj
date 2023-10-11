@@ -20,6 +20,10 @@
 		2478B2E02A406ACC0094C0DD /* PlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2DE2A406ACC0094C0DD /* PlistViewController.xib */; };
 		2478B2E92A4083BA0094C0DD /* PasteboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */; };
 		2478B2EA2A4083BA0094C0DD /* PasteboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */; };
+		24D90A212AD6AE670072F1FD /* ProtobufViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */; };
+		24D90A222AD6AE670072F1FD /* ProtobufViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */; };
+		24D90A502AD6D56D0072F1FD /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D90A4F2AD6D56D0072F1FD /* Person.pbobjc.m */; };
+		24D90A522AD6D8950072F1FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 24D90A512AD6D8950072F1FD /* README.md */; };
 		3A111D3028C20FDD0086C4AA /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A111D2E28C20FDD0086C4AA /* TimeViewController.m */; };
 		3A111D3128C20FDD0086C4AA /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A111D2F28C20FDD0086C4AA /* TimeViewController.xib */; };
 		3A154A2B28650C4600340F1C /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A154A2928650C4600340F1C /* ButtonViewController.m */; };
@@ -97,7 +101,7 @@
 		3ACA4C1C28D6FC9A003169E4 /* CheckboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA4C1A28D6FC9A003169E4 /* CheckboxViewController.xib */; };
 		3ACA4C1F28D6FD04003169E4 /* CheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA4C1E28D6FD03003169E4 /* CheckBox.m */; };
 		3ADD7747286AE41100451603 /* SerializeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD7743286AE41100451603 /* SerializeViewController.m */; };
-		3ADD7748286AE41100451603 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD7744286AE41100451603 /* Person.m */; };
+		3ADD7748286AE41100451603 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD7744286AE41100451603 /* Student.m */; };
 		3ADD7749286AE41100451603 /* SerializeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ADD7745286AE41100451603 /* SerializeViewController.xib */; };
 		3ADD774E286AE5C300451603 /* DeviceIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD774C286AE5C300451603 /* DeviceIDViewController.m */; };
 		3ADD774F286AE5C300451603 /* DeviceIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ADD774D286AE5C300451603 /* DeviceIDViewController.xib */; };
@@ -301,6 +305,7 @@
 		CEFA19DD22657598002C245A /* ParseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA19DB22657598002C245A /* ParseViewController.xib */; };
 		CEFA19E0226576D8002C245A /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = CEFA19DF226576D8002C245A /* message.json */; };
 		CEFA19E32265775C002C245A /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA19E22265775C002C245A /* Message.m */; };
+		F070901596BAF448144F365A /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DABE50017089FD9398BD5F34 /* libPods-ObjectiveC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,9 +344,15 @@
 		2478B2E62A4083BA0094C0DD /* PasteboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteboardViewController.h; sourceTree = "<group>"; };
 		2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteboardViewController.m; sourceTree = "<group>"; };
 		2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasteboardViewController.xib; sourceTree = "<group>"; };
-		24808EA32A61069600FBF58A /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ObjectiveC.app; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveC.app"; sourceTree = "<absolute>"; };
-		24808EA42A61069600FBF58A /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCUITests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCUITests.xctest"; sourceTree = "<absolute>"; };
-		24808EA52A61069600FBF58A /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
+		24D90A1A2AD6AE030072F1FD /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D90A1B2AD6AE030072F1FD /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D90A1C2AD6AE030072F1FD /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D90A1E2AD6AE670072F1FD /* ProtobufViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtobufViewController.h; sourceTree = "<group>"; };
+		24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufViewController.m; sourceTree = "<group>"; };
+		24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtobufViewController.xib; sourceTree = "<group>"; };
+		24D90A4E2AD6D56D0072F1FD /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
+		24D90A4F2AD6D56D0072F1FD /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
+		24D90A512AD6D8950072F1FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A111D2D28C20FDD0086C4AA /* TimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
 		3A111D2E28C20FDD0086C4AA /* TimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
 		3A111D2F28C20FDD0086C4AA /* TimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeViewController.xib; sourceTree = "<group>"; };
@@ -460,9 +471,9 @@
 		3ACA4C1A28D6FC9A003169E4 /* CheckboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckboxViewController.xib; sourceTree = "<group>"; };
 		3ACA4C1D28D6FD03003169E4 /* CheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBox.h; sourceTree = "<group>"; };
 		3ACA4C1E28D6FD03003169E4 /* CheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBox.m; sourceTree = "<group>"; };
-		3ADD7742286AE41100451603 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3ADD7742286AE41100451603 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		3ADD7743286AE41100451603 /* SerializeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializeViewController.m; sourceTree = "<group>"; };
-		3ADD7744286AE41100451603 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		3ADD7744286AE41100451603 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		3ADD7745286AE41100451603 /* SerializeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerializeViewController.xib; sourceTree = "<group>"; };
 		3ADD7746286AE41100451603 /* SerializeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializeViewController.h; sourceTree = "<group>"; };
 		3ADD774B286AE5C300451603 /* DeviceIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceIDViewController.h; sourceTree = "<group>"; };
@@ -791,6 +802,7 @@
 		CEFA19E12265775C002C245A /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		CEFA19E22265775C002C245A /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
+		DABE50017089FD9398BD5F34 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -812,6 +824,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F070901596BAF448144F365A /* libPods-ObjectiveC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,6 +901,19 @@
 				2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */,
 			);
 			path = pasteboard;
+			sourceTree = "<group>";
+		};
+		24D90A1D2AD6AE3A0072F1FD /* protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				24D90A4E2AD6D56D0072F1FD /* Person.pbobjc.h */,
+				24D90A4F2AD6D56D0072F1FD /* Person.pbobjc.m */,
+				24D90A1E2AD6AE670072F1FD /* ProtobufViewController.h */,
+				24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */,
+				24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */,
+				24D90A512AD6D8950072F1FD /* README.md */,
+			);
+			path = protobuf;
 			sourceTree = "<group>";
 		};
 		3A111D2C28C20FCB0086C4AA /* time */ = {
@@ -1127,8 +1153,8 @@
 				3ADD7746286AE41100451603 /* SerializeViewController.h */,
 				3ADD7743286AE41100451603 /* SerializeViewController.m */,
 				3ADD7745286AE41100451603 /* SerializeViewController.xib */,
-				3ADD7742286AE41100451603 /* Person.h */,
-				3ADD7744286AE41100451603 /* Person.m */,
+				3ADD7742286AE41100451603 /* Student.h */,
+				3ADD7744286AE41100451603 /* Student.m */,
 			);
 			path = serialize;
 			sourceTree = "<group>";
@@ -1188,6 +1214,10 @@
 				BBEEFED4BB651D1A5F8E0205 /* Pods */,
 				245AACB92A46074700DFA706 /* ObjectiveCUITests */,
 				245AACC82A46078100DFA706 /* ObjectiveCTests */,
+				D1ADD9862F1AE77B6AD1EED4 /* Frameworks */,
+				24D90A1A2AD6AE030072F1FD /* ObjectiveC.app */,
+				24D90A1B2AD6AE030072F1FD /* ObjectiveCUITests.xctest */,
+				24D90A1C2AD6AE030072F1FD /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1985,6 +2015,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				24D90A1D2AD6AE3A0072F1FD /* protobuf */,
 				241258DE2A4956B800FF0A01 /* compress */,
 				3A2E7B8B29CC090400408AC2 /* customalert */,
 				3A2F7C0F299CCC3800679555 /* regular */,
@@ -2233,6 +2264,14 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		D1ADD9862F1AE77B6AD1EED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DABE50017089FD9398BD5F34 /* libPods-ObjectiveC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2251,7 +2290,7 @@
 			);
 			name = ObjectiveCUITests;
 			productName = ObjectiveCUITests;
-			productReference = 24808EA42A61069600FBF58A /* ObjectiveCUITests.xctest */;
+			productReference = 24D90A1B2AD6AE030072F1FD /* ObjectiveCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		245AACC62A46078100DFA706 /* ObjectiveCTests */ = {
@@ -2269,7 +2308,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 24808EA52A61069600FBF58A /* ObjectiveCTests.xctest */;
+			productReference = 24D90A1C2AD6AE030072F1FD /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
@@ -2288,7 +2327,7 @@
 			);
 			name = ObjectiveC;
 			productName = ObjectiveC;
-			productReference = 24808EA32A61069600FBF58A /* ObjectiveC.app */;
+			productReference = 24D90A1A2AD6AE030072F1FD /* ObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2460,6 +2499,7 @@
 				CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */,
 				2478B2EA2A4083BA0094C0DD /* PasteboardViewController.xib in Resources */,
 				3A2F7B4029939B6100679555 /* show.html in Resources */,
+				24D90A222AD6AE670072F1FD /* ProtobufViewController.xib in Resources */,
 				CE287AAF2265B70C00B6C517 /* test2.json in Resources */,
 				3A2F7C09299BCAB800679555 /* NSTimerViewController.xib in Resources */,
 				CE34E749228BC3520042C323 /* NSURLSessionVC.xib in Resources */,
@@ -2468,6 +2508,7 @@
 				3D220CC1217DBF9000E3799F /* Assets.xcassets in Resources */,
 				3A82A8F529C5CE190028CC6D /* WindowViewController.xib in Resources */,
 				CE17E4F223548C2A004A7AA2 /* iWiBi-orange-icon@2x.png in Resources */,
+				24D90A522AD6D8950072F1FD /* README.md in Resources */,
 				CE287AFC2265E77B00B6C517 /* DelegateViewController.xib in Resources */,
 				3A82A85929C41E550028CC6D /* HandleCellVC.xib in Resources */,
 				3AB12A81292E8F7700ABC707 /* HTTPSPing02ViewController.xib in Resources */,
@@ -2647,7 +2688,7 @@
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
 				CED3B8BF2265F3CF008988CE /* DelegateView.m in Sources */,
 				CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */,
-				3ADD7748286AE41100451603 /* Person.m in Sources */,
+				3ADD7748286AE41100451603 /* Student.m in Sources */,
 				3ACA4C1B28D6FC9A003169E4 /* CheckboxViewController.m in Sources */,
 				3A63EE9F28B0E05700ABD1CD /* WKWebViewDelegateVC.m in Sources */,
 				3AC6B3C128E99B74003C8103 /* SingletonViewController.m in Sources */,
@@ -2670,6 +2711,7 @@
 				3A154A2B28650C4600340F1C /* ButtonViewController.m in Sources */,
 				3D220CB9217DBF8F00E3799F /* AppDelegate.m in Sources */,
 				5FF96AD22226DBE10094DF79 /* NibCollectionViewCell.m in Sources */,
+				24D90A212AD6AE670072F1FD /* ProtobufViewController.m in Sources */,
 				CEE43F5C2331E0CA008FA43C /* MJRefreshViewController.m in Sources */,
 				3A4F100428E58FC500DF6FFE /* MMKVViewController.m in Sources */,
 				3A2E7B9329CC0EA700408AC2 /* MyAlertUtil.m in Sources */,
@@ -2711,6 +2753,7 @@
 				3A811581288E96600011AA45 /* DataTypeViewController.m in Sources */,
 				CEE43DEF2330F9AA008FA43C /* Osier.m in Sources */,
 				2478B2E92A4083BA0094C0DD /* PasteboardViewController.m in Sources */,
+				24D90A502AD6D56D0072F1FD /* Person.pbobjc.m in Sources */,
 				CED3B8CF22660844008988CE /* Man2.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
 				CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */,
@@ -2968,7 +3011,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/ObjectiveC/utils/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveC/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Objective-C";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2998,7 +3041,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/ObjectiveC/utils/PrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveC/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Objective-C";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

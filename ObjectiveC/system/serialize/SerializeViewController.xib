@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zo0-KY-SAg">
-                    <rect key="frame" x="10" y="53" width="394" height="345"/>
+                    <rect key="frame" x="10" y="53" width="394" height="295"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5l-40-kMc">
                             <rect key="frame" x="0.0" y="0.0" width="394" height="45"/>
@@ -71,14 +71,6 @@
                             <state key="normal" title="反序化 Object"/>
                             <connections>
                                 <action selector="deserialize2:" destination="-1" eventType="touchUpInside" id="qDW-rV-dl5"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9re-ou-Yi3">
-                            <rect key="frame" x="0.0" y="300" width="394" height="45"/>
-                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                            <state key="normal" title="过时的方法"/>
-                            <connections>
-                                <action selector="oldMethod:" destination="-1" eventType="touchUpInside" id="z5e-vs-QIZ"/>
                             </connections>
                         </button>
                     </subviews>

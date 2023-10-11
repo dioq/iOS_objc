@@ -6,9 +6,9 @@
 //  Copyright © 2019 William. All rights reserved.
 //
 
-#import "Person.h"
+#import "Student.h"
 
-@implementation Person
+@implementation Student
 
 // 归档方法
 -(void)encodeWithCoder:(NSCoder *)aCoder {

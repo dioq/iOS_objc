@@ -26,6 +26,7 @@
 #import "RegularViewController.h"
 #import "MyAlertViewController.h"
 #import "CompressViewController.h"
+#import "ProtobufViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -38,6 +39,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    ProtobufViewController *protobufVC = [ProtobufViewController new];
+    protobufVC.title = @"Protobuf 数据序列化";
+    [self.dataArray addObject:protobufVC];
     
     CompressViewController *compressVC = [CompressViewController new];
     compressVC.title = @"数据的压缩和解压";
