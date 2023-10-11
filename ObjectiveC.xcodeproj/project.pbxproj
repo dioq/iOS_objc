@@ -345,8 +345,8 @@
 		2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteboardViewController.m; sourceTree = "<group>"; };
 		2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasteboardViewController.xib; sourceTree = "<group>"; };
 		24D90A1A2AD6AE030072F1FD /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		24D90A1B2AD6AE030072F1FD /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		24D90A1C2AD6AE030072F1FD /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D90A1B2AD6AE030072F1FD /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCUITests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCUITests.xctest"; sourceTree = "<absolute>"; };
+		24D90A1C2AD6AE030072F1FD /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		24D90A1E2AD6AE670072F1FD /* ProtobufViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtobufViewController.h; sourceTree = "<group>"; };
 		24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufViewController.m; sourceTree = "<group>"; };
 		24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtobufViewController.xib; sourceTree = "<group>"; };
@@ -1147,7 +1147,7 @@
 			path = checkbox;
 			sourceTree = "<group>";
 		};
-		3ADD7741286AE41100451603 /* serialize */ = {
+		3ADD7741286AE41100451603 /* archiver */ = {
 			isa = PBXGroup;
 			children = (
 				3ADD7746286AE41100451603 /* SerializeViewController.h */,
@@ -1156,7 +1156,7 @@
 				3ADD7742286AE41100451603 /* Student.h */,
 				3ADD7744286AE41100451603 /* Student.m */,
 			);
-			path = serialize;
+			path = archiver;
 			sourceTree = "<group>";
 		};
 		3ADD774A286AE59A00451603 /* DeviceID */ = {
@@ -1216,8 +1216,6 @@
 				245AACC82A46078100DFA706 /* ObjectiveCTests */,
 				D1ADD9862F1AE77B6AD1EED4 /* Frameworks */,
 				24D90A1A2AD6AE030072F1FD /* ObjectiveC.app */,
-				24D90A1B2AD6AE030072F1FD /* ObjectiveCUITests.xctest */,
-				24D90A1C2AD6AE030072F1FD /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1255,7 +1253,7 @@
 				3A5648482899ABB2005FAF49 /* NSUserDefaults */,
 				3A56CF42288EF108004255E2 /* NSDataType */,
 				3ABF6A262876C99100CEE7F2 /* network */,
-				3ADD7741286AE41100451603 /* serialize */,
+				3ADD7741286AE41100451603 /* archiver */,
 				CE427A36236D8754001A90B4 /* block */,
 				CE0D2E492350642E00BD6A0E /* KVO */,
 				CEE43DDB2330F22C008FA43C /* polymorphism */,
