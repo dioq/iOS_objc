@@ -12,13 +12,10 @@
 #import "SDViewController.h"
 #import "MyShareViewController.h"
 #import "AFNetworkingVC.h"
-#import "HQFlowViewVC.h"
 #import "MenuListViewController.h"
 #import "ColorViewController.h"
 #import "Color2ViewController.h"
-#import "ToastViewController.h"
 #import "LottieViewController.h"
-#import "DLSlideViewVC.h"
 #import "MJRefreshViewController.h"
 #import "CheckboxViewController.h"
 #import "MMKVViewController.h"
@@ -47,17 +44,9 @@
     mjVC.title = @"MJRefresh";
     [self.dataArray addObject:mjVC];
     
-    DLSlideViewVC *dlsVC = [DLSlideViewVC new];
-    dlsVC.title = @"DLSlideView";
-    [self.dataArray addObject:dlsVC];
-    
     LottieViewController *lottieVC = [LottieViewController new];
     lottieVC.title = @"lottie";
     [self.dataArray addObject:lottieVC];
-    
-    ToastViewController *toastVC = [ToastViewController new];
-    toastVC.title= @"toast";
-    [self.dataArray addObject:toastVC];
     
     Color2ViewController *color2VC = [Color2ViewController new];
     color2VC.title = @"颜色选取2";
@@ -70,10 +59,6 @@
     MenuListViewController *menulistVC = [MenuListViewController new];
     menulistVC.title = @"展开选项列表";
     [self.dataArray addObject:menulistVC];
-    
-    HQFlowViewVC *hqflowVC = [HQFlowViewVC new];
-    hqflowVC.title = @"3D轮播图";
-    [self.dataArray addObject:hqflowVC];
     
     AFNetworkingVC *afVC = [AFNetworkingVC new];
     afVC.title = @"AFNetworking";
@@ -100,12 +85,8 @@
     [super viewDidLoad];
     self.navigationItem.title = @"SDK";
     [self loadData];
-
-    if (@available(iOS 11.0, *)) {//判断系统版本
-        self.myTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    } else {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
+    
+    self.myTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
@@ -143,15 +124,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
