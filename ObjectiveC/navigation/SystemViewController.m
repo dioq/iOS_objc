@@ -33,6 +33,7 @@
 #import "SetViewController.h"
 #import "PlistViewController.h"
 #import "PasteboardViewController.h"
+#import "SandboxViewController.h"
 
 @interface SystemViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -45,6 +46,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    SandboxViewController *sandboxVC = [SandboxViewController new];
+    sandboxVC.title = @"Sandbox";
+    [self.dataArray addObject:sandboxVC];
     
     PasteboardViewController *pasteboardVC = [PasteboardViewController new];
     pasteboardVC.title = @"Pasteboard";

@@ -20,6 +20,8 @@
 		2478B2E02A406ACC0094C0DD /* PlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2DE2A406ACC0094C0DD /* PlistViewController.xib */; };
 		2478B2E92A4083BA0094C0DD /* PasteboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */; };
 		2478B2EA2A4083BA0094C0DD /* PasteboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */; };
+		24C10FBE2B24A92200F536A8 /* InstallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C10FBC2B24A92200F536A8 /* InstallViewController.m */; };
+		24C10FBF2B24A92200F536A8 /* InstallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C10FBD2B24A92200F536A8 /* InstallViewController.xib */; };
 		24D90A212AD6AE670072F1FD /* ProtobufViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */; };
 		24D90A222AD6AE670072F1FD /* ProtobufViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */; };
 		24D90A502AD6D56D0072F1FD /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D90A4F2AD6D56D0072F1FD /* Person.pbobjc.m */; };
@@ -315,8 +317,6 @@
 		0212BA1C2859A847005822C8 /* SandboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SandboxViewController.xib; sourceTree = "<group>"; };
 		0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
 		24036C222B21FD3900779D8A /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		24036C252B21FF8900779D8A /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		24036C262B21FF8900779D8A /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
 		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
 		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
@@ -331,6 +331,11 @@
 		2478B2E62A4083BA0094C0DD /* PasteboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteboardViewController.h; sourceTree = "<group>"; };
 		2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteboardViewController.m; sourceTree = "<group>"; };
 		2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasteboardViewController.xib; sourceTree = "<group>"; };
+		24C10F902B24557B00F536A8 /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C10F912B24557B00F536A8 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C10FBB2B24A92200F536A8 /* InstallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallViewController.h; sourceTree = "<group>"; };
+		24C10FBC2B24A92200F536A8 /* InstallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallViewController.m; sourceTree = "<group>"; };
+		24C10FBD2B24A92200F536A8 /* InstallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallViewController.xib; sourceTree = "<group>"; };
 		24D90A1E2AD6AE670072F1FD /* ProtobufViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtobufViewController.h; sourceTree = "<group>"; };
 		24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufViewController.m; sourceTree = "<group>"; };
 		24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtobufViewController.xib; sourceTree = "<group>"; };
@@ -855,6 +860,16 @@
 			path = pasteboard;
 			sourceTree = "<group>";
 		};
+		24C10FBA2B24A90900F536A8 /* ipa_install */ = {
+			isa = PBXGroup;
+			children = (
+				24C10FBB2B24A92200F536A8 /* InstallViewController.h */,
+				24C10FBC2B24A92200F536A8 /* InstallViewController.m */,
+				24C10FBD2B24A92200F536A8 /* InstallViewController.xib */,
+			);
+			path = ipa_install;
+			sourceTree = "<group>";
+		};
 		24D90A1D2AD6AE3A0072F1FD /* protobuf */ = {
 			isa = PBXGroup;
 			children = (
@@ -1168,8 +1183,8 @@
 				245AACC82A46078100DFA706 /* ObjectiveCTests */,
 				D1ADD9862F1AE77B6AD1EED4 /* Frameworks */,
 				24036C222B21FD3900779D8A /* ObjectiveC.app */,
-				24036C252B21FF8900779D8A /* ObjectiveCUITests.xctest */,
-				24036C262B21FF8900779D8A /* ObjectiveCTests.xctest */,
+				24C10F902B24557B00F536A8 /* ObjectiveCUITests.xctest */,
+				24C10F912B24557B00F536A8 /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1195,6 +1210,7 @@
 		3D220CCE217DC17A00E3799F /* system */ = {
 			isa = PBXGroup;
 			children = (
+				0212BA192859A81F005822C8 /* sandbox */,
 				2478B2E52A4083AC0094C0DD /* pasteboard */,
 				2478B2DB2A406A9D0094C0DD /* plist */,
 				CE7386D5224108F4004C7239 /* audio */,
@@ -1928,6 +1944,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				24C10FBA2B24A90900F536A8 /* ipa_install */,
 				24D90A1D2AD6AE3A0072F1FD /* protobuf */,
 				241258DE2A4956B800FF0A01 /* compress */,
 				3A2E7B8B29CC090400408AC2 /* customalert */,
@@ -1936,7 +1953,6 @@
 				3A15D31C28A6A4CD00C62036 /* contacts */,
 				3AEF9DC828A038B400ACB99A /* mynetwork */,
 				3ADD774A286AE59A00451603 /* DeviceID */,
-				0212BA192859A81F005822C8 /* sandbox */,
 				9321B19A23A26E700028B245 /* crypto */,
 				CE17E4C323547D41004A7AA2 /* changeIcon */,
 				CEFA19D822657263002C245A /* paraseJSON */,
@@ -2154,7 +2170,7 @@
 			);
 			name = ObjectiveCUITests;
 			productName = ObjectiveCUITests;
-			productReference = 24036C252B21FF8900779D8A /* ObjectiveCUITests.xctest */;
+			productReference = 24C10F902B24557B00F536A8 /* ObjectiveCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		245AACC62A46078100DFA706 /* ObjectiveCTests */ = {
@@ -2172,7 +2188,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 24036C262B21FF8900779D8A /* ObjectiveCTests.xctest */;
+			productReference = 24C10F912B24557B00F536A8 /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
@@ -2336,6 +2352,7 @@
 				0212BA1E2859A847005822C8 /* SandboxViewController.xib in Resources */,
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
+				24C10FBF2B24A92200F536A8 /* InstallViewController.xib in Resources */,
 				CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */,
 				CE7D20342259E44900DEE23E /* LottieViewController.xib in Resources */,
 				CE7D203A2259E4F700DEE23E /* vcTransition2.json in Resources */,
@@ -2548,6 +2565,7 @@
 				3D220CC7217DBF9000E3799F /* main.m in Sources */,
 				CE7165B02380016C00D476C3 /* EndModalViewController.m in Sources */,
 				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
+				24C10FBE2B24A92200F536A8 /* InstallViewController.m in Sources */,
 				CE193C08222BB61B002F670B /* KKColor.m in Sources */,
 				3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */,
 				3A9908B8292749C6009C139D /* HTTPS1WayViewController.m in Sources */,
@@ -2865,7 +2883,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectc;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectivec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -2895,7 +2913,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectc;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectivec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

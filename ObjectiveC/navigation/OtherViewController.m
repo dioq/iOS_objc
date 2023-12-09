@@ -16,7 +16,6 @@
 #import "ParseViewController.h"
 #import "ChangeIconViewController.h"
 #import "CryptoViewController.h"
-#import "SandboxViewController.h"
 #import "SystemFileViewController.h"
 #import "FilesystemViewController.h"
 #import "DeviceIDViewController.h"
@@ -27,6 +26,7 @@
 #import "MyAlertViewController.h"
 #import "CompressViewController.h"
 #import "ProtobufViewController.h"
+#import "InstallViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -39,6 +39,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    InstallViewController *installVC = [InstallViewController new];
+    installVC.title = @"ipa在线安装";
+    [self.dataArray addObject:installVC];
     
     ProtobufViewController *protobufVC = [ProtobufViewController new];
     protobufVC.title = @"Protobuf 数据序列化";
@@ -71,10 +75,6 @@
     DeviceIDViewController *deviceUUID = [DeviceIDViewController new];
     deviceUUID.title = @"设备唯一标识符";
     [self.dataArray addObject:deviceUUID];
-    
-    SandboxViewController *sandboxVC = [SandboxViewController new];
-    sandboxVC.title = @"Sandbox";
-    [self.dataArray addObject:sandboxVC];
     
     SystemFileViewController *fileVC = [SystemFileViewController new];
     fileVC.title = @"系统File";
