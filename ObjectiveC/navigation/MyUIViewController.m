@@ -27,6 +27,7 @@
 #import "ToolBarViewController.h"
 #import "HandleCellVC.h"
 #import "WindowViewController.h"
+#import "BadgeViewController.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -39,6 +40,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    BadgeViewController *badgeVC = [BadgeViewController new];
+    badgeVC.title = @"badge 小红点";
+    [self.dataArray addObject:badgeVC];
     
     WindowViewController *windowVC = [WindowViewController new];
     windowVC.title = @"window 研究";

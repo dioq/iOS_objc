@@ -22,6 +22,8 @@
 		2478B2EA2A4083BA0094C0DD /* PasteboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */; };
 		24C10FBE2B24A92200F536A8 /* InstallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C10FBC2B24A92200F536A8 /* InstallViewController.m */; };
 		24C10FBF2B24A92200F536A8 /* InstallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C10FBD2B24A92200F536A8 /* InstallViewController.xib */; };
+		24C10FC82B273A8500F536A8 /* BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C10FC62B273A8500F536A8 /* BadgeViewController.m */; };
+		24C10FC92B273A8500F536A8 /* BadgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C10FC72B273A8500F536A8 /* BadgeViewController.xib */; };
 		24D90A212AD6AE670072F1FD /* ProtobufViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */; };
 		24D90A222AD6AE670072F1FD /* ProtobufViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */; };
 		24D90A502AD6D56D0072F1FD /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D90A4F2AD6D56D0072F1FD /* Person.pbobjc.m */; };
@@ -336,6 +338,9 @@
 		24C10FBB2B24A92200F536A8 /* InstallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallViewController.h; sourceTree = "<group>"; };
 		24C10FBC2B24A92200F536A8 /* InstallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallViewController.m; sourceTree = "<group>"; };
 		24C10FBD2B24A92200F536A8 /* InstallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallViewController.xib; sourceTree = "<group>"; };
+		24C10FC52B273A8500F536A8 /* BadgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BadgeViewController.h; sourceTree = "<group>"; };
+		24C10FC62B273A8500F536A8 /* BadgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeViewController.m; sourceTree = "<group>"; };
+		24C10FC72B273A8500F536A8 /* BadgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeViewController.xib; sourceTree = "<group>"; };
 		24D90A1E2AD6AE670072F1FD /* ProtobufViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtobufViewController.h; sourceTree = "<group>"; };
 		24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufViewController.m; sourceTree = "<group>"; };
 		24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtobufViewController.xib; sourceTree = "<group>"; };
@@ -870,6 +875,16 @@
 			path = ipa_install;
 			sourceTree = "<group>";
 		};
+		24C10FC42B273A7400F536A8 /* badge */ = {
+			isa = PBXGroup;
+			children = (
+				24C10FC52B273A8500F536A8 /* BadgeViewController.h */,
+				24C10FC62B273A8500F536A8 /* BadgeViewController.m */,
+				24C10FC72B273A8500F536A8 /* BadgeViewController.xib */,
+			);
+			path = badge;
+			sourceTree = "<group>";
+		};
 		24D90A1D2AD6AE3A0072F1FD /* protobuf */ = {
 			isa = PBXGroup;
 			children = (
@@ -1239,6 +1254,7 @@
 		3D220CCF217DC19700E3799F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				24C10FC42B273A7400F536A8 /* badge */,
 				3A82A8F029C5CE0A0028CC6D /* window */,
 				3A2F7C7F299F56B000679555 /* toolbar */,
 				3AAF126228DF0D9300A948C0 /* alert */,
@@ -2308,6 +2324,7 @@
 				CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */,
 				3ABF6A2F2877585300CEE7F2 /* client.p12 in Resources */,
 				CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */,
+				24C10FC92B273A8500F536A8 /* BadgeViewController.xib in Resources */,
 				3A111D3128C20FDD0086C4AA /* TimeViewController.xib in Resources */,
 				CE287AEB2265D0DB00B6C517 /* test3.json in Resources */,
 				CE287AB82265BC8D00B6C517 /* test.json in Resources */,
@@ -2485,6 +2502,7 @@
 				CEE43DDE2330F254008FA43C /* PolymorphismViewController.m in Sources */,
 				3A72D499291FDA44002A70A1 /* AES256Util.m in Sources */,
 				CED3B8D52266085A008988CE /* Dog2.m in Sources */,
+				24C10FC82B273A8500F536A8 /* BadgeViewController.m in Sources */,
 				CEE43DE12330F306008FA43C /* CHPerson.m in Sources */,
 				93EFF45C23BB3F1300A4BC67 /* Modal1ViewController.m in Sources */,
 				CE287AE92265CEB500B6C517 /* YYEatModel.m in Sources */,

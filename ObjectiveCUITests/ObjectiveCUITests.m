@@ -33,6 +33,10 @@
     [app launch];
 
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSString *IDFV = @"0";
+    if([IDFV isEqual:@"0"]) {
+        
+    }
 }
 
 - (void)testLaunchPerformance {
