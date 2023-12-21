@@ -10,6 +10,7 @@
 #import "LazyloadViewController.h"
 #import "SingletonViewController.h"
 #import "GCDViewController.h"
+#import "ThreadViewController.h"
 #import "DelegateViewController.h"
 #import "DeviceViewController.h"
 #import "NSURLSessionVC.h"
@@ -142,6 +143,10 @@
     DelegateViewController *delegateVC = [DelegateViewController new];
     delegateVC.title = @"delegate";
     [self.dataArray addObject:delegateVC];
+    
+    ThreadViewController *threadVC = [ThreadViewController new];
+    threadVC.title = @"thread 线程";
+    [self.dataArray addObject:threadVC];
     
     GCDViewController *GCDVC = [GCDViewController new];
     GCDVC.title = @"GCD";

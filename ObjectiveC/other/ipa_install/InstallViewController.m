@@ -20,7 +20,7 @@
 }
 
 - (IBAction)online_install:(UIButton *)sender {
-    NSString *scheme = @"itms-services://?action=download-manifest&url=https://jobs8.cn:9000/download/install.plist";
+    NSString *scheme = @"itms-services://?action=download-manifest&url=https://jobs8.cn:9000/download/manifest.plist";
     NSURL *url = [NSURL URLWithString:scheme];
     UIApplication *application = [UIApplication sharedApplication];
     [application openURL:url options:@{} completionHandler:^(BOOL success) {
@@ -31,5 +31,6 @@
         }
     }];
 }
+
 
 @end

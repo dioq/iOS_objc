@@ -18,17 +18,16 @@ static int num = 1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    UIUserNotificationSettings  *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:nil];
+    [[UIApplication  sharedApplication] registerUserNotificationSettings:setting];
 }
 
 - (IBAction)show1_action:(UIButton *)sender {
-    [UIApplication  sharedApplication].applicationIconBadgeNumber = num;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = num;
     
     // 一般在 app 进入后台时调用
     [[UIApplication  sharedApplication] registerForRemoteNotifications];
-    //    [[UIApplication  sharedApplication] isRegisteredForRemoteNotifications];
-    //    UIUserNotificationSettings  *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:nil];
-    //    [[UIApplication  sharedApplication] registerUserNotificationSettings:setting];
+    //        [[UIApplication  sharedApplication] isRegisteredForRemoteNotifications];
 }
 
 - (IBAction)redpoint_add_action:(UIButton *)sender {

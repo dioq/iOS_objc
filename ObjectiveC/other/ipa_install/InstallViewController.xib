@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="snZ-Sz-j9V">
-                    <rect key="frame" x="10" y="69" width="373" height="45"/>
+                    <rect key="frame" x="10" y="69" width="373" height="100"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-aX-hPm">
                             <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
@@ -33,6 +33,15 @@
                             <connections>
                                 <action selector="online_install:" destination="-1" eventType="touchUpInside" id="VXG-0t-hzT"/>
                             </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFb-kJ-kbf">
+                            <rect key="frame" x="0.0" y="55" width="373" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="h02-5p-Vp0"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="从本地安装"/>
                         </button>
                     </subviews>
                 </stackView>
