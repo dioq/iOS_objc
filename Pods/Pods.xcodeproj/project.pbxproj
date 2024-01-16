@@ -549,7 +549,7 @@
 		17424C3EBF07EC9B6287D33DAC8359D5 /* LOTShapeRectangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeRectangle.h; path = "lottie-ios/Classes/Models/LOTShapeRectangle.h"; sourceTree = "<group>"; };
 		179F411756967E56999AF2C3113B505D /* InterProcessLock_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Android.cpp; path = Core/InterProcessLock_Android.cpp; sourceTree = "<group>"; };
 		17BF5854552AA1EE83712925EEB69B86 /* LOTPolystarAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTPolystarAnimator.m; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTPolystarAnimator.m"; sourceTree = "<group>"; };
-		180E748CEBFE8D8A884CFCF7BA70CFFD /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
+		180E748CEBFE8D8A884CFCF7BA70CFFD /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
 		187F8C254E810AF6277D4DEA30C08302 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		19155D26A324F0BFBD48F5113BEDE0E7 /* GPBRootObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBRootObject.h; path = objectivec/GPBRootObject.h; sourceTree = "<group>"; };
 		192E3EBD2AB68519358C07AD4F7D2A7C /* GPBUnknownField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBUnknownField.m; path = objectivec/GPBUnknownField.m; sourceTree = "<group>"; };
@@ -569,7 +569,7 @@
 		1D6A6F89EFA3D786F90CA5BC4689E14C /* GPBDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBDictionary.h; path = objectivec/GPBDictionary.h; sourceTree = "<group>"; };
 		1D97BE52AFAD7FE7FADAD2AEC8E4FC52 /* LOTShapePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapePath.h; path = "lottie-ios/Classes/Models/LOTShapePath.h"; sourceTree = "<group>"; };
 		1EAA5C89371017FB19DDBDA158968AAB /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		1F2E42134A514BEB1F4205D58B86D7DD /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
+		1F2E42134A514BEB1F4205D58B86D7DD /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
 		1FA060057317CE2E34D044206FBF3F7F /* InterProcessLock_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Win32.cpp; path = Core/InterProcessLock_Win32.cpp; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Masonry; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D2E4E59A29B09E099D8D9EB13EF342 /* LOTAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationView.h; path = "lottie-ios/Classes/PublicHeaders/LOTAnimationView.h"; sourceTree = "<group>"; };
@@ -769,7 +769,7 @@
 		9B88808136435C0B368490BFECCAD72A /* LOTShapeStar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeStar.h; path = "lottie-ios/Classes/Models/LOTShapeStar.h"; sourceTree = "<group>"; };
 		9BE1D922067ACE97BA14D5BF064BF847 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		9D05371D523ED31297BA76F9B9F16935 /* LOTKeypath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTKeypath.h; path = "lottie-ios/Classes/PublicHeaders/LOTKeypath.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E6D2F6FB43EDDE931D77BCA028F2AA9 /* MMKV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-prefix.pch"; sourceTree = "<group>"; };
 		9EB68931D494AD1AFEA941AC6C7E1353 /* LOTAnimationCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationCache.h; path = "lottie-ios/Classes/PublicHeaders/LOTAnimationCache.h"; sourceTree = "<group>"; };
 		9F8AE1E74062C87350933DF3E7B62F63 /* GPBTimestamp.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBTimestamp.pbobjc.h; path = objectivec/GPBTimestamp.pbobjc.h; sourceTree = "<group>"; };
@@ -793,7 +793,7 @@
 		A6D2D4C11EAA3BD1E6FCB5D96BEB42F2 /* GPBAny.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBAny.pbobjc.h; path = objectivec/GPBAny.pbobjc.h; sourceTree = "<group>"; };
 		A6FFF616C59BEB341F5034EE32B97A90 /* GPBDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBDescriptor.m; path = objectivec/GPBDescriptor.m; sourceTree = "<group>"; };
 		A74DAD754F52C477EAF8F20645123959 /* KeyValueHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyValueHolder.h; path = Core/KeyValueHolder.h; sourceTree = "<group>"; };
-		A85C15CF1EAD82C872736561BEF370E6 /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
+		A85C15CF1EAD82C872736561BEF370E6 /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
 		A87115BF588EA2EF6EABBC6FB4D896DD /* Pods-ObjectiveC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjectiveC-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A8832ECB9A429F699907D99C4E3887AE /* GPBUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBUtilities.m; path = objectivec/GPBUtilities.m; sourceTree = "<group>"; };
 		A89F0ACDB0FFFC798FC82F34BD562FC3 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
@@ -1069,7 +1069,6 @@
 				46435D282F9314F82ACFD60465125614 /* UIView+SDAutoLayout.m */,
 				5C5969AB38A31B27054380AD20174BAE /* Support Files */,
 			);
-			name = SDAutoLayout;
 			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
@@ -1219,7 +1218,6 @@
 				B1C8067A0E8E1BB40E1478DCDFF59E57 /* UIColor+Expanded.m */,
 				4552F6580C0DA5D82127B5F8FA142976 /* Support Files */,
 			);
-			name = "lottie-ios";
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
@@ -1239,7 +1237,6 @@
 				DC8E2BED286D026B3D47ED49ED52E8DF /* MBProgressHUD.m */,
 				D7E7C1C32699811C7EFEBBB6098EC3E4 /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1308,7 +1305,6 @@
 				2A2AA17085A9DCCCC8C280ADD75E8872 /* ThreadLock_Win32.cpp */,
 				0764E5A997A88A0C155212427BD3F400 /* Support Files */,
 			);
-			name = MMKVCore;
 			path = MMKVCore;
 			sourceTree = "<group>";
 		};
@@ -1413,7 +1409,6 @@
 				27633C2F2AFBE10D69A383CF04919CC7 /* Wrappers.pbobjc.h */,
 				A2EAC11A6C061316D1047415B71AABF2 /* Support Files */,
 			);
-			name = Protobuf;
 			path = Protobuf;
 			sourceTree = "<group>";
 		};
@@ -1478,7 +1473,6 @@
 				3602A6B519DB60FB9F6948AC20AC79C6 /* UIImage+CoreGraphics.m */,
 				9CF0A5E60D690C792C29C0D66D597F34 /* Support Files */,
 			);
-			name = "Color-Picker-for-iOS";
 			path = "Color-Picker-for-iOS";
 			sourceTree = "<group>";
 		};
@@ -1524,7 +1518,6 @@
 				D509286AF26D53DA1E7AB6F111A522D4 /* Support Files */,
 				CC3ACF0F28388F82515519EF7CF492C9 /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -1536,7 +1529,6 @@
 				EFFF61934DF9278300E90A50C4EC4B40 /* MMKVHandler.h */,
 				21DA560535DE749D29BCC5A6948D8582 /* Support Files */,
 			);
-			name = MMKV;
 			path = MMKV;
 			sourceTree = "<group>";
 		};
@@ -1607,7 +1599,6 @@
 				C20A669E0C360A1201622254F20D3161 /* YYModel.h */,
 				AB9B20611D2F6AC6AB6CB6AFFF05C934 /* Support Files */,
 			);
-			name = YYModel;
 			path = YYModel;
 			sourceTree = "<group>";
 		};
@@ -1641,7 +1632,6 @@
 				9BE1D922067ACE97BA14D5BF064BF847 /* ViewController+MASAdditions.m */,
 				883734E9E59ADA85A9EDCA7025A21E79 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1696,7 +1686,6 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				7BA865E526C9AB8DA601246C649A3232 /* Pods */,
 				8D71016112756E6BC800F6569605FA39 /* Products */,
 				CCC253FAD6D7B2A9A6A1505EE778B9BC /* Targets Support Files */,
@@ -1750,7 +1739,6 @@
 				6F3AC1E29B095BC5A5841B670E220B58 /* Resources */,
 				CCE38E6316C6B3AD0353BEB03EB4E624 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -1776,13 +1764,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBProgressHUD";
-			sourceTree = "<group>";
-		};
-		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E6933B374CF48765046911380B91A00B /* Serialization */ = {

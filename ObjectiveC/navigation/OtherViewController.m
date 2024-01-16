@@ -27,6 +27,7 @@
 #import "CompressViewController.h"
 #import "ProtobufViewController.h"
 #import "InstallViewController.h"
+#import "CheckAppViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -39,6 +40,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    CheckAppViewController *checkappVC = [CheckAppViewController new];
+    checkappVC.title = @"检查手机上安装的应用";
+    [self.dataArray addObject:checkappVC];
     
     InstallViewController *installVC = [InstallViewController new];
     installVC.title = @"ipa在线安装";

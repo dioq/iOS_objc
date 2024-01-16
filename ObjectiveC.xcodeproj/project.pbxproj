@@ -16,12 +16,16 @@
 		245AACCA2A46078100DFA706 /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 245AACC92A46078100DFA706 /* ObjectiveCTests.m */; };
 		2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A33F2B33F42A0094CE90 /* ThreadViewController.m */; };
 		2476A3422B33F42A0094CE90 /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2476A3402B33F42A0094CE90 /* ThreadViewController.xib */; };
+		2476A3792B356D220094CE90 /* CheckAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A3772B356D220094CE90 /* CheckAppViewController.m */; };
+		2476A37A2B356D220094CE90 /* CheckAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2476A3782B356D220094CE90 /* CheckAppViewController.xib */; };
+		2476A37D2B358ACB0094CE90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0277512250799E00BA7A88 /* InfoPlist.strings */; };
 		2478B2D92A406A3F0094C0DD /* array.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2D72A406A3F0094C0DD /* array.plist */; };
 		2478B2DA2A406A3F0094C0DD /* dictonary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2D82A406A3F0094C0DD /* dictonary.plist */; };
 		2478B2DF2A406ACC0094C0DD /* PlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478B2DD2A406ACC0094C0DD /* PlistViewController.m */; };
 		2478B2E02A406ACC0094C0DD /* PlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2DE2A406ACC0094C0DD /* PlistViewController.xib */; };
 		2478B2E92A4083BA0094C0DD /* PasteboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */; };
 		2478B2EA2A4083BA0094C0DD /* PasteboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */; };
+		2490C65D2B563EEA008E81D9 /* ZipUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490C65C2B563EEA008E81D9 /* ZipUtil.m */; };
 		24C10FBE2B24A92200F536A8 /* InstallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C10FBC2B24A92200F536A8 /* InstallViewController.m */; };
 		24C10FBF2B24A92200F536A8 /* InstallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C10FBD2B24A92200F536A8 /* InstallViewController.xib */; };
 		24C10FC82B273A8500F536A8 /* BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C10FC62B273A8500F536A8 /* BadgeViewController.m */; };
@@ -164,7 +168,6 @@
 		93EFF45D23BB3F1300A4BC67 /* Modal1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EFF45B23BB3F1300A4BC67 /* Modal1ViewController.xib */; };
 		CE027749225075C800BA7A88 /* LocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE027747225075C800BA7A88 /* LocalizableViewController.m */; };
 		CE02774A225075C800BA7A88 /* LocalizableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE027748225075C800BA7A88 /* LocalizableViewController.xib */; };
-		CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0277512250799E00BA7A88 /* InfoPlist.strings */; };
 		CE027753225079A600BA7A88 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE027755225079A600BA7A88 /* Localizable.strings */; };
 		CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0277D92250DB3B00BA7A88 /* OrientationVC.m */; };
 		CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0277DA2250DB3B00BA7A88 /* OrientationVC.xib */; };
@@ -320,7 +323,6 @@
 		0212BA1B2859A847005822C8 /* SandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxViewController.m; sourceTree = "<group>"; };
 		0212BA1C2859A847005822C8 /* SandboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SandboxViewController.xib; sourceTree = "<group>"; };
 		0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
-		24036C222B21FD3900779D8A /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
 		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
 		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
@@ -330,6 +332,9 @@
 		2476A33E2B33F42A0094CE90 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		2476A33F2B33F42A0094CE90 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		2476A3402B33F42A0094CE90 /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
+		2476A3762B356D220094CE90 /* CheckAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckAppViewController.h; sourceTree = "<group>"; };
+		2476A3772B356D220094CE90 /* CheckAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckAppViewController.m; sourceTree = "<group>"; };
+		2476A3782B356D220094CE90 /* CheckAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckAppViewController.xib; sourceTree = "<group>"; };
 		2478B2D72A406A3F0094C0DD /* array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = array.plist; sourceTree = "<group>"; };
 		2478B2D82A406A3F0094C0DD /* dictonary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dictonary.plist; sourceTree = "<group>"; };
 		2478B2DC2A406ACC0094C0DD /* PlistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistViewController.h; sourceTree = "<group>"; };
@@ -338,14 +343,17 @@
 		2478B2E62A4083BA0094C0DD /* PasteboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteboardViewController.h; sourceTree = "<group>"; };
 		2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteboardViewController.m; sourceTree = "<group>"; };
 		2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasteboardViewController.xib; sourceTree = "<group>"; };
-		24C10F902B24557B00F536A8 /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCUITests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCUITests.xctest"; sourceTree = "<absolute>"; };
-		24C10F912B24557B00F536A8 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
+		2490C6562B5639F0008E81D9 /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2490C6572B5639F0008E81D9 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2490C65B2B563EEA008E81D9 /* ZipUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipUtil.h; sourceTree = "<group>"; };
+		2490C65C2B563EEA008E81D9 /* ZipUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipUtil.m; sourceTree = "<group>"; };
 		24C10FBB2B24A92200F536A8 /* InstallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallViewController.h; sourceTree = "<group>"; };
 		24C10FBC2B24A92200F536A8 /* InstallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallViewController.m; sourceTree = "<group>"; };
 		24C10FBD2B24A92200F536A8 /* InstallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallViewController.xib; sourceTree = "<group>"; };
 		24C10FC52B273A8500F536A8 /* BadgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BadgeViewController.h; sourceTree = "<group>"; };
 		24C10FC62B273A8500F536A8 /* BadgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeViewController.m; sourceTree = "<group>"; };
 		24C10FC72B273A8500F536A8 /* BadgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeViewController.xib; sourceTree = "<group>"; };
+		24CF66442B550D8E00D89A9A /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D90A1E2AD6AE670072F1FD /* ProtobufViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtobufViewController.h; sourceTree = "<group>"; };
 		24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufViewController.m; sourceTree = "<group>"; };
 		24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtobufViewController.xib; sourceTree = "<group>"; };
@@ -820,6 +828,8 @@
 				241258DF2A4956DE00FF0A01 /* CompressViewController.h */,
 				241258E02A4956DE00FF0A01 /* CompressViewController.m */,
 				241258E12A4956DE00FF0A01 /* CompressViewController.xib */,
+				2490C65B2B563EEA008E81D9 /* ZipUtil.h */,
+				2490C65C2B563EEA008E81D9 /* ZipUtil.m */,
 			);
 			path = compress;
 			sourceTree = "<group>";
@@ -849,6 +859,16 @@
 				2476A3402B33F42A0094CE90 /* ThreadViewController.xib */,
 			);
 			path = thread;
+			sourceTree = "<group>";
+		};
+		2476A3752B356D080094CE90 /* checkapp */ = {
+			isa = PBXGroup;
+			children = (
+				2476A3762B356D220094CE90 /* CheckAppViewController.h */,
+				2476A3772B356D220094CE90 /* CheckAppViewController.m */,
+				2476A3782B356D220094CE90 /* CheckAppViewController.xib */,
+			);
+			path = checkapp;
 			sourceTree = "<group>";
 		};
 		2478B2D62A406A160094C0DD /* plist */ = {
@@ -1212,7 +1232,9 @@
 				245AACB92A46074700DFA706 /* ObjectiveCUITests */,
 				245AACC82A46078100DFA706 /* ObjectiveCTests */,
 				D1ADD9862F1AE77B6AD1EED4 /* Frameworks */,
-				24036C222B21FD3900779D8A /* ObjectiveC.app */,
+				24CF66442B550D8E00D89A9A /* ObjectiveC.app */,
+				2490C6562B5639F0008E81D9 /* ObjectiveCUITests.xctest */,
+				2490C6572B5639F0008E81D9 /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1974,6 +1996,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				2476A3752B356D080094CE90 /* checkapp */,
 				24C10FBA2B24A90900F536A8 /* ipa_install */,
 				24D90A1D2AD6AE3A0072F1FD /* protobuf */,
 				241258DE2A4956B800FF0A01 /* compress */,
@@ -2200,7 +2223,7 @@
 			);
 			name = ObjectiveCUITests;
 			productName = ObjectiveCUITests;
-			productReference = 24C10F902B24557B00F536A8 /* ObjectiveCUITests.xctest */;
+			productReference = 2490C6562B5639F0008E81D9 /* ObjectiveCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		245AACC62A46078100DFA706 /* ObjectiveCTests */ = {
@@ -2218,7 +2241,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 24C10F912B24557B00F536A8 /* ObjectiveCTests.xctest */;
+			productReference = 2490C6572B5639F0008E81D9 /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
@@ -2237,7 +2260,7 @@
 			);
 			name = ObjectiveC;
 			productName = ObjectiveC;
-			productReference = 24036C222B21FD3900779D8A /* ObjectiveC.app */;
+			productReference = 24CF66442B550D8E00D89A9A /* ObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2344,6 +2367,7 @@
 				CE287AB82265BC8D00B6C517 /* test.json in Resources */,
 				CEFA19DD22657598002C245A /* ParseViewController.xib in Resources */,
 				93EFF45D23BB3F1300A4BC67 /* Modal1ViewController.xib in Resources */,
+				2476A37A2B356D220094CE90 /* CheckAppViewController.xib in Resources */,
 				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
 				CE7D203B2259E4F700DEE23E /* water-loading.json in Resources */,
 				3A15D32128A6A4E500C62036 /* ContactsViewController.xib in Resources */,
@@ -2373,7 +2397,6 @@
 				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
 				CE7386F12242593A004C7239 /* Splash.caf in Resources */,
 				CE7386EC2242508B004C7239 /* bg_maze.mp3 in Resources */,
-				CE02774F2250799E00BA7A88 /* InfoPlist.strings in Resources */,
 				CE3D1E4F21ABDC9700015F2B /* MyShareViewController.xib in Resources */,
 				3AA56A4128AF8AD000940DEF /* ScreenshotViewController.xib in Resources */,
 				CE7D1BDA2255C8B900DEE23E /* language.json in Resources */,
@@ -2434,6 +2457,7 @@
 				CE757CCF237E6EC20039C29D /* yaoti.ttf in Resources */,
 				3AC6B3C228E99B74003C8103 /* SingletonViewController.xib in Resources */,
 				3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */,
+				2476A37D2B358ACB0094CE90 /* InfoPlist.strings in Resources */,
 				3A2F7C84299F56CF00679555 /* ToolBarViewController.xib in Resources */,
 				CE7D20392259E4F700DEE23E /* Boat_Loader.json in Resources */,
 				3AEF9DCD28A038E700ACB99A /* MyNetworkViewController.xib in Resources */,
@@ -2510,6 +2534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D220CEA217DC1F700E3799F /* MyUIViewController.m in Sources */,
+				2476A3792B356D220094CE90 /* CheckAppViewController.m in Sources */,
 				3AA56A8728AFCF2500940DEF /* SliderViewController.m in Sources */,
 				5F9921732597B082009F938C /* SceneDelegate.m in Sources */,
 				3A7F2BB729FC1B8E005DE73B /* SetViewController.m in Sources */,
@@ -2603,6 +2628,7 @@
 				CE193C08222BB61B002F670B /* KKColor.m in Sources */,
 				3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */,
 				3A9908B8292749C6009C139D /* HTTPS1WayViewController.m in Sources */,
+				2490C65D2B563EEA008E81D9 /* ZipUtil.m in Sources */,
 				5FF96AC82226D49C0094DF79 /* MyCollectionViewCell.m in Sources */,
 				3A111D3028C20FDD0086C4AA /* TimeViewController.m in Sources */,
 				3AE3AA0C29AA213E005998B1 /* CategoryViewController.m in Sources */,

@@ -34,11 +34,7 @@
 // 设置背景颜色
 -(void)setBackgroudColor {
     UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 49)];
-    if (@available(iOS 13,*)) {
-        backView.backgroundColor = [UIColor systemGroupedBackgroundColor];
-    } else {
-        backView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    }
+    backView.backgroundColor = [UIColor systemGroupedBackgroundColor];
     [self.tabBar insertSubview:backView atIndex:0];
     self.tabBar.opaque = YES;
 }

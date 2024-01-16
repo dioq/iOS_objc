@@ -6,7 +6,7 @@
   Copyright © 2019 William. All rights reserved.
 */
 
-CFBundleDisplayName = "OC 中文";
+CFBundleDisplayName = "H微信H恢复H";
 
 NSLocationWhenInUseUsageDescription = "需要位置权限";
 NSMicrophoneUsageDescription = "需要麦克风权限";

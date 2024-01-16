@@ -85,6 +85,32 @@
     }];
 }
 
+- (IBAction)submit_action:(UIButton *)sender {
+    NSString *urlStr = @"http://127.0.0.1:9000/form";
+    
+    NSMutableDictionary *mutParamDict = [NSMutableDictionary dictionary];
+    [mutParamDict setValue:@"Beijing" forKey:@"address"];
+    
+    NSMutableArray *mutableArr = [[NSMutableArray alloc] init];
+    [mutableArr addObject:@"file"];
+    [mutableArr addObject:@"keychain"];
+    NSArray *fileNames = [mutableArr copy];
+    NSLog(@"%@",fileNames);
+    
+    NSMutableArray<NSData *> *fileDatas = [[NSMutableArray alloc] init];
+    NSData *dt1 = [@"11111,this is a test" dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *dt2 = [@"22222,this is a test" dataUsingEncoding:NSUTF8StringEncoding];
+    [fileDatas addObject:dt1];
+    [fileDatas addObject:dt2];
+    
+    [[NetworkManager sharedManager] submitUrlStr:urlStr params:[mutParamDict copy] fileNames:fileNames fileDatas:fileDatas success:^(id _Nonnull response) {
+        NSString *result = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+        NSLog(@"%@",result);
+    } failure:^(NSError * _Nonnull error) {
+        NSLog(@"%@",[error localizedDescription]);
+    }];
+}
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }

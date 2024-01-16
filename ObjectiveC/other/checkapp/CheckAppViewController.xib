@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProtobufViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckAppViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,28 +19,28 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OHj-z4-B9P">
-                    <rect key="frame" x="10" y="64" width="373" height="95"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-Sv-Amd">
+                    <rect key="frame" x="10" y="64" width="373" height="100"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prc-3U-YEO">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqC-sZ-erF">
                             <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
                             <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="45" id="ZT3-jo-jMa"/>
+                                <constraint firstAttribute="height" constant="45" id="aJC-dU-w1m"/>
                             </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="序列化"/>
+                            <buttonConfiguration key="configuration" style="plain" title="检测特定应用"/>
                             <connections>
-                                <action selector="serialize_action:" destination="-1" eventType="touchUpInside" id="DdL-Fr-n4g"/>
+                                <action selector="check_app_act:" destination="-1" eventType="touchUpInside" id="meq-fq-ydA"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie9-Fc-mi9">
-                            <rect key="frame" x="0.0" y="50" width="373" height="45"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMW-Sv-lW4">
+                            <rect key="frame" x="0.0" y="55" width="373" height="45"/>
                             <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="反序列化"/>
+                            <buttonConfiguration key="configuration" style="plain" title="检测特定应用"/>
                             <connections>
-                                <action selector="deserialize_action:" destination="-1" eventType="touchUpInside" id="zEA-r6-IJI"/>
+                                <action selector="check_bid_act:" destination="-1" eventType="touchUpInside" id="7rP-KU-sCD"/>
                             </connections>
                         </button>
                     </subviews>
@@ -49,9 +49,9 @@
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="OHj-z4-B9P" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="5" id="BrE-L4-aNC"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="OHj-z4-B9P" secondAttribute="trailing" constant="10" id="nBj-Cb-RWo"/>
-                <constraint firstItem="OHj-z4-B9P" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="w7x-y6-zhg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rb8-Sv-Amd" secondAttribute="trailing" constant="10" id="2QR-Dy-Ogn"/>
+                <constraint firstItem="rb8-Sv-Amd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="TnI-ry-nhn"/>
+                <constraint firstItem="rb8-Sv-Amd" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="5" id="Wfs-zO-HU8"/>
             </constraints>
             <point key="canvasLocation" x="138" y="20"/>
         </view>

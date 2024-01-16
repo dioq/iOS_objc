@@ -23,7 +23,7 @@
 
 
 - (IBAction)otherApp:(UIButton *)sender {
-    NSString *urlStr = @"weixin://";
+    NSString *urlStr = @"weixin://"; // bundle id 两个前缀要不相同 com.tencent.x1 与 com.tencent.x2 跳转不成功
     NSURL *url = [NSURL URLWithString:urlStr];
     UIApplication *application = [UIApplication sharedApplication];
     if([application canOpenURL:url]){

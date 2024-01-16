@@ -75,10 +75,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string></string>
+			<string>cn.jobs8.objectivec</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>weixin</string>
+				<string>objc</string>
 			</array>
 		</dict>
 		<dict>
@@ -87,10 +87,36 @@
 			<key>CFBundleURLIconFile</key>
 			<string></string>
 			<key>CFBundleURLName</key>
-			<string>William2.718</string>
+			<string>com.tencent.xin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>ObjectiveC2.718</string>
+				<string>weixin</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>mqq</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.tencent.xin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wechat</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>weixinapp</string>
 			</array>
 		</dict>
 	</array>
@@ -100,6 +126,7 @@
 	<dict>
 		<key>LSApplicationQueriesSchemes</key>
 		<array>
+			<string>wechat</string>
 			<string>weixin</string>
 		</array>
 	</dict>
