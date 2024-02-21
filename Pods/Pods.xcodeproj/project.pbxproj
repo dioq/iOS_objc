@@ -571,7 +571,7 @@
 		1EAA5C89371017FB19DDBDA158968AAB /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		1F2E42134A514BEB1F4205D58B86D7DD /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
 		1FA060057317CE2E34D044206FBF3F7F /* InterProcessLock_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Win32.cpp; path = Core/InterProcessLock_Win32.cpp; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Masonry; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/Masonry/libMasonry.a"; sourceTree = "<absolute>"; };
 		21D2E4E59A29B09E099D8D9EB13EF342 /* LOTAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimationView.h; path = "lottie-ios/Classes/PublicHeaders/LOTAnimationView.h"; sourceTree = "<group>"; };
 		220A80347CF46712C4CBFC30E1199613 /* LOTShapeTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeTransform.m; path = "lottie-ios/Classes/Models/LOTShapeTransform.m"; sourceTree = "<group>"; };
 		2243280A3D0CA4104B056BB852B97447 /* Color-Picker-for-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Color-Picker-for-iOS-dummy.m"; sourceTree = "<group>"; };
@@ -589,7 +589,7 @@
 		2AE4D2FAAF75A4E60D2FC765208FD515 /* LOTArrayInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTArrayInterpolator.m; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTArrayInterpolator.m"; sourceTree = "<group>"; };
 		2CA292A77E637DEEABA323576ABC5621 /* LOTShapeGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeGroup.h; path = "lottie-ios/Classes/Models/LOTShapeGroup.h"; sourceTree = "<group>"; };
 		2CC203F89A749ED138983A0D28F094F5 /* LOTShapeCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeCircle.h; path = "lottie-ios/Classes/Models/LOTShapeCircle.h"; sourceTree = "<group>"; };
-		2D24B4853EF5CE5AD7D4FA5E183BD6E2 /* SDAutoLayout */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SDAutoLayout; path = libSDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D24B4853EF5CE5AD7D4FA5E183BD6E2 /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDAutoLayout.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/SDAutoLayout/libSDAutoLayout.a"; sourceTree = "<absolute>"; };
 		2E039FD2AFE62C28E235884516F53758 /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
 		2E2B5F78751F766A0C650E1CC79591E0 /* MMKV.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV.cpp; path = Core/MMKV.cpp; sourceTree = "<group>"; };
 		2E728CDDDFD351B62650BDC84466469C /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
@@ -647,7 +647,7 @@
 		4E7EF150C1CD519629AE3581825DBA29 /* LOTPathAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTPathAnimator.m; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTPathAnimator.m"; sourceTree = "<group>"; };
 		50E252B40A94F8474FDC2B261F878230 /* LOTCacheProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTCacheProvider.h; path = "lottie-ios/Classes/PublicHeaders/LOTCacheProvider.h"; sourceTree = "<group>"; };
 		511A2AA1F4829ED3CB3793D030A54584 /* LOTPathInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTPathInterpolator.m; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTPathInterpolator.m"; sourceTree = "<group>"; };
-		51BA97E8B5085EFFB47BC9C0B785CEA7 /* lottie-ios */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "lottie-ios"; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BA97E8B5085EFFB47BC9C0B785CEA7 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "liblottie-ios.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/lottie-ios/liblottie-ios.a"; sourceTree = "<absolute>"; };
 		51CD65ACCD72BF038529BFAB5EA520EA /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		51E941F2D5614C879F3589C860AB94AE /* openssl_aes_core.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_aes_core.cpp; path = Core/aes/openssl/openssl_aes_core.cpp; sourceTree = "<group>"; };
 		5474B7CA4E5FE86BD54CA15F9F53B175 /* LOTAnimatedSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatedSwitch.m; path = "lottie-ios/Classes/Private/LOTAnimatedSwitch.m"; sourceTree = "<group>"; };
@@ -742,7 +742,7 @@
 		89BC110BE37C0ABB07E3151FB680A239 /* HRBrightnessCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRBrightnessCursor.h; path = ColorPicker/HRBrightnessCursor.h; sourceTree = "<group>"; };
 		89E4B05102C6605EC11117A4C9C2A7CD /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		8A9C8D6B4B5D5D03ECF58566DDB0FFC5 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = MBProgressHUD; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MBProgressHUD/libMBProgressHUD.a"; sourceTree = "<absolute>"; };
 		8C37D90658B66284C46743BEDF6830E2 /* LOTShapeGradientFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeGradientFill.m; path = "lottie-ios/Classes/Models/LOTShapeGradientFill.m"; sourceTree = "<group>"; };
 		8C9E508EE32CB7E9FF0A115A4668FD88 /* LOTNumberInterpolator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTNumberInterpolator.h; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTNumberInterpolator.h"; sourceTree = "<group>"; };
 		8CA96AEFF65630582F71778FAE1EF6DA /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -786,7 +786,7 @@
 		A3FF65824460E932EE0B5BA08C0A7713 /* LOTAnimatorNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatorNode.m; path = "lottie-ios/Classes/RenderSystem/LOTAnimatorNode.m"; sourceTree = "<group>"; };
 		A43CF2F657B0FE624A2A5860CF259651 /* LOTValueCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTValueCallback.m; path = "lottie-ios/Classes/Private/LOTValueCallback.m"; sourceTree = "<group>"; };
 		A4E4CE4847E81390D42439BCAEB3575A /* GPBDescriptor_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBDescriptor_PackagePrivate.h; path = objectivec/GPBDescriptor_PackagePrivate.h; sourceTree = "<group>"; };
-		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AFNetworking; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<absolute>"; };
 		A522C8732127ECD8F52F9E74FA545956 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		A688E5A5853B96075A103EF58E017C73 /* MMKV_IO.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_IO.cpp; path = Core/MMKV_IO.cpp; sourceTree = "<group>"; };
 		A6BE868EB246F3EF3739BC2AF4102DC6 /* HRBrightnessCursor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessCursor.m; path = ColorPicker/HRBrightnessCursor.m; sourceTree = "<group>"; };
@@ -822,7 +822,7 @@
 		B59E7532E0A1814FDC426CB98F3CBD0C /* MemoryFile_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Android.cpp; path = Core/MemoryFile_Android.cpp; sourceTree = "<group>"; };
 		B60B1FF86054E2B9AC74B3241339C52D /* CodedInputDataCrypt_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputDataCrypt_OSX.cpp; path = Core/CodedInputDataCrypt_OSX.cpp; sourceTree = "<group>"; };
 		B68CB367B91A3006A3A8903927157FAE /* MJRefreshConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConfig.h; path = MJRefresh/MJRefreshConfig.h; sourceTree = "<group>"; };
-		B88A54159B245E727A6D16DEFE105A09 /* MMKV */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = MMKV; path = libMMKV.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88A54159B245E727A6D16DEFE105A09 /* libMMKV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMKV.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MMKV/libMMKV.a"; sourceTree = "<absolute>"; };
 		B91AF2146CB1962B0D2B506A7A78CF86 /* GPBWellKnownTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBWellKnownTypes.m; path = objectivec/GPBWellKnownTypes.m; sourceTree = "<group>"; };
 		B991257BED4F200AC01033436A22F815 /* LOTShapePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapePath.m; path = "lottie-ios/Classes/Models/LOTShapePath.m"; sourceTree = "<group>"; };
 		B9C4B0464EA3C1CD39491D97CD73D3E1 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
@@ -842,7 +842,7 @@
 		C14F7413A5F7F498409EC25401D6617E /* UIColor+Expanded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Expanded.h"; path = "lottie-ios/Classes/Extensions/UIColor+Expanded.h"; sourceTree = "<group>"; };
 		C1F093D5F4582284AEF490E0690EB1C9 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		C20A669E0C360A1201622254F20D3161 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
-		C2105C94812B6214B154F54DCEDB72AC /* Protobuf */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Protobuf; path = libProtobuf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2105C94812B6214B154F54DCEDB72AC /* libProtobuf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libProtobuf.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/Protobuf/libProtobuf.a"; sourceTree = "<absolute>"; };
 		C212EF3AA277936410DDB74D6B5964E7 /* GPBWireFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBWireFormat.h; path = objectivec/GPBWireFormat.h; sourceTree = "<group>"; };
 		C31BB055CF548D391D2BC7BB3E548E7D /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		C3768D1271100C5D5DB7A3F08919C8D5 /* GPBSourceContext.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBSourceContext.pbobjc.m; path = objectivec/GPBSourceContext.pbobjc.m; sourceTree = "<group>"; };
@@ -850,7 +850,7 @@
 		C56C26AE82A1DA9368F9912C84ACD7FE /* GPBExtensionInternals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBExtensionInternals.h; path = objectivec/GPBExtensionInternals.h; sourceTree = "<group>"; };
 		C5BCCC12B5465364DE90EA391EDEFFCD /* GPBDuration.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBDuration.pbobjc.h; path = objectivec/GPBDuration.pbobjc.h; sourceTree = "<group>"; };
 		C76E755EF7110BA11584AD2D6229553C /* MJRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.debug.xcconfig; sourceTree = "<group>"; };
-		CA984D84C054759E5142E8B4DBADFC11 /* Pods-ObjectiveC */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-ObjectiveC"; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA984D84C054759E5142E8B4DBADFC11 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjectiveC.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/libPods-ObjectiveC.a"; sourceTree = "<absolute>"; };
 		CAA5D732DC978350C9B17917C13313BD /* LOTLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTLayer.m; path = "lottie-ios/Classes/Models/LOTLayer.m"; sourceTree = "<group>"; };
 		CB1F9DD650EAC82A5908DEEF52F5E9BD /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		CBFA97F6B87A22EA3994780B8F4ACE7A /* CodedInputData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedInputData.h; path = Core/CodedInputData.h; sourceTree = "<group>"; };
@@ -895,7 +895,7 @@
 		DFD4C512FE530987401F373437F26368 /* PBEncodeItem.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PBEncodeItem.hpp; path = Core/PBEncodeItem.hpp; sourceTree = "<group>"; };
 		DFF806C866C601ED380B658A8A49B4AE /* LOTBezierData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTBezierData.h; path = "lottie-ios/Classes/AnimatableProperties/LOTBezierData.h"; sourceTree = "<group>"; };
 		E04D94537F79C81F899B2212FEFBEAB5 /* LOTPlatformCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTPlatformCompat.h; path = "lottie-ios/Classes/MacCompatability/LOTPlatformCompat.h"; sourceTree = "<group>"; };
-		E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = MMKVCore; path = libMMKVCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B603F54009DAEF6C3BAAE621E5F180 /* libMMKVCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMKVCore.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MMKVCore/libMMKVCore.a"; sourceTree = "<absolute>"; };
 		E0FB7D5CE130519E5D257755A1DB8CD0 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
 		E1594303D1D4B86A96FCB7672D517BFB /* HRBrightnessSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessSlider.m; path = ColorPicker/HRBrightnessSlider.m; sourceTree = "<group>"; };
 		E164B59809FC49D754533BEC7C3B02CA /* lottie-ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-prefix.pch"; sourceTree = "<group>"; };
@@ -906,9 +906,9 @@
 		E3987549CB779EAE32F35A6768AFDEA2 /* LOTMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTMask.h; path = "lottie-ios/Classes/Models/LOTMask.h"; sourceTree = "<group>"; };
 		E4405BA08DC20EB62AABA560592503C0 /* LOTCacheProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTCacheProvider.m; path = "lottie-ios/Classes/Private/LOTCacheProvider.m"; sourceTree = "<group>"; };
 		E44AC581638ACA6F6E528257AB4BF73B /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
-		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = YYModel; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E460D5B0416D36F66EE8EC89E5D2FA0A /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYModel.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/YYModel/libYYModel.a"; sourceTree = "<absolute>"; };
 		E462F2C9418ACBC17E3AC25E5022C10E /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = MJRefresh; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/MJRefresh/libMJRefresh.a"; sourceTree = "<absolute>"; };
 		E4AB9E5AB741DAAE15238DB6BDE9F21B /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
 		E5F43268A7BDFE70639C8407131D4031 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		E6067D39A682F017A8B7F588EF533CDD /* MemoryFile.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile.cpp; path = Core/MemoryFile.cpp; sourceTree = "<group>"; };
@@ -944,7 +944,7 @@
 		F6310D542712221610BABCE8054431C6 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		F699F01945002D2CECD8FA161F68F139 /* LOTComposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTComposition.h; path = "lottie-ios/Classes/PublicHeaders/LOTComposition.h"; sourceTree = "<group>"; };
 		F7D1237A6C0FE9EEA1398E2C14170882 /* LOTCircleAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTCircleAnimator.h; path = "lottie-ios/Classes/RenderSystem/AnimatorNodes/LOTCircleAnimator.h"; sourceTree = "<group>"; };
-		F8A5EE5333D293BE554342EF796AF4E7 /* Color-Picker-for-iOS */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Color-Picker-for-iOS"; path = "libColor-Picker-for-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A5EE5333D293BE554342EF796AF4E7 /* libColor-Picker-for-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libColor-Picker-for-iOS.a"; path = "/Users/lzd/Repository/iOS_objc/Pods/../build/Debug-iphoneos/Color-Picker-for-iOS/libColor-Picker-for-iOS.a"; sourceTree = "<absolute>"; };
 		F970A646CC9FC4013513C51C7E5E1F5A /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		FA04BC7DB591768EC0E94F1524863CA7 /* MemoryFile_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_OSX.cpp; path = Core/MemoryFile_OSX.cpp; sourceTree = "<group>"; };
 		FA19D2D2D99CB6F790EA4346B109E9AF /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
@@ -1488,25 +1488,6 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		8D71016112756E6BC800F6569605FA39 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */,
-				F8A5EE5333D293BE554342EF796AF4E7 /* Color-Picker-for-iOS */,
-				51BA97E8B5085EFFB47BC9C0B785CEA7 /* lottie-ios */,
-				1FFED36A657123030ABB700256D73F15 /* Masonry */,
-				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */,
-				E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */,
-				B88A54159B245E727A6D16DEFE105A09 /* MMKV */,
-				E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */,
-				CA984D84C054759E5142E8B4DBADFC11 /* Pods-ObjectiveC */,
-				C2105C94812B6214B154F54DCEDB72AC /* Protobuf */,
-				2D24B4853EF5CE5AD7D4FA5E183BD6E2 /* SDAutoLayout */,
-				E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		8DC147DB85D2770E653C5221E71C5BEA /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1687,7 +1668,6 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				7BA865E526C9AB8DA601246C649A3232 /* Pods */,
-				8D71016112756E6BC800F6569605FA39 /* Products */,
 				CCC253FAD6D7B2A9A6A1505EE778B9BC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -2096,7 +2076,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		03932C47FBFD347205B2F367F78E9B63 /* SDAutoLayout */ = {
@@ -2113,7 +2093,7 @@
 			);
 			name = SDAutoLayout;
 			productName = SDAutoLayout;
-			productReference = 2D24B4853EF5CE5AD7D4FA5E183BD6E2 /* SDAutoLayout */;
+			productReference = 2D24B4853EF5CE5AD7D4FA5E183BD6E2 /* libSDAutoLayout.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		0B967D7F8561D42493EE289EC8D450D1 /* lottie-ios */ = {
@@ -2130,7 +2110,7 @@
 			);
 			name = "lottie-ios";
 			productName = "lottie-ios";
-			productReference = 51BA97E8B5085EFFB47BC9C0B785CEA7 /* lottie-ios */;
+			productReference = 51BA97E8B5085EFFB47BC9C0B785CEA7 /* liblottie-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1A309BC1817F061288A1C9578DF98D55 /* Pods-ObjectiveC */ = {
@@ -2158,7 +2138,7 @@
 			);
 			name = "Pods-ObjectiveC";
 			productName = "Pods-ObjectiveC";
-			productReference = CA984D84C054759E5142E8B4DBADFC11 /* Pods-ObjectiveC */;
+			productReference = CA984D84C054759E5142E8B4DBADFC11 /* libPods-ObjectiveC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		44CA85B9068A41C746742D5576314D0A /* Color-Picker-for-iOS */ = {
@@ -2175,7 +2155,7 @@
 			);
 			name = "Color-Picker-for-iOS";
 			productName = "Color-Picker-for-iOS";
-			productReference = F8A5EE5333D293BE554342EF796AF4E7 /* Color-Picker-for-iOS */;
+			productReference = F8A5EE5333D293BE554342EF796AF4E7 /* libColor-Picker-for-iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		470FE31978DC918618A329D8B55C85FF /* Protobuf */ = {
@@ -2192,7 +2172,7 @@
 			);
 			name = Protobuf;
 			productName = Protobuf;
-			productReference = C2105C94812B6214B154F54DCEDB72AC /* Protobuf */;
+			productReference = C2105C94812B6214B154F54DCEDB72AC /* libProtobuf.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
@@ -2209,7 +2189,7 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry */;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */ = {
@@ -2226,7 +2206,7 @@
 			);
 			name = MJRefresh;
 			productName = MJRefresh;
-			productReference = E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */;
+			productReference = E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
@@ -2243,7 +2223,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */;
+			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		84B44807A12996D487A4A591A481D6A0 /* YYModel */ = {
@@ -2260,7 +2240,7 @@
 			);
 			name = YYModel;
 			productName = YYModel;
-			productReference = E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel */;
+			productReference = E460D5B0416D36F66EE8EC89E5D2FA0A /* libYYModel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		91A6826828CB9FCD0169A7547E8A79EA /* MMKV */ = {
@@ -2278,7 +2258,7 @@
 			);
 			name = MMKV;
 			productName = MMKV;
-			productReference = B88A54159B245E727A6D16DEFE105A09 /* MMKV */;
+			productReference = B88A54159B245E727A6D16DEFE105A09 /* libMMKV.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		AC8AE887C706A43711D115E69B9D988A /* MMKVCore */ = {
@@ -2295,7 +2275,7 @@
 			);
 			name = MMKVCore;
 			productName = MMKVCore;
-			productReference = E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */;
+			productReference = E0B603F54009DAEF6C3BAAE621E5F180 /* libMMKVCore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -2316,7 +2296,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8D71016112756E6BC800F6569605FA39 /* Products */;
+			productRefGroup = CF1408CF629C7361332E53B88F7BD30C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

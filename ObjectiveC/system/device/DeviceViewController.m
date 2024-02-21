@@ -36,6 +36,10 @@
     //电池电量
     CGFloat batteryLevel = [[UIDevice currentDevice] batteryLevel];
     NSLog(@"电池电量:%f", batteryLevel);
+    
+    NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+    NSString *bundle_id = [infoDict valueForKey:@"CFBundleIdentifier"];
+    NSLog(@"bundle_id:%@",bundle_id);
 }
 
 - (NSString *)iplatform {

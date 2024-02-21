@@ -298,7 +298,6 @@
 		CEFA19DD22657598002C245A /* ParseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA19DB22657598002C245A /* ParseViewController.xib */; };
 		CEFA19E0226576D8002C245A /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = CEFA19DF226576D8002C245A /* message.json */; };
 		CEFA19E32265775C002C245A /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA19E22265775C002C245A /* Message.m */; };
-		F070901596BAF448144F365A /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DABE50017089FD9398BD5F34 /* libPods-ObjectiveC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -343,17 +342,17 @@
 		2478B2E62A4083BA0094C0DD /* PasteboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteboardViewController.h; sourceTree = "<group>"; };
 		2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteboardViewController.m; sourceTree = "<group>"; };
 		2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasteboardViewController.xib; sourceTree = "<group>"; };
-		2490C6562B5639F0008E81D9 /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2490C6572B5639F0008E81D9 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2490C65B2B563EEA008E81D9 /* ZipUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipUtil.h; sourceTree = "<group>"; };
 		2490C65C2B563EEA008E81D9 /* ZipUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipUtil.m; sourceTree = "<group>"; };
+		24AC59F82B7F919600A1B292 /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ObjectiveC.app; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveC.app"; sourceTree = "<absolute>"; };
+		24AC59F92B7F919600A1B292 /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCUITests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCUITests.xctest"; sourceTree = "<absolute>"; };
+		24AC59FA2B7F919600A1B292 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		24C10FBB2B24A92200F536A8 /* InstallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallViewController.h; sourceTree = "<group>"; };
 		24C10FBC2B24A92200F536A8 /* InstallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallViewController.m; sourceTree = "<group>"; };
 		24C10FBD2B24A92200F536A8 /* InstallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallViewController.xib; sourceTree = "<group>"; };
 		24C10FC52B273A8500F536A8 /* BadgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BadgeViewController.h; sourceTree = "<group>"; };
 		24C10FC62B273A8500F536A8 /* BadgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeViewController.m; sourceTree = "<group>"; };
 		24C10FC72B273A8500F536A8 /* BadgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeViewController.xib; sourceTree = "<group>"; };
-		24CF66442B550D8E00D89A9A /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D90A1E2AD6AE670072F1FD /* ProtobufViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtobufViewController.h; sourceTree = "<group>"; };
 		24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufViewController.m; sourceTree = "<group>"; };
 		24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtobufViewController.xib; sourceTree = "<group>"; };
@@ -777,7 +776,6 @@
 		CEFA19E12265775C002C245A /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		CEFA19E22265775C002C245A /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
-		DABE50017089FD9398BD5F34 /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -799,7 +797,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F070901596BAF448144F365A /* libPods-ObjectiveC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1231,10 +1228,6 @@
 				BBEEFED4BB651D1A5F8E0205 /* Pods */,
 				245AACB92A46074700DFA706 /* ObjectiveCUITests */,
 				245AACC82A46078100DFA706 /* ObjectiveCTests */,
-				D1ADD9862F1AE77B6AD1EED4 /* Frameworks */,
-				24CF66442B550D8E00D89A9A /* ObjectiveC.app */,
-				2490C6562B5639F0008E81D9 /* ObjectiveCUITests.xctest */,
-				2490C6572B5639F0008E81D9 /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2197,14 +2190,6 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		D1ADD9862F1AE77B6AD1EED4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DABE50017089FD9398BD5F34 /* libPods-ObjectiveC.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2223,7 +2208,7 @@
 			);
 			name = ObjectiveCUITests;
 			productName = ObjectiveCUITests;
-			productReference = 2490C6562B5639F0008E81D9 /* ObjectiveCUITests.xctest */;
+			productReference = 24AC59F92B7F919600A1B292 /* ObjectiveCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		245AACC62A46078100DFA706 /* ObjectiveCTests */ = {
@@ -2241,7 +2226,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 2490C6572B5639F0008E81D9 /* ObjectiveCTests.xctest */;
+			productReference = 24AC59FA2B7F919600A1B292 /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
@@ -2260,7 +2245,7 @@
 			);
 			name = ObjectiveC;
 			productName = ObjectiveC;
-			productReference = 24CF66442B550D8E00D89A9A /* ObjectiveC.app */;
+			productReference = 24AC59F82B7F919600A1B292 /* ObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
