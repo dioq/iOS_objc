@@ -35,8 +35,10 @@
                                           [key bytes],
                                           [key length],
                                           iv /* initialization vector (optional) */,
-                                          [plaintext bytes], dataLength, /* input */
-                                          buffer, bufferSize, /* output */
+                                          [plaintext bytes], 
+                                          dataLength, /* input */
+                                          buffer, 
+                                          bufferSize, /* output */
                                           &numBytesEncrypted);
     NSData *encryptData;
     if (cryptStatus == kCCSuccess) {

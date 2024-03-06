@@ -63,8 +63,8 @@
     //创建一个弹框
     UIAlertController *addAlertVC = [UIAlertController alertControllerWithTitle:@"控制台" message:@"苹果推的控制界面" preferredStyle:UIAlertControllerStyleAlert];
     
-//    __block NSString *target_account;
-//    __block NSString *content;
+    //    __block NSString *target_account;
+    //    __block NSString *content;
     //创建两个textFiled输入框
     [addAlertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.tag = 100;
@@ -79,7 +79,7 @@
     
     // 发送
     UIAlertAction *sendAction =[UIAlertAction actionWithTitle:@"发送" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-
+        
     }];
     //添加确定按钮
     [addAlertVC addAction:sendAction];
@@ -87,14 +87,41 @@
     
     // 清空
     UIAlertAction *cleanAction =[UIAlertAction actionWithTitle:@"清空" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-
+        
     }];
     [addAlertVC addAction:cleanAction];
     
     
     UIWindow *window =  [[[UIApplication sharedApplication] windows] objectAtIndex:0];
     [window.rootViewController presentViewController:addAlertVC animated:YES completion:nil];
-//    [window.rootViewController.view layoutSubviews];
+    //    [window.rootViewController.view layoutSubviews];
+}
+
+- (IBAction)bottom_aert:(UIButton *)sender {
+    //创建一个弹框
+    UIAlertController *addAlertVC = [UIAlertController alertControllerWithTitle:@"选择" message:@"苹果推的控制界面" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    // 发送
+    UIAlertAction *sureAction =[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        NSLog(@"click sure");
+    }];
+    //添加确定按钮
+    [addAlertVC addAction:sureAction];
+    
+    // 发送
+    UIAlertAction *sendAction =[UIAlertAction actionWithTitle:@"发送" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        NSLog(@"click send");
+    }];
+    //添加确定按钮
+    [addAlertVC addAction:sendAction];
+    
+    // 清空
+    UIAlertAction *cancelAction =[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
+        NSLog(@"click cancel");
+    }];
+    [addAlertVC addAction:cancelAction];
+    
+    [self.navigationController presentViewController:addAlertVC animated:YES completion:nil];
 }
 
 @end
