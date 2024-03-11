@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,11 +20,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AtE-EQ-6MU">
-                    <rect key="frame" x="10" y="49" width="394" height="200"/>
+                    <rect key="frame" x="10" y="53" width="394" height="155"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mI-cQ-1h0">
-                            <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="6fn-2b-bKQ"/>
+                            </constraints>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="完整过程"/>
                             <connections>
@@ -32,7 +35,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfc-4P-ZIw">
-                            <rect key="frame" x="0.0" y="70" width="394" height="60"/>
+                            <rect key="frame" x="0.0" y="55" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="写入数据"/>
@@ -41,7 +44,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-Hs-UQb">
-                            <rect key="frame" x="0.0" y="140" width="394" height="60"/>
+                            <rect key="frame" x="0.0" y="110" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="读出数据"/>
@@ -50,9 +53,6 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="200" id="yWl-AQ-d64"/>
-                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
@@ -70,7 +70,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

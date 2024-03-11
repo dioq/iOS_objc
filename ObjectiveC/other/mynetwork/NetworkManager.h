@@ -32,12 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
         failure:(void (^)(NSError * _Nonnull))failure;
 
 // 提交表单
-- (void)submitUrlStr:(NSString *)urlStr
-              params:(NSDictionary *)paramsDict
-           fileNames:(NSArray<NSString *> *)fileNames
-           fileDatas:(NSArray<NSData *> *)fileDatas
-             success:(void (^)(id _Nonnull))success
-             failure:(void (^)(NSError * _Nonnull))failure;
+- (void)submitUrl:(NSString *)urlStr
+         textDict:(NSDictionary<NSString *, NSString *> *)textDict
+         fileDict:(NSDictionary<NSString *, NSData *> *)fileDict
+          success:(void (^)(id _Nonnull))success
+          failure:(void (^)(NSError * _Nonnull))failure;
 
 @end
 

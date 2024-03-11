@@ -39,7 +39,7 @@
 - (IBAction)download:(UIButton *)sender {
     [self.show setText:@""];
     NSString *urlStr = @"https://jobs8.cn:8091/cmdr.plist";
-//    NSString *urlStr = @"itms-services://?action=download-manifest&url=https://jobs8.cn:8091/cmdr.plist";
+    //    NSString *urlStr = @"itms-services://?action=download-manifest&url=https://jobs8.cn:8091/cmdr.plist";
     [[NetworkManager sharedManager] getUrl:urlStr success:^(id  _Nonnull response) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.show setText:response];
@@ -88,22 +88,20 @@
 - (IBAction)submit_action:(UIButton *)sender {
     NSString *urlStr = @"http://127.0.0.1:9000/form";
     
-    NSMutableDictionary *mutParamDict = [NSMutableDictionary dictionary];
-    [mutParamDict setValue:@"Beijing" forKey:@"address"];
+    NSMutableDictionary *textMutDict = [NSMutableDictionary dictionary];
+    [textMutDict setValue:@"Dio" forKey:@"name"];
+    [textMutDict setValue:@"Beijing" forKey:@"address"];
+    [textMutDict setValue:@"18" forKey:@"age"];
     
-    NSMutableArray *mutableArr = [[NSMutableArray alloc] init];
-    [mutableArr addObject:@"file"];
-    [mutableArr addObject:@"keychain"];
-    NSArray *fileNames = [mutableArr copy];
-    NSLog(@"%@",fileNames);
-    
-    NSMutableArray<NSData *> *fileDatas = [[NSMutableArray alloc] init];
+    NSMutableDictionary *fileMutDict = [NSMutableDictionary dictionary];
     NSData *dt1 = [@"11111,this is a test" dataUsingEncoding:NSUTF8StringEncoding];
     NSData *dt2 = [@"22222,this is a test" dataUsingEncoding:NSUTF8StringEncoding];
-    [fileDatas addObject:dt1];
-    [fileDatas addObject:dt2];
+    NSData *dt3 = [@"33333,this is a test" dataUsingEncoding:NSUTF8StringEncoding];
+    [fileMutDict setValue:dt1 forKey:@"file1"];
+    [fileMutDict setValue:dt2 forKey:@"file2"];
+    [fileMutDict setValue:dt3 forKey:@"file2"];
     
-    [[NetworkManager sharedManager] submitUrlStr:urlStr params:[mutParamDict copy] fileNames:fileNames fileDatas:fileDatas success:^(id _Nonnull response) {
+    [[NetworkManager sharedManager] submitUrl:urlStr textDict:[textMutDict copy] fileDict:[fileMutDict copy] success:^(id _Nonnull response) {
         NSString *result = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
         NSLog(@"%@",result);
     } failure:^(NSError * _Nonnull error) {

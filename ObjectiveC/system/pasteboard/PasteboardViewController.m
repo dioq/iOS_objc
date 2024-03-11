@@ -10,16 +10,14 @@
 
 /*
  + (UIPasteboard *)generalPasteboard;
- 系统级别的剪切板在整个设备中共享，而且会持久化，即应用程序被删掉，其向系统级的剪切板中写入的数据依然在
+ 系统级别的剪切板在整个设备中共享，而且会持久化，即应用程序被删掉，其向系统级的剪切板中写入的数据依然存在
  
  + (nullable UIPasteboard *)pasteboardWithName:(NSString *)pasteboardName create:(BOOL)create;
- 自定义的剪切板通过一个特定的名称字符串进行创建，它在应用程序内或者同一开发者开发(必须Bundle Identifier 例com.maoshaoqian.** 星号前部一样)
- 的其他应用程序中可以进行数据共享。
+ 自定义的剪切板用pasteboardName进行标识，只能在同一个开发者账号签名的App 中共享数据。
  举个例子：比如你开发了多款应用，用户全部下载了，在A应用中用户拷贝了一些数据（为了数据安全，不用系统级别的Pasteboard），在打开B应用时就会自动识别，提高用户体验。
  
  + (UIPasteboard *)pasteboardWithUniqueName;
- 第3个方法创建的剪切板等价为使用第2个方法创建的剪切板，只是其名称字符串为nil，它通常用于当前应用内部。
- （当然也可以跨应用使用，但必须Bundle Identifier 例com.maoshaoqian.** 星号前部一样）
+ 第3个方法创建的剪切板等价为使用第2个方法创建的剪切板，只是其名称字符串为nil
  
  
  //剪切板内容发生变化时发送的通知
@@ -81,6 +79,7 @@
     }
     
     [mutArr addObject:[mutDict copy]];
+    [mutArr addObject:[mutDict copy]];
     
     pasteboard.items = [mutArr copy];
     
@@ -90,9 +89,18 @@
 - (IBAction)many_read_act:(UIButton *)sender {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     
-    if(!(pasteboard.items && pasteboard.items.count > 0)) {
+    NSLog(@"numberOfItems:%lu",pasteboard.numberOfItems);
+    NSLog(@"items.count:%lu",pasteboard.items.count);
+    if(pasteboard.numberOfItems == 0) {
         return;
     }
+    
+//    NSMutableIndexSet *mutSet = [[NSMutableIndexSet alloc] init];
+//    for (int i = 0; i < pasteboard.numberOfItems; i++) {
+//        [mutSet addIndex:i];
+//    }
+//    NSArray *item = [pasteboard pasteboardTypesForItemSet:mutSet];
+//    NSLog(@"%@",item);
     
     NSLog(@"%@",pasteboard.items);
 }

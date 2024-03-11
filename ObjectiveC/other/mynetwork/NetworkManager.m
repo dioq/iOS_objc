@@ -110,65 +110,70 @@
     }];
 }
 
--(void)submitUrlStr:(NSString *)urlStr params:(NSDictionary *)paramsDict fileNames:(NSArray<NSString *> *)fileNames fileDatas:(NSArray<NSData *> *)fileDatas success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+-(void)submitUrl:(NSString *)urlStr textDict:(NSDictionary<NSString *,NSString *> *)textDict fileDict:(NSDictionary<NSString *,NSData *> *)fileDict success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.timeoutInterval = 30;
     request.HTTPMethod = @"POST";
     
-    NSString *boundary = [[NSUUID UUID] UUIDString];
-    boundary = [boundary stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    NSString *uuidStr = [[NSUUID UUID] UUIDString];
+    NSString *boundary = [uuidStr stringByReplacingOccurrencesOfString:@"-" withString:@""];
     
     NSString *content_type = [NSString stringWithFormat:@"multipart/form-data;boundary=%@", boundary];
     [request setValue:content_type forHTTPHeaderField:@"Content-Type"];
     
-    NSMutableData *body_data = [[NSMutableData alloc] init];
+    NSString *line_break = @"\r\n"; // 换行
+    NSString *item_start = [NSString stringWithFormat:@"--%@%@",boundary,line_break]; // form-data 每一项开始标志
+    NSString *body_end = [NSString stringWithFormat:@"%@--%@--%@",line_break,boundary,line_break]; // body 结束标志
     
-    NSString *line_feed = @"\r\n"; // 换行
-    NSString *item_start = [NSString stringWithFormat:@"--%@%@",boundary,line_feed]; // form-data 每一项的开始
-    NSString *item_end = [NSString stringWithFormat:@"%@--%@--%@",line_feed,boundary,line_feed]; // form-data 每一项的结束
-    
-    //http body的字符串
-    NSMutableString *bodyMutStr = [[NSMutableString alloc]init];
-    //参数的集合的所有key的集合
-    NSArray *keys = [paramsDict allKeys];
-    //遍历keys
-    for(int i = 0; i < [keys count]; i++) {
-        //添加分界线
-        [bodyMutStr appendString:boundary];
-        [bodyMutStr appendString:line_feed];
-        //得到当前key
-        NSString *key = [keys objectAtIndex:i];
-        //添加字段名称，换2行
-        [bodyMutStr appendFormat:@"Content-Disposition: form-data; name=%@",key];
-        [bodyMutStr appendString:line_feed];
-        [bodyMutStr appendString:line_feed];
-        //添加字段的值
-        [bodyMutStr appendString:[paramsDict objectForKey:key]];
+    // TEXT 类型数据拼装
+    NSMutableData *textMutData = [[NSMutableData alloc] init];
+    // 遍历 textMutData
+    for (NSString *key in [textDict allKeys]) {
+        // 1. 每一项的开始
+        [textMutData appendData:[item_start dataUsingEncoding:NSUTF8StringEncoding]];
+        // 2. 每一项的描述信息
+        NSString *content_disposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=%@",key];
+        [textMutData appendData:[content_disposition dataUsingEncoding:NSUTF8StringEncoding]];
+        // 3. 描述信息和数据之间 换2行
+        [textMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+        [textMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+        // 4. 每一项的数据
+        NSString *value = [textDict objectForKey:key];
+        [textMutData appendData:[value dataUsingEncoding:NSUTF8StringEncoding]];
+        // 5. 每一项结束时换行
+        [textMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
     }
-    //    NSLog(@"%@",bodyMutStr);
-    [body_data appendData:[item_start dataUsingEncoding:NSUTF8StringEncoding]];
-    [body_data appendData:[bodyMutStr dataUsingEncoding:NSUTF8StringEncoding]];
-    [body_data appendData:[line_feed dataUsingEncoding:NSUTF8StringEncoding]];// 每一项结束 \r\n
     
-    for (int i = 0; i < fileNames.count; i++) {
-        [body_data appendData:[item_start dataUsingEncoding:NSUTF8StringEncoding]];
-        
-        //        NSLog(@"fileNames[%d] = %@", i, fileNames[i]);
-        NSString *content = [NSString stringWithFormat:@"Content-Disposition: form-data; name=%@; filename=%@;",fileNames[i], fileNames[i]];
-        [body_data appendData:[content dataUsingEncoding:NSUTF8StringEncoding]];
-        [body_data appendData:[line_feed dataUsingEncoding:NSUTF8StringEncoding]];
-        [body_data appendData:[line_feed dataUsingEncoding:NSUTF8StringEncoding]];
-        
-        NSData *fileData = fileDatas[i];
-        [body_data appendData:fileData];
-        
-        [body_data appendData:[line_feed dataUsingEncoding:NSUTF8StringEncoding]];// 每一项结束 \r\n
+    // FILE 类型数据拼装
+    NSMutableData *fileMutData = [[NSMutableData alloc] init];
+    // 遍历 textMutData
+    for (NSString *key in [fileDict allKeys]) {
+        // 1. 每一项的开始
+        [fileMutData appendData:[item_start dataUsingEncoding:NSUTF8StringEncoding]];
+        // 2. 每一项的描述信息
+        NSString *content_disposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=%@; filename=%@;",key, key];
+        [fileMutData appendData:[content_disposition dataUsingEncoding:NSUTF8StringEncoding]];
+        // 3. 描述信息和数据之间 换2行
+        [fileMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+        // 4. 每一项的数据
+        NSData *value = [fileDict objectForKey:key];
+        [fileMutData appendData:value];
+        // 5. 每一项结束时换行
+        [fileMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
     }
-    [body_data appendData:[item_end dataUsingEncoding:NSUTF8StringEncoding]];
-    //    NSLog(@"body_data.length : %lu",body_data.length);
+    
+    // body 二进制数据
+    NSMutableData *bodyMutData = [[NSMutableData alloc] init];
+    [bodyMutData appendData:[textMutData copy]];
+    [bodyMutData appendData:[fileMutData copy]];
+    
+    // body 结束标志
+    [bodyMutData appendData:[body_end dataUsingEncoding:NSUTF8StringEncoding]];
+    
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig]];
-    NSURLSessionUploadTask *dataTask = [session uploadTaskWithRequest:request fromData:body_data completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSessionUploadTask *dataTask = [session uploadTaskWithRequest:request fromData:[bodyMutData copy] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             NSLog(@"%@",[error localizedDescription]);
         }else {
