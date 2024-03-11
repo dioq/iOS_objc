@@ -19,15 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
        success:(void(^)(id response))success
        failure:(void(^)(NSError *error))failure;
 
-// post 参数是 NSData
+// post body 是 二进制数据
 - (void)postUrl:(NSString *)urlStr
-     parameters:(NSData *)params
+      paramData:(NSData * _Nonnull)params
         success:(void (^)(id _Nonnull))success
         failure:(void (^)(NSError * _Nonnull))failure;
 
-// post 参数是 json格式
+// post body 是 json
 - (void)postUrl:(NSString *)urlStr
-      paramJson:(NSDictionary * _Nullable)params
+      paramDict:(NSDictionary * _Nonnull)params
         success:(void (^)(id _Nonnull))success
         failure:(void (^)(NSError * _Nonnull))failure;
 

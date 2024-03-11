@@ -24,69 +24,29 @@
 
 - (IBAction)get:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"http://jobs8.cn:8090/get";
+    NSString *urlStr = @"http://127.0.0.1:8090/get";
     [[NetworkManager sharedManager] getUrl:urlStr success:^(id  _Nonnull response) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.show setText:response];
-        });
+        [self showTip:response];
     } failure:^(NSError * _Nonnull error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.show setText:[error localizedDescription]];
-        });
-    }];
-}
-
-- (IBAction)download:(UIButton *)sender {
-    [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8091/cmdr.plist";
-    //    NSString *urlStr = @"itms-services://?action=download-manifest&url=https://jobs8.cn:8091/cmdr.plist";
-    [[NetworkManager sharedManager] getUrl:urlStr success:^(id  _Nonnull response) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.show setText:response];
-        });
-    } failure:^(NSError * _Nonnull error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.show setText:[error localizedDescription]];
-        });
+        [self showTip:[error localizedDescription]];
     }];
 }
 
 - (IBAction)post:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"http://jobs8.cn:8090/post";
+    NSString *urlStr = @"http://127.0.0.1:8090/post";
     NSMutableDictionary<NSString *,NSObject *> *param = [NSMutableDictionary dictionary];
     [param setValue:@"Dio Brand" forKey:@"name"];
     [param setValue:@18 forKey:@"age"];
-    [[NetworkManager sharedManager] postUrl:urlStr paramJson:param success:^(id  _Nonnull response) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.show setText:response];
-        });
+    [[NetworkManager sharedManager] postUrl:urlStr paramDict:[param copy] success:^(id  _Nonnull response) {
+        [self showTip:response];
     } failure:^(NSError * _Nonnull error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.show setText:[error localizedDescription]];
-        });
-    }];
-}
-
-- (IBAction)formdataAct:(UIButton *)sender {
-    [self.show setText:@""];
-    NSString *urlStr = @"http://jobs8.cn:8090/postform";
-    NSString *parameter = [NSString stringWithFormat:@"name=%@&area=%@&age=%d&action=%@", @"dio", @"guiyang",18,@"testaction"];
-    NSData *paramData = [parameter dataUsingEncoding:NSUTF8StringEncoding];
-    [[NetworkManager sharedManager] postUrl:urlStr parameters:paramData success:^(id _Nonnull response) {
-        NSString *result = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.show setText:result];
-        });
-    } failure:^(NSError * _Nonnull error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.show setText:[error localizedDescription]];
-        });
+        [self showTip:[error localizedDescription]];
     }];
 }
 
 - (IBAction)submit_action:(UIButton *)sender {
-    NSString *urlStr = @"http://127.0.0.1:9000/form";
+    NSString *urlStr = @"http://127.0.0.1:8090/form";
     
     NSMutableDictionary *textMutDict = [NSMutableDictionary dictionary];
     [textMutDict setValue:@"Dio" forKey:@"name"];
@@ -102,11 +62,16 @@
     [fileMutDict setValue:dt3 forKey:@"file2"];
     
     [[NetworkManager sharedManager] submitUrl:urlStr textDict:[textMutDict copy] fileDict:[fileMutDict copy] success:^(id _Nonnull response) {
-        NSString *result = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
-        NSLog(@"%@",result);
+        [self showTip:response];
     } failure:^(NSError * _Nonnull error) {
-        NSLog(@"%@",[error localizedDescription]);
+        [self showTip:[error localizedDescription]];
     }];
+}
+
+-(void)showTip:(NSString * _Nonnull)tip {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.show setText:tip];
+    });
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

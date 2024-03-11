@@ -8,6 +8,9 @@
 
 #import "NSURLSessionVC.h"
 
+//#define url_prefix @"http://127.0.0.1:8090"
+#define url_prefix @"http://jobs8.cn:8090"
+
 @interface NSURLSessionVC ()<NSURLSessionDelegate,UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *show;
@@ -25,7 +28,7 @@
 - (IBAction)getAction:(UIButton *)sender {
     [self.show setText:@""];
     //1.确定请求路径
-    NSString *urlStr = @"http://jobs8.cn:8090/get?name=dio&age=100";
+    NSString *urlStr = [NSString stringWithFormat:@"%@/get?name=dio&age=100", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     //2.创建请求对象
     //请求对象内部默认已经包含了请求头和请求方法（GET）
@@ -42,35 +45,28 @@
      */
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"%@",[error localizedDescription]);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:[error localizedDescription]];
-            });
+            [self showTip:[error localizedDescription]];
         }else {
-            //6.解析服务器返回的数据
-            //NSData转成NSString
+            // 解析服务器返回的数据
             NSString *resultString = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"%@", resultString);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:resultString];
-            });
+            [self showTip:resultString];
         }
     }];
-    //5.执行任务
     [dataTask resume];
 }
 
+// 尚未实现
 - (IBAction)get2:(UIButton *)sender {
     [self.show setText:@""];
     //1.确定请求路径
-    NSString *urlStr = @"http://jobs8.cn:8090/get";
+    NSString *urlStr = [NSString stringWithFormat:@"%@/get", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     //2.创建请求对象
     //请求对象内部默认已经包含了请求头和请求方法（GET）
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     //3. 指定网络请求所走的代理(指定网络代理后,代理抓包获取不到网络数据)
-    NSString *host = @"jobs8.cn";
+    NSString *host = @"jobs8.cn";//@"127.0.0.1";
     NSNumber *proxyPort = [NSNumber numberWithInt:8090];
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     config.connectionProxyDictionary = @{
@@ -85,27 +81,19 @@
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"%@",[error localizedDescription]);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:[error localizedDescription]];
-            });
+            [self showTip:[error localizedDescription]];
         }else {
-            //6.解析服务器返回的数据
-            //NSData转成NSString
+            // 解析服务器返回的数据
             NSString *resultString = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"%@", resultString);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:resultString];
-            });
+            [self showTip:resultString];
         }
     }];
-    //5.执行任务
     [dataTask resume];
 }
 
 - (IBAction)postAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"http://jobs8.cn:8090/post";
+    NSString *urlStr = [NSString stringWithFormat:@"%@/post", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     //设置超时时间
@@ -125,82 +113,117 @@
     [params setValue:@"Dio" forKey:@"name"];
     [params setValue:@18 forKey:@"age"];
     //NSMutableDictionary 转成 json字符串的二进制形式
-    NSData *data= [NSJSONSerialization dataWithJSONObject:params options:NSJSONWritingPrettyPrinted error:nil];
+    NSError *error;
+    NSData *data= [NSJSONSerialization dataWithJSONObject:[params copy] options:NSJSONWritingPrettyPrinted error:&error];
+    if (error) {
+        [self showTip:[error localizedDescription]];
+        return;
+    }
     request.HTTPBody = data;
     
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error){
         if (error) {
-            NSLog(@"%@",[error localizedDescription]);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:[error localizedDescription]];
-            });
+            [self showTip:[error localizedDescription]];
         }else {
-            //6.解析服务器返回的数据
-            //NSData转成NSString
+            // 解析服务器返回的数据
             NSString *resultString = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"%@", resultString);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:resultString];
-            });
+            [self showTip:resultString];
         }
     }];
-    //7.执行任务
     [dataTask resume];
 }
 
-- (IBAction)uploadAction:(UIButton *)sender {
+- (IBAction)submitAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"http://jobs8.cn:8090/upload";
+    NSString *urlStr = [NSString stringWithFormat:@"%@/form", url_prefix];
+    
+    NSMutableDictionary *textMutDict = [NSMutableDictionary dictionary];
+    [textMutDict setValue:@"Dio" forKey:@"name"];
+    [textMutDict setValue:@"Beijing" forKey:@"address"];
+    [textMutDict setValue:@"18" forKey:@"age"];
+    
+    NSMutableDictionary *fileMutDict = [NSMutableDictionary dictionary];
+    UIImage *image1 = [UIImage imageNamed:@"22"];
+    NSData *dt1 = UIImagePNGRepresentation(image1);
+    UIImage *image2 = [UIImage imageNamed:@"33"];
+    NSData *dt2 = UIImagePNGRepresentation(image2);
+    UIImage *image3 = [UIImage imageNamed:@"44"];
+    NSData *dt3 = UIImagePNGRepresentation(image3);
+    [fileMutDict setValue:dt1 forKey:@"image1.png"];
+    [fileMutDict setValue:dt2 forKey:@"image2.png"];
+    [fileMutDict setValue:dt3 forKey:@"image3.png"];
+    
+    /** 以下是提交 form 表单的过程 **/
+    
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.timeoutInterval = 30;
     request.HTTPMethod = @"POST";
     
-    NSString *boundary = [[NSUUID UUID] UUIDString];
-    boundary = [boundary stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    NSString *uuidStr = [[NSUUID UUID] UUIDString];
+    NSString *boundary = [uuidStr stringByReplacingOccurrencesOfString:@"-" withString:@""];
     
-    NSString *head = [NSString stringWithFormat:@"multipart/form-data;boundary=%@", boundary];
-    [request setValue:head forHTTPHeaderField:@"Content-Type"];
+    NSString *content_type = [NSString stringWithFormat:@"multipart/form-data;boundary=%@", boundary];
+    [request setValue:content_type forHTTPHeaderField:@"Content-Type"];
     
-    NSString *newLine = @"\r\n";
-    NSMutableData *param_data = [[NSMutableData alloc] init];
+    NSString *line_break = @"\r\n"; // 换行
+    NSString *item_start = [NSString stringWithFormat:@"--%@%@",boundary,line_break]; // form-data 每一项开始标志
+    NSString *body_end = [NSString stringWithFormat:@"%@--%@--%@",line_break,boundary,line_break]; // body 结束标志
     
-    NSString *body1 = [NSString stringWithFormat:@"--%@%@",boundary,newLine];
-    [param_data appendData:[body1 dataUsingEncoding:NSUTF8StringEncoding]];
+    // TEXT 类型数据拼装
+    NSMutableData *textMutData = [[NSMutableData alloc] init];
+    // 遍历 textMutData
+    for (NSString *key in [textMutDict allKeys]) {
+        // 1. 每一项的开始
+        [textMutData appendData:[item_start dataUsingEncoding:NSUTF8StringEncoding]];
+        // 2. 每一项的描述信息
+        NSString *content_disposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=%@",key];
+        [textMutData appendData:[content_disposition dataUsingEncoding:NSUTF8StringEncoding]];
+        // 3. 描述信息和数据之间 换2行
+        [textMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+        [textMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+        // 4. 每一项的数据
+        NSString *value = [textMutDict objectForKey:key];
+        [textMutData appendData:[value dataUsingEncoding:NSUTF8StringEncoding]];
+        // 5. 每一项结束时换行
+        [textMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+    }
     
-    NSString *name = @"file";
-    NSString *filename = @"paihangbang_anniu.png";
-    NSString *content = [NSString stringWithFormat:@"Content-Disposition: form-data; name=%@; filename=%@;",name, filename];
-    NSData *contentData = [content dataUsingEncoding:NSUTF8StringEncoding];
-    [param_data appendData:contentData];
-    [param_data appendData:[newLine dataUsingEncoding:NSUTF8StringEncoding]];
-    [param_data appendData:[newLine dataUsingEncoding:NSUTF8StringEncoding]];
+    // FILE 类型数据拼装
+    NSMutableData *fileMutData = [[NSMutableData alloc] init];
+    // 遍历 textMutData
+    for (NSString *key in [fileMutDict allKeys]) {
+        // 1. 每一项的开始
+        [fileMutData appendData:[item_start dataUsingEncoding:NSUTF8StringEncoding]];
+        // 2. 每一项的描述信息
+        NSString *content_disposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=%@; filename=%@;",key, key];
+        [fileMutData appendData:[content_disposition dataUsingEncoding:NSUTF8StringEncoding]];
+        // 3. 描述信息和数据之间 换2行
+        [fileMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+        // 4. 每一项的数据
+        NSData *value = [fileMutDict objectForKey:key];
+        [fileMutData appendData:value];
+        // 5. 每一项结束时换行
+        [fileMutData appendData:[line_break dataUsingEncoding:NSUTF8StringEncoding]];
+    }
     
-    UIImage *img = [UIImage imageNamed:filename];
-    NSData *imgData = UIImageJPEGRepresentation(img, 1.0);
-    //    UIImagePNGRepresentation(img)
-    [param_data appendData:imgData];
+    // body 二进制数据
+    NSMutableData *bodyMutData = [[NSMutableData alloc] init];
+    [bodyMutData appendData:[textMutData copy]];
+    [bodyMutData appendData:[fileMutData copy]];
     
-    NSString *body2 = [NSString stringWithFormat:@"%@--%@--%@",newLine,boundary,newLine];
-    [param_data appendData:[body2 dataUsingEncoding:NSUTF8StringEncoding]];
+    // body 结束标志
+    [bodyMutData appendData:[body_end dataUsingEncoding:NSUTF8StringEncoding]];
     
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
-    
-    NSURLSessionUploadTask *dataTask = [session uploadTaskWithRequest:request fromData:param_data completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionUploadTask *dataTask = [session uploadTaskWithRequest:request fromData:[bodyMutData copy] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"%@",[error localizedDescription]);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:[error localizedDescription]];
-            });
+            [self showTip:[error localizedDescription]];
         }else {
-            //6.解析服务器返回的数据
-            //NSData转成NSString
-            NSString *resultString = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"%@", resultString);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:resultString];
-            });
+            NSString *result = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+            [self showTip:result];
         }
     }];
     [dataTask resume];
@@ -209,33 +232,42 @@
 - (IBAction)download:(UIButton *)sender {
     [self.show setText:@""];
     NSString *fileName = @"test.png";
-    NSString *urlStr = [NSString stringWithFormat:@"http://jobs8.cn:8090/%@",fileName];
+    NSString *urlStr = [NSString stringWithFormat:@"%@/download/%@",url_prefix,fileName];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"%@",[error localizedDescription]);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.show setText:[error localizedDescription]];
-            });
+            [self showTip:[error localizedDescription]];
         }else {
-            // 创建文件时写入内容
-            NSFileManager *fileManager = [NSFileManager defaultManager];
-            NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
-            NSLog(@"docDir:\n%@",docDir);
-            NSString *filePath = [NSString stringWithFormat:@"%@/%@",docDir,fileName];
-            BOOL suc = [fileManager createFileAtPath:filePath contents:data attributes:nil];
-            dispatch_async(dispatch_get_main_queue(), ^{
+            //            NSLog(@"%@", response);
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+            long status = [httpResponse statusCode];
+            
+            if (status == 200) {
+                // 创建文件时写入内容
+                NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+                NSLog(@"docDir:\n%@",docDir);
+                NSString *filePath = [NSString stringWithFormat:@"%@/%@",docDir,fileName];
+                BOOL suc = [[NSFileManager defaultManager] createFileAtPath:filePath contents:data attributes:nil];
                 if (suc) {
-                    [self.show setText:@"写入数据成功!"];
+                    [self showTip:@"写入数据成功!"];
                 }else{
-                    [self.show setText:@"写入数据失败!"];
+                    [self showTip:@"写入数据失败!"];
                 }
-            });
+            }else {
+                NSString *msg = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                [self showTip:msg];
+            }
         }
     }];
     [dataTask resume];
+}
+
+-(void)showTip:(NSString * _Nonnull)tip {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.show setText:tip];
+    });
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{

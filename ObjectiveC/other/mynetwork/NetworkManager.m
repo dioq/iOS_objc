@@ -47,7 +47,6 @@
     return config;
 }
 
-#pragma mark - get请求
 - (void)getUrl:(NSString *)urlStr success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -66,15 +65,12 @@
     [task resume];
 }
 
-#pragma mark - post 参数是 NSData
-- (void)postUrl:(NSString *)urlStr parameters:(NSData *)params success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+-(void)postUrl:(NSString *)urlStr paramData:(NSData *)params success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     
-    if(params) {
-        request.HTTPBody = params;
-    }
+    request.HTTPBody = params;
     
     //    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig]];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
@@ -89,8 +85,7 @@
     [task resume];
 }
 
-// post 参数是json格式
-- (void)postUrl:(NSString *)urlStr paramJson:(NSDictionary * _Nullable)params success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+-(void)postUrl:(NSString *)urlStr paramDict:(NSDictionary *)params success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
@@ -102,7 +97,7 @@
         return;
     }
     
-    [self postUrl:urlStr parameters:param_data success:^(id  _Nonnull response) {
+    [self postUrl:urlStr paramData:param_data success:^(id  _Nonnull response) {
         NSString *result = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
         success(result);
     } failure:^(NSError * _Nonnull error) {
@@ -175,10 +170,10 @@
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig]];
     NSURLSessionUploadTask *dataTask = [session uploadTaskWithRequest:request fromData:[bodyMutData copy] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"%@",[error localizedDescription]);
+            failure(error);
         }else {
-            NSString *resultString = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"%@", resultString);
+            NSString *result = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+            success(result);
         }
     }];
     [dataTask resume];

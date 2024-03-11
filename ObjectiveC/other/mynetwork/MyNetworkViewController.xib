@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Q-cQ-4mD">
-                    <rect key="frame" x="10" y="53" width="394" height="265"/>
+                    <rect key="frame" x="10" y="53" width="394" height="155"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4i-S0-wPJ">
                             <rect key="frame" x="0.0" y="0.0" width="394" height="45"/>
@@ -35,38 +35,20 @@
                                 <action selector="get:" destination="-1" eventType="touchUpInside" id="usz-Dd-sV1"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwf-oi-zEe">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id3-qJ-HQc">
                             <rect key="frame" x="0.0" y="55" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Download"/>
-                            <connections>
-                                <action selector="download:" destination="-1" eventType="touchUpInside" id="lmd-fw-aJp"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id3-qJ-HQc">
-                            <rect key="frame" x="0.0" y="110" width="394" height="45"/>
-                            <color key="backgroundColor" systemColor="systemGray6Color"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="POST param json"/>
+                            <buttonConfiguration key="configuration" style="plain" title="POST json"/>
                             <connections>
                                 <action selector="post:" destination="-1" eventType="touchUpInside" id="AnL-6Y-6DU"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igL-OX-7D5">
-                            <rect key="frame" x="0.0" y="165" width="394" height="45"/>
-                            <color key="backgroundColor" systemColor="systemGray6Color"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="POST param NSData"/>
-                            <connections>
-                                <action selector="formdataAct:" destination="-1" eventType="touchUpInside" id="YWB-23-Jjk"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Min-cx-nEO">
-                            <rect key="frame" x="0.0" y="220" width="394" height="45"/>
+                            <rect key="frame" x="0.0" y="110" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="submit form-data"/>
+                            <buttonConfiguration key="configuration" style="plain" title="submit form"/>
                             <connections>
                                 <action selector="submit_action:" destination="-1" eventType="touchUpInside" id="z8e-NK-zoj"/>
                             </connections>
@@ -74,7 +56,7 @@
                     </subviews>
                 </stackView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HN7-7E-sLM">
-                    <rect key="frame" x="10" y="328" width="394" height="524"/>
+                    <rect key="frame" x="10" y="218" width="394" height="634"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
