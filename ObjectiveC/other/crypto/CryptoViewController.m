@@ -8,7 +8,7 @@
 
 #import "CryptoViewController.h"
 #import "CryptoUtil.h"
-#import "RSA.h"
+#import "RSAUtil.h"
 #import "AES.h"
 #import "AES256Util.h"
 
@@ -25,18 +25,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     /*
-     生成公钥和私钥的网站:http://web.chacuo.net/netrsakeypair
+     openssl 生成公钥和私钥
+     openssl genrsa -out private_key.pem 1024
+     openssl rsa -in private_key.pem -pubout -out public_key.pem
      **/
-    self.publickKey = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2hpqSwl56BbfWzf652a6gZDwVHuqBFkI3zPN4ywlUNdwiLlCFBb3MPi8OdBdXoafSpwdm8zUfQhK71GcBMPvlhGzQnaRbH6JLGV9U8Y7XVoUMdSFXs7SqahdqMUZ+p+3eeD2anH3nTycVyj7ymLc0YUgvln7xuPHPDRrCv0lXhQIDAQAB";
-    self.privateKey = @"MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBALaGmpLCXnoFt9bN/rnZrqBkPBUe6oEWQjfM83jLCVQ13CIuUIUFvcw+Lw50F1ehp9KnB2bzNR9CErvUZwEw++WEbNCdpFsfoksZX1TxjtdWhQx1IVeztKpqF2oxRn6n7d54PZqcfedPJxXKPvKYtzRhSC+WfvG48c8NGsK/SVeFAgMBAAECgYBAuPRAzCmCLVrmEX+c2WLBvylK9/6BrannbYZ8M8roEH0xpaipssJ9lSNMhb/tNAZ1fQLz75PLtLs93XB1DLCVNbsnikuqufCb58cBsMZ3F19YEjixzkq1uWXvR54OazchRAcEO717caVypwSbo08ybYp3d0NjXMChnOT5pvKB4QJBAOdWge8wAken16ivHdpzU/RJ01SJJcGIVV+Xn7/257sQMinUeMSrt+s/lHnd3+ajz25xZKEYx/kLhG97ZBDj+hkCQQDJ+/REu2OFwGBg2S2sjF+M8krmnr0AKzVYze46N2MXlz4iRxFmHgzPSgSCTPkB3b/dwXGcb42FB8PUYF0QD85NAkEAl0/b+Qjb1OaRhoHT8viQJy7KjXaPPYDg5n+UO8lRVOeJCBczTuBKkhKqGPPo6UCoAsMkYMKGufywiQKaNvoGsQJAIUneAynjCBshhzSj22kzIjaYc5O70HhOjXk7Busz8KJjgiC2VF8le1BWl+b5rv4N7g1AnSihaUhTVQAgtlH0jQJALOHAJe5jlWkBRy7YmYgw98wzDPeHenK3RY5H3jXlrtMGDjCPEiHknRiCjZJjW0I/wJ8vPs7Jlz2CrpYqpIJdFw==";
+    self.publickKey = @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDaCXgeHqPXkv8qCpWFxpHteDn8j0GExQMHowbMzCbdhfysuFkl1DdbsTGT3QPOenlro5D7pn5onZ2doE/5nyMIyPBQ2Dhq/RSsQQQDofTBvA37PaT3rGa4e1Nn1fp5wcBh8RDwT7h2iYg6ndRe02A1bCxDW93OPGaWokSHs+0OUQIDAQAB";
+    self.privateKey = @"MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANoJeB4eo9eS/yoKlYXGke14OfyPQYTFAwejBszMJt2F/Ky4WSXUN1uxMZPdA856eWujkPumfmidnZ2gT/mfIwjI8FDYOGr9FKxBBAOh9MG8Dfs9pPesZrh7U2fV+nnBwGHxEPBPuHaJiDqd1F7TYDVsLENb3c48ZpaiRIez7Q5RAgMBAAECgYBHRP0ca0uG9aeuaFNDrQqaIshhg7oY2gUJhAJ/AuRZWKilFIUfVmTZ9euMt5u87E+wHYEQoPWE4LBai8JYh+n9JDJNdNokqLzVT7WStKbPuNETWYYa2WLf0vsU0LZUe2Wkvdl4UbgjfO2Br6Zvooqz1ot7XLlwrwrqSb1nullDIQJBAP+oQKxN3dh+2MjinsG6G2SaToc4IRcI5+lK4tOVJrH81qhRGWGIUVn25/UDCzROAdEn2o7lrlvgXDEgMKRb3q0CQQDaVE3w4uiyIYx6UZjC9OEYCKtd84/R1qRbH2UavKSpZVN1UlMgwaNYPBX2OwABUpv9HRmRR5nulSyYfHG8pNa1AkEA5jgVRRQ5miNgBEZOwBVfZZCu9oVNBvk2HZcZ+35sggs1Ig0l1fZzi5gT+UbsaAV3DWneHqAmCwZW/sYGB3vTYQJBAMbJkbmtcH+YCkbo+nUv768pXZaKiD1f+H+7Qxwn/Kj7yBR/Y47koCxbcQejyqppo/u/PiNIFUDk9BjW3dwMHi0CQGYGZILNBkKfJQwHK7ARFYhCFT5hzVUgTcE9RsMzFOToEyA9nNq4WgpHwA+QT7jnSQfqhMmXF+wleZfzfsQ4Gn0=";
 }
 
+// RSA 公钥加密 私钥解密 (反过来数学理论上可行,但实际上会降低加密的安全等级)
 - (IBAction)RSAcrypto:(UIButton *)sender {
-    NSString *plaintext = @"Hello Dio Brand";
-    NSString *result = [RSA encryptString:plaintext publicKey:self.publickKey];
-    NSLog(@"Encrypted with public key: %@", result);
-    NSString *decWithPrivKey = [RSA decryptString:result privateKey:self.privateKey];
-    NSLog(@"Decrypted with private key: %@", decWithPrivKey);
+    NSString *plaintext = @"This is a test string for RSA encrypt.";
+    
+    NSData *cipher_data = [RSAUtil encryptData:[plaintext dataUsingEncoding:NSUTF8StringEncoding] publicKey:[CryptoUtil base64Decode:self.publickKey]];
+    NSString *hexStr = [CryptoUtil hexEncode:cipher_data];
+    NSLog(@"cipher:\n%@", hexStr);
+    
+    NSData *plaint_data = [RSAUtil decryptData:cipher_data privateKey:[CryptoUtil base64Decode:self.privateKey]];
+    //    NSLog(@"plaint_data.length:%lu", plaint_data.length);
+    NSString *plaintext2 = [[NSString alloc] initWithData:plaint_data encoding:NSUTF8StringEncoding];
+    NSLog(@"plaintext:\n%@", plaintext2);
 }
 
 - (IBAction)aes256origin:(UIButton *)sender {
@@ -50,7 +58,7 @@
     const size_t keyLength = kCCKeySizeAES256;
     const char key[keyLength] = "by78elrbovb3rncvk9kkwx0byxb70rlo";
     const void *iv  = "ixJ7U9asz9GgGfk7";
-
+    
     // 缓冲区大小
     size_t dataOutAvailable = (strlen(plaintext) / 0x10) * 0x10 + ((strlen(plaintext) % 0x10) ? 1 : 0);
     unsigned char *result1 = (unsigned char *)malloc(dataOutAvailable);
@@ -92,7 +100,7 @@ void decrypt(unsigned char *cipher,size_t len) {
     const size_t keyLength = kCCKeySizeAES256;
     const char key[keyLength] = "by78elrbovb3rncvk9kkwx0byxb70rlo";
     const void *iv  = "ixJ7U9asz9GgGfk7";
-
+    
     size_t dataOutAvailable = len;
     unsigned char *result1 = (unsigned char *)malloc(dataOutAvailable);
     memset(result1, 0, dataOutAvailable);

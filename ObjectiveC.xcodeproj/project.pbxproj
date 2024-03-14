@@ -161,7 +161,7 @@
 		5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE92226F2200094DF79 /* PersonModel.m */; };
 		9321B19E23A26E8C0028B245 /* CryptoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B19C23A26E8C0028B245 /* CryptoViewController.m */; };
 		9321B19F23A26E8C0028B245 /* CryptoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9321B19D23A26E8C0028B245 /* CryptoViewController.xib */; };
-		9321B1A223A270A80028B245 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B1A123A270A80028B245 /* RSA.m */; };
+		9321B1A223A270A80028B245 /* RSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B1A123A270A80028B245 /* RSAUtil.m */; };
 		936DCCB223B0CFC300E38DB5 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936DCCB023B0CFC300E38DB5 /* LabelViewController.m */; };
 		936DCCB323B0CFC300E38DB5 /* LabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */; };
 		93EFF45C23BB3F1300A4BC67 /* Modal1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EFF45A23BB3F1300A4BC67 /* Modal1ViewController.m */; };
@@ -328,8 +328,6 @@
 		245AACBA2A46074700DFA706 /* ObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCUITests.m; sourceTree = "<group>"; };
 		245AACBC2A46074700DFA706 /* ObjectiveCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCUITestsLaunchTests.m; sourceTree = "<group>"; };
 		245AACC92A46078100DFA706 /* ObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTests.m; sourceTree = "<group>"; };
-		246284DD2B95A06500C3342D /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCUITests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCUITests.xctest"; sourceTree = "<absolute>"; };
-		246284DE2B95A06500C3342D /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ObjectiveCTests.xctest; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveCTests.xctest"; sourceTree = "<absolute>"; };
 		2462CCB82B89E30F0059695E /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2476A33E2B33F42A0094CE90 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		2476A33F2B33F42A0094CE90 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
@@ -345,6 +343,8 @@
 		2478B2E62A4083BA0094C0DD /* PasteboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteboardViewController.h; sourceTree = "<group>"; };
 		2478B2E72A4083BA0094C0DD /* PasteboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteboardViewController.m; sourceTree = "<group>"; };
 		2478B2E82A4083BA0094C0DD /* PasteboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasteboardViewController.xib; sourceTree = "<group>"; };
+		2483C3FF2BA2B01200A79F0E /* ObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2483C4002BA2B01200A79F0E /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2490C65B2B563EEA008E81D9 /* ZipUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipUtil.h; sourceTree = "<group>"; };
 		2490C65C2B563EEA008E81D9 /* ZipUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipUtil.m; sourceTree = "<group>"; };
 		24C10FBB2B24A92200F536A8 /* InstallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallViewController.h; sourceTree = "<group>"; };
@@ -561,8 +561,8 @@
 		9321B19B23A26E8C0028B245 /* CryptoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoViewController.h; sourceTree = "<group>"; };
 		9321B19C23A26E8C0028B245 /* CryptoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoViewController.m; sourceTree = "<group>"; };
 		9321B19D23A26E8C0028B245 /* CryptoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoViewController.xib; sourceTree = "<group>"; };
-		9321B1A023A270A80028B245 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
-		9321B1A123A270A80028B245 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		9321B1A023A270A80028B245 /* RSAUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAUtil.h; sourceTree = "<group>"; };
+		9321B1A123A270A80028B245 /* RSAUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAUtil.m; sourceTree = "<group>"; };
 		936DCCAF23B0CFC300E38DB5 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
 		936DCCB023B0CFC300E38DB5 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelViewController.xib; sourceTree = "<group>"; };
@@ -1229,6 +1229,8 @@
 				245AACB92A46074700DFA706 /* ObjectiveCUITests */,
 				245AACC82A46078100DFA706 /* ObjectiveCTests */,
 				2462CCB82B89E30F0059695E /* ObjectiveC.app */,
+				2483C3FF2BA2B01200A79F0E /* ObjectiveCUITests.xctest */,
+				2483C4002BA2B01200A79F0E /* ObjectiveCTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1483,8 +1485,8 @@
 				3AE84E2D29127749007AD544 /* AES.m */,
 				3A72D497291FDA44002A70A1 /* AES256Util.h */,
 				3A72D498291FDA44002A70A1 /* AES256Util.m */,
-				9321B1A023A270A80028B245 /* RSA.h */,
-				9321B1A123A270A80028B245 /* RSA.m */,
+				9321B1A023A270A80028B245 /* RSAUtil.h */,
+				9321B1A123A270A80028B245 /* RSAUtil.m */,
 				9321B19B23A26E8C0028B245 /* CryptoViewController.h */,
 				9321B19C23A26E8C0028B245 /* CryptoViewController.m */,
 				9321B19D23A26E8C0028B245 /* CryptoViewController.xib */,
@@ -2209,7 +2211,7 @@
 			);
 			name = ObjectiveCUITests;
 			productName = ObjectiveCUITests;
-			productReference = 246284DD2B95A06500C3342D /* ObjectiveCUITests.xctest */;
+			productReference = 2483C3FF2BA2B01200A79F0E /* ObjectiveCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		245AACC62A46078100DFA706 /* ObjectiveCTests */ = {
@@ -2227,7 +2229,7 @@
 			);
 			name = ObjectiveCTests;
 			productName = ObjectiveCTests;
-			productReference = 246284DE2B95A06500C3342D /* ObjectiveCTests.xctest */;
+			productReference = 2483C4002BA2B01200A79F0E /* ObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
@@ -2596,7 +2598,7 @@
 				2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */,
 				CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */,
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
-				9321B1A223A270A80028B245 /* RSA.m in Sources */,
+				9321B1A223A270A80028B245 /* RSAUtil.m in Sources */,
 				CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */,
 				3A2F7B472993D11500679555 /* WebViewJSCode2.m in Sources */,
 				CE2EF18922D4446200C09B22 /* BrowerViewController.m in Sources */,

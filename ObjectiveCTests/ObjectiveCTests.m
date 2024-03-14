@@ -25,7 +25,9 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    [UIView alloc];
+    NSString *str = @"30819f300d06092a864886f70d010101050003818d00";
+    NSData *dt = [CryptoUtil hexDecode:str];
+    NSLog(@"================>%lu",dt.length);
 }
 
 -(void)testDataLength {

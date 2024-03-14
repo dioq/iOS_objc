@@ -379,15 +379,14 @@ void keyAndvalue(const void *key, const void *value, void *context)
     NSData *d_tag = [tag dataUsingEncoding:NSUTF8StringEncoding];
     
     NSMutableDictionary *publicKey = [[NSMutableDictionary alloc] init];
-    [publicKey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
-    [publicKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+    [publicKey setObject:(__bridge id)kSecClassKey forKey:(__bridge id)kSecClass];
+    [publicKey setObject:(__bridge id)kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
     [publicKey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
     
-    [publicKey setObject:(__bridge id) kSecAttrKeyClassPublic forKey:(__bridge id)
-     kSecAttrKeyClass];
+    [publicKey setObject:(__bridge id) kSecAttrKeyClassPublic forKey:(__bridge id)kSecAttrKeyClass];
     
-    [publicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
-    [publicKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+    [publicKey setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge id)kSecReturnRef];
+    [publicKey setObject:(__bridge id)kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
     
     SecKeyRef keyRef = nil;
     OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)[publicKey copy], (CFTypeRef *)&keyRef);

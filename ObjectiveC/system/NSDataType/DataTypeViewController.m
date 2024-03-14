@@ -166,6 +166,25 @@
     NSLog(@"%@",dic);
 }
 
+- (IBAction)mutableData_act:(UIButton *)sender {
+    NSString *testStr = @"30819f300d06092a864886f70d010101050003818d0030818902818100b6869a92c25e7a05b7d6cdfeb9d9aea0643c151eea81164237ccf378cb095435dc222e508505bdcc3e2f0e741757a1a7d2a70766f3351f4212bbd4670130fbe5846cd09da45b1fa24b195f54f18ed756850c752157b3b4aa6a176a31467ea7edde783d9a9c7de74f2715ca3ef298b73461482f967ef1b8f1cf0d1ac2bf4957850203010001";
+    NSString *test2Str = @"30818902818100b6869a92c25e7a05b7d6cdfeb9d9aea0643c151eea81164237ccf378cb095435dc222e508505bdcc3e2f0e741757a1a7d2a70766f3351f4212bbd4670130fbe5846cd09da45b1fa24b195f54f18ed756850c752157b3b4aa6a176a31467ea7edde783d9a9c7de74f2715ca3ef298b73461482f967ef1b8f1cf0d1ac2bf4957850203010001";
+    
+    NSData *data1 = [CryptoUtil hexDecode:testStr];
+    NSMutableData *mutData = [data1 mutableCopy];
+    NSLog(@"length:%lu", mutData.length);
+    [mutData replaceBytesInRange:NSMakeRange(0, 22) withBytes:NULL length:0];
+    NSLog(@"length:%lu", mutData.length);
+    
+    NSData *data2 = [mutData copy];
+    NSString *hexStr = [CryptoUtil hexEncode:data2];
+    if ([hexStr isEqual:test2Str]) {
+        NSLog(@"true");
+    }else {
+        NSLog(@"false");
+    }
+}
+
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
     if ([text isEqualToString:@"\n"]) {
         [self.view endEditing:YES];
