@@ -1,8 +1,3 @@
-/*
- @author: ideawu
- @link: https://github.com/ideawu/Objective-C-RSA
-*/
-
 #import "RSA.h"
 #import <Security/Security.h>
 
@@ -53,7 +48,6 @@ static NSData *base64_decode(NSString *str){
 	return([NSData dataWithBytes:&c_key[idx] length:len - idx]);
 }
 
-//credit: http://hg.mozilla.org/services/fx-home/file/tip/Sources/NetworkAndStorage/CryptoUtils.m#l1036
 + (NSData *)stripPrivateKeyHeader:(NSData *)d_key{
 	// Skip ASN.1 private key header
 	if (d_key == nil) return(nil);

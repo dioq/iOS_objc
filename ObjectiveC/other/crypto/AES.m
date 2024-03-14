@@ -48,11 +48,6 @@
     NSMutableData * keyData = [[key dataUsingEncoding: NSUTF8StringEncoding] mutableCopy];
     NSMutableData * ivData = [[iv dataUsingEncoding: NSUTF8StringEncoding] mutableCopy];
     
-#if !__has_feature(objc_arc)
-    [keyData autorelease];
-    [ivData autorelease];
-#endif
-    
     [keyData setLength:keySize];
     [ivData setLength:keySize];
     

@@ -12,6 +12,9 @@
 @implementation CryptoUtil
 
 +(NSString *)base64Encode:(NSData *)data {
+    if (!(data && data.length > 0)) {
+        return nil;
+    }
     NSString *base64Str = [data base64EncodedStringWithOptions:0];
     return base64Str;
 }
@@ -22,8 +25,8 @@
 }
 
 + (NSString *)hexEncode:(NSData * _Nonnull)data {
-    if ([data length] == 0) {
-        return @"";
+    if (!(data && data.length > 0)) {
+        return nil;
     }
     NSMutableString *string = [[NSMutableString alloc] initWithCapacity:[data length]];
     
@@ -43,7 +46,7 @@
 }
 
 + (NSData *)hexDecode:(NSString *)str {
-    if ([str length] == 0) {
+    if (!(str && str.length > 0)) {
         return nil;
     }
     
@@ -70,9 +73,11 @@
     return hexData;
 }
 
-//对string进行md5加密
-+(NSString *)md5:(NSString *)string {
-    const char *cStr = [string UTF8String];
++(NSString *)md5:(NSString *)str {
+    if (!(str && str.length > 0)) {
+        return nil;
+    }
+    const char *cStr = [str UTF8String];
     unsigned char result[16];
     CC_MD5(cStr, (CC_LONG)strlen(cStr), result);
     return [NSString stringWithFormat:
@@ -84,8 +89,11 @@
     ];
 }
 
-+ (NSString*)sha256:(NSString *)string {
-    const char *cStr = [string UTF8String];
++ (NSString*)sha256:(NSString *)str {
+    if (!(str && str.length > 0)) {
+        return nil;
+    }
+    const char *cStr = [str UTF8String];
     uint8_t digest[CC_SHA256_DIGEST_LENGTH];
     CC_SHA256(cStr, (CC_LONG)strlen(cStr), digest);
     

@@ -21,32 +21,42 @@
 
 - (IBAction)typeSwitch:(UIButton *)sender {
     /*
-     有一些数据类型是能够在 Core Foundation Framework 和 Foundation Framework 之间交换使用的。这意味着，对于同一个数据类型，你既可以将其作为参数传入 Core Foundation 函数，也可以将其作为接收者对其发送 Objective-C 消息（即调用ObjC类方法）。这种在 Core Foundation 和 Foundation 之间交换使用数据类型的技术就叫 Toll-Free Bridging.
+     有一些数据类型是能够在 Core Foundation Framework 和 Foundation Framework 之间交换使用的。这意味着,对于同一个数据类型,你既可以将其作为参数传入 Core Foundation 函数,也可以将其作为接收者对其发送 Objective-C 消息(即调用ObjC类方法)。这种在 Core Foundation 和 Foundation 之间交换使用数据类型的技术就叫 Toll-Free Bridging.
      
      三种数据类型转换的形式:
-     __bridge:              只做类型转换，但是不修改对象（内存）管理权；
-     __bridge_retained:     将Objective-C的对象转换为Core Foundation的对象，同时将对象（内存）的管理权交给我们，后续需要使用CFRelease或者相关方法来释放对象
-     __bridge_transfer:     将Core Foundation的对象转换为Objective-C的对象，同时将对象（内存）的管理权交给ARC
+     __bridge:              只做类型转换,不修改对象(内存)管理权
+     __bridge_retained:     将Objective-C的对象转换为Core Foundation的对象,同时将对象(内存)的管理权交给 程序员,后续需要使用CFRelease或者相关方法来释放对象
+     __bridge_transfer:     将Core Foundation的对象转换为Objective-C的对象,同时将对象(内存)的管理权交给ARC
      **/
     
-    //__bridge：NSArray -> CFArrayRef
-    //__bridge不会转换内存管理所有权，ARC仍然具备这个Objective-C对象所有权
+    //__bridge: NSArray -> CFArrayRef
+    //__bridge不会转换内存管理所有权,ARC仍然具备这个Objective-C 对象(内存)管理权
     NSArray *aNSArray = @[@1,@2,@3];
     CFArrayRef aCFArray = (__bridge CFArrayRef)aNSArray;
-    NSLog(@"size of array = %li",CFArrayGetCount(aCFArray));
+    NSLog(@"aCFArray count : %ld",CFArrayGetCount(aCFArray));
     
-    //__bridge_retained：NSArray -> CFArrayRef
-    //__bridge_retained会转换所有权，ARC失去所有权，而且在不使用时，必须释放。
-    NSArray *bNSArray = @[@1,@2,@3];
-    CFArrayRef bCFArray = (__bridge_retained CFArrayRef)bNSArray;
-    CFRelease(bCFArray);
+    //__bridge: CFArrayRef -> NSArray
+    //__bridge 不会转换内存管理所有权,ARC 不会具备 Core Foundation 对象(内存)管理权
+    CFStringRef stringRef[] = {CFSTR("one"), CFSTR("two"), CFSTR("three")};
+    CFArrayRef aCFArrayRef = CFArrayCreate(kCFAllocatorDefault, (void *)stringRef, (CFIndex)3, NULL);
+    NSArray *a2NSArray = (__bridge NSArray *)aCFArrayRef;
+    NSLog(@"a2NSArray:%@",a2NSArray);
+    CFRelease(aCFArrayRef);
     
-    //__bridge_transfer：CFArrayRef -> NSArray
-    // __bridge_transfer 会转换所有权,内存管理交给ARC
-    NSString *values[] = {@"hello", @"world"};
-    CFArrayRef cCFArray = CFArrayCreate(kCFAllocatorDefault,  (void *)values, (CFIndex)2, NULL);
-    NSArray *cNSArray = (__bridge_transfer NSArray*)cCFArray;
-    NSLog(@"%@",cNSArray);
+    
+    //__bridge_retained: NSArray -> CFArrayRef
+    //__bridge_retained会转换所有权,ARC失去所有权,而且在不使用时,必须释放。
+    NSArray *bNSArray = @[@1,@2,@3,@4];
+    CFArrayRef bCFArrayRef = (__bridge_retained CFArrayRef)bNSArray;
+    NSLog(@"bCFArrayRef count : %ld",CFArrayGetCount(bCFArrayRef));
+    CFRelease(bCFArrayRef);
+    
+    //__bridge_transfer: CFArrayRef -> NSArray
+    //__bridge_transfer 会转换所有权,内存管理交给ARC
+    CFStringRef string2Ref[] = {CFSTR("three"), CFSTR("four"), CFSTR("five"), CFSTR("six")};
+    CFArrayRef cCFarrayRef = CFArrayCreate(kCFAllocatorDefault, (void *)string2Ref, (CFIndex)4, NULL);
+    NSArray *cNSArray = (__bridge_transfer NSArray *)cCFarrayRef;
+    NSLog(@"cNSArray:%@",cNSArray);
 }
 
 - (IBAction)cfType:(UIButton *)sender {
@@ -164,10 +174,10 @@
     
     /*
      创建字典
-     keyCallBacks:字典键值的回调，系统预设值kCFTypeDictionaryKeyCallBacks适用于所有CFTypes类型；当KEY是可变类型时，需要保存一个不可变的副本，需要使用kCFCopyStringDictionaryKeyCallBacks；
+     keyCallBacks:字典键值的回调,系统预设值kCFTypeDictionaryKeyCallBacks适用于所有CFTypes类型；当KEY是可变类型时,需要保存一个不可变的副本,需要使用kCFCopyStringDictionaryKeyCallBacks
      valueCallBacks:系统预设值kCFTypeDictionaryValueCallBacks适用于所有CFTypes类型
      */
-    CFDictionaryRef dict = CFDictionaryCreate(CFAllocatorGetDefault(), (const void**)keys, (const void**)values, 2, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
+    CFDictionaryRef dict = CFDictionaryCreate(CFAllocatorGetDefault(), (const void **)keys, (const void **)values, 2, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
     NSLog(@"dict:\n%@",dict);
     
     //获取KEY对应的value
@@ -194,7 +204,7 @@
     
     // 遍历 CFDictionaryRef
     CFTypeRef *keysTypeRef = (CFTypeRef *)malloc(count * sizeof(CFTypeRef));
-    CFTypeRef *valuesTypeRef = (CFTypeRef *) malloc(count * sizeof(CFTypeRef) );
+    CFTypeRef *valuesTypeRef = (CFTypeRef *)malloc(count * sizeof(CFTypeRef));
     CFDictionaryGetKeysAndValues(dict, (const void **)keysTypeRef, (const void **)valuesTypeRef);
     const void **keys2 = (const void **) keysTypeRef;
     const void **values2 = (const void **) valuesTypeRef;
@@ -210,7 +220,7 @@
     CFDictionaryRef dictionaryRef2 = CFDictionaryCreateCopy(kCFAllocatorDefault, dict);
     NSLog(@"dictionaryRef2:\n%@",dictionaryRef2);
     
-    //根据KEY获取value，如果KEY不存在返回false
+    //根据KEY获取value,如果KEY不存在返回false
     CFStringRef value = NULL;
     flag = CFDictionaryGetValueIfPresent(dict, keys[0], (const void **)&value);
     if(flag){
@@ -315,8 +325,8 @@ void keyAndvalue(const void *key, const void *value, void *context)
     
     free(valuesTypeRef);
     free(keysTypeRef);
-//    CFRelease(valuesTypeRef);
-//    CFRelease(keysTypeRef);
+    //    CFRelease(valuesTypeRef);
+    //    CFRelease(keysTypeRef);
     CFRelease(mutDic);
 }
 
@@ -362,6 +372,39 @@ void keyAndvalue(const void *key, const void *value, void *context)
     CFRelease(value);
     CFRelease(muArrayRef2);
     CFRelease(muArrayRef1);
+}
+
+- (IBAction)handle_error_act:(UIButton *)sender {
+    NSString *tag = @"RSAUtil_PubKey";
+    NSData *d_tag = [tag dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSMutableDictionary *publicKey = [[NSMutableDictionary alloc] init];
+    [publicKey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
+    [publicKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+    [publicKey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
+    
+    [publicKey setObject:(__bridge id) kSecAttrKeyClassPublic forKey:(__bridge id)
+     kSecAttrKeyClass];
+    
+    [publicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
+    [publicKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+    
+    SecKeyRef keyRef = nil;
+    OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)[publicKey copy], (CFTypeRef *)&keyRef);
+    //    NSLog(@"keyRef:\n%@", keyRef);
+    if (status != errSecSuccess) { //判断状态
+        NSLog(@"status:%d", status);
+        return;
+    }
+    
+    CFErrorRef errorRef = NULL;
+    CFDataRef dataRef = SecKeyCopyExternalRepresentation(keyRef, &errorRef);
+    if (errorRef != NULL) {
+        NSError *error = (__bridge_transfer NSError *)errorRef;
+        NSLog(@"error NO:%ld des:%@", error.code, [error localizedDescription]);
+    }
+    NSData *data = (__bridge_transfer NSData*)dataRef;
+    NSLog(@"publicKey:%@",[CryptoUtil hexEncode:data]);
 }
 
 @end

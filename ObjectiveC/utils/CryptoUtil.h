@@ -22,8 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 16进制字符串 进行解码
 + (NSData *)hexDecode:(NSString * _Nonnull)str;
 
-+(NSString *)md5:(NSString * _Nonnull)string;
-+(NSString*)sha256:(NSString * _Nonnull)string;
++(NSString *)md5:(NSString * _Nonnull)str;
++(NSString*)sha256:(NSString * _Nonnull)str;
 
 @end
 
