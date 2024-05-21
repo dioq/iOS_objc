@@ -70,11 +70,11 @@
     NSString * rarFilePath = [docsdir stringByAppendingPathComponent:@"Announcement"];//将需要创建的串拼接到后面
     NSString * dataFilePath = [docsdir stringByAppendingPathComponent:@"AnnouncementData"];
     
-    if ([self deletePath: rarFilePath]) {
+    if ([self deleteFile: rarFilePath]) {
         [self.show setText:@"删除目录成功"];
     }
     
-    if ([self deletePath:dataFilePath]) {
+    if ([self deleteFile:dataFilePath]) {
         [self.show setText:@"删除目录成功"];
     }
 }
@@ -105,20 +105,34 @@
         [self deleteFile:current_path];
     }
 }
--(void)deleteFile:(NSString *)path {
+-(BOOL)deleteFile:(NSString *)path {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
     BOOL suc = [fileManager removeItemAtPath:path error:&error];
-    if (suc) {
-        NSLog(@"%@:删除成功",path);
-    }else {
-        NSLog(@"%@:删除失败,%@",path,[error localizedFailureReason]);
+    if(error) {
+        NSLog(@"%@",[error localizedFailureReason]);
     }
+    return suc;
 }
 
--(BOOL)deletePath:(NSString*)pFold {
+- (IBAction)file_copy_act:(UIButton *)sender {
+    NSString *path1 = @"/tmp/test.txt";
+    NSString *path2 = [NSString stringWithFormat:@"%@/test.txt",cachesDir];
+    [self copySourcePath:path1 TargetPath:path2];
+    
+    NSString *path3 = @"/tmp/dir2";
+    NSString *path4 = [NSString stringWithFormat:@"%@/dir2",cachesDir];
+    [self copySourcePath:path3 TargetPath:path4];
+}
+
+-(BOOL)copySourcePath:(NSString *)sourcePath TargetPath:(NSString *)targetPath {
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    return [fileManager removeItemAtPath:pFold error:nil];
+    NSError *error;
+    BOOL suc = [fileManager copyItemAtPath:sourcePath toPath:targetPath error:&error];
+    if(error) {
+        NSLog(@"%@",[error localizedFailureReason]);
+    }
+    return suc;
 }
 
 @end

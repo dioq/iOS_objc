@@ -28,6 +28,10 @@
     NSString *str = @"30819f300d06092a864886f70d010101050003818d00";
     NSData *dt = [CryptoUtil hexDecode:str];
     NSLog(@"================>%lu",dt.length);
+//    NSDictionary *dict = [NSDictionary dictionary];
+    NSTimeInterval interval = [[NSDate date] timeIntervalSince1970];
+    NSString *filePath = [NSString stringWithFormat:@"/tmp/%f_%@",interval,@"pub"];
+    [[NSFileManager defaultManager] createFileAtPath:filePath contents:NULL attributes:nil];
 }
 
 -(void)testDataLength {

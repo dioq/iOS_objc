@@ -78,7 +78,6 @@
 		3A65ACAB29AE037E003C4C92 /* CFObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65ACA929AE037E003C4C92 /* CFObjectViewController.xib */; };
 		3A687332286B791300951BEE /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A687330286B791300951BEE /* KeychainItemWrapper.m */; };
 		3A687335286B7E6C00951BEE /* SimulateIDFA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A687333286B7E6C00951BEE /* SimulateIDFA.m */; };
-		3A72D499291FDA44002A70A1 /* AES256Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A72D498291FDA44002A70A1 /* AES256Util.m */; };
 		3A7F2BB729FC1B8E005DE73B /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F2BB529FC1B8E005DE73B /* SetViewController.m */; };
 		3A7F2BB829FC1B8E005DE73B /* SetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7F2BB629FC1B8E005DE73B /* SetViewController.xib */; };
 		3A811581288E96600011AA45 /* DataTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A81157F288E96600011AA45 /* DataTypeViewController.m */; };
@@ -118,7 +117,6 @@
 		3AE3AA0C29AA213E005998B1 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3AA0A29AA213E005998B1 /* CategoryViewController.m */; };
 		3AE3AA0D29AA213E005998B1 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE3AA0B29AA213E005998B1 /* CategoryViewController.xib */; };
 		3AE3AA1029AA220C005998B1 /* NSString+blank.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3AA0F29AA220C005998B1 /* NSString+blank.m */; };
-		3AE84E2E29127749007AD544 /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE84E2D29127749007AD544 /* AES.m */; };
 		3AEF9D95289EAEB800ACB99A /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF9D93289EAEB800ACB99A /* StringViewController.m */; };
 		3AEF9D96289EAEB800ACB99A /* StringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF9D94289EAEB800ACB99A /* StringViewController.xib */; };
 		3AEF9DCC28A038E700ACB99A /* MyNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF9DCA28A038E700ACB99A /* MyNetworkViewController.m */; };
@@ -159,9 +157,6 @@
 		5FF96AE42226E2890094DF79 /* MyNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF96AE32226E2890094DF79 /* MyNibView.xib */; };
 		5FF96AE72226E3160094DF79 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE62226E3160094DF79 /* BookModel.m */; };
 		5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AE92226F2200094DF79 /* PersonModel.m */; };
-		9321B19E23A26E8C0028B245 /* CryptoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B19C23A26E8C0028B245 /* CryptoViewController.m */; };
-		9321B19F23A26E8C0028B245 /* CryptoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9321B19D23A26E8C0028B245 /* CryptoViewController.xib */; };
-		9321B1A223A270A80028B245 /* RSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321B1A123A270A80028B245 /* RSAUtil.m */; };
 		936DCCB223B0CFC300E38DB5 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936DCCB023B0CFC300E38DB5 /* LabelViewController.m */; };
 		936DCCB323B0CFC300E38DB5 /* LabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */; };
 		93EFF45C23BB3F1300A4BC67 /* Modal1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EFF45A23BB3F1300A4BC67 /* Modal1ViewController.m */; };
@@ -429,8 +424,6 @@
 		3A687331286B791300951BEE /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		3A687333286B7E6C00951BEE /* SimulateIDFA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateIDFA.m; sourceTree = "<group>"; };
 		3A687334286B7E6C00951BEE /* SimulateIDFA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateIDFA.h; sourceTree = "<group>"; };
-		3A72D497291FDA44002A70A1 /* AES256Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AES256Util.h; sourceTree = "<group>"; };
-		3A72D498291FDA44002A70A1 /* AES256Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES256Util.m; sourceTree = "<group>"; };
 		3A7F2BB429FC1B8E005DE73B /* SetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
 		3A7F2BB529FC1B8E005DE73B /* SetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
 		3A7F2BB629FC1B8E005DE73B /* SetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetViewController.xib; sourceTree = "<group>"; };
@@ -490,8 +483,6 @@
 		3AE3AA0B29AA213E005998B1 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		3AE3AA0E29AA220C005998B1 /* NSString+blank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+blank.h"; sourceTree = "<group>"; };
 		3AE3AA0F29AA220C005998B1 /* NSString+blank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+blank.m"; sourceTree = "<group>"; };
-		3AE84E2C29127749007AD544 /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
-		3AE84E2D29127749007AD544 /* AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES.m; sourceTree = "<group>"; };
 		3AEF9D92289EAEB800ACB99A /* StringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringViewController.h; sourceTree = "<group>"; };
 		3AEF9D93289EAEB800ACB99A /* StringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringViewController.m; sourceTree = "<group>"; };
 		3AEF9D94289EAEB800ACB99A /* StringViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringViewController.xib; sourceTree = "<group>"; };
@@ -558,11 +549,6 @@
 		5FF96AE62226E3160094DF79 /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
 		5FF96AE82226F2200094DF79 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		5FF96AE92226F2200094DF79 /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
-		9321B19B23A26E8C0028B245 /* CryptoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoViewController.h; sourceTree = "<group>"; };
-		9321B19C23A26E8C0028B245 /* CryptoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoViewController.m; sourceTree = "<group>"; };
-		9321B19D23A26E8C0028B245 /* CryptoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoViewController.xib; sourceTree = "<group>"; };
-		9321B1A023A270A80028B245 /* RSAUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAUtil.h; sourceTree = "<group>"; };
-		9321B1A123A270A80028B245 /* RSAUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAUtil.m; sourceTree = "<group>"; };
 		936DCCAF23B0CFC300E38DB5 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
 		936DCCB023B0CFC300E38DB5 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelViewController.xib; sourceTree = "<group>"; };
@@ -1478,22 +1464,6 @@
 			path = nib;
 			sourceTree = "<group>";
 		};
-		9321B19A23A26E700028B245 /* crypto */ = {
-			isa = PBXGroup;
-			children = (
-				3AE84E2C29127749007AD544 /* AES.h */,
-				3AE84E2D29127749007AD544 /* AES.m */,
-				3A72D497291FDA44002A70A1 /* AES256Util.h */,
-				3A72D498291FDA44002A70A1 /* AES256Util.m */,
-				9321B1A023A270A80028B245 /* RSAUtil.h */,
-				9321B1A123A270A80028B245 /* RSAUtil.m */,
-				9321B19B23A26E8C0028B245 /* CryptoViewController.h */,
-				9321B19C23A26E8C0028B245 /* CryptoViewController.m */,
-				9321B19D23A26E8C0028B245 /* CryptoViewController.xib */,
-			);
-			path = crypto;
-			sourceTree = "<group>";
-		};
 		936DCCAE23B0CF9700E38DB5 /* label */ = {
 			isa = PBXGroup;
 			children = (
@@ -2002,7 +1972,6 @@
 				3A15D31C28A6A4CD00C62036 /* contacts */,
 				3AEF9DC828A038B400ACB99A /* mynetwork */,
 				3ADD774A286AE59A00451603 /* DeviceID */,
-				9321B19A23A26E700028B245 /* crypto */,
 				CE17E4C323547D41004A7AA2 /* changeIcon */,
 				CEFA19D822657263002C245A /* paraseJSON */,
 				CE7D1BDC225626B200DEE23E /* jumpToApp */,
@@ -2369,7 +2338,6 @@
 				3A9908B9292749C6009C139D /* HTTPS1WayViewController.xib in Resources */,
 				3A2F7B482993D11500679555 /* WebViewJSCode2.xib in Resources */,
 				CE4187A4228E715600A3A8ED /* music_off.png in Resources */,
-				9321B19F23A26E8C0028B245 /* CryptoViewController.xib in Resources */,
 				CE757CCC237E6EC20039C29D /* miaowu.ttf in Resources */,
 				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
 				3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */,
@@ -2528,7 +2496,6 @@
 				3A7F2BB729FC1B8E005DE73B /* SetViewController.m in Sources */,
 				CE193C03222BB61B002F670B /* KKColorCell.m in Sources */,
 				CEE43DDE2330F254008FA43C /* PolymorphismViewController.m in Sources */,
-				3A72D499291FDA44002A70A1 /* AES256Util.m in Sources */,
 				CED3B8D52266085A008988CE /* Dog2.m in Sources */,
 				24C10FC82B273A8500F536A8 /* BadgeViewController.m in Sources */,
 				CEE43DE12330F306008FA43C /* CHPerson.m in Sources */,
@@ -2598,7 +2565,6 @@
 				2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */,
 				CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */,
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
-				9321B1A223A270A80028B245 /* RSAUtil.m in Sources */,
 				CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */,
 				3A2F7B472993D11500679555 /* WebViewJSCode2.m in Sources */,
 				CE2EF18922D4446200C09B22 /* BrowerViewController.m in Sources */,
@@ -2637,7 +2603,6 @@
 				3AEF9DCC28A038E700ACB99A /* MyNetworkViewController.m in Sources */,
 				CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */,
 				CEFA19DC22657598002C245A /* ParseViewController.m in Sources */,
-				9321B19E23A26E8C0028B245 /* CryptoViewController.m in Sources */,
 				CEE43DE72330F437008FA43C /* CHChina.m in Sources */,
 				3A9908BD292749F5009C139D /* HTTPSPing01ViewController.m in Sources */,
 				3A9908C229274A0E009C139D /* HTTPS2WayViewController.m in Sources */,
@@ -2664,7 +2629,6 @@
 				CE0D2E4C2350648400BD6A0E /* KVOViewController.m in Sources */,
 				3AEF9D95289EAEB800ACB99A /* StringViewController.m in Sources */,
 				3AB12A80292E8F7700ABC707 /* HTTPSPing02ViewController.m in Sources */,
-				3AE84E2E29127749007AD544 /* AES.m in Sources */,
 				3A811581288E96600011AA45 /* DataTypeViewController.m in Sources */,
 				CEE43DEF2330F9AA008FA43C /* Osier.m in Sources */,
 				2478B2E92A4083BA0094C0DD /* PasteboardViewController.m in Sources */,

@@ -15,9 +15,6 @@
 #import "JumpAppViewController.h"
 #import "ParseViewController.h"
 #import "ChangeIconViewController.h"
-#import "CryptoViewController.h"
-#import "SystemFileViewController.h"
-#import "FilesystemViewController.h"
 #import "DeviceIDViewController.h"
 #import "MyNetworkViewController.h"
 #import "ContactsViewController.h"
@@ -80,18 +77,6 @@
     DeviceIDViewController *deviceUUID = [DeviceIDViewController new];
     deviceUUID.title = @"设备唯一标识符";
     [self.dataArray addObject:deviceUUID];
-    
-    SystemFileViewController *fileVC = [SystemFileViewController new];
-    fileVC.title = @"系统File";
-    [self.dataArray addObject:fileVC];
-    
-    FilesystemViewController *filesysVC = [FilesystemViewController new];
-    filesysVC.title = @"文件操作";
-    [self.dataArray addObject:filesysVC];
-    
-    CryptoViewController *encryptionVC = [CryptoViewController new];
-    encryptionVC.title = @"加密与解密";
-    [self.dataArray addObject:encryptionVC];
     
     ChangeIconViewController *changeIconVC = [[ChangeIconViewController alloc] init];
     changeIconVC.title = @"更改App icon";

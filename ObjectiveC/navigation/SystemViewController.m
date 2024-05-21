@@ -35,6 +35,8 @@
 #import "PlistViewController.h"
 #import "PasteboardViewController.h"
 #import "SandboxViewController.h"
+#import "SystemFileViewController.h"
+#import "FilesystemViewController.h"
 
 @interface SystemViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -51,6 +53,14 @@
     SandboxViewController *sandboxVC = [SandboxViewController new];
     sandboxVC.title = @"Sandbox";
     [self.dataArray addObject:sandboxVC];
+    
+    SystemFileViewController *fileVC = [SystemFileViewController new];
+    fileVC.title = @"系统File";
+    [self.dataArray addObject:fileVC];
+    
+    FilesystemViewController *filesysVC = [FilesystemViewController new];
+    filesysVC.title = @"文件操作";
+    [self.dataArray addObject:filesysVC];
     
     PasteboardViewController *pasteboardVC = [PasteboardViewController new];
     pasteboardVC.title = @"Pasteboard";

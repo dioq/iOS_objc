@@ -89,7 +89,7 @@
     NSError *error;
     [testStr writeToFile:_filePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
     if (error) {
-        NSLog(@"%@",error);
+        NSLog(@"%@",[error localizedFailureReason]);
         [_show setText:[error localizedFailureReason]];
     }
     [_show setText:@"数据写入成功"];
