@@ -32,11 +32,10 @@
     XCUIApplication *app = [[XCUIApplication alloc] init];
     [app launch];
 
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    NSString *IDFV = @"0";
-    if([IDFV isEqual:@"0"]) {
-        
-    }
+    NSString *filename = @"aaa.bbb.ccc.json";
+    NSLog(@"filename:%@",filename);
+    NSString *agrp = [filename substringToIndex:filename.length - 5];//[filename stringByDeletingLastPathComponent];
+    NSLog(@"agrp:%@",agrp);
 }
 
 - (void)testLaunchPerformance {

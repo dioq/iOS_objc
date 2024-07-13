@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
 }
 
 - (IBAction)showAlertAct:(UIButton *)sender {
@@ -59,6 +58,10 @@
 
 - (IBAction)done:(UIButton *)sender {
     [[MyAlertUtil sharedManager] disappear];
+}
+
+- (IBAction)disapper_after_time_action:(UIButton *)sender {
+    [[MyAlertUtil sharedManager] disappearAfter:5];
 }
 
 - (IBAction)showSometime:(UIButton *)sender {

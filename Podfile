@@ -10,7 +10,7 @@ target 'ObjectiveC' do
   # Pods for ObjectiveC
   pod 'Masonry', '1.1.0'
   pod 'SDAutoLayout', '2.2.1'
-  pod 'MBProgressHUD', '1.1.0'
+  pod 'MBProgressHUD', '~> 1.2.0'
   pod 'AFNetworking', '3.2.1'
   pod 'Color-Picker-for-iOS', '2.0'
   pod 'lottie-ios', '2.5.0'
@@ -18,5 +18,6 @@ target 'ObjectiveC' do
   pod 'MJRefresh', '3.2.0'
   pod 'MMKV', '~> 1.2.14'
   pod 'Protobuf', '~> 3.23.3'
+  pod 'SSZipArchive'
   
 end

@@ -55,7 +55,7 @@
     [self.dataArray addObject:compressVC];
     
     MyAlertViewController *alertVC = [MyAlertViewController new];
-    alertVC.title = @"自定义提示框";
+    alertVC.title = @"自定义加载等待框";
     [self.dataArray addObject:alertVC];
     
     RegularViewController *regularVC = [RegularViewController new];

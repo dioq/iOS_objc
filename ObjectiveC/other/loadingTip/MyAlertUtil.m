@@ -7,7 +7,6 @@
 //
 
 #import "MyAlertUtil.h"
-#import <UIKit/UIKit.h>
 
 @interface MyAlertUtil()
 
@@ -22,7 +21,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         staticInstance = [[super allocWithZone:NULL] init];
-        //        staticInstance.somepro = [staticInstance getSomepro];
     });
     return staticInstance;
 }
@@ -76,6 +74,12 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.cover.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];// 删除所有子视图
         [self.cover removeFromSuperview];
+    });
+}
+
+-(void)disappearAfter:(float)duration {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, duration * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self disappear];
     });
 }
 

@@ -6,7 +6,7 @@
 //  Copyright © 2023 my. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)showTip:(NSString * _Nonnull)tip;
 -(void)disappear;
+-(void)disappearAfter:(float)duration;
 -(void)showTip:(NSString * _Nonnull)tip duration:(float)duration;
 
 @end

@@ -28,16 +28,31 @@
     NSString *str = @"30819f300d06092a864886f70d010101050003818d00";
     NSData *dt = [CryptoUtil hexDecode:str];
     NSLog(@"================>%lu",dt.length);
-//    NSDictionary *dict = [NSDictionary dictionary];
+    //    NSDictionary *dict = [NSDictionary dictionary];
     NSTimeInterval interval = [[NSDate date] timeIntervalSince1970];
     NSString *filePath = [NSString stringWithFormat:@"/tmp/%f_%@",interval,@"pub"];
     [[NSFileManager defaultManager] createFileAtPath:filePath contents:NULL attributes:nil];
 }
 
 -(void)testDataLength {
-    NSString *str = @"a";
-    NSData *dt = [str dataUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"length:%lu",dt.length);
+    //    NSMutableArray
+    //    NSDictionary *dict = [[NSDictionary alloc] init];
+    NSMutableDictionary *mutDict = [[NSMutableDictionary alloc] init];
+    [mutDict setValue:@"AAA" forKey:@"aaa"];
+    NSError *error;
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[mutDict copy] requiringSecureCoding:YES error:&error];
+    if (error) {
+        NSLog(@"%@",[error localizedFailureReason]);
+        return;
+    }
+    
+    NSString *filePath = @"/tmp/test.plist";
+    BOOL suc = [[NSFileManager defaultManager] createFileAtPath:filePath contents:data attributes:nil];
+    if (suc) {
+        NSLog(@"写入数据成功!");
+    }else{
+        NSLog(@"写入数据失败!");
+    }
 }
 
 -(void)testSha256 {

@@ -12,7 +12,6 @@
 #import "GCDViewController.h"
 #import "ThreadViewController.h"
 #import "DelegateViewController.h"
-#import "DeviceViewController.h"
 #import "NSURLSessionVC.h"
 #import "PolymorphismViewController.h"
 #import "KVOViewController.h"
@@ -145,10 +144,6 @@
     PolymorphismViewController *polyVC = [PolymorphismViewController new];
     polyVC.title = @"多态";
     [self.dataArray addObject:polyVC];
-    
-    DeviceViewController *devVC = [DeviceViewController new];
-    devVC.title = @"设备信息";
-    [self.dataArray addObject:devVC];
     
     DelegateViewController *delegateVC = [DelegateViewController new];
     delegateVC.title = @"delegate";
