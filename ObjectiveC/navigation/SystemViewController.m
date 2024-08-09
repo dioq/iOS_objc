@@ -34,8 +34,8 @@
 #import "PlistViewController.h"
 #import "PasteboardViewController.h"
 #import "SandboxViewController.h"
-#import "SystemFileViewController.h"
-#import "FilesystemViewController.h"
+#import "DocumentPickerVC.h"
+#import "FTPViewController.h"
 
 @interface SystemViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -49,17 +49,17 @@
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
     
+    FTPViewController *ftpVC = [FTPViewController new];
+    ftpVC.title = @"ftp 传输文件";
+    [self.dataArray addObject:ftpVC];
+    
     SandboxViewController *sandboxVC = [SandboxViewController new];
     sandboxVC.title = @"Sandbox";
     [self.dataArray addObject:sandboxVC];
     
-    SystemFileViewController *fileVC = [SystemFileViewController new];
-    fileVC.title = @"系统File";
-    [self.dataArray addObject:fileVC];
-    
-    FilesystemViewController *filesysVC = [FilesystemViewController new];
-    filesysVC.title = @"文件操作";
-    [self.dataArray addObject:filesysVC];
+    DocumentPickerVC *documentPickerVC = [DocumentPickerVC new];
+    documentPickerVC.title = @"UIDocumentPickerViewController";
+    [self.dataArray addObject:documentPickerVC];
     
     PasteboardViewController *pasteboardVC = [PasteboardViewController new];
     pasteboardVC.title = @"Pasteboard";

@@ -24,14 +24,32 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    NSString *str = @"30819f300d06092a864886f70d010101050003818d00";
-    NSData *dt = [CryptoUtil hexDecode:str];
-    NSLog(@"================>%lu",dt.length);
-    //    NSDictionary *dict = [NSDictionary dictionary];
-    NSTimeInterval interval = [[NSDate date] timeIntervalSince1970];
-    NSString *filePath = [NSString stringWithFormat:@"/tmp/%f_%@",interval,@"pub"];
-    [[NSFileManager defaultManager] createFileAtPath:filePath contents:NULL attributes:nil];
+    NSError *error;
+    
+    NSUUID *uuid = [NSUUID UUID];
+    NSString *uuidStr = [uuid UUIDString];
+    NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@.txt",docDir,uuidStr];
+    NSLog(@"filePath:%@",filePath);
+    NSDate *date = [NSDate date];
+    NSLog(@"date = %@\n",date);
+
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeZone:[NSTimeZone defaultTimeZone]];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd aHH:mm:ss"];
+    NSString *current_time_str = [dateFormatter stringFromDate:date];
+    NSLog(@"%@",current_time_str);
+    
+    [current_time_str writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    if (error) {
+        NSLog(@"%@",[error localizedFailureReason]);
+    }
+    NSLog(@"log ---> injected code is running!");
+}
+
+-(void)test_inject {
+    NSLog(@"log ---> injected code is running!");
 }
 
 -(void)testDataLength {

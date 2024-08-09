@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+            <title>UTIs苹果官方的文件扩展名全集</title>
+    </head>
+    
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Identifier (Constant) 文件类型</th>
+                    <th>Conforms to</th>
+                    <th>Tags</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>public.item (kUTTypeItem)</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for the physical hierarchy.</td>
+                </tr>
+                <tr>
+                    <td>public.content (kUTTypeContent)</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for all document content.</td>
+                </tr>
+                <tr>
+                    <td>public.composite-content (kUTTypeCompositeContent)</td>
+                    <td>public.content</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for mixed content. For example, a PDF file contains both text and special formatting data.
+                    </td>
+                </tr>
+                <tr>
+                    <td>public.data (kUTTypeData)</td>
+                    <td>public.item</td>
+                    <td>&nbsp;</td>
+                    <td>Base physical type for byte streams (flat files, pasteboard data, and so on).</td>
+                </tr>
+                <tr>
+                    <td>public.database</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Base functional type for databases.</td>
+                </tr>
+                <tr>
+                    <td>public.calendar-event</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Base functional type for scheduled events.</td>
+                </tr>
+                <tr>
+                    <td>public.message (kUTTypeMessage)</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for messages (email, IM, and so on).</td>
+                </tr>
+                <tr>
+                    <td>public.presentation</td>
+                    <td>public.composite-content</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for presentations.</td>
+                </tr>
+                <tr>
+                    <td>public.contact (kUTTypeContact)</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for contact information.</td>
+                </tr>
+                <tr>
+                    <td>public.archive (kUTTypeArchive)</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for an archive of files and directories.</td>
+                </tr>
+                <tr>
+                    <td>public.disk-image (kUTTypeDiskImage)</td>
+                    <td>public.archive</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for items mountable as a volume.</td>
+                </tr>
+                <tr>
+                    <td>public.text (kUTTypeText)</td>
+                    <td>public.content, public.data</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for all text, including text with markup information (HTML, RTF, and so on).</td>
+                </tr>
+                <tr>
+                    <td>public.plain-text (kUTTypePlainText)</td>
+                    <td>public.text</td>
+                    <td>.txt, text/plain</td>
+                    <td>Text of unspecified encoding, with no markup. Equivalent to the MIME type text/plain</td>
+                </tr>
+                <tr>
+                    <td>public.utf8-plain-text (kUTTypeUTF8PlainText)</td>
+                    <td>public.plain-text</td>
+                    <td>‘utf8’, NSStringPBoardType</td>
+                    <td>Unicode-8</td>
+                </tr>
+                <tr>
+                    <td>public.utf16-external-plain-&ZeroWidthSpace;text (kUTTypeUTF16ExternalPlain&ZeroWidthSpace;Text)
+                    </td>
+                    <td>public.plain-text</td>
+                    <td>‘ut16’</td>
+                    <td>Unicode-16 with byte-order mark (BOM), or if BOM is not present, an external representation byte
+                        order (big-endian).</td>
+                </tr>
+                <tr>
+                    <td>public.utf16-plain-text (kUTTypeUTF16PlainText)</td>
+                    <td>public.plain-text</td>
+                    <td>‘utxt’</td>
+                    <td>Unicode-16, native byte order, with an optional byte-order mark (BOM).</td>
+                </tr>
+                <tr>
+                    <td>com.apple.traditional-mac-&ZeroWidthSpace;plain-text</td>
+                    <td>public.plain-text</td>
+                    <td>‘TEXT’</td>
+                    <td>Classic Mac OS text.</td>
+                </tr>
+                <tr>
+                    <td>public.rtf (kUTTypeRTF)</td>
+                    <td>public.text</td>
+                    <td>‘RTF ‘, .rtf, text/rtf, NeXT Rich Text Format 1.0 pasteboard type, NSRTFPBoardType</td>
+                    <td>Rich Text.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.ink.inktext (kUTTypeInkText)</td>
+                    <td>public.data</td>
+                    <td>&nbsp;</td>
+                    <td>Opaque InkText data.</td>
+                </tr>
+                <tr>
+                    <td>public.html (kUTTypeHTML)</td>
+                    <td>public.text</td>
+                    <td>‘HTML’, .html, .htm, text/html, Apple HTML pasteboard type</td>
+                    <td>HTML text.</td>
+                </tr>
+                <tr>
+                    <td>public.xml (kUTTypeXML)</td>
+                    <td>public.text</td>
+                    <td>.xml, text/xml</td>
+                    <td>XML text.</td>
+                </tr>
+                <tr>
+                    <td>public.source-code (kUTTypeSourceCode)</td>
+                    <td>public.plain-text</td>
+                    <td>&nbsp;</td>
+                    <td>Generic source code.</td>
+                </tr>
+                <tr>
+                    <td>public.c-source (kUTTypeCSource)</td>
+                    <td>public.source-code</td>
+                    <td>.c</td>
+                    <td>C source code.</td>
+                </tr>
+                <tr>
+                    <td>public.objective-c-source (kUTTypeObjectiveCSource)</td>
+                    <td>public.source-code</td>
+                    <td>.m</td>
+                    <td>Objective-C source code.</td>
+                </tr>
+                <tr>
+                    <td>public.c-plus-plus-source (kUTTypeCPlusPlusSource)</td>
+                    <td>public.source-code</td>
+                    <td>.cp, .cpp, .c++, .cc, .cxx</td>
+                    <td>C++ source code.</td>
+                </tr>
+                <tr>
+                    <td>public.objective-c-plus-&ZeroWidthSpace;plus-source
+                        (kUTTypeObjectiveC&ZeroWidthSpace;PlusPlusSource)</td>
+                    <td>public.source-code</td>
+                    <td>.mm</td>
+                    <td>Objective-C++ source code.</td>
+                </tr>
+                <tr>
+                    <td>public.c-header (kUTTypeCHeader)</td>
+                    <td>public.source-code</td>
+                    <td>.h</td>
+                    <td>C header file.</td>
+                </tr>
+                <tr>
+                    <td>public.c-plus-plus-header (kUTTypeCPlusPlusHeader)</td>
+                    <td>public.source-code</td>
+                    <td>.hpp, .h++ , .hxx</td>
+                    <td>C++ header file.</td>
+                </tr>
+                <tr>
+                    <td>com.sun.java-source (kUTTypeJavaSource)</td>
+                    <td>public.source-code</td>
+                    <td>.java, .jav</td>
+                    <td>Java source code</td>
+                </tr>
+                <tr>
+                    <td>public.script</td>
+                    <td>public.source-code</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for scripting language source code.</td>
+                </tr>
+                <tr>
+                    <td>public.assembly-source</td>
+                    <td>public.source-code</td>
+                    <td>.s</td>
+                    <td>Assembly language source code.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.rez-source</td>
+                    <td>public.source-code</td>
+                    <td>.r</td>
+                    <td>Rez source code.</td>
+                </tr>
+                <tr>
+                    <td>public.mig-source</td>
+                    <td>public.source-code</td>
+                    <td>.defs, .mig</td>
+                    <td>Mig definition source code.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.symbol-export</td>
+                    <td>public.source-code</td>
+                    <td>.exp</td>
+                    <td>Symbol export list.</td>
+                </tr>
+                <tr>
+                    <td>com.netscape.javascript-&ZeroWidthSpace;source</td>
+                    <td>public.source-code, public.executable</td>
+                    <td>.js, .jscript, .javascript, text/javascript</td>
+                    <td>JavaScript.</td>
+                </tr>
+                <tr>
+                    <td>public.shell-script</td>
+                    <td>public.script</td>
+                    <td>.sh, .command</td>
+                    <td>Shell script.</td>
+                </tr>
+                <tr>
+                    <td>public.csh-script</td>
+                    <td>public.shell-script</td>
+                    <td>.csh</td>
+                    <td>C-shell script.</td>
+                </tr>
+                <tr>
+                    <td>public.perl-script</td>
+                    <td>public.shell-script</td>
+                    <td>.pl, .pm, text/x-perl-script</td>
+                    <td>Perl script.</td>
+                </tr>
+                <tr>
+                    <td>public.python-script</td>
+                    <td>public.shell-script</td>
+                    <td>.py, text/x-python-script</td>
+                    <td>Python script.</td>
+                </tr>
+                <tr>
+                    <td>public.ruby-script</td>
+                    <td>public.shell-script</td>
+                    <td>.rb, .rbw, text/ruby-script</td>
+                    <td>Ruby script.</td>
+                </tr>
+                <tr>
+                    <td>public.php-script</td>
+                    <td>public.shell-script</td>
+                    <td>.php, .php3, .php4, .ph3, .ph4, .phtml, text/x-php-script, text/php, application/php</td>
+                    <td>PHP script.</td>
+                </tr>
+                <tr>
+                    <td>com.sun.java-web-start</td>
+                    <td>public.xml</td>
+                    <td>.jnlp, application/x-java, jnlp-file, application/jnlp</td>
+                    <td>Java web start.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.applescript.text</td>
+                    <td>public.script</td>
+                    <td>.applescript</td>
+                    <td>AppleScript text.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.applescript.&ZeroWidthSpace;script</td>
+                    <td>public.data</td>
+                    <td>.scpt, ‘osas’</td>
+                    <td>AppleScript.</td>
+                </tr>
+                <tr>
+                    <td>public.object-code</td>
+                    <td>public.data, public.executable</td>
+                    <td>.o</td>
+                    <td>Object code.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.mach-o-binary</td>
+                    <td>public.data, public.executable</td>
+                    <td>&nbsp;</td>
+                    <td>Mach-O binary.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.pef-binary</td>
+                    <td>public.data, public.executable</td>
+                    <td>&nbsp;</td>
+                    <td>PEF (CFM-based) binary</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;executable</td>
+                    <td>public.data, public.executable</td>
+                    <td>.exe, application/x-msdownload</td>
+                    <td>Microsoft Windows application.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;dynamic-link-library</td>
+                    <td>public.data, public.executable</td>
+                    <td>.dll, application/x-msdownload</td>
+                    <td>Microsoft dynamic link library.</td>
+                </tr>
+                <tr>
+                    <td>com.sun.java-class</td>
+                    <td>public.data, public.executable</td>
+                    <td>.class</td>
+                    <td>Java class.</td>
+                </tr>
+                <tr>
+                    <td>com.sun.java-archive</td>
+                    <td>public.data, public.executable, public.archive</td>
+                    <td>.jar , application/java-archive</td>
+                    <td>Java archive.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.quartz-&ZeroWidthSpace;composer-composition</td>
+                    <td>public.data, public.executable</td>
+                    <td>.qtz , application/x-quartzcomposer</td>
+                    <td>Quartz Composer composition.</td>
+                </tr>
+                <tr>
+                    <td>org.gnu.gnu-tar-archive</td>
+                    <td>public.data, public.archive</td>
+                    <td>.gtar, application/x-gtar</td>
+                    <td>GNU archive.</td>
+                </tr>
+                <tr>
+                    <td>public.tar-archive</td>
+                    <td>org.gnu.gnu-tar-archive</td>
+                    <td>.tar, application/x-tar, application/tar</td>
+                    <td>Tar archive.</td>
+                </tr>
+                <tr>
+                    <td>org.gnu.gnu-zip-archive</td>
+                    <td>public.data, public.archive</td>
+                    <td>.gz, .gzip, application/x-gzip, application/gzip</td>
+                    <td>Gzip archive.</td>
+                </tr>
+                <tr>
+                    <td>org.gnu.gnu-zip-tar-archive</td>
+                    <td>org.gnu.gnu-zip-archve</td>
+                    <td>.tgz</td>
+                    <td>Gzip tar archive.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.binhex-archive</td>
+                    <td>public.data, public.archive</td>
+                    <td>.hqx, application/mac-binhex40, application/mac-binhex, application/binhex</td>
+                    <td>BinHex archive.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.macbinary-&ZeroWidthSpace;archive</td>
+                    <td>public.data, public.archive</td>
+                    <td>.bin, application/x-macbinary, application/macbinary</td>
+                    <td>MacBinary archive.</td>
+                </tr>
+                <tr>
+                    <td>public.url (kUTTypeURL)</td>
+                    <td>public.data</td>
+                    <td>‘url ‘</td>
+                    <td>Uniform Resource Locator.</td>
+                </tr>
+                <tr>
+                    <td>public.file-url (kUTTypeFileURL)</td>
+                    <td>public.url</td>
+                    <td>‘furl’</td>
+                    <td>File URL.</td>
+                </tr>
+                <tr>
+                    <td>public.url-name</td>
+                    <td>-</td>
+                    <td>‘urln’</td>
+                    <td>URL name.</td>
+                </tr>
+                <tr>
+                    <td>public.vcard (kUTTypeVCard)</td>
+                    <td>public.data, public.content</td>
+                    <td>‘vCrd’, .vcf, .vcard, text/directory, text/vcard, text/x-vcard, Apple Vcard, pasteboard type</td>
+                    <td>vCard (electronic business card).</td>
+                </tr>
+                <tr>
+                    <td>public.image (kUTTypeImage)</td>
+                    <td>public.data, public.content</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for images.</td>
+                </tr>
+                <tr>
+                    <td>public.fax</td>
+                    <td>public.image</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for fax images.</td>
+                </tr>
+                <tr>
+                    <td>public.jpeg (kUTTypeJPEG)</td>
+                    <td>public.image</td>
+                    <td>‘JPEG’, .jpg, .jpeg, image/jpeg</td>
+                    <td>JPEG image.</td>
+                </tr>
+                <tr>
+                    <td>public.jpeg-2000 (kUTTypeJPEG2000)</td>
+                    <td>public.image</td>
+                    <td>‘jp2 ‘, .jp2, image/jp2</td>
+                    <td>JPEG 2000 image.</td>
+                </tr>
+                <tr>
+                    <td>public.tiff (kUTTypeTIFF)</td>
+                    <td>public.image</td>
+                    <td>‘TIFF’, .tif, .tiff, image/tiff, NeXT TIFF v4.0 pasteboard type, NSTIFFPBoardType</td>
+                    <td>TIFF image.</td>
+                </tr>
+                <tr>
+                    <td>public.camera-raw-image</td>
+                    <td>public.image</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for digital camera raw image formats.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.pict (kUTTypePICT)</td>
+                    <td>public.image</td>
+                    <td>‘PICT’, .pic, .pct, .pict, image/pict, image/x-pict, image/x-macpict</td>
+                    <td>PICT image</td>
+                </tr>
+                <tr>
+                    <td>com.apple.macpaint-image</td>
+                    <td>public.image</td>
+                    <td>.pntg, ‘PNTG’</td>
+                    <td>MacPaint image.</td>
+                </tr>
+                <tr>
+                    <td>public.png (kUTTypePNG)</td>
+                    <td>public.image</td>
+                    <td>‘PNGf’, .png, image/png</td>
+                    <td>PNG image</td>
+                </tr>
+                <tr>
+                    <td>public.xbitmap-image</td>
+                    <td>public.image</td>
+                    <td>.xbm, image/x-quicktime</td>
+                    <td>X bitmap image.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.quicktime-image (kUTTypeQuickTimeImage)</td>
+                    <td>public.image</td>
+                    <td>‘qtif’, .qif, .qtif, image/x-quicktime</td>
+                    <td>QuickTime image.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.icns (kUTTypeAppleICNS)</td>
+                    <td>public.image</td>
+                    <td>‘icns’, .icns</td>
+                    <td>Mac OS icon image.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.txn.text-&ZeroWidthSpace;multimedia-data (kUTTypeTXNTextAnd&ZeroWidthSpace;MultimediaData)
+                    </td>
+                    <td>public.data, public.composite-&ZeroWidthSpace;content</td>
+                    <td>‘txtn’</td>
+                    <td>MLTE (Textension) format for mixed text and multimedia data.</td>
+                </tr>
+                <tr>
+                    <td>public.audiovisual-&ZeroWidthSpace;content (kUTTypeAudioVisual&ZeroWidthSpace;Content)</td>
+                    <td>public.data, public.content</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for any audiovisual content.</td>
+                </tr>
+                <tr>
+                    <td>public.movie</td>
+                    <td>public.audiovisual-&ZeroWidthSpace;content</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for movies (video with optional audio or other tracks).</td>
+                </tr>
+                <tr>
+                    <td>public.video (kUTTypeVideo)</td>
+                    <td>public.movie</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for video (no audio).</td>
+                </tr>
+                <tr>
+                    <td>com.apple.quicktime-movie (kUTTypeQuickTimeMovie)</td>
+                    <td>public.movie</td>
+                    <td>‘MooV’, .mov, .qt, video/quicktime</td>
+                    <td>QuickTime movie.</td>
+                </tr>
+                <tr>
+                    <td>public.avi</td>
+                    <td>public.movie</td>
+                    <td>.avi, .vfw, ‘Vfw ‘, video/avi, video/msvideo, video/x-msvideo</td>
+                    <td>AVI movie.</td>
+                </tr>
+                <tr>
+                    <td>public.mpeg (kUTTypeMPEG)</td>
+                    <td>public.movie</td>
+                    <td>‘MPG ‘, ‘MPEG’, .mpg, .mpeg, .m75, .m15, video/mpg, video/mpeg, video/x-mpg, video/x-mpeg</td>
+                    <td>MPEG-1 or MPEG-2 content.</td>
+                </tr>
+                <tr>
+                    <td>public.mpeg-4 (kUTTypeMPEG4)</td>
+                    <td>public.movie</td>
+                    <td>‘mpg4’, .mp4, video/mp4, video/mp4v</td>
+                    <td>MPEG-4 content.</td>
+                </tr>
+                <tr>
+                    <td>public.3gpp</td>
+                    <td>public.movie</td>
+                    <td>.3gp, .3gpp, ‘3gpp’, video/3gpp, audio/3gpp</td>
+                    <td>3GPP movie.</td>
+                </tr>
+                <tr>
+                    <td>public.3gpp2</td>
+                    <td>public.movie</td>
+                    <td>.3g2 , .3gp2 , ‘3gp2’, video/3gpp2, audio/3gpp2</td>
+                    <td>3GPP2 movie.</td>
+                </tr>
+                <tr>
+                    <td>public.audio (kUTTypeAudio)</td>
+                    <td>public.audiovisual-&ZeroWidthSpace;content</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for audio (no video).</td>
+                </tr>
+                <tr>
+                    <td>public.mp3 (kUTTypeMP3)</td>
+                    <td>public.audio</td>
+                    <td>‘MPG3’, ‘mpg3’, ‘Mp3 ‘, ‘MP3 ‘, ‘mp3!’, ‘MP3!’, .mp3, audio/mpeg, audio/mpeg3, audio/mpg, audio/mp3,
+                        audio/x-mpeg, audio/x-mpeg3, audio/x-mpg, audio/x-mp3</td>
+                    <td>MPEG-3 audio.</td>
+                </tr>
+                <tr>
+                    <td>public.mpeg-4-audio (kUTTypeMPEG4Audio)</td>
+                    <td>public.audio, public.mpeg4</td>
+                    <td>‘M4A ‘, .m4a</td>
+                    <td>MPEG-4 audio.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.protected-&ZeroWidthSpace;mpeg-4-audio (kUTTypeAppleProtected&ZeroWidthSpace;MPEG4Audio)
+                    </td>
+                    <td>public.audio</td>
+                    <td>‘M4P ‘, ‘M4B ‘, .m4p, .m4b</td>
+                    <td>Protected MPEG-4 audio. (iTunes music store format)</td>
+                </tr>
+                <tr>
+                    <td>public.ulaw-audio</td>
+                    <td>public.audio</td>
+                    <td>.au, .ulw, .snd, ‘ULAW’, audio/basic, audio/au, audio/snd</td>
+                    <td>μLaw audio.</td>
+                </tr>
+                <tr>
+                    <td>public.aifc-audio</td>
+                    <td>public.audio</td>
+                    <td>.aifc, .aiff, .aif, ‘AIFC’, audio/aiff, audio/x-aiff</td>
+                    <td>AIFF-C audio.</td>
+                </tr>
+                <tr>
+                    <td>public.aiff-audio</td>
+                    <td>public.audio</td>
+                    <td>.aiff, .aif, ‘AIFF’, audio/aiff, audio/x-aiff</td>
+                    <td>AIFF audio.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.coreaudio-&ZeroWidthSpace;format</td>
+                    <td>public.audio</td>
+                    <td>.caf, ‘caff’</td>
+                    <td>Core Audio format.</td>
+                </tr>
+                <tr>
+                    <td>public.directory (kUTTypeDirectory)</td>
+                    <td>public.item</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for directories.</td>
+                </tr>
+                <tr>
+                    <td>public.folder (kUTTypeFolder)</td>
+                    <td>public.directory</td>
+                    <td>&nbsp;</td>
+                    <td>A plain folder (that is, not a package).</td>
+                </tr>
+                <tr>
+                    <td>public.volume (kUTTypeVolume)</td>
+                    <td>public.folder</td>
+                    <td>&nbsp;</td>
+                    <td>A volume.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.package (kUTTypePackage)</td>
+                    <td>public.directory</td>
+                    <td>&nbsp;</td>
+                    <td>A package (that is, a directory presented to the user as a file).</td>
+                </tr>
+                <tr>
+                    <td>com.apple.bundle (kUTTypeBundle)</td>
+                    <td>public.directory</td>
+                    <td>‘BNDL’, .bundle</td>
+                    <td>A directory with an internal structure specified by Core Foundation Bundle Services. .</td>
+                </tr>
+                <tr>
+                    <td>public.executable</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for executable data.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.application (kUTTypeApplication)</td>
+                    <td>public.executable</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for applications and other launchable files.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.application-&ZeroWidthSpace;bundle (kUTTypeApplicationBundle)</td>
+                    <td>com.apple.package, com.apple.bundle, com.apple.application</td>
+                    <td>‘APPL’, .app</td>
+                    <td>Application bundle.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.application-file (kUTTypeApplicationFile)</td>
+                    <td>com.apple.application public.data</td>
+                    <td>‘APPL’</td>
+                    <td>Application file.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.deprecated-&ZeroWidthSpace;application-file</td>
+                    <td>com.apple.application&ZeroWidthSpace;-file</td>
+                    <td>‘APPC’, ‘APPD’, ‘APPE’, ‘appe’, ‘CDEV’, ‘cdev’, ‘dfil’</td>
+                    <td>Deprecated application file.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.plugin</td>
+                    <td>com.apple.bundle, com.apple.package</td>
+                    <td>.plugin</td>
+                    <td>Plugin.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.metadata-&ZeroWidthSpace;importer</td>
+                    <td>com.apple.plugin</td>
+                    <td>.mdimporter</td>
+                    <td>Spotlight importer plugin.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.dashboard-&ZeroWidthSpace;widget</td>
+                    <td>com.apple.bundle, com.apple.package</td>
+                    <td>.wdgt</td>
+                    <td>Dashboard widget.</td>
+                </tr>
+                <tr>
+                    <td>public.cpio-archive</td>
+                    <td>public.data</td>
+                    <td>.cpio</td>
+                    <td>CPIO archive.</td>
+                </tr>
+                <tr>
+                    <td>com.pkware.zip-archive</td>
+                    <td>public.data, public.archive</td>
+                    <td>.zip, application/zip</td>
+                    <td>Zip archive.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.webarchive (kUTTypeWebArchive)</td>
+                    <td>public.data, public.composite-&ZeroWidthSpace;content</td>
+                    <td>&nbsp;</td>
+                    <td>Web Kit webarchive format.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.framework (kUTTypeFramework)</td>
+                    <td>com.apple.bundle</td>
+                    <td>‘FMWK’, .framework</td>
+                    <td>Framework.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.rtfd (kUTTypeRTFD)</td>
+                    <td>com.apple.package, public.composite-&ZeroWidthSpace;content</td>
+                    <td>.rtfd</td>
+                    <td>Rich Text Format Directory. That is, Rich Text with content embedding, on-disk format.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.flat-rtfd (kUTTypeFlatRTFD)</td>
+                    <td>public.data, public.composite-&ZeroWidthSpace;content</td>
+                    <td>NeXT RTFD pasteboard type, NSRTFDPBoardType</td>
+                    <td>Rich Text with content embedding, pasteboard format.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.resolvable (kUTTypeResolvable)</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                    <td>Items that the Alias Manager can resolve.</td>
+                </tr>
+                <tr>
+                    <td>public.symlink (kUTTypeSymLink)</td>
+                    <td>public.item, com.apple.resolvable</td>
+                    <td>&nbsp;</td>
+                    <td>UNIX-style symlink.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.mount-point (kUTTypeMountPoint)</td>
+                    <td>public.item, com.apple.resolvable</td>
+                    <td>&nbsp;</td>
+                    <td>A volume mount point</td>
+                </tr>
+                <tr>
+                    <td>com.apple.alias-record (kUTTypeAliasRecord)</td>
+                    <td>public.data, com.apple.resolvable</td>
+                    <td>‘alis’</td>
+                    <td>Alias record.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.alias-file (kUTTypeAliasFile)</td>
+                    <td>public.data, com.apple.resolvable</td>
+                    <td>&nbsp;</td>
+                    <td>Alias file.</td>
+                </tr>
+                <tr>
+                    <td>public.font</td>
+                    <td>public.data</td>
+                    <td>&nbsp;</td>
+                    <td>Base type for fonts.</td>
+                </tr>
+                <tr>
+                    <td>public.truetype-font</td>
+                    <td>public.font</td>
+                    <td>&nbsp;</td>
+                    <td>TrueType font.</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.postscript-font</td>
+                    <td>public.font</td>
+                    <td>&nbsp;</td>
+                    <td>PostScript font.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.truetype-&ZeroWidthSpace;datafork-suitcase-font</td>
+                    <td>public.truetype-font</td>
+                    <td>.dfont, ‘dfon’</td>
+                    <td>TrueType data fork font.</td>
+                </tr>
+                <tr>
+                    <td>public.opentype-font</td>
+                    <td>public.font</td>
+                    <td>.otf, ‘OTTO’</td>
+                    <td>PostScript OpenType font.</td>
+                </tr>
+                <tr>
+                    <td>public.truetype-ttf-font</td>
+                    <td>public.truetype-font</td>
+                    <td>.ttf</td>
+                    <td>TrueType OpenType font.</td>
+                </tr>
+                <tr>
+                    <td>public.truetype-collection-&ZeroWidthSpace;font</td>
+                    <td>public.font</td>
+                    <td>.ttc, ‘ttcf’</td>
+                    <td>TrueType collection font.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.font-suitcase</td>
+                    <td>public.font</td>
+                    <td>.suit, ‘FFIL’, ‘ffil’, ‘sfnt’, ‘tfil’</td>
+                    <td>Font suitcase.</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.postscript-lwfn&ZeroWidthSpace;-font</td>
+                    <td>com.adobe.postscript-&ZeroWidthSpace;font</td>
+                    <td>‘LWFN’</td>
+                    <td>PostScript Type 1 outline font.</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.postscript-pfb-&ZeroWidthSpace;font</td>
+                    <td>com.adobe.postscript-&ZeroWidthSpace;font</td>
+                    <td>.pfb</td>
+                    <td>PostScriptType1 outline font.</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.postscript.pfa-&ZeroWidthSpace;font</td>
+                    <td>com.adobe.postscript-&ZeroWidthSpace;font</td>
+                    <td>.pfa</td>
+                    <td>PostScriptType 1 outline font.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.colorsync-profile</td>
+                    <td>public.data</td>
+                    <td>.icc, .icm, .pf , ‘prof’</td>
+                    <td>ColorSync profile.</td>
+                </tr>
+                <tr>
+                    <td>Identifier</td>
+                    <td>Conforms to</td>
+                    <td>Comments</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>public.filename-extension</td>
+                    <td>public.case-insensitive-text</td>
+                    <td>Filename extension.</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>public.mime-type</td>
+                    <td>public.case-insensitive-text</td>
+                    <td>MIME type.</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>com.apple.ostype</td>
+                    <td>public.text</td>
+                    <td>Four-character code (type OSType).</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>com.apple.nspboard-type</td>
+                    <td>public.text</td>
+                    <td>NSPasteboard type.</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Identifier (Constant)</td>
+                    <td>Conforms to</td>
+                    <td>Tags</td>
+                    <td>Comments</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.pdf (kUTTypePDF)</td>
+                    <td>public.data, public.composite-&ZeroWidthSpace;content</td>
+                    <td>‘PDF ‘, .pdf, application/pdf, Apple PDF pasteboard type</td>
+                    <td>PDF data.</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.postscript</td>
+                    <td>public.data</td>
+                    <td>.ps, application/postscript</td>
+                    <td>PostScript data.</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.encapsulated-&ZeroWidthSpace;postscript</td>
+                    <td>com.adobe.postscript</td>
+                    <td>.eps, NeXT Encapsulated PostScript v1.2 pasteboard type</td>
+                    <td>Encapsulated PostScript.</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.photoshop-&ZeroWidthSpace;image</td>
+                    <td>public.image</td>
+                    <td>.psd, ‘8BPS, ‘ image/x-photoshop, image/photoshop, image/psd, application/photoshop</td>
+                    <td>Adobe Photoshop document.</td>
+                </tr>
+                <tr>
+                    <td>com.adobe.illustrator.ai-&ZeroWidthSpace;image</td>
+                    <td>public.image</td>
+                    <td>.ai</td>
+                    <td>Adobe Illustrator document.</td>
+                </tr>
+                <tr>
+                    <td>com.compuserve.gif (kUTTypeGIF)</td>
+                    <td>public.image</td>
+                    <td>‘GIFf’, .gif, image/gif</td>
+                    <td>GIF image.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.bmp (kUTTypeBMP)</td>
+                    <td>public.image</td>
+                    <td>‘BMP ‘, ‘BMPf’, .bmp</td>
+                    <td>Windows bitmap image.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.ico (kUTTypeICO)</td>
+                    <td>public.image</td>
+                    <td>.ico</td>
+                    <td>Windows icon image.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.word.doc</td>
+                    <td>public.data</td>
+                    <td>‘W8BN’, .doc, application/msword</td>
+                    <td>Microsoft Word data.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.excel.xls</td>
+                    <td>public.data</td>
+                    <td>‘XLS8’, .xls, application/vnd.ms-excel</td>
+                    <td>Microsoft Excel data.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.powerpoint.&ZeroWidthSpace;ppt</td>
+                    <td>public.data, public.presentation</td>
+                    <td>.ppt, ‘SLD8’, application/mspowerpoint</td>
+                    <td>Microsoft PowerPoint presentation.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.waveform-&ZeroWidthSpace;audio</td>
+                    <td>public.audio</td>
+                    <td>.wav, .wave, ‘.WAV’, ‘WAVE’, audio/wav, audio/wave</td>
+                    <td>Waveform audio.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.advanced-&ZeroWidthSpace;systems-format</td>
+                    <td>public.audiovisual-&ZeroWidthSpace;content</td>
+                    <td>.asf , ‘ASF_’, video/x-ms-asf</td>
+                    <td>Microsoft Advanced Systems format.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;media-wm</td>
+                    <td>public.movie, com.microsoft.advanced-&ZeroWidthSpace;systems-format</td>
+                    <td>.wm, video/x-ms-wm</td>
+                    <td>Windows media.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;media-wmv</td>
+                    <td>public.movie, com.microsoft.advanced-&ZeroWidthSpace;systems-format</td>
+                    <td>.wmv, video/x-ms-wmv</td>
+                    <td>Windows media.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;media-wmp</td>
+                    <td>public.movie, com.microsoft.advanced-&ZeroWidthSpace;systems-format</td>
+                    <td>.wmp, video/x-ms-wmp</td>
+                    <td>Windows media.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;media-wma</td>
+                    <td>public.audio, com.microsoft.advanced-&ZeroWidthSpace;systems-format</td>
+                    <td>.wma, video/x-ms-wma</td>
+                    <td>Windows media audio.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.advanced-&ZeroWidthSpace;stream-redirector</td>
+                    <td>public.xml, public.audiovisual-&ZeroWidthSpace;content</td>
+                    <td>.asx, ‘ASX_’, video/x-ms-asx</td>
+                    <td>Advanced Stream Redirector.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;media-wmx</td>
+                    <td>public.audio, com.microsoft.advanced-&ZeroWidthSpace;stream-redirector</td>
+                    <td>.wmx , video-x-ms-wmx</td>
+                    <td>Windows media.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;media-wvx</td>
+                    <td>public.audio, com.microsoft.advanced-&ZeroWidthSpace;stream-redirector</td>
+                    <td>.wvx, video-x-ms-wvx</td>
+                    <td>Windows media.</td>
+                </tr>
+                <tr>
+                    <td>com.microsoft.windows-&ZeroWidthSpace;media-wax</td>
+                    <td>public.audio, com.microsoft.advanced-&ZeroWidthSpace;stream-redirector</td>
+                    <td>.wax, video-x-ms-wax</td>
+                    <td>Windows media audio.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.keynote.key</td>
+                    <td>com.apple.package, public.presentation</td>
+                    <td>.key</td>
+                    <td>Apple Keynote document.</td>
+                </tr>
+                <tr>
+                    <td>com.apple.keynote.kth</td>
+                    <td>com.apple.package, public.composite-&ZeroWidthSpace;content</td>
+                    <td>.kth</td>
+                    <td>Apple Keynote theme.</td>
+                </tr>
+                <tr>
+                    <td>com.truevision.tga-image</td>
+                    <td>public.image</td>
+                    <td>.tga, ‘TPIC’, image/targa, image/tga, application/tga</td>
+                    <td>TGA image.</td>
+                </tr>
+                <tr>
+                    <td>com.sgi.sgi-image</td>
+                    <td>public.image</td>
+                    <td>.sgi, ‘.SGI’, image/sgi</td>
+                    <td>Silicon Graphics image.</td>
+                </tr>
+                <tr>
+                    <td>com.ilm.openexr-image</td>
+                    <td>public.image</td>
+                    <td>.exr</td>
+                    <td>OpenEXR image.</td>
+                </tr>
+                <tr>
+                    <td>com.kodak.flashpix.image</td>
+                    <td>public.image</td>
+                    <td>.fpx, image/fpx, application/vnd.fpx</td>
+                    <td>FlashPix image.</td>
+                </tr>
+                <tr>
+                    <td>com.j2.jfx-fax</td>
+                    <td>public.fax</td>
+                    <td>.jfx</td>
+                    <td>J2 fax.</td>
+                </tr>
+                <tr>
+                    <td>com.js.efx-fax</td>
+                    <td>public.fax</td>
+                    <td>.efx, image/efax</td>
+                    <td>eFax fax.</td>
+                </tr>
+                <tr>
+                    <td>com.digidesign.sd2-audio</td>
+                    <td>public.audio</td>
+                    <td>.sd2, ‘Sd2f’</td>
+                    <td>Digidesign Sound Designer II audio.</td>
+                </tr>
+                <tr>
+                    <td>com.real.realmedia</td>
+                    <td>public.movie</td>
+                    <td>.rm, ‘PNRM’, application/vnd.rn-realmedia</td>
+                    <td>RealMedia.</td>
+                </tr>
+                <tr>
+                    <td>com.real.realaudio</td>
+                    <td>public.audio</td>
+                    <td>.ram, .ra , ‘PNRA’, audio/vnd.rn-realaudio, audio/x-pn-realaudio</td>
+                    <td>RealMedia audio.</td>
+                </tr>
+                <tr>
+                    <td>com.real.smil</td>
+                    <td>public.xml</td>
+                    <td>.smil, application/smil</td>
+                    <td>Real synchronized multimedia integration language.</td>
+                </tr>
+                <tr>
+                    <td>com.allume.stuffit-archive</td>
+                    <td>public.data, public.archive</td>
+                    <td>.sit, .sitx, application/x-stuffit, application/x-sit , application/stuffit</td>
+                    <td>Stuffit archive.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    
+</html>

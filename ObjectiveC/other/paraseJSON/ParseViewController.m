@@ -39,26 +39,8 @@
 }
 
 - (IBAction)parse5:(UIButton *)sender {
-//    NSDictionary *dic = @{
-//                          @"id":@"123",
-//                          @"name":@"张三",
-//                          @"age":@(12),
-//                          @"languages":@[
-//                                  @"汉语",@"英语",@"法语"
-//                                  ],
-//                          @"job":@{
-//                                  @"work":@"iOS开发",
-//                                  @"eveDay":@"10小时",
-//                                  @"site":@"软件园"
-//                                  },
-//                          @"eats":@[
-//                                  @{@"food":@"西瓜",@"date":@"8点"},
-//                                  @{@"food":@"烤鸭",@"date":@"14点"},
-//                                  @{@"food":@"西餐",@"date":@"20点"}
-//                                  ]
-//                          };
-    NSString * filepath = [[NSBundle mainBundle]pathForResource:@"test3" ofType:@"json"];
-    NSData * fileData = [NSData dataWithContentsOfFile:filepath];
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"test3" ofType:@"json"];
+    NSData *fileData = [NSData dataWithContentsOfFile:filepath];
     NSString *jsonStr = [[NSString alloc] initWithData:fileData encoding:NSUTF8StringEncoding];
     YYPersonModel2 *model = [YYPersonModel2 yy_modelWithJSON: jsonStr];
     NSLog(@"id:%@, name:%@, age:%d", model.personId, model.name, model.age);

@@ -8,6 +8,7 @@
 
 #import "MyAlertViewController.h"
 #import "MyAlertUtil.h"
+#import "MyTip.h"
 
 @interface MyAlertViewController ()
 
@@ -66,6 +67,12 @@
 
 - (IBAction)showSometime:(UIButton *)sender {
     [[MyAlertUtil sharedManager] showTip:@"显示一会" duration:5];
+}
+
+- (IBAction)show_message_tip_act:(UIButton *)sender {
+    NSString *tip = @"In conclusion, navigating Palera1n Rootful mode is a seamless experience, particularly beneficial for addressing tweaks without rootless support updates and meeting specific iCloud Bypass requirements. However, for everyday read and write access to the complete file system is not needed. The landscape of tweaks is rapidly evolving, with most being developed for rootless environments, indicating a significant shift in the future of jailbreaking.";
+//    tip = @"In conclusion, navigating Palera1n Rootful mode";
+    [[MyTip sharedManager] show:tip duration:2];
 }
 
 @end

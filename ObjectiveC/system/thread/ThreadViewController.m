@@ -30,7 +30,8 @@
 }
 
 - (IBAction)thread_creat_act:(UIButton *)sender {
-    NSThread *thread = [[NSThread currentThread] initWithTarget:self selector:@selector(newThread1) object:nil];
+    NSString *msg = @"thread_creat_act";
+    NSThread *thread = [[NSThread currentThread] initWithTarget:self selector:@selector(newThread1:) object:msg];
     NSLog(@"%d:%@",__LINE__, [NSThread currentThread]);
     if ([NSThread isMainThread]) {
         NSLog(@"%d: main thread",__LINE__);
@@ -38,15 +39,9 @@
     [thread start];
 }
 
--(void)newThread1 {
-    NSLog(@"%d:%@",__LINE__, [NSThread currentThread]);
-    if ([NSThread isMainThread]) {
-        NSLog(@"%d: main thread",__LINE__);
-    }
-}
-
 - (IBAction)thread_create_sys_act:(UIButton *)sender {
-    [self performSelectorInBackground:@selector(newThread1) withObject:nil];
+    NSString *msg = @"thread_create_sys_act";
+    [self performSelectorInBackground:@selector(newThread1:) withObject:msg];
     NSLog(@"%d:%@",__LINE__, [NSThread currentThread]);
     if ([NSThread isMainThread]) {
         NSLog(@"%d: main thread",__LINE__);
@@ -57,6 +52,13 @@
     // 开辟子线程
     [self performSelectorInBackground:@selector(childThread) withObject:nil];
     NSLog(@"%d:%@",__LINE__, [NSThread currentThread]);
+    if ([NSThread isMainThread]) {
+        NSLog(@"%d: main thread",__LINE__);
+    }
+}
+
+-(void)newThread1:(NSString *)msg {
+    NSLog(@"%d:%@ msg:%@",__LINE__, [NSThread currentThread],msg);
     if ([NSThread isMainThread]) {
         NSLog(@"%d: main thread",__LINE__);
     }

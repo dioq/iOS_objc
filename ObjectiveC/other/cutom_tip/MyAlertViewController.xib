@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m3o-n9-KpC">
-                    <rect key="frame" x="10" y="64" width="373" height="245"/>
+                    <rect key="frame" x="10" y="64" width="373" height="295"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCA-1z-rXd">
                             <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
@@ -68,6 +68,15 @@
                             <buttonConfiguration key="configuration" style="plain" title="展示一会再消失"/>
                             <connections>
                                 <action selector="showSometime:" destination="-1" eventType="touchUpInside" id="mGb-d1-YjZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWZ-rH-rJs">
+                            <rect key="frame" x="0.0" y="250" width="373" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="文字提示(持续一会)"/>
+                            <connections>
+                                <action selector="show_message_tip_act:" destination="-1" eventType="touchUpInside" id="G6n-yW-2jl"/>
                             </connections>
                         </button>
                     </subviews>

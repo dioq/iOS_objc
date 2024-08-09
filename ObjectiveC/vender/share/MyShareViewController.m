@@ -26,10 +26,17 @@
 }
 
 - (IBAction)shareAction:(UIButton *)sender {
-    NSArray * items =  self.SharePic;    //分享图片 数组
+    NSArray *items =  self.SharePic;    //分享图片 数组
     UIActivityViewController * activityCtl = [[UIActivityViewController alloc]initWithActivityItems:items applicationActivities:nil];
-    //去除一些不需要的图标选项
-    activityCtl.excludedActivityTypes = @[UIActivityTypePostToTwitter];
+    // 排除目标平台
+    activityCtl.excludedActivityTypes = @[UIActivityTypeAirDrop,UIActivityTypePostToFacebook,UIActivityTypePostToTwitter];
+    [self presentViewController:activityCtl animated:YES completion:nil];
+}
+
+- (IBAction)share2_action:(UIButton *)sender {
+    UIImage *img = [UIImage imageNamed:@"1"];
+    NSArray *items = [NSArray arrayWithObject:img];
+    UIActivityViewController * activityCtl = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:nil];
     [self presentViewController:activityCtl animated:YES completion:nil];
 }
 
