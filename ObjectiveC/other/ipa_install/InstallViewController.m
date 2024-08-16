@@ -7,6 +7,7 @@
 //
 
 #import "InstallViewController.h"
+#import "PackageUtil.h"
 
 @interface InstallViewController ()
 
@@ -32,5 +33,8 @@
     }];
 }
 
+- (IBAction)local_install:(UIButton *)sender {
+    [[PackageUtil sharedManager] install];
+}
 
 @end

@@ -1,10 +1,12 @@
-/* 
-  Localizable.strings
-  ObjectiveC
+/*
+ Localizable.strings
+ ObjectiveC
+ 
+ Created by hello on 2019/3/31.
+ Copyright © 2019 William. All rights reserved.
+ */
 
-  Created by hello on 2019/3/31.
-  Copyright © 2019 William. All rights reserved.
-*/
-
-"mainText" = "中文";
+"mainText" = "|0|中文|0|";
 "mainImage" = "mainImage_cn";
+"test1" = "|1|||微信|||1|";
+"test2" = "|2|||恢复|||2|";

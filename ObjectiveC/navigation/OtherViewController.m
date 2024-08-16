@@ -43,7 +43,7 @@
     [self.dataArray addObject:checkappVC];
     
     InstallViewController *installVC = [InstallViewController new];
-    installVC.title = @"ipa在线安装";
+    installVC.title = @"ipa安装";
     [self.dataArray addObject:installVC];
     
     ProtobufViewController *protobufVC = [ProtobufViewController new];

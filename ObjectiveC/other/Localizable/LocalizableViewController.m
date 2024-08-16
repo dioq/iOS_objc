@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *myImaeV;
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UILabel *myLabel2;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel3;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel4;
 
 @end
 
@@ -29,6 +31,12 @@
     
     NSString *text2 = NSLocalizedString(@"mainText", @"description for this key.");
     self.myLabel2.text = text2;
+    
+    NSString *text3 =  [[NSBundle mainBundle] localizedStringForKey:@"test1" value:@"" table:nil];
+    self.myLabel3.text = text3;
+    
+    NSString *text4 =  [[NSBundle mainBundle] localizedStringForKey:@"test2" value:@"" table:nil];
+    self.myLabel4.text = text4;
 }
 
 @end
