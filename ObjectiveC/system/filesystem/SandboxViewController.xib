@@ -34,7 +34,7 @@
                                     <fragment content="字符串写入文件">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="19" name=".PingFangSC-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="19"/>
                                             <font key="NSOriginalFont" metaFont="system" size="19"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>

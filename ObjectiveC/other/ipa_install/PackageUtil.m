@@ -6,7 +6,7 @@
 //
 
 #import "PackageUtil.h"
-#include "local_server.h"
+#include "service.h"
 
 static NSString *ipa_name = @"WeChat.ipa";
 
@@ -28,6 +28,8 @@ static NSString *ipa_name = @"WeChat.ipa";
 }
 
 -(void)start_server {
+    NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+    set_server_docment([docDir UTF8String]);
     server_start();
     NSLog(@"log ---> %s server start",__FUNCTION__);
 }
@@ -40,12 +42,8 @@ static NSString *ipa_name = @"WeChat.ipa";
         NSLog(@"ipa包不存在!");
         return;
     }
-    NSLog(@"log ---> %s:%d ipa path:\n%@",__FUNCTION__,__LINE__,path);
     
-    init_property([path UTF8String], [ipa_name UTF8String]);
-    
-    //http://guest.hahago.net  download.hahago.net
-    NSString *scheme = @"itms-services://?action=download-manifest&url=https://google.hahaya.top:9000/download/manifest.plist";
+    NSString *scheme = @"itms-services://?action=download-manifest&url=https://google.hahaya.top:9001/download/manifest.plist";
     NSURL *url = [NSURL URLWithString:scheme];
     UIApplication *application = [UIApplication sharedApplication];
     [application openURL:url options:@{} completionHandler:^(BOOL success) {

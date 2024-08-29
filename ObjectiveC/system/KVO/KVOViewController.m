@@ -36,7 +36,8 @@
      
      　　NSKeyValueObservingOptionPrior 分2次调用。在值改变之前和值改变之后。
      */
-    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    char *msg = "Test message!";
+    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:msg];
 }
 
 #pragma mark - kvo的回调方法(系统提供的回调方法)
@@ -45,6 +46,8 @@
 //change:变化前后的值都存储在change字典中
 //context:注册观察者的时候,context传递过来的值
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    NSLog(@"keyPath:%@",keyPath);
+    printf("context:%s\n",(char *)context);
     id oldName = [change objectForKey:NSKeyValueChangeOldKey];
     NSLog(@"oldName----------%@",oldName);
     id newName = [change objectForKey:NSKeyValueChangeNewKey];
