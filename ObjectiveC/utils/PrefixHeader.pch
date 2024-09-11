@@ -21,6 +21,5 @@
 
 #import "CryptoUtil.h"
 #import "Common.h"
-#import <Masonry.h>
 
 #endif /* PrefixHeader_pch */

@@ -179,6 +179,40 @@
     [dataTask resume];
 }
 
+-(void)downloadtUrl:(NSString *)urlStr success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+    NSString *fileName = @"storage.zip";
+    NSURL *url = [NSURL URLWithString:urlStr];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            failure(error);
+        }else {
+            //            NSLog(@"%@", response);
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+            long status = [httpResponse statusCode];
+            
+            if (status == 200) {
+                // 创建文件时写入内容
+                NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+                NSLog(@"docDir:\n%@",docDir);
+                NSString *filePath = [NSString stringWithFormat:@"%@/%@",docDir,fileName];
+                BOOL suc = [[NSFileManager defaultManager] createFileAtPath:filePath contents:data attributes:nil];
+                if (suc) {
+                    success(filePath);
+                }else{
+                    NSString *tip = @"file write fail!";
+                    success(tip);
+                }
+            }else {
+                NSString *msg = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                success(msg);
+            }
+        }
+    }];
+    [dataTask resume];
+}
+
 -(void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler {
     NSString *host = challenge.protectionSpace.host;
     NSLog(@"host:%@", host);

@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Q-cQ-4mD">
-                    <rect key="frame" x="10" y="53" width="394" height="155"/>
+                    <rect key="frame" x="10" y="53" width="394" height="210"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4i-S0-wPJ">
                             <rect key="frame" x="0.0" y="0.0" width="394" height="45"/>
@@ -53,10 +53,19 @@
                                 <action selector="submit_action:" destination="-1" eventType="touchUpInside" id="z8e-NK-zoj"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTG-Fc-nWt">
+                            <rect key="frame" x="0.0" y="165" width="394" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="download"/>
+                            <connections>
+                                <action selector="download_btn_action:" destination="-1" eventType="touchUpInside" id="3eC-uj-37a"/>
+                            </connections>
+                        </button>
                     </subviews>
                 </stackView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HN7-7E-sLM">
-                    <rect key="frame" x="10" y="218" width="394" height="634"/>
+                    <rect key="frame" x="10" y="273" width="394" height="579"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -85,7 +94,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

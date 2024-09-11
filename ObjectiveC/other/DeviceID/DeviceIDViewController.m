@@ -13,9 +13,8 @@
 #import "SimulateIDFA.h"
 #import "CryptoUtil.h"
 
-@interface DeviceIDViewController ()<UITextFieldDelegate>
+@interface DeviceIDViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *uuidTF;
 @property (weak, nonatomic) IBOutlet UITextView *show;
 
 @end
@@ -25,12 +24,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.uuidTF.delegate = self;
 }
 
 - (IBAction)getuuid:(UIButton *)sender {
     [self.show setText:@""];
-    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:self.uuidTF.text];
+    NSString *radom_str = @"04713B8B-4262-D954-394A-CBC560A4393F";
+    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:radom_str];
     NSString *uuidStr = [uuid UUIDString];
     NSLog(@"uuid:%@", uuidStr);
     [self.show setText:uuidStr];
@@ -104,15 +103,6 @@
     NSString *simulateIDFA = [SimulateIDFA createSimulateIDFA];
     NSLog(@"simulateIDFA:\n%@", simulateIDFA);
     [self.show setText:simulateIDFA];
-}
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.view endEditing:YES];
-}
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return YES;
 }
 
 @end

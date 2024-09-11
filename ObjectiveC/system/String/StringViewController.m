@@ -58,18 +58,18 @@ static NSString *global_str;
 
 - (IBAction)subString:(UIButton *)sender {
     //字符串截取
-    NSString *str1=@"Hello world";
+    NSString *str1 = @"Hello world";
     //从索引为2的位置开始截取直到最后（包括第二个字符）
     NSLog(@"{2,}: %@",[str1 substringFromIndex:2]);//打印结果为:llo world
     //从索引为0开始截取到索引为2的位置,但是不包括索引2所对应的字符
     NSLog(@"{0,2}: %@",[str1 substringToIndex:2]);//打印结果为:He
     //从指定索引的位置(location)向后截取,截取长度为length
-    NSRange range={2,3};//截取位置从索引2开始 截取3位长度的字符 包括索引为2对应的字符
+    NSRange range = {2,3};//截取位置从索引2开始 截取3位长度的字符 包括索引为2对应的字符
     NSLog(@"{2,3}: %@",[str1 substringWithRange:range]);//打印结果:llo
-
+    
     //字符串替换
-    NSString *str2=@"abc";
-    NSString *str3=@"def";
+    NSString *str2 = @"abc";
+    NSString *str3 = @"def";
     NSLog(@"%@",[str2 stringByReplacingOccurrencesOfString:str2 withString:str3]);//打印结果:def
 }
 

@@ -178,7 +178,7 @@
         tempIdentity = CFDictionaryGetValue(ident, kSecImportItemIdentity);
         *identity = (SecIdentityRef)tempIdentity;
     }else {
-        NSLog(@"clinet.p12 error!");
+        NSLog(@"clinet.p12 error! status:%d",securityError);
     }
     
     if (options) {

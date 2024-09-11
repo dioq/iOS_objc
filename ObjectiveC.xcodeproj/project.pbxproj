@@ -149,7 +149,6 @@
 		3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B17217DC71E00CD9E24 /* HUDViewController.m */; };
 		3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB19B18217DC71E00CD9E24 /* HUDViewController.xib */; };
 		3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B1C217DC71E00CD9E24 /* SDViewController.m */; };
-		4564CFB6E9D2C1E176ABE9E3 /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B19DF918A3109F2EB8A95D0D /* libPods-ObjectiveC.a */; };
 		5F2F0F2B2592691E00197207 /* CryptoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F0F2A2592691E00197207 /* CryptoUtil.m */; };
 		5F9921732597B082009F938C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9921722597B081009F938C /* SceneDelegate.m */; };
 		5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF96AC42226D0CB0094DF79 /* MyCollectionViewVC.m */; };
@@ -307,7 +306,7 @@
 		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
 		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
 		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
-		245392EB2C416F2F00955850 /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		246629482C88966500A687FC /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ObjectiveC.app; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveC.app"; sourceTree = "<absolute>"; };
 		2476A33E2B33F42A0094CE90 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		2476A33F2B33F42A0094CE90 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		2476A3402B33F42A0094CE90 /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
@@ -558,7 +557,6 @@
 		93EFF45923BB3F1300A4BC67 /* Modal1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Modal1ViewController.h; sourceTree = "<group>"; };
 		93EFF45A23BB3F1300A4BC67 /* Modal1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Modal1ViewController.m; sourceTree = "<group>"; };
 		93EFF45B23BB3F1300A4BC67 /* Modal1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Modal1ViewController.xib; sourceTree = "<group>"; };
-		B19DF918A3109F2EB8A95D0D /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE027746225075C800BA7A88 /* LocalizableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizableViewController.h; sourceTree = "<group>"; };
 		CE027747225075C800BA7A88 /* LocalizableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizableViewController.m; sourceTree = "<group>"; };
 		CE027748225075C800BA7A88 /* LocalizableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalizableViewController.xib; sourceTree = "<group>"; };
@@ -769,7 +767,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4564CFB6E9D2C1E176ABE9E3 /* libPods-ObjectiveC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,7 +778,6 @@
 			children = (
 				2498F0F62C66024D003E7566 /* CoreServices.framework */,
 				2498F0F42C660230003E7566 /* MobileCoreServices.framework */,
-				B19DF918A3109F2EB8A95D0D /* libPods-ObjectiveC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1221,7 +1217,6 @@
 				3D220CB6217DBF8F00E3799F /* ObjectiveC */,
 				BBEEFED4BB651D1A5F8E0205 /* Pods */,
 				01127D54518BDF1AF49EC6DC /* Frameworks */,
-				245392EB2C416F2F00955850 /* ObjectiveC.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2165,7 +2160,7 @@
 			);
 			name = ObjectiveC;
 			productName = ObjectiveC;
-			productReference = 245392EB2C416F2F00955850 /* ObjectiveC.app */;
+			productReference = 246629482C88966500A687FC /* ObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2711,7 +2706,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectivec;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.objc.study2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -2741,7 +2736,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.jobs8.objectivec;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.objc.study2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

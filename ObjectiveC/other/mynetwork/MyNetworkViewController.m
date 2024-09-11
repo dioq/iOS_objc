@@ -68,6 +68,16 @@
     }];
 }
 
+- (IBAction)download_btn_action:(UIButton *)sender {
+    NSString *urlStr = @"http://192.168.2.5:8090/download/storage.zip";
+    
+    [[NetworkManager sharedManager] downloadtUrl:urlStr success:^(id  _Nonnull response) {
+        [self showTip:response];
+    } failure:^(NSError * _Nonnull error) {
+        [self showTip:[error localizedDescription]];
+    }];
+}
+
 -(void)showTip:(NSString * _Nonnull)tip {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.show setText:tip];

@@ -109,4 +109,17 @@
     NSLog(@"%@",str);
 }
 
+- (IBAction)create_dir_btn_action:(UIButton *)sender {
+    NSError *error;
+    NSString *new_path = [NSString stringWithFormat:@"%@/dir10/dir20",libDir];
+    // 如果文件所在的 目录不存在 是无法写入数据的,需要先创建对应的目录
+    if (![_fileManager fileExistsAtPath:new_path]) {
+        [_fileManager createDirectoryAtPath:new_path withIntermediateDirectories:YES attributes:nil error:&error];
+        if (error) {
+            NSLog(@"%@",[error localizedFailureReason]);
+            return;
+        }
+    }
+}
+
 @end

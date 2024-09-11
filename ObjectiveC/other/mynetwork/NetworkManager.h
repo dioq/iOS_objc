@@ -38,6 +38,10 @@ NS_ASSUME_NONNULL_BEGIN
           success:(void (^)(id _Nonnull))success
           failure:(void (^)(NSError * _Nonnull))failure;
 
+- (void)downloadtUrl:(NSString *)urlStr
+             success:(void(^)(id response))success
+             failure:(void(^)(NSError *error))failure;
+
 @end
 
 NS_ASSUME_NONNULL_END

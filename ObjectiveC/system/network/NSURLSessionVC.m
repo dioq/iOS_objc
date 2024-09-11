@@ -231,11 +231,11 @@
 
 - (IBAction)download:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *fileName = @"test.png";
-    NSString *urlStr = [NSString stringWithFormat:@"%@/download/%@",url_prefix,fileName];
+    NSString *urlStr = @"http://192.168.2.5:8090/download/storage.zip";
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLSession *session = [NSURLSession sharedSession];
+    NSString *fileName = @"storage.zip";
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             [self showTip:[error localizedDescription]];
