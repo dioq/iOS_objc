@@ -8,8 +8,7 @@
 
 #import "NSURLSessionVC.h"
 
-//#define url_prefix @"http://127.0.0.1:8090"
-#define url_prefix @"http://jobs8.cn:8090"
+#define url_prefix "http://" hostname ":8090"
 
 @interface NSURLSessionVC ()<NSURLSessionDelegate,UITextViewDelegate>
 
@@ -28,7 +27,7 @@
 - (IBAction)getAction:(UIButton *)sender {
     [self.show setText:@""];
     //1.确定请求路径
-    NSString *urlStr = [NSString stringWithFormat:@"%@/get?name=dio&age=100", url_prefix];
+    NSString *urlStr = [NSString stringWithFormat:@"%s/get?name=dio&age=100", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     //2.创建请求对象
     //请求对象内部默认已经包含了请求头和请求方法（GET）
@@ -59,7 +58,7 @@
 - (IBAction)get2:(UIButton *)sender {
     [self.show setText:@""];
     //1.确定请求路径
-    NSString *urlStr = [NSString stringWithFormat:@"%@/get", url_prefix];
+    NSString *urlStr = [NSString stringWithFormat:@"%s/get", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     //2.创建请求对象
     //请求对象内部默认已经包含了请求头和请求方法（GET）
@@ -93,7 +92,7 @@
 
 - (IBAction)postAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = [NSString stringWithFormat:@"%@/post", url_prefix];
+    NSString *urlStr = [NSString stringWithFormat:@"%s/post", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     //设置超时时间
@@ -136,7 +135,7 @@
 
 - (IBAction)submitAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = [NSString stringWithFormat:@"%@/form", url_prefix];
+    NSString *urlStr = [NSString stringWithFormat:@"%s/form", url_prefix];
     
     NSMutableDictionary *textMutDict = [NSMutableDictionary dictionary];
     [textMutDict setValue:@"Dio" forKey:@"name"];
@@ -231,11 +230,11 @@
 
 - (IBAction)download:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"http://192.168.2.5:8090/download/storage.zip";
+    NSString *fileName = @"storage.zip";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/download/%@", url_prefix,fileName];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLSession *session = [NSURLSession sharedSession];
-    NSString *fileName = @"storage.zip";
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             [self showTip:[error localizedDescription]];

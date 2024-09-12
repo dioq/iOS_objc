@@ -8,6 +8,8 @@
 
 #import "HTTPSPing01ViewController.h"
 
+#define url_prefix "http://" hostname ":8091"
+
 @interface HTTPSPing01ViewController ()<UITextViewDelegate,NSURLSessionDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *show;
@@ -24,7 +26,7 @@
 
 - (IBAction)getAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8091/get";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/get", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
@@ -51,7 +53,7 @@
 
 - (IBAction)postAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8091/post";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/post", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];

@@ -22,4 +22,6 @@
 #import "CryptoUtil.h"
 #import "Common.h"
 
+#define hostname "192.168.2.5"
+
 #endif /* PrefixHeader_pch */

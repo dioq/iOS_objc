@@ -8,6 +8,8 @@
 
 #import "HTTPS2WayViewController.h"
 
+#define url_prefix "http://" hostname ":8092"
+
 @interface HTTPS2WayViewController ()<UITextViewDelegate,NSURLSessionDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *show;
@@ -24,7 +26,7 @@
 
 - (IBAction)getAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8092/get";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/get", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
@@ -51,7 +53,7 @@
 
 - (IBAction)postAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8092/post";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/post", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
@@ -144,7 +146,7 @@
         //TODO:设置客户端证书认证
         //load cert
         NSLog(@"--------- send client cert ---------");
-        NSString *path = [[NSBundle mainBundle]pathForResource:@"client" ofType:@"p12"];
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"client" ofType:@"pem"];
         NSData *p12data = [NSData dataWithContentsOfFile:path];
         CFDataRef inP12data = (__bridge CFDataRef)p12data;
         SecIdentityRef myIdentity;
@@ -165,7 +167,7 @@
 - (OSStatus)extractIdentity:(CFDataRef)inP12Data toIdentity:(SecIdentityRef*)identity {
     NSLog(@"%s",__FUNCTION__);
     OSStatus securityError = errSecSuccess;
-    CFStringRef password = CFSTR("27662AB51A814E99");
+    CFStringRef password = CFSTR("p12pwd");
     const void *keys[] = { kSecImportExportPassphrase };
     const void *values[] = { password };
     CFDictionaryRef options = CFDictionaryCreate(NULL, keys, values, 1, NULL, NULL);

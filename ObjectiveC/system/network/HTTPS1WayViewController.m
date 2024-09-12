@@ -8,6 +8,8 @@
 
 #import "HTTPS1WayViewController.h"
 
+#define url_prefix "http://" hostname ":8091"
+
 /*
  不可信任的证书 要在 Info.plist 里把域名加入白名单
  
@@ -15,18 +17,18 @@
  <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
  <plist version="1.0">
  <dict>
-     <key>NSAllowsArbitraryLoads</key>
-     <true/>
-     <key>NSExceptionDomains</key>
-     <dict>
-         <key>jobs8.cn</key>
-         <dict>
-             <key>NSExceptionAllowsInsecureHTTPLoads</key>
-             <true/>
-             <key>NSIncludesSubdomains</key>
-             <true/>
-         </dict>
-     </dict>
+ <key>NSAllowsArbitraryLoads</key>
+ <true/>
+ <key>NSExceptionDomains</key>
+ <dict>
+ <key>jobs8.cn</key>
+ <dict>
+ <key>NSExceptionAllowsInsecureHTTPLoads</key>
+ <true/>
+ <key>NSIncludesSubdomains</key>
+ <true/>
+ </dict>
+ </dict>
  </dict>
  </plist>
  **/
@@ -46,7 +48,7 @@
 
 - (IBAction)getAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8091/get";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/get", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
@@ -73,7 +75,7 @@
 
 - (IBAction)postAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8091/post";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/post", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];

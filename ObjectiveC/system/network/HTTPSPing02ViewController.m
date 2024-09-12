@@ -8,6 +8,8 @@
 
 #import "HTTPSPing02ViewController.h"
 
+#define url_prefix "http://" hostname ":8091"
+
 @interface HTTPSPing02ViewController ()<UITextViewDelegate,NSURLSessionDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *show;
@@ -24,7 +26,7 @@
 
 - (IBAction)getAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8091/get";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/get", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
@@ -51,7 +53,7 @@
 
 - (IBAction)postAction:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"https://jobs8.cn:8091/post";
+    NSString *urlStr = [NSString stringWithFormat:@"%s/post", url_prefix];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
@@ -130,7 +132,7 @@
         NSString *remoteCertificateSha256 = [CryptoUtil sha256:remoteCertificateBase64];
         
         // SSL Ping 本地不存放证书,获取服务器传来的证书后 直接base64再sha256 再对这个值做唯一性判断
-        if ([remoteCertificateSha256 isEqual:@"cf8656402438db6bc81d427fba1a5ae3406a588e36ed86eef34557ce53e15343"]) {
+        if ([remoteCertificateSha256 isEqual:@"d36d094d00a4b600d9765ad61c09a38b66f58f91e22ad91b8269283f9d21664c"]) {
             NSLog(@"SSL ping is pass!");
             NSURLCredential *credential = [NSURLCredential credentialForTrust:serverTrust];
             completionHandler(NSURLSessionAuthChallengeUseCredential,credential);
