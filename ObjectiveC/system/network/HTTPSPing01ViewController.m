@@ -8,7 +8,7 @@
 
 #import "HTTPSPing01ViewController.h"
 
-#define url_prefix "http://" hostname ":8091"
+#define url_prefix "https://" hostname ":8091"
 
 @interface HTTPSPing01ViewController ()<UITextViewDelegate,NSURLSessionDelegate>
 
@@ -38,7 +38,7 @@
     config.timeoutIntervalForRequest = 30;
     config.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -70,7 +70,7 @@
     config.timeoutIntervalForRequest = 30;
     config.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];

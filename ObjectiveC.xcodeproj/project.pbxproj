@@ -11,7 +11,6 @@
 		0212BA1E2859A847005822C8 /* SandboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0212BA1C2859A847005822C8 /* SandboxViewController.xib */; };
 		241258E22A4956DE00FF0A01 /* CompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241258E02A4956DE00FF0A01 /* CompressViewController.m */; };
 		241258E32A4956DE00FF0A01 /* CompressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241258E12A4956DE00FF0A01 /* CompressViewController.xib */; };
-		245DEB452C9186AB00E13ADD /* client.pem in Resources */ = {isa = PBXBuildFile; fileRef = 245DEB442C9186AB00E13ADD /* client.pem */; };
 		2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A33F2B33F42A0094CE90 /* ThreadViewController.m */; };
 		2476A3422B33F42A0094CE90 /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2476A3402B33F42A0094CE90 /* ThreadViewController.xib */; };
 		2476A3792B356D220094CE90 /* CheckAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A3772B356D220094CE90 /* CheckAppViewController.m */; };
@@ -307,7 +306,6 @@
 		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
 		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
 		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
-		245DEB442C9186AB00E13ADD /* client.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = client.pem; sourceTree = "<group>"; };
 		246629482C88966500A687FC /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ObjectiveC.app; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveC.app"; sourceTree = "<absolute>"; };
 		2476A33E2B33F42A0094CE90 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		2476A33F2B33F42A0094CE90 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
@@ -1390,7 +1388,6 @@
 		5F80D1E925A82FF400A63227 /* cer */ = {
 			isa = PBXGroup;
 			children = (
-				245DEB442C9186AB00E13ADD /* client.pem */,
 				3A5354732879AD370096D4E2 /* server.cer */,
 				3ABF6A2D2877585300CEE7F2 /* client.p12 */,
 			);
@@ -2213,7 +2210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE757CD1237E6EC20039C29D /* zhanbi.ttf in Resources */,
-				245DEB452C9186AB00E13ADD /* client.pem in Resources */,
 				CE757CCE237E6EC20039C29D /* kangti.ttf in Resources */,
 				CE17E4EB23548C2A004A7AA2 /* AppIcon-default@3x.png in Resources */,
 				2483AFA92C4E4934006F7868 /* FTPViewController.xib in Resources */,

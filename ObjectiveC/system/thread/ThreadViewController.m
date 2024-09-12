@@ -57,6 +57,22 @@
     }
 }
 
+- (IBAction)OperationQueue_btn_action:(UIButton *)sender {
+    /**
+     NSInvocationOperation : 创建操作 ---> 创建队列 ---> 操作加入队列
+     */
+    //1:创建操作
+    NSInvocationOperation *op = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(handleInvocation:) object:@"123"];
+    //2:创建队列
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    //3:操作加入队列 --- 操作会在新的线程中
+    [queue addOperation:op];
+}
+
+- (void)handleInvocation:(NSObject *)param{
+    NSLog(@"%d --- %@ : %@",__LINE__,[NSThread currentThread], param);
+}
+
 -(void)newThread1:(NSString *)msg {
     NSLog(@"%d:%@ msg:%@",__LINE__, [NSThread currentThread],msg);
     if ([NSThread isMainThread]) {

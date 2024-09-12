@@ -8,7 +8,7 @@
 
 #import "HTTPS2WayViewController.h"
 
-#define url_prefix "http://" hostname ":8092"
+#define url_prefix "https://" hostname ":8092"
 
 @interface HTTPS2WayViewController ()<UITextViewDelegate,NSURLSessionDelegate>
 
@@ -38,7 +38,7 @@
     config.timeoutIntervalForRequest = 30;
     config.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -70,7 +70,7 @@
     config.timeoutIntervalForRequest = 30;
     config.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -105,34 +105,32 @@
          也可以更进一步不光认证 CA证书,还得是自己服务器的CA证书,这就是证书绑定
          **/
         
-        SecTrustRef serverTrust = challenge.protectionSpace.serverTrust;
-        
-        // 获取 服务器证书(server cert) 类型
-        SecTrustResultType result;
-        SecTrustEvaluate(serverTrust, &result);
-        NSLog(@"SecTrustResultType: %u", result);
+        // 判断服务器证书是否是 CA认证过的
+        SecTrustRef trust = NULL;
+        CFErrorRef error = NULL;
+        BOOL certificateIsValid = SecTrustEvaluateWithError(trust, &error);
+        if(error) {
+            NSLog(@"CFErrorRef:%@",error);
+            return;
+        }
         // 是否是 CA 颁发的证书
-        BOOL certificateIsValid = (result == kSecTrustResultUnspecified || result == kSecTrustResultProceed);
         if(certificateIsValid) {
             NSLog(@"CA 机构颁发的证书");
         }else {
             NSLog(@"不是 CA 机构颁发的证书");
         }
+        
         // 获取服务器传过来的 服务器证书(server cert)
+        SecTrustRef serverTrust = challenge.protectionSpace.serverTrust;
         SecCertificateRef certificate = SecTrustGetCertificateAtIndex(serverTrust, 0);
         NSData *remoteCertificate = CFBridgingRelease(SecCertificateCopyData(certificate));
+        NSLog(@"remoteCertificate:\n%@",[remoteCertificate base64EncodedStringWithOptions:0]);
         
-        // 获取本地保存的 服务器证书(server cert)
-        NSString *pathToCer = [[NSBundle mainBundle] pathForResource:@"server" ofType:@"cer"];
-        NSData *localCertificate = [NSData dataWithContentsOfFile:pathToCer];
-        NSString *localCerticateString = [[NSString alloc] initWithData:localCertificate encoding:NSUTF8StringEncoding];
-        localCerticateString = [localCerticateString stringByReplacingOccurrencesOfString:@"-----BEGIN CERTIFICATE-----" withString:@""];
-        localCerticateString = [localCerticateString stringByReplacingOccurrencesOfString:@"-----END CERTIFICATE-----" withString:@""];
-        localCerticateString = [localCerticateString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-        localCertificate = [[NSData alloc]initWithBase64EncodedString:localCerticateString options:0];
+        NSString *remoteCertificateBase64 = [remoteCertificate base64EncodedStringWithOptions:0];
+        NSString *remoteCertificateSha256 = [CryptoUtil sha256:remoteCertificateBase64];
         
-        // 判断个 服务器证书(server cert) 是不是同一个
-        if ([remoteCertificate isEqualToData:localCertificate]) {
+        // SSL Ping 本地不存放证书,获取服务器传来的证书后 直接base64再sha256 再对这个值做唯一性判断
+        if ([remoteCertificateSha256 isEqual:@"cb5374022dc37f108ab31884fd5b12ba5fd839ec3808c968e12c55a3361457ee"]) {
             NSLog(@"SSL ping is pass!");
             NSURLCredential *credential = [NSURLCredential credentialForTrust:serverTrust];
             completionHandler(NSURLSessionAuthChallengeUseCredential,credential);
@@ -140,13 +138,12 @@
             NSLog(@"SSL ping is not pass!");
             completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge,NULL);
         }
-        
     } else if([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodClientCertificate]) {
         //客户端证书认证
         //TODO:设置客户端证书认证
         //load cert
         NSLog(@"--------- send client cert ---------");
-        NSString *path = [[NSBundle mainBundle]pathForResource:@"client" ofType:@"pem"];
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"client" ofType:@"p12"];
         NSData *p12data = [NSData dataWithContentsOfFile:path];
         CFDataRef inP12data = (__bridge CFDataRef)p12data;
         SecIdentityRef myIdentity;
@@ -165,14 +162,14 @@
 }
 
 - (OSStatus)extractIdentity:(CFDataRef)inP12Data toIdentity:(SecIdentityRef*)identity {
-    NSLog(@"%s",__FUNCTION__);
+    NSLog(@"%d:%@",__LINE__, [NSThread currentThread]);
     OSStatus securityError = errSecSuccess;
     CFStringRef password = CFSTR("p12pwd");
     const void *keys[] = { kSecImportExportPassphrase };
     const void *values[] = { password };
     CFDictionaryRef options = CFDictionaryCreate(NULL, keys, values, 1, NULL, NULL);
     CFArrayRef items = CFArrayCreate(NULL, 0, 0, NULL);
-    securityError = SecPKCS12Import(inP12Data, options, &items);
+    securityError = SecPKCS12Import(inP12Data, options, &items);// p12 只支持 openssl < 3.0 生成
     if (securityError == 0) {
         NSLog(@"clinet.p12 success!");
         CFDictionaryRef ident = CFArrayGetValueAtIndex(items,0);

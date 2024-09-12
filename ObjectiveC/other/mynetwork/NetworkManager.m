@@ -51,8 +51,7 @@
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    //    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig]];
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig] delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             failure(error);
@@ -73,7 +72,7 @@
     request.HTTPBody = params;
     
     //    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig]];
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig] delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             failure(error);

@@ -8,7 +8,7 @@
 
 #import "HTTPSPing02ViewController.h"
 
-#define url_prefix "http://" hostname ":8091"
+#define url_prefix "https://" hostname ":8091"
 
 @interface HTTPSPing02ViewController ()<UITextViewDelegate,NSURLSessionDelegate>
 
@@ -38,7 +38,7 @@
     config.timeoutIntervalForRequest = 30;
     config.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -70,7 +70,7 @@
     config.timeoutIntervalForRequest = 30;
     config.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -132,7 +132,7 @@
         NSString *remoteCertificateSha256 = [CryptoUtil sha256:remoteCertificateBase64];
         
         // SSL Ping 本地不存放证书,获取服务器传来的证书后 直接base64再sha256 再对这个值做唯一性判断
-        if ([remoteCertificateSha256 isEqual:@"d36d094d00a4b600d9765ad61c09a38b66f58f91e22ad91b8269283f9d21664c"]) {
+        if ([remoteCertificateSha256 isEqual:@"cb5374022dc37f108ab31884fd5b12ba5fd839ec3808c968e12c55a3361457ee"]) {
             NSLog(@"SSL ping is pass!");
             NSURLCredential *credential = [NSURLCredential credentialForTrust:serverTrust];
             completionHandler(NSURLSessionAuthChallengeUseCredential,credential);
