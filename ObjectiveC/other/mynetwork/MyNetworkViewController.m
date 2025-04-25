@@ -24,9 +24,10 @@
 
 - (IBAction)get:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"http://127.0.0.1:8090/get";
+    NSString *urlStr = [NSString stringWithFormat:@"http://%s:8090/get",hostname];
     [[NetworkManager sharedManager] getUrl:urlStr success:^(id  _Nonnull response) {
-        [self showTip:response];
+        NSString *result = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+        [self showTip:result];
     } failure:^(NSError * _Nonnull error) {
         [self showTip:[error localizedDescription]];
     }];
@@ -34,7 +35,7 @@
 
 - (IBAction)post:(UIButton *)sender {
     [self.show setText:@""];
-    NSString *urlStr = @"http://127.0.0.1:8090/post";
+    NSString *urlStr = [NSString stringWithFormat:@"http://%s:8090/post",hostname];
     NSMutableDictionary<NSString *,NSObject *> *param = [NSMutableDictionary dictionary];
     [param setValue:@"Dio Brand" forKey:@"name"];
     [param setValue:@18 forKey:@"age"];
@@ -46,7 +47,7 @@
 }
 
 - (IBAction)submit_action:(UIButton *)sender {
-    NSString *urlStr = @"http://127.0.0.1:8090/form";
+    NSString *urlStr = [NSString stringWithFormat:@"http://%s:8090/form",hostname];
     
     NSMutableDictionary *textMutDict = [NSMutableDictionary dictionary];
     [textMutDict setValue:@"Dio" forKey:@"name"];
@@ -69,9 +70,9 @@
 }
 
 - (IBAction)download_btn_action:(UIButton *)sender {
-    NSString *urlStr = @"http://192.168.2.5:8090/download/storage.zip";
-    
-    [[NetworkManager sharedManager] downloadtUrl:urlStr success:^(id  _Nonnull response) {
+    NSString *fileName = @"img.png";
+    NSString *urlStr = [NSString stringWithFormat:@"http://%s:8090/download/%@",hostname,fileName];
+    [[NetworkManager sharedManager] downloadUrl:urlStr fileName:fileName success:^(id  _Nonnull response) {
         [self showTip:response];
     } failure:^(NSError * _Nonnull error) {
         [self showTip:[error localizedDescription]];

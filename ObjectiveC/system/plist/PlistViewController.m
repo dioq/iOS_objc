@@ -9,7 +9,9 @@
 #import "PlistViewController.h"
 
 @interface PlistViewController ()
-
+{
+    NSString *docDir;
+}
 @end
 
 @implementation PlistViewController
@@ -19,6 +21,9 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationController.title = @"plist文件";
     
+    // 获取Documents目录路径
+    docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+    NSLog(@"docDir:\n%@",docDir);
 }
 
 - (IBAction)TestDictonary:(UIButton *)sender {
@@ -36,5 +41,26 @@
     NSLog(@"%@",array);
 }
 
+- (IBAction)save_action:(UIButton *)sender {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"%@",dict);
+    
+    
+    NSError *error;
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dict requiringSecureCoding:YES error:&error];
+    if (error) {
+        NSLog(@"%@",[error localizedFailureReason]);
+        return;
+    }
+    
+    NSString *filePath = [NSString stringWithFormat:@"%@/Info.plist",docDir];
+    BOOL suc = [[NSFileManager defaultManager] createFileAtPath:filePath contents:data attributes:nil];
+    if (suc) {
+        NSLog(@"写入数据成功!");
+    }else{
+        NSLog(@"写入数据失败!");
+    }
+}
 
 @end

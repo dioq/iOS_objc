@@ -69,52 +69,56 @@
 
 - (IBAction)compress_file_action:(UIButton *)sender {
     // 目标路径
-    NSString *destinationFilePath = [NSString stringWithFormat:@"%@/test.zip",docDir];
+    NSString *dst_path = [NSString stringWithFormat:@"%@/test.zip",docDir];
     // 源路径，待压缩的文件
     NSString *f1 = [NSString stringWithFormat:@"%@/t1.txt",docDir];
     NSString *f2 = [NSString stringWithFormat:@"%@/t2.txt",docDir];
-    NSArray *resourcesFilePaths = @[f1,
-                                    f2];
+    NSArray *src_paths = @[f1,f2];
     
-    NSLog(@"destinationFilePath:%@",destinationFilePath);
-    NSLog(@"resourcesFilePaths:%@",resourcesFilePaths);
-    BOOL result = [SSZipArchive createZipFileAtPath:destinationFilePath
-                                   withFilesAtPaths:resourcesFilePaths];
+    NSLog(@"dst_path:%@",dst_path);
+    NSLog(@"src_paths:%@",src_paths);
+    BOOL result = [SSZipArchive createZipFileAtPath:dst_path
+                                   withFilesAtPaths:src_paths];
     NSLog(@"%d",result);
 }
 
 - (IBAction)decopress_file_action:(UIButton *)sender {
     // 源路径，待解压缩的文件
-    NSString *resourcesFilePath = [NSString stringWithFormat:@"%@/test.zip",docDir];
+    NSString *src_path = [NSString stringWithFormat:@"%@/test.zip",docDir];
     // 目标路径
-    NSString *destinationDirPath = [NSString stringWithFormat:@"%@/test",docDir];
+    NSString *dst_path = [NSString stringWithFormat:@"%@/test",docDir];
     
-    BOOL result = [SSZipArchive unzipFileAtPath:resourcesFilePath
-                                  toDestination:destinationDirPath];
+    BOOL result = [SSZipArchive unzipFileAtPath:src_path
+                                  toDestination:dst_path];
     NSLog(@"%d",result);
 }
 
 - (IBAction)compress_dir_action:(UIButton *)sender {
     // 目标路径
-    NSString *destinationFilePath = [NSString stringWithFormat:@"%@/test.zip",libDir];
+    NSString *dst_path = [NSString stringWithFormat:@"%@/test.zip",libDir];
     
     // 源路径，待压缩的文件夹
-    NSString *resourcesDirPath = [NSString stringWithFormat:@"%@/test",libDir];
+    NSString *src_path = [NSString stringWithFormat:@"%@/test",libDir];
     
-    BOOL result = [SSZipArchive createZipFileAtPath:destinationFilePath
-                            withContentsOfDirectory:resourcesDirPath];
+    BOOL result = [SSZipArchive createZipFileAtPath:dst_path
+                            withContentsOfDirectory:src_path];
     NSLog(@"%d",result);
 }
 
 - (IBAction)decopress_dir_action:(UIButton *)sender {
     // 源路径，待解压缩的文件
-    NSString *resourcesFilePath = [NSString stringWithFormat:@"%@/test.zip",libDir];
+    NSString *src_path = [NSString stringWithFormat:@"%@/test.zip",libDir];
     // 目标路径
-    NSString *destinationDirPath = [NSString stringWithFormat:@"%@/test",tmpDir];
+    NSString *dst_path = [NSString stringWithFormat:@"%@/test",tmpDir];
     
-    BOOL result = [SSZipArchive unzipFileAtPath:resourcesFilePath
-                                  toDestination:destinationDirPath];
+    BOOL result = [SSZipArchive unzipFileAtPath:src_path
+                                  toDestination:dst_path];
     NSLog(@"%d",result);
+}
+
+- (IBAction)decopress_selected_file_act:(UIButton *)sender {
+    NSString *src_path = [NSString stringWithFormat:@"%@/test.zip",docDir];
+    NSString *dst_dir_path = [NSString stringWithFormat:@"%@/dst",docDir];
 }
 
 @end

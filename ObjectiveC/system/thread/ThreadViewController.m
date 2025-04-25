@@ -75,6 +75,7 @@
 
 -(void)newThread1:(NSString *)msg {
     NSLog(@"%d:%@ msg:%@",__LINE__, [NSThread currentThread],msg);
+    [NSThread sleepForTimeInterval:5];
     if ([NSThread isMainThread]) {
         NSLog(@"%d: main thread",__LINE__);
     }

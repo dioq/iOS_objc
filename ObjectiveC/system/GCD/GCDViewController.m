@@ -208,4 +208,17 @@
     NSLog(@"the last line! ==== go here!");
 }
 
+- (IBAction)semaphore_btn_act:(UIButton *)sender {
+    int m = 3;
+    int n = 100;
+    dispatch_semaphore_t sema = dispatch_semaphore_create(m);
+    for (int i = 0; i < n; i++) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+            // doing
+            dispatch_semaphore_signal(sema);
+        });
+    }
+}
+
 @end

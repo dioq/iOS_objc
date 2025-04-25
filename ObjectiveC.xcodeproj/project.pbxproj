@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0212BA1D2859A847005822C8 /* SandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0212BA1B2859A847005822C8 /* SandboxViewController.m */; };
 		0212BA1E2859A847005822C8 /* SandboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0212BA1C2859A847005822C8 /* SandboxViewController.xib */; };
+		24075E3A2CA2CB6F0055274E /* ProgressViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 24075E382CA2CB6F0055274E /* ProgressViewDemoVC.m */; };
+		24075E3B2CA2CB6F0055274E /* ProgressViewDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24075E392CA2CB6F0055274E /* ProgressViewDemoVC.xib */; };
 		241258E22A4956DE00FF0A01 /* CompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241258E02A4956DE00FF0A01 /* CompressViewController.m */; };
 		241258E32A4956DE00FF0A01 /* CompressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241258E12A4956DE00FF0A01 /* CompressViewController.xib */; };
 		2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A33F2B33F42A0094CE90 /* ThreadViewController.m */; };
@@ -33,6 +35,8 @@
 		2498F0F22C65F627003E7566 /* DocumentPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2498F0F02C65F627003E7566 /* DocumentPickerVC.m */; };
 		2498F0F32C65F627003E7566 /* DocumentPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2498F0F12C65F627003E7566 /* DocumentPickerVC.xib */; };
 		2498F0FD2C6605C6003E7566 /* AppleFileType.htm in Resources */ = {isa = PBXBuildFile; fileRef = 2498F0FC2C6605C6003E7566 /* AppleFileType.htm */; };
+		249E23422CA406AE0098DDDC /* GCD.md in Resources */ = {isa = PBXBuildFile; fileRef = 249E23412CA406AE0098DDDC /* GCD.md */; };
+		249E23442CA410840098DDDC /* Thread.md in Resources */ = {isa = PBXBuildFile; fileRef = 249E23432CA410840098DDDC /* Thread.md */; };
 		24C10FBE2B24A92200F536A8 /* InstallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C10FBC2B24A92200F536A8 /* InstallViewController.m */; };
 		24C10FBF2B24A92200F536A8 /* InstallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C10FBD2B24A92200F536A8 /* InstallViewController.xib */; };
 		24C10FC82B273A8500F536A8 /* BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C10FC62B273A8500F536A8 /* BadgeViewController.m */; };
@@ -303,10 +307,13 @@
 		0212BA1B2859A847005822C8 /* SandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxViewController.m; sourceTree = "<group>"; };
 		0212BA1C2859A847005822C8 /* SandboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SandboxViewController.xib; sourceTree = "<group>"; };
 		0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
+		24075E352CA187530055274E /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24075E372CA2CB6F0055274E /* ProgressViewDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewDemoVC.h; sourceTree = "<group>"; };
+		24075E382CA2CB6F0055274E /* ProgressViewDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressViewDemoVC.m; sourceTree = "<group>"; };
+		24075E392CA2CB6F0055274E /* ProgressViewDemoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewDemoVC.xib; sourceTree = "<group>"; };
 		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
 		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
 		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
-		246629482C88966500A687FC /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ObjectiveC.app; path = "/Users/lzd/Repository/iOS_objc/build/Debug-iphoneos/ObjectiveC.app"; sourceTree = "<absolute>"; };
 		2476A33E2B33F42A0094CE90 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		2476A33F2B33F42A0094CE90 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		2476A3402B33F42A0094CE90 /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
@@ -343,6 +350,8 @@
 		2498F0F42C660230003E7566 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		2498F0F62C66024D003E7566 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		2498F0FC2C6605C6003E7566 /* AppleFileType.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AppleFileType.htm; sourceTree = "<group>"; };
+		249E23412CA406AE0098DDDC /* GCD.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GCD.md; sourceTree = "<group>"; };
+		249E23432CA410840098DDDC /* Thread.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Thread.md; sourceTree = "<group>"; };
 		24C10FBB2B24A92200F536A8 /* InstallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallViewController.h; sourceTree = "<group>"; };
 		24C10FBC2B24A92200F536A8 /* InstallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallViewController.m; sourceTree = "<group>"; };
 		24C10FBD2B24A92200F536A8 /* InstallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallViewController.xib; sourceTree = "<group>"; };
@@ -797,6 +806,16 @@
 			path = filesystem;
 			sourceTree = "<group>";
 		};
+		24075E362CA2CB350055274E /* progressView */ = {
+			isa = PBXGroup;
+			children = (
+				24075E372CA2CB6F0055274E /* ProgressViewDemoVC.h */,
+				24075E382CA2CB6F0055274E /* ProgressViewDemoVC.m */,
+				24075E392CA2CB6F0055274E /* ProgressViewDemoVC.xib */,
+			);
+			path = progressView;
+			sourceTree = "<group>";
+		};
 		241258DE2A4956B800FF0A01 /* compress */ = {
 			isa = PBXGroup;
 			children = (
@@ -815,6 +834,7 @@
 				2476A33E2B33F42A0094CE90 /* ThreadViewController.h */,
 				2476A33F2B33F42A0094CE90 /* ThreadViewController.m */,
 				2476A3402B33F42A0094CE90 /* ThreadViewController.xib */,
+				249E23432CA410840098DDDC /* Thread.md */,
 			);
 			path = thread;
 			sourceTree = "<group>";
@@ -1217,6 +1237,7 @@
 				3D220CB6217DBF8F00E3799F /* ObjectiveC */,
 				BBEEFED4BB651D1A5F8E0205 /* Pods */,
 				01127D54518BDF1AF49EC6DC /* Frameworks */,
+				24075E352CA187530055274E /* ObjectiveC.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1270,6 +1291,7 @@
 		3D220CCF217DC19700E3799F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				24075E362CA2CB350055274E /* progressView */,
 				24C10FC42B273A7400F536A8 /* badge */,
 				3A82A8F029C5CE0A0028CC6D /* window */,
 				3A2F7C7F299F56B000679555 /* toolbar */,
@@ -1752,6 +1774,7 @@
 				CE3B3950224CE91000CF5E61 /* GCDViewController.h */,
 				CE3B3951224CE91000CF5E61 /* GCDViewController.m */,
 				CE3B3952224CE91000CF5E61 /* GCDViewController.xib */,
+				249E23412CA406AE0098DDDC /* GCD.md */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -2160,7 +2183,7 @@
 			);
 			name = ObjectiveC;
 			productName = ObjectiveC;
-			productReference = 246629482C88966500A687FC /* ObjectiveC.app */;
+			productReference = 24075E352CA187530055274E /* ObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2251,6 +2274,7 @@
 				3A9908C329274A0E009C139D /* HTTPS2WayViewController.xib in Resources */,
 				5FF96AD32226DBE10094DF79 /* NibCollectionViewCell.xib in Resources */,
 				3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */,
+				249E23422CA406AE0098DDDC /* GCD.md in Resources */,
 				3A65ACAB29AE037E003C4C92 /* CFObjectViewController.xib in Resources */,
 				3A9908B9292749C6009C139D /* HTTPS1WayViewController.xib in Resources */,
 				3A2F7B482993D11500679555 /* WebViewJSCode2.xib in Resources */,
@@ -2280,6 +2304,7 @@
 				0212BA1E2859A847005822C8 /* SandboxViewController.xib in Resources */,
 				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
+				249E23442CA410840098DDDC /* Thread.md in Resources */,
 				24C10FBF2B24A92200F536A8 /* InstallViewController.xib in Resources */,
 				CE7386DA22410957004C7239 /* AVPlayerViewController.xib in Resources */,
 				CE7D20342259E44900DEE23E /* LottieViewController.xib in Resources */,
@@ -2332,6 +2357,7 @@
 				3AC6B3C228E99B74003C8103 /* SingletonViewController.xib in Resources */,
 				3DB19B1F217DC71E00CD9E24 /* HUDViewController.xib in Resources */,
 				2476A37D2B358ACB0094CE90 /* InfoPlist.strings in Resources */,
+				24075E3B2CA2CB6F0055274E /* ProgressViewDemoVC.xib in Resources */,
 				3A2F7C84299F56CF00679555 /* ToolBarViewController.xib in Resources */,
 				CE7D20392259E4F700DEE23E /* Boat_Loader.json in Resources */,
 				3AEF9DCD28A038E700ACB99A /* MyNetworkViewController.xib in Resources */,
@@ -2479,6 +2505,7 @@
 				3AC6B3C128E99B74003C8103 /* SingletonViewController.m in Sources */,
 				3D220CC7217DBF9000E3799F /* main.m in Sources */,
 				CE7165B02380016C00D476C3 /* EndModalViewController.m in Sources */,
+				24075E3A2CA2CB6F0055274E /* ProgressViewDemoVC.m in Sources */,
 				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
 				24C10FBE2B24A92200F536A8 /* InstallViewController.m in Sources */,
 				CE193C08222BB61B002F670B /* KKColor.m in Sources */,
@@ -2694,7 +2721,7 @@
 				CODE_SIGN_ENTITLEMENTS = ObjectiveC/ObjectiveC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.2.2;
-				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DEVELOPMENT_TEAM = UKHRF32S6H;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/ObjectiveC/utils/PrefixHeader.pch";
@@ -2706,7 +2733,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.objc.study2;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.objc.study66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -2724,7 +2751,7 @@
 				CODE_SIGN_ENTITLEMENTS = ObjectiveC/ObjectiveC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.2.2;
-				DEVELOPMENT_TEAM = 5YBWG2X244;
+				DEVELOPMENT_TEAM = UKHRF32S6H;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/ObjectiveC/utils/PrefixHeader.pch";
@@ -2736,7 +2763,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.objc.study2;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.objc.study66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

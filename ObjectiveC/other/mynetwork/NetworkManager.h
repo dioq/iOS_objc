@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // post body 是 二进制数据
 - (void)postUrl:(NSString *)urlStr
-      paramData:(NSData * _Nonnull)params
+      paramData:(NSData * _Nullable)params
         success:(void (^)(id _Nonnull))success
         failure:(void (^)(NSError * _Nonnull))failure;
 
@@ -38,9 +38,10 @@ NS_ASSUME_NONNULL_BEGIN
           success:(void (^)(id _Nonnull))success
           failure:(void (^)(NSError * _Nonnull))failure;
 
-- (void)downloadtUrl:(NSString *)urlStr
-             success:(void(^)(id response))success
-             failure:(void(^)(NSError *error))failure;
+- (void)downloadUrl:(NSString *)urlStr
+           fileName:(NSString * _Nonnull)fileName
+            success:(void(^)(id response))success
+            failure:(void(^)(NSError *error))failure;
 
 @end
 

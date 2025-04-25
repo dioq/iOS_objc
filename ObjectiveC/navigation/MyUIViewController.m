@@ -28,6 +28,7 @@
 #import "HandleCellVC.h"
 #import "WindowViewController.h"
 #import "BadgeViewController.h"
+#import "ProgressViewDemoVC.h"
 
 @interface MyUIViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -40,6 +41,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    ProgressViewDemoVC *progressVC = [ProgressViewDemoVC new];
+    progressVC.title = @"进度条";
+    [self.dataArray addObject:progressVC];
     
     BadgeViewController *badgeVC = [BadgeViewController new];
     badgeVC.title = @"badge 小红点";

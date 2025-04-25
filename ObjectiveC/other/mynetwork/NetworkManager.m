@@ -56,8 +56,7 @@
         if (error) {
             failure(error);
         }else {
-            NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            success(result);
+            success(data);
         }
     }];
     // 执行
@@ -69,7 +68,9 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     
-    request.HTTPBody = params;
+    if (params) {
+        request.HTTPBody = params;
+    }
     
     //    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig]];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig] delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
@@ -166,7 +167,8 @@
     // body 结束标志
     [bodyMutData appendData:[body_end dataUsingEncoding:NSUTF8StringEncoding]];
     
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig]];
+    //    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig]];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[self getConfig] delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
     NSURLSessionUploadTask *dataTask = [session uploadTaskWithRequest:request fromData:[bodyMutData copy] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             failure(error);
@@ -178,38 +180,28 @@
     [dataTask resume];
 }
 
--(void)downloadtUrl:(NSString *)urlStr success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
-    NSString *fileName = @"storage.zip";
-    NSURL *url = [NSURL URLWithString:urlStr];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error) {
-            failure(error);
-        }else {
-            //            NSLog(@"%@", response);
-            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-            long status = [httpResponse statusCode];
-            
-            if (status == 200) {
-                // 创建文件时写入内容
-                NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
-                NSLog(@"docDir:\n%@",docDir);
-                NSString *filePath = [NSString stringWithFormat:@"%@/%@",docDir,fileName];
-                BOOL suc = [[NSFileManager defaultManager] createFileAtPath:filePath contents:data attributes:nil];
-                if (suc) {
-                    success(filePath);
-                }else{
-                    NSString *tip = @"file write fail!";
-                    success(tip);
-                }
-            }else {
-                NSString *msg = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                success(msg);
-            }
+-(void)downloadUrl:(NSString *)urlStr fileName:(NSString *)fileName success:(void (^)(id _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
+    [self getUrl:urlStr success:^(id  _Nonnull response) {
+        NSError *error = NULL;
+        NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+        NSString *filePath = [NSString stringWithFormat:@"%@/%@",docDir,fileName];
+        NSLog(@"filePath:\n%@",filePath);
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        if ([fileManager fileExistsAtPath:filePath]) {
+            error = NULL;
+            [fileManager removeItemAtPath:filePath error:&error];
         }
+        BOOL suc = [fileManager createFileAtPath:filePath contents:response attributes:nil];
+        NSString *tip = nil;
+        if (suc) {
+            tip = @"success";
+        }else{
+            tip = @"fail";
+        }
+        success(tip);
+    } failure:^(NSError * _Nonnull error) {
+        failure(error);
     }];
-    [dataTask resume];
 }
 
 -(void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler {
