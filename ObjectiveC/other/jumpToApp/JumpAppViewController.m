@@ -23,17 +23,17 @@
 
 - (IBAction)otherApp:(UIButton *)sender {
     /*
-     通过URL Scheme 跳转到目标App,目标App 需要设置URL Types,本app需要在 Info.plist 里声明 LSApplicationQueriesSchemes
+     通过URL Scheme 跳转到目标App
+     
+     目标App 需要设置URL Types
+     
+     本app需要在 Info.plist 里声明
      <key>LSApplicationQueriesSchemes</key>
      <array>
      <string>ass</string>
      <string>weixin</string>
      <string>tiktok</string>
      </array>
-     
-     tiktok://
-     weixin://
-     ass://
      */
     NSString *urlStr = @"ass://";
     NSURL *url = [NSURL URLWithString:urlStr];
