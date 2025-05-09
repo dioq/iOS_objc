@@ -21,9 +21,21 @@
     
 }
 
-
 - (IBAction)otherApp:(UIButton *)sender {
-    NSString *urlStr = @"weixin://"; // bundle id 两个前缀要不相同 com.tencent.x1 与 com.tencent.x2 跳转不成功
+    /*
+     通过URL Scheme 跳转到目标App,目标App 需要设置URL Types,本app需要在 Info.plist 里声明 LSApplicationQueriesSchemes
+     <key>LSApplicationQueriesSchemes</key>
+     <array>
+     <string>ass</string>
+     <string>weixin</string>
+     <string>tiktok</string>
+     </array>
+     
+     tiktok://
+     weixin://
+     ass://
+     */
+    NSString *urlStr = @"ass://";
     NSURL *url = [NSURL URLWithString:urlStr];
     UIApplication *application = [UIApplication sharedApplication];
     if([application canOpenURL:url]){

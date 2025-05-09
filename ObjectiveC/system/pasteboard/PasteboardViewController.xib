@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PasteboardViewController">
             <connections>
+                <outlet property="imgv" destination="thY-TQ-aB3" id="0bK-16-dly"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="64F-MK-osd">
-                    <rect key="frame" x="10" y="64" width="373" height="345"/>
+                    <rect key="frame" x="10" y="64" width="373" height="445"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmg-7f-oIM">
                             <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
@@ -79,8 +80,26 @@
                                 <action selector="many_read_act:" destination="-1" eventType="touchUpInside" id="Upq-yl-xVW"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hso-jv-BXa">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwb-Be-mAD">
                             <rect key="frame" x="0.0" y="300" width="373" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="文件 存"/>
+                            <connections>
+                                <action selector="file_save_act:" destination="-1" eventType="touchUpInside" id="6ej-aH-WmW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yq4-JG-u57">
+                            <rect key="frame" x="0.0" y="350" width="373" height="45"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="文件 取"/>
+                            <connections>
+                                <action selector="file_get_act:" destination="-1" eventType="touchUpInside" id="2L9-ZY-aBg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hso-jv-BXa">
+                            <rect key="frame" x="0.0" y="400" width="373" height="45"/>
                             <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="监控"/>
@@ -90,10 +109,19 @@
                         </button>
                     </subviews>
                 </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="thY-TQ-aB3">
+                    <rect key="frame" x="303" y="762" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="HRd-IL-aea"/>
+                        <constraint firstAttribute="width" constant="80" id="lc6-Mj-Jss"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="thY-TQ-aB3" secondAttribute="bottom" constant="10" id="5Kb-wt-cuY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="thY-TQ-aB3" secondAttribute="trailing" constant="10" id="Dgu-8x-p1d"/>
                 <constraint firstItem="64F-MK-osd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="Ryg-ff-BSe"/>
                 <constraint firstItem="64F-MK-osd" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="5" id="vuV-Rg-HMg"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="64F-MK-osd" secondAttribute="trailing" constant="10" id="y0n-G4-SGS"/>

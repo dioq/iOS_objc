@@ -35,6 +35,8 @@
 
 @interface PasteboardViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgv;
+
 @end
 
 @implementation PasteboardViewController
@@ -95,14 +97,31 @@
         return;
     }
     
-//    NSMutableIndexSet *mutSet = [[NSMutableIndexSet alloc] init];
-//    for (int i = 0; i < pasteboard.numberOfItems; i++) {
-//        [mutSet addIndex:i];
-//    }
-//    NSArray *item = [pasteboard pasteboardTypesForItemSet:mutSet];
-//    NSLog(@"%@",item);
+    //    NSMutableIndexSet *mutSet = [[NSMutableIndexSet alloc] init];
+    //    for (int i = 0; i < pasteboard.numberOfItems; i++) {
+    //        [mutSet addIndex:i];
+    //    }
+    //    NSArray *item = [pasteboard pasteboardTypesForItemSet:mutSet];
+    //    NSLog(@"%@",item);
     
     NSLog(@"%@",pasteboard.items);
+}
+
+- (IBAction)file_save_act:(UIButton *)sender {
+    UIImage *img = [UIImage imageNamed:@"music_on"];
+    NSData *data = UIImagePNGRepresentation(img);
+    
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    [pasteboard setData:data forPasteboardType:@"test.png"];
+}
+
+- (IBAction)file_get_act:(UIButton *)sender {
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    
+    NSData *data = [pasteboard dataForPasteboardType:@"test.png"];
+    
+    UIImage *img = [UIImage imageWithData:data];
+    [self.imgv setImage:img];
 }
 
 - (IBAction)monitor_act:(UIButton *)sender {
