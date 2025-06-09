@@ -25,6 +25,7 @@
 #import "ProtobufViewController.h"
 #import "InstallViewController.h"
 #import "CheckAppViewController.h"
+#import "AppInfoViewController.h"
 
 @interface OtherViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -37,6 +38,10 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    AppInfoViewController *appInfo = [AppInfoViewController new];
+    appInfo.title = @"App 信息";
+    [self.dataArray addObject:appInfo];
     
     CheckAppViewController *checkappVC = [CheckAppViewController new];
     checkappVC.title = @"检查手机上安装的应用";

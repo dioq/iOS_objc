@@ -13,6 +13,8 @@
 		24075E3B2CA2CB6F0055274E /* ProgressViewDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24075E392CA2CB6F0055274E /* ProgressViewDemoVC.xib */; };
 		241258E22A4956DE00FF0A01 /* CompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241258E02A4956DE00FF0A01 /* CompressViewController.m */; };
 		241258E32A4956DE00FF0A01 /* CompressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241258E12A4956DE00FF0A01 /* CompressViewController.xib */; };
+		2459E2CC2DF7230700E56F91 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */; };
+		2459E2CD2DF7230700E56F91 /* AppInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */; };
 		2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A33F2B33F42A0094CE90 /* ThreadViewController.m */; };
 		2476A3422B33F42A0094CE90 /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2476A3402B33F42A0094CE90 /* ThreadViewController.xib */; };
 		2476A3792B356D220094CE90 /* CheckAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A3772B356D220094CE90 /* CheckAppViewController.m */; };
@@ -314,6 +316,9 @@
 		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
 		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
 		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
+		2459E2C92DF7230700E56F91 /* AppInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
+		2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
+		2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInfoViewController.xib; sourceTree = "<group>"; };
 		2476A33E2B33F42A0094CE90 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		2476A33F2B33F42A0094CE90 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		2476A3402B33F42A0094CE90 /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
@@ -826,6 +831,16 @@
 				2490C65C2B563EEA008E81D9 /* ZipUtil.m */,
 			);
 			path = compress;
+			sourceTree = "<group>";
+		};
+		2459E2C82DF722E600E56F91 /* appinfo */ = {
+			isa = PBXGroup;
+			children = (
+				2459E2C92DF7230700E56F91 /* AppInfoViewController.h */,
+				2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */,
+				2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */,
+			);
+			path = appinfo;
 			sourceTree = "<group>";
 		};
 		2476A33D2B33F40D0094CE90 /* thread */ = {
@@ -1971,6 +1986,7 @@
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				2459E2C82DF722E600E56F91 /* appinfo */,
 				2476A3752B356D080094CE90 /* checkapp */,
 				24C10FBA2B24A90900F536A8 /* ipa_install */,
 				24D90A1D2AD6AE3A0072F1FD /* protobuf */,
@@ -2281,6 +2297,7 @@
 				CE4187A4228E715600A3A8ED /* music_off.png in Resources */,
 				CE757CCC237E6EC20039C29D /* miaowu.ttf in Resources */,
 				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
+				2459E2CD2DF7230700E56F91 /* AppInfoViewController.xib in Resources */,
 				3D220CEB217DC1F700E3799F /* MyUIViewController.xib in Resources */,
 				3A5354742879AD370096D4E2 /* server.cer in Resources */,
 				3A811582288E96600011AA45 /* DataTypeViewController.xib in Resources */,
@@ -2382,9 +2399,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2422,6 +2443,7 @@
 				5F9921732597B082009F938C /* SceneDelegate.m in Sources */,
 				3A7F2BB729FC1B8E005DE73B /* SetViewController.m in Sources */,
 				CE193C03222BB61B002F670B /* KKColorCell.m in Sources */,
+				2459E2CC2DF7230700E56F91 /* AppInfoViewController.m in Sources */,
 				CEE43DDE2330F254008FA43C /* PolymorphismViewController.m in Sources */,
 				CED3B8D52266085A008988CE /* Dog2.m in Sources */,
 				24C10FC82B273A8500F536A8 /* BadgeViewController.m in Sources */,
