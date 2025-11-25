@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AtE-EQ-6MU">
-                    <rect key="frame" x="10" y="53" width="394" height="155"/>
+                    <rect key="frame" x="10" y="101" width="394" height="155"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mI-cQ-1h0">
                             <rect key="frame" x="0.0" y="0.0" width="394" height="45"/>
@@ -38,18 +38,18 @@
                             <rect key="frame" x="0.0" y="55" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="写入数据"/>
+                            <buttonConfiguration key="configuration" style="plain" title="test1"/>
                             <connections>
-                                <action selector="write:" destination="-1" eventType="touchUpInside" id="rnI-P9-qMP"/>
+                                <action selector="test1:" destination="-1" eventType="touchUpInside" id="Q9R-IF-WXo"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-Hs-UQb">
                             <rect key="frame" x="0.0" y="110" width="394" height="45"/>
                             <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="读出数据"/>
+                            <buttonConfiguration key="configuration" style="plain" title="test2"/>
                             <connections>
-                                <action selector="read:" destination="-1" eventType="touchUpInside" id="Vhf-KV-2aE"/>
+                                <action selector="test2:" destination="-1" eventType="touchUpInside" id="c1a-1H-Z8P"/>
                             </connections>
                         </button>
                     </subviews>
@@ -70,7 +70,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

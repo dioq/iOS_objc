@@ -32,7 +32,9 @@
         NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
-    NSLog(@"字符串序列化完成");
+    NSLog(@"archived:%@",self.serializeData);
+    NSString *token = [CryptoUtil hexEncode:self.serializeData];
+    NSLog(@"token:%@\nlength:%lu",token,token.length);
 }
 
 - (IBAction)deserializeString:(UIButton *)sender {
@@ -42,7 +44,7 @@
         NSLog(@"%@",[error localizedFailureReason]);
         return;
     }
-    NSLog(@"字符串反序列化:%@",str);
+    NSLog(@"unarchived:%@",str);
 }
 
 - (IBAction)serialize1:(UIButton *)sender {

@@ -9,20 +9,20 @@
 #import "NSUserDefaultsVC.h"
 
 @interface NSUserDefaultsVC ()
-
+{
+    NSUserDefaults *defaults;
+}
 @end
 
 @implementation NSUserDefaultsVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // 1. 创建NSUserDefaults单例
+    defaults = [NSUserDefaults standardUserDefaults];
 }
 
 - (IBAction)study:(UIButton *)sender {
-    // 1. 创建NSUserDefaults单例:
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
     // 2. 数据写入:
     // 通过 key 值 来存入 和 读取数据
     [defaults setInteger:23 forKey:@"myInteger"];
@@ -36,17 +36,26 @@
     NSLog(@"myInteger:%ld",myInteger);
 }
 
-- (IBAction)write:(UIButton *)sender {
-    // NSUserDefaults 数据存放在沙盒 Library/Preferences/ 目录下，一个以你包名命名的.plist文件。
+- (IBAction)test1:(UIButton *)sender {
+    // NSUserDefaults 数据存放在沙盒,路径如下
+    NSString *bundleID = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleIdentifier"];
+    NSString *path = [NSString stringWithFormat:@"%@/Library/Preferences/%@.plist",NSHomeDirectory(),bundleID];
+    NSLog(@"path:%@", path);
+    
     NSString *value = @"test value";
     NSString *key = @"test key";
-    [[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
-    NSString *path = NSHomeDirectory();
-    NSLog(@"path : %@", path);
+    [defaults setObject:value forKey:key];
 }
 
-- (IBAction)read:(UIButton *)sender {
+- (IBAction)test2:(UIButton *)sender {
+    NSMutableDictionary *mutDict = [NSMutableDictionary new];
+    [mutDict setValue:@"value1" forKey:@"key1"];
+    [mutDict setValue:@"value2" forKey:@"key2"];
     
+    [defaults setObject:[mutDict copy] forKey:@"dkey"];
+    
+    NSDictionary *dict = [defaults objectForKey:@"dkey"];
+    NSLog(@"%@",[dict valueForKey:@"key1"]);
 }
 
 @end
