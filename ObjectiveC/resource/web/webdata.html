@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Web2App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <style>
+            .btnClass {
+                width: 100%;
+                height: 45px;
+                font-size: 15px;
+                text-align: center;
+                line-height: 45px;
+                margin-bottom: 10px;
+            }
+        </style>
+        <script>
+            function write_action() {
+                localStorage.setItem('lk', "v1");
+                sessionStorage.setItem('sk', "v2");
+            }
+            
+            function read_action() {
+                var tmp1 = localStorage.getItem('lk');
+                var tmp2 = sessionStorage.getItem('sk');
+                var str = 'lk:' + tmp1 + "," + "sk:" + tmp2;
+                document.getElementById("showid").innerHTML = str;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input class="btnClass" type="button" value="write" onclick="write_action()" />
+        <br />
+        <input class="btnClass" type="button" value="read" onclick="read_action()" />
+        <br/>
+        <p id="showid" style="color: red; font-size: 25px;">显示app回调内容...</p>
+    </body>
+</html>

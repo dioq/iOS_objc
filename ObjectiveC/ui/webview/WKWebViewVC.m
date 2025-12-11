@@ -17,7 +17,7 @@
 
 @implementation WKWebViewVC
 
-// .storyboard 依赖库
+// 依赖库
 // TARGETS -> AppName -> General -> Frameworks, Libraries, and Embedded Content 添加 WebKit.framework
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,7 +32,7 @@
 }
 
 - (IBAction)loadLocalUrl:(UIButton *)sender {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"show" ofType:@"html"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"webdata" ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webview loadRequest: request];

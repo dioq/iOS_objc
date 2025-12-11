@@ -13,6 +13,7 @@
 		24075E3B2CA2CB6F0055274E /* ProgressViewDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24075E392CA2CB6F0055274E /* ProgressViewDemoVC.xib */; };
 		241258E22A4956DE00FF0A01 /* CompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241258E02A4956DE00FF0A01 /* CompressViewController.m */; };
 		241258E32A4956DE00FF0A01 /* CompressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241258E12A4956DE00FF0A01 /* CompressViewController.xib */; };
+		24415EF62EE8269F00EB9C10 /* webdata.html in Resources */ = {isa = PBXBuildFile; fileRef = 24415EF52EE8269F00EB9C10 /* webdata.html */; };
 		2459E2CC2DF7230700E56F91 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */; };
 		2459E2CD2DF7230700E56F91 /* AppInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */; };
 		2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A33F2B33F42A0094CE90 /* ThreadViewController.m */; };
@@ -147,8 +148,6 @@
 		3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D220CF4217DC23C00E3799F /* MyTabBarController.m */; };
 		3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19AFD217DC4AB00CD9E24 /* LazyloadViewController.m */; };
 		3DB19B0C217DC59600CD9E24 /* myimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DB19B00217DC59500CD9E24 /* myimage.jpg */; };
-		3DB19B0E217DC59600CD9E24 /* t2.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DB19B03217DC59500CD9E24 /* t2.html */; };
-		3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DB19B04217DC59500CD9E24 /* myweb.html */; };
 		3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B09217DC59600CD9E24 /* WKWebViewVC.m */; };
 		3DB19B12217DC59600CD9E24 /* WKWebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB19B0B217DC59600CD9E24 /* WKWebViewVC.xib */; };
 		3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB19B14217DC71E00CD9E24 /* MasonryVC.m */; };
@@ -326,6 +325,7 @@
 		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
 		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
 		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
+		24415EF52EE8269F00EB9C10 /* webdata.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = webdata.html; sourceTree = "<group>"; };
 		2459E2C92DF7230700E56F91 /* AppInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
 		2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
 		2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInfoViewController.xib; sourceTree = "<group>"; };
@@ -539,8 +539,6 @@
 		3DB19AFC217DC4AB00CD9E24 /* LazyloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyloadViewController.h; sourceTree = "<group>"; };
 		3DB19AFD217DC4AB00CD9E24 /* LazyloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyloadViewController.m; sourceTree = "<group>"; };
 		3DB19B00217DC59500CD9E24 /* myimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myimage.jpg; sourceTree = "<group>"; };
-		3DB19B03217DC59500CD9E24 /* t2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = t2.html; sourceTree = "<group>"; };
-		3DB19B04217DC59500CD9E24 /* myweb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = myweb.html; sourceTree = "<group>"; };
 		3DB19B09217DC59600CD9E24 /* WKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewVC.m; sourceTree = "<group>"; };
 		3DB19B0A217DC59600CD9E24 /* WKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewVC.h; sourceTree = "<group>"; };
 		3DB19B0B217DC59600CD9E24 /* WKWebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKWebViewVC.xib; sourceTree = "<group>"; };
@@ -1860,10 +1858,9 @@
 		CE40E2D7221BE2B60072CF9E /* web */ = {
 			isa = PBXGroup;
 			children = (
+				24415EF52EE8269F00EB9C10 /* webdata.html */,
 				3A2F7B492993D1F700679555 /* show2.html */,
 				3AB2288D2934BB1900DCA181 /* pkg.html */,
-				3DB19B03217DC59500CD9E24 /* t2.html */,
-				3DB19B04217DC59500CD9E24 /* myweb.html */,
 				3A2F7B3F29939B6100679555 /* show.html */,
 			);
 			path = web;
@@ -2330,6 +2327,7 @@
 				CE17E4EA23548C2A004A7AA2 /* AppIcon-default@2x.png in Resources */,
 				CE757CD0237E6EC20039C29D /* zhiyi.ttf in Resources */,
 				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
+				24415EF62EE8269F00EB9C10 /* webdata.html in Resources */,
 				CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */,
 				3ABF6A2F2877585300CEE7F2 /* client.p12 in Resources */,
 				CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */,
@@ -2366,7 +2364,6 @@
 				2476A3422B33F42A0094CE90 /* ThreadViewController.xib in Resources */,
 				3A2F7B4A2993D1F700679555 /* show2.html in Resources */,
 				3A2E7B9029CC091900408AC2 /* MyAlertViewController.xib in Resources */,
-				3DB19B0E217DC59600CD9E24 /* t2.html in Resources */,
 				2498F0F32C65F627003E7566 /* DocumentPickerVC.xib in Resources */,
 				CE7386F12242593A004C7239 /* Splash.caf in Resources */,
 				CE7386EC2242508B004C7239 /* bg_maze.mp3 in Resources */,
@@ -2438,7 +2435,6 @@
 				CE7D20392259E4F700DEE23E /* Boat_Loader.json in Resources */,
 				3AEF9DCD28A038E700ACB99A /* MyNetworkViewController.xib in Resources */,
 				2478B2D92A406A3F0094C0DD /* array.plist in Resources */,
-				3DB19B0F217DC59600CD9E24 /* myweb.html in Resources */,
 				CED3B96022674A52008988CE /* PhotoViewController.xib in Resources */,
 				CE17E4EE23548C2A004A7AA2 /* iWiBi-orange-icon-light@3x.png in Resources */,
 				3ACA4C1C28D6FC9A003169E4 /* CheckboxViewController.xib in Resources */,

@@ -22,26 +22,22 @@
 - (IBAction)timestampAction:(UIButton *)sender {
     // 以下这个结果是10位数
     NSDate *date = [NSDate date];
-    NSLog(@"date = %@\n",date);
+    NSLog(@"date = %@",date);
     // date = 2017-10-27 05:03:09 +0000
     
     NSTimeInterval interval = [date timeIntervalSince1970];
+    NSLog(@"interval:%f",interval); //时间戳
     NSInteger timestamp = interval;
     NSLog(@"timestamp:%ld",timestamp); //时间戳
     
     NSDate *date2 = [NSDate dateWithTimeIntervalSince1970:interval];
-    NSLog(@"date = %@\n",date2);
+    NSLog(@"date = %@",date2);
 }
 
 - (IBAction)basicAPI:(UIButton *)sender {
     NSDate *date = [NSDate date];
     NSLog(@"date = %@\n",date);
     // date = 2017-10-27 05:03:09 +0000
-    
-    NSTimeInterval interval = [date timeIntervalSince1970];
-    NSInteger timestamp = interval;
-    NSLog(@"timestamp:%ld",timestamp); //时间戳
-    
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setTimeZone:[NSTimeZone defaultTimeZone]];

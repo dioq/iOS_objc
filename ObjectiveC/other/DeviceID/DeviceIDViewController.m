@@ -76,11 +76,11 @@
             if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
                 NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
                 NSLog(@"IDFA:\n%@",idfa);
-                //                [self.show setText:idfa];
+                [self.show setText:idfa];
             } else {
                 NSString *tip = @"请在设置-隐私-跟踪中允许App请求跟踪";
                 NSLog(@"%@",tip);
-                //                [self.show setText:tip];
+                [self.show setText:tip];
             }
         }];
     } else {

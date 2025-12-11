@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#include <time.h>
 
 @interface ObjectiveCTests : XCTestCase
 
@@ -22,12 +23,46 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-- (void)testExample {
-    NSArray<NSString *> *systemVersionsArr = [NSArray arrayWithObjects:@"16.0",@"16.0.1",@"16.0.2",@"16.0.3",@"16.1",@"16.1.1",@"16.1.2",@"16.2",@"16.3",@"16.3.1",@"16.4",@"16.4.1",@"16.5",@"16.5.1",@"16.6",@"16.6.1",@"16.7",@"16.7.1",@"16.7.2",@"16.7.3",@"16.7.4",@"16.7.5",@"16.7.6",@"16.7.7",@"17.0",@"17.0.1",@"17.0.2",@"17.0.3",@"17.1",@"17.1.1",@"17.1.2",@"17.2",@"17.2.1",@"17.3",@"17.3.1",@"17.4",@"17.4.1",@"17.5",@"17.5.1",nil];
+-(void)test4 {
+    NSTimeInterval time = [[NSProcessInfo processInfo] systemUptime];
+    srand((unsigned int)clock());
+    NSTimeInterval last_start_time = time + rand() % 10000000;
+    NSLog(@"%d ---> %f",__LINE__,last_start_time);
+    NSString *str = [NSString stringWithFormat:@"%f",last_start_time];
+    NSLog(@"%d ---> %@",__LINE__,str);
+    
+    NSData *dt = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *str2 = [[NSString alloc] initWithData:dt encoding:NSUTF8StringEncoding];
+    NSLog(@"%d ---> %@",__LINE__,str2);
+    
+    NSTimeInterval last_start_time2 = [str2 doubleValue];
+    NSLog(@"%d ---> %f",__LINE__,last_start_time2);
+}
+
+-(void)test3{
+    // 使用 CPU 时钟作为种子
+    srand((unsigned int)clock());
+    
+    for (int i = 0; i < 100; i++)
+    {
+        int random_num = rand() % 10000;
+        printf("%d: %d\n", __LINE__, random_num);
+    }
+}
+
+-(void)test2 {
+    srand((unsigned int)clock());
     for (int i =0; i < 100; i++) {
-        long index = random() % systemVersionsArr.count;
-        NSString *systemVersion = systemVersionsArr[index];
-        NSLog(@"systemVersion:%@",systemVersion);
+        long num = rand() % 1000000;
+        printf("%ld\n",num);
+    }
+}
+
+- (void)testExample {
+    for (int i =0; i < 200; i++) {
+        NSString *uuidStr = [[NSUUID UUID] UUIDString];
+        //        NSLog(@"%d uuid:%@",i, uuidStr);
+        printf("%s\n",[uuidStr UTF8String]);
     }
 }
 
