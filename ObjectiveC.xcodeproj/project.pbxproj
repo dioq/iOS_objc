@@ -16,6 +16,9 @@
 		24415EF62EE8269F00EB9C10 /* webdata.html in Resources */ = {isa = PBXBuildFile; fileRef = 24415EF52EE8269F00EB9C10 /* webdata.html */; };
 		2459E2CC2DF7230700E56F91 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */; };
 		2459E2CD2DF7230700E56F91 /* AppInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */; };
+		247192882F5414C10086DB80 /* Progress2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 247192862F5414C10086DB80 /* Progress2VC.m */; };
+		247192892F5414C10086DB80 /* Progress2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247192872F5414C10086DB80 /* Progress2VC.xib */; };
+		2471928F2F54208D0086DB80 /* TaskProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2471928E2F54208D0086DB80 /* TaskProgressView.m */; };
 		2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A33F2B33F42A0094CE90 /* ThreadViewController.m */; };
 		2476A3422B33F42A0094CE90 /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2476A3402B33F42A0094CE90 /* ThreadViewController.xib */; };
 		2476A3792B356D220094CE90 /* CheckAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476A3772B356D220094CE90 /* CheckAppViewController.m */; };
@@ -329,6 +332,11 @@
 		2459E2C92DF7230700E56F91 /* AppInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
 		2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
 		2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInfoViewController.xib; sourceTree = "<group>"; };
+		247192852F5414C10086DB80 /* Progress2VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Progress2VC.h; sourceTree = "<group>"; };
+		247192862F5414C10086DB80 /* Progress2VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Progress2VC.m; sourceTree = "<group>"; };
+		247192872F5414C10086DB80 /* Progress2VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Progress2VC.xib; sourceTree = "<group>"; };
+		2471928D2F54208D0086DB80 /* TaskProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskProgressView.h; sourceTree = "<group>"; };
+		2471928E2F54208D0086DB80 /* TaskProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskProgressView.m; sourceTree = "<group>"; };
 		2476A33E2B33F42A0094CE90 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		2476A33F2B33F42A0094CE90 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		2476A3402B33F42A0094CE90 /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
@@ -837,6 +845,11 @@
 				24075E372CA2CB6F0055274E /* ProgressViewDemoVC.h */,
 				24075E382CA2CB6F0055274E /* ProgressViewDemoVC.m */,
 				24075E392CA2CB6F0055274E /* ProgressViewDemoVC.xib */,
+				247192852F5414C10086DB80 /* Progress2VC.h */,
+				247192862F5414C10086DB80 /* Progress2VC.m */,
+				247192872F5414C10086DB80 /* Progress2VC.xib */,
+				2471928D2F54208D0086DB80 /* TaskProgressView.h */,
+				2471928E2F54208D0086DB80 /* TaskProgressView.m */,
 			);
 			path = progressView;
 			sourceTree = "<group>";
@@ -2363,6 +2376,7 @@
 				3D220CF0217DC20200E3799F /* VenderViewController.xib in Resources */,
 				2476A3422B33F42A0094CE90 /* ThreadViewController.xib in Resources */,
 				3A2F7B4A2993D1F700679555 /* show2.html in Resources */,
+				247192892F5414C10086DB80 /* Progress2VC.xib in Resources */,
 				3A2E7B9029CC091900408AC2 /* MyAlertViewController.xib in Resources */,
 				2498F0F32C65F627003E7566 /* DocumentPickerVC.xib in Resources */,
 				CE7386F12242593A004C7239 /* Splash.caf in Resources */,
@@ -2565,6 +2579,7 @@
 				0212BA1D2859A847005822C8 /* SandboxViewController.m in Sources */,
 				CED3B8B62265F185008988CE /* Man.m in Sources */,
 				2483AFA82C4E4934006F7868 /* FTPViewController.m in Sources */,
+				247192882F5414C10086DB80 /* Progress2VC.m in Sources */,
 				CE193C05222BB61B002F670B /* KKColorsHeaderView.m in Sources */,
 				3AAF126628DF0DA300A948C0 /* AlertViewController.m in Sources */,
 				CEC9EE022228DBEE006E2064 /* Common.m in Sources */,
@@ -2578,6 +2593,7 @@
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
 				24DF132C2C6F61D300B225E0 /* server.m in Sources */,
 				CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */,
+				2471928F2F54208D0086DB80 /* TaskProgressView.m in Sources */,
 				3A2F7B472993D11500679555 /* WebViewJSCode2.m in Sources */,
 				CE2EF18922D4446200C09B22 /* BrowerViewController.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,

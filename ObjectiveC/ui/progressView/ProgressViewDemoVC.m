@@ -20,10 +20,14 @@ static double num = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setup1];
+}
+
+-(void)setup1 {
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(10, 200, [[UIScreen mainScreen] bounds].size.width - 20, 0)];
-    self.progressView.tintColor = [UIColor greenColor];     // 进度条颜色
-    self.progressView.backgroundColor = [UIColor redColor]; // 进度条背景色
+    self.progressView.tintColor = [UIColor systemGray5Color];     // 进度条颜色
+    self.progressView.progressTintColor = [UIColor systemBlueColor];
+    //    self.progressView.backgroundColor = [UIColor redColor]; // 进度条背景色
     //设置进度条的高度，下面这句代码表示进度条的宽度变为原来的1倍，高度变为原来的1.5倍.
     self.progressView.transform = CGAffineTransformMakeScale(1.0f, 1.5f);
     [self.view addSubview:self.progressView];
