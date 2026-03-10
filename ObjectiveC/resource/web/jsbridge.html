@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>jsbridge</title>
+    </head>
+    
+    <body>
+        <button style="width: 100%;height: 45px;background-color: pink;font-size: 20px;" onclick="call_oc_func()" >js call oc function</button>
+        <p id="showid" style="color: red; font-size: 25px;">message ...</p>
+        
+        <script>
+            // 简单版：直接发字符串或对象
+            function call_oc_func() {
+                if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.nativeBridge) {
+                    // 可以传字符串、对象、数组、数字等 JSON 可序列化的内容
+                    window.webkit.messageHandlers.nativeBridge.postMessage("msg from js");// 无法接受 oc 方法返回值
+                    // 或传对象
+                    // window.webkit.messageHandlers.nativeBridge.postMessage({ action: "click", id: 123 });
+                } else {
+                    alert("当前不在 WKWebView 中，或 nativeBridge 未注册");
+                }
+            }
+            
+            function js_func_for_call(msg) {
+                document.getElementById("showid").innerHTML = msg;
+                return "receive: msg from js";
+            }
+        </script>
+    </body>
+    
+</html>

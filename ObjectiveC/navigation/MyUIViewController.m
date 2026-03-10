@@ -9,8 +9,7 @@
 #import "MyUIViewController.h"
 #import "WKWebViewVC.h"
 #import "WKWebViewDelegateVC.h"
-#import "WebViewJSCode.h"
-#import "WebViewJSCode2.h"
+#import "WebViewJSBridgeVC.h"
 #import "MyVideoViewController.h"
 #import "MyCollectionViewVC.h"
 #import "NibCollectionViewVC.h"
@@ -42,6 +41,18 @@
 
 -(void)loadData{//添加controller
     self.dataArray = [NSMutableArray array];
+    
+    WebViewJSBridgeVC *jsbridgeVC = [WebViewJSBridgeVC new];
+    jsbridgeVC.title = @"js bridge";
+    [self.dataArray addObject:jsbridgeVC];
+    
+    WKWebViewDelegateVC *wk2 = [WKWebViewDelegateVC new];
+    wk2.title = @"WKWebView delegate";
+    [self.dataArray addObject:wk2];
+    
+    WKWebViewVC *wk = [WKWebViewVC new];
+    wk.title = @"WKWebView load";
+    [self.dataArray addObject:wk];
     
     Progress2VC *progressVC2 = [Progress2VC new];
     progressVC2.title = @"自定义进度条";
@@ -118,22 +129,6 @@
     MyVideoViewController *videoVC = [MyVideoViewController new];
     videoVC.title = @"Video";
     [self.dataArray addObject:videoVC];
-    
-    WebViewJSCode2 *jscodeVC2 = [WebViewJSCode2 new];
-    jscodeVC2.title = @"webview js往 app 传不同的参数";
-    [self.dataArray addObject:jscodeVC2];
-    
-    WebViewJSCode *jscodeVC = [WebViewJSCode new];
-    jscodeVC.title = @"webview 中与 js 交互";
-    [self.dataArray addObject:jscodeVC];
-    
-    WKWebViewDelegateVC *wk2 = [WKWebViewDelegateVC new];
-    wk2.title = @"WKWebView delegate";
-    [self.dataArray addObject:wk2];
-    
-    WKWebViewVC *wk = [WKWebViewVC new];
-    wk.title = @"WKWebView load";
-    [self.dataArray addObject:wk];
 }
 
 - (void)viewDidLoad {
@@ -176,6 +171,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

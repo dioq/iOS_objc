@@ -12,9 +12,6 @@
 #import "SDViewController.h"
 #import "MyShareViewController.h"
 #import "AFNetworkingVC.h"
-#import "MenuListViewController.h"
-#import "ColorViewController.h"
-#import "Color2ViewController.h"
 #import "LottieViewController.h"
 #import "MJRefreshViewController.h"
 #import "CheckboxViewController.h"
@@ -29,7 +26,7 @@
 
 @implementation VenderViewController
 
--(void)loadData{//添加controller
+-(void)loadData{
     self.dataArray = [NSMutableArray array];
     
     MMKVViewController *mmkvVC = [MMKVViewController new];
@@ -47,18 +44,6 @@
     LottieViewController *lottieVC = [LottieViewController new];
     lottieVC.title = @"lottie";
     [self.dataArray addObject:lottieVC];
-    
-    Color2ViewController *color2VC = [Color2ViewController new];
-    color2VC.title = @"颜色选取2";
-    [self.dataArray addObject:color2VC];
-    
-    ColorViewController *colorVC = [ColorViewController new];
-    colorVC.title = @"颜色选取";
-    [self.dataArray addObject:colorVC];
-    
-    MenuListViewController *menulistVC = [MenuListViewController new];
-    menulistVC.title = @"展开选项列表";
-    [self.dataArray addObject:menulistVC];
     
     AFNetworkingVC *afVC = [AFNetworkingVC new];
     afVC.title = @"AFNetworking";

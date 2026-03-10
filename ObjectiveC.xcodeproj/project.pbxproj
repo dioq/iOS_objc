@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		24075E3B2CA2CB6F0055274E /* ProgressViewDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24075E392CA2CB6F0055274E /* ProgressViewDemoVC.xib */; };
 		241258E22A4956DE00FF0A01 /* CompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241258E02A4956DE00FF0A01 /* CompressViewController.m */; };
 		241258E32A4956DE00FF0A01 /* CompressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241258E12A4956DE00FF0A01 /* CompressViewController.xib */; };
-		24415EF62EE8269F00EB9C10 /* webdata.html in Resources */ = {isa = PBXBuildFile; fileRef = 24415EF52EE8269F00EB9C10 /* webdata.html */; };
 		2459E2CC2DF7230700E56F91 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */; };
 		2459E2CD2DF7230700E56F91 /* AppInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */; };
 		247192882F5414C10086DB80 /* Progress2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 247192862F5414C10086DB80 /* Progress2VC.m */; };
@@ -47,6 +46,8 @@
 		24C10FBF2B24A92200F536A8 /* InstallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C10FBD2B24A92200F536A8 /* InstallViewController.xib */; };
 		24C10FC82B273A8500F536A8 /* BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C10FC62B273A8500F536A8 /* BadgeViewController.m */; };
 		24C10FC92B273A8500F536A8 /* BadgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C10FC72B273A8500F536A8 /* BadgeViewController.xib */; };
+		24CF803E2F5FF8C800BF4550 /* WebViewJSBridgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF803C2F5FF8C800BF4550 /* WebViewJSBridgeVC.m */; };
+		24CF80412F5FFF0600BF4550 /* jsbridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 24CF80402F5FFF0600BF4550 /* jsbridge.html */; };
 		24D90A212AD6AE670072F1FD /* ProtobufViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */; };
 		24D90A222AD6AE670072F1FD /* ProtobufViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */; };
 		24D90A502AD6D56D0072F1FD /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D90A4F2AD6D56D0072F1FD /* Person.pbobjc.m */; };
@@ -70,11 +71,6 @@
 		3A2E7B8F29CC091900408AC2 /* MyAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E7B8D29CC091900408AC2 /* MyAlertViewController.m */; };
 		3A2E7B9029CC091900408AC2 /* MyAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2E7B8E29CC091900408AC2 /* MyAlertViewController.xib */; };
 		3A2E7B9329CC0EA700408AC2 /* MyAlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E7B9229CC0EA700408AC2 /* MyAlertUtil.m */; };
-		3A2F7B3B2993923400679555 /* WebViewJSCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F7B392993923400679555 /* WebViewJSCode.m */; };
-		3A2F7B4029939B6100679555 /* show.html in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F7B3F29939B6100679555 /* show.html */; };
-		3A2F7B472993D11500679555 /* WebViewJSCode2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F7B452993D11500679555 /* WebViewJSCode2.m */; };
-		3A2F7B482993D11500679555 /* WebViewJSCode2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F7B462993D11500679555 /* WebViewJSCode2.xib */; };
-		3A2F7B4A2993D1F700679555 /* show2.html in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F7B492993D1F700679555 /* show2.html */; };
 		3A2F7C08299BCAB800679555 /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F7C06299BCAB800679555 /* NSTimerViewController.m */; };
 		3A2F7C09299BCAB800679555 /* NSTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F7C07299BCAB800679555 /* NSTimerViewController.xib */; };
 		3A2F7C13299CCC6500679555 /* RegularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F7C11299CCC6500679555 /* RegularViewController.m */; };
@@ -194,20 +190,6 @@
 		CE17E4F023548C2A004A7AA2 /* iWiBi-orange-blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E623548C2A004A7AA2 /* iWiBi-orange-blank@2x.png */; };
 		CE17E4F123548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E723548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png */; };
 		CE17E4F223548C2A004A7AA2 /* iWiBi-orange-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE17E4E823548C2A004A7AA2 /* iWiBi-orange-icon@2x.png */; };
-		CE193BDF222B971A002F670B /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BDE222B971A002F670B /* ColorViewController.m */; };
-		CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BE1222BB554002F670B /* Color2ViewController.m */; };
-		CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE193BE2222BB554002F670B /* Color2ViewController.xib */; };
-		CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE193BE7222BB61B002F670B /* colors_pantone.plist */; };
-		CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE193BE8222BB61B002F670B /* colors_crayola.plist */; };
-		CE193C03222BB61B002F670B /* KKColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BEB222BB61B002F670B /* KKColorCell.m */; };
-		CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE193BEC222BB61B002F670B /* KKColorCell.xib */; };
-		CE193C05222BB61B002F670B /* KKColorsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BED222BB61B002F670B /* KKColorsHeaderView.m */; };
-		CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE193BEF222BB61B002F670B /* KKColorsHeaderView.xib */; };
-		CE193C07222BB61B002F670B /* KKColorsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BF3222BB61B002F670B /* KKColorsLoader.m */; };
-		CE193C08222BB61B002F670B /* KKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BF6222BB61B002F670B /* KKColor.m */; };
-		CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BF9222BB61B002F670B /* KKColorListViewController.m */; };
-		CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */; };
-		CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */; };
 		CE1CBAB12322469200D3AE39 /* MyFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1CBAB02322469200D3AE39 /* MyFontViewController.m */; };
 		CE287AA02265833500B6C517 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287A9F2265833500B6C517 /* TestModel.m */; };
 		CE287AA62265838500B6C517 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE287AA52265838500B6C517 /* DataModel.m */; };
@@ -278,9 +260,6 @@
 		CE9420AD2248908F00C10CD0 /* JudgeNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9420AB2248908F00C10CD0 /* JudgeNetworkingVC.m */; };
 		CE9420AE2248908F00C10CD0 /* JudgeNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9420AC2248908F00C10CD0 /* JudgeNetworkingVC.xib */; };
 		CEC9EE022228DBEE006E2064 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE012228DBEE006E2064 /* Common.m */; };
-		CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE32222931B9006E2064 /* YCMenuView.m */; };
-		CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9EE36222932EE006E2064 /* MenuListViewController.m */; };
-		CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9EE37222932EE006E2064 /* MenuListViewController.xib */; };
 		CED3B8B62265F185008988CE /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8B52265F185008988CE /* Man.m */; };
 		CED3B8B92265F1B8008988CE /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8B82265F1B8008988CE /* Dog.m */; };
 		CED3B8BC2265F1C1008988CE /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = CED3B8BB2265F1C1008988CE /* Fish.m */; };
@@ -304,23 +283,14 @@
 		CEFA19DD22657598002C245A /* ParseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA19DB22657598002C245A /* ParseViewController.xib */; };
 		CEFA19E0226576D8002C245A /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = CEFA19DF226576D8002C245A /* message.json */; };
 		CEFA19E32265775C002C245A /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA19E22265775C002C245A /* Message.m */; };
+		DDC099A2DC0AF21D825EFE00 /* libPods-ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FB0FED0ABAB202731FECCE /* libPods-ObjectiveC.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		24C749CB2EB3A42F00E99445 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D220CAC217DBF8E00E3799F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D220CB3217DBF8F00E3799F;
-			remoteInfo = ObjectiveC;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0212BA1A2859A847005822C8 /* SandboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxViewController.h; sourceTree = "<group>"; };
 		0212BA1B2859A847005822C8 /* SandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxViewController.m; sourceTree = "<group>"; };
 		0212BA1C2859A847005822C8 /* SandboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SandboxViewController.xib; sourceTree = "<group>"; };
-		0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
+		05FB0FED0ABAB202731FECCE /* libPods-ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24075E352CA187530055274E /* ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24075E372CA2CB6F0055274E /* ProgressViewDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewDemoVC.h; sourceTree = "<group>"; };
 		24075E382CA2CB6F0055274E /* ProgressViewDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressViewDemoVC.m; sourceTree = "<group>"; };
@@ -328,7 +298,6 @@
 		241258DF2A4956DE00FF0A01 /* CompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressViewController.h; sourceTree = "<group>"; };
 		241258E02A4956DE00FF0A01 /* CompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressViewController.m; sourceTree = "<group>"; };
 		241258E12A4956DE00FF0A01 /* CompressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompressViewController.xib; sourceTree = "<group>"; };
-		24415EF52EE8269F00EB9C10 /* webdata.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = webdata.html; sourceTree = "<group>"; };
 		2459E2C92DF7230700E56F91 /* AppInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
 		2459E2CA2DF7230700E56F91 /* AppInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
 		2459E2CB2DF7230700E56F91 /* AppInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppInfoViewController.xib; sourceTree = "<group>"; };
@@ -381,7 +350,9 @@
 		24C10FC52B273A8500F536A8 /* BadgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BadgeViewController.h; sourceTree = "<group>"; };
 		24C10FC62B273A8500F536A8 /* BadgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeViewController.m; sourceTree = "<group>"; };
 		24C10FC72B273A8500F536A8 /* BadgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeViewController.xib; sourceTree = "<group>"; };
-		24C749C72EB3A42F00E99445 /* ObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24CF803B2F5FF8C800BF4550 /* WebViewJSBridgeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewJSBridgeVC.h; sourceTree = "<group>"; };
+		24CF803C2F5FF8C800BF4550 /* WebViewJSBridgeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJSBridgeVC.m; sourceTree = "<group>"; };
+		24CF80402F5FFF0600BF4550 /* jsbridge.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = jsbridge.html; sourceTree = "<group>"; };
 		24D90A1E2AD6AE670072F1FD /* ProtobufViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtobufViewController.h; sourceTree = "<group>"; };
 		24D90A1F2AD6AE670072F1FD /* ProtobufViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufViewController.m; sourceTree = "<group>"; };
 		24D90A202AD6AE670072F1FD /* ProtobufViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtobufViewController.xib; sourceTree = "<group>"; };
@@ -422,13 +393,6 @@
 		3A2E7B8E29CC091900408AC2 /* MyAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAlertViewController.xib; sourceTree = "<group>"; };
 		3A2E7B9129CC0EA700408AC2 /* MyAlertUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAlertUtil.h; sourceTree = "<group>"; };
 		3A2E7B9229CC0EA700408AC2 /* MyAlertUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAlertUtil.m; sourceTree = "<group>"; };
-		3A2F7B382993923400679555 /* WebViewJSCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewJSCode.h; sourceTree = "<group>"; };
-		3A2F7B392993923400679555 /* WebViewJSCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJSCode.m; sourceTree = "<group>"; };
-		3A2F7B3F29939B6100679555 /* show.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = show.html; sourceTree = "<group>"; };
-		3A2F7B442993D11500679555 /* WebViewJSCode2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewJSCode2.h; sourceTree = "<group>"; };
-		3A2F7B452993D11500679555 /* WebViewJSCode2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJSCode2.m; sourceTree = "<group>"; };
-		3A2F7B462993D11500679555 /* WebViewJSCode2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewJSCode2.xib; sourceTree = "<group>"; };
-		3A2F7B492993D1F700679555 /* show2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = show2.html; sourceTree = "<group>"; };
 		3A2F7C05299BCAB800679555 /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		3A2F7C06299BCAB800679555 /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		3A2F7C07299BCAB800679555 /* NSTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSTimerViewController.xib; sourceTree = "<group>"; };
@@ -582,6 +546,8 @@
 		5FF96AE62226E3160094DF79 /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
 		5FF96AE82226F2200094DF79 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		5FF96AE92226F2200094DF79 /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		70DC11059B75013F4BD97E9A /* Pods-ObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.debug.xcconfig"; path = "Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
+		741D9B10EC3949D626B25A54 /* Pods-ObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.release.xcconfig"; path = "Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
 		936DCCAF23B0CFC300E38DB5 /* LabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
 		936DCCB023B0CFC300E38DB5 /* LabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 		936DCCB123B0CFC300E38DB5 /* LabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelViewController.xib; sourceTree = "<group>"; };
@@ -615,31 +581,6 @@
 		CE17E4E623548C2A004A7AA2 /* iWiBi-orange-blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-blank@2x.png"; sourceTree = "<group>"; };
 		CE17E4E723548C2A004A7AA2 /* iWiBi-orange-icon-light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon-light@2x.png"; sourceTree = "<group>"; };
 		CE17E4E823548C2A004A7AA2 /* iWiBi-orange-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iWiBi-orange-icon@2x.png"; sourceTree = "<group>"; };
-		CE193BDD222B971A002F670B /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
-		CE193BDE222B971A002F670B /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
-		CE193BE0222BB554002F670B /* Color2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color2ViewController.h; sourceTree = "<group>"; };
-		CE193BE1222BB554002F670B /* Color2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color2ViewController.m; sourceTree = "<group>"; };
-		CE193BE2222BB554002F670B /* Color2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Color2ViewController.xib; sourceTree = "<group>"; };
-		CE193BE7222BB61B002F670B /* colors_pantone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors_pantone.plist; sourceTree = "<group>"; };
-		CE193BE8222BB61B002F670B /* colors_crayola.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors_crayola.plist; sourceTree = "<group>"; };
-		CE193BEA222BB61B002F670B /* KKColorsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsHeaderView.h; sourceTree = "<group>"; };
-		CE193BEB222BB61B002F670B /* KKColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorCell.m; sourceTree = "<group>"; };
-		CE193BEC222BB61B002F670B /* KKColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKColorCell.xib; sourceTree = "<group>"; };
-		CE193BED222BB61B002F670B /* KKColorsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorsHeaderView.m; sourceTree = "<group>"; };
-		CE193BEE222BB61B002F670B /* KKColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorCell.h; sourceTree = "<group>"; };
-		CE193BEF222BB61B002F670B /* KKColorsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKColorsHeaderView.xib; sourceTree = "<group>"; };
-		CE193BF1222BB61B002F670B /* KKColorsSchemeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsSchemeType.h; sourceTree = "<group>"; };
-		CE193BF2222BB61B002F670B /* KKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColor.h; sourceTree = "<group>"; };
-		CE193BF3222BB61B002F670B /* KKColorsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorsLoader.m; sourceTree = "<group>"; };
-		CE193BF4222BB61B002F670B /* KKColorListPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorListPicker.h; sourceTree = "<group>"; };
-		CE193BF5222BB61B002F670B /* KKColorsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsLoader.h; sourceTree = "<group>"; };
-		CE193BF6222BB61B002F670B /* KKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColor.m; sourceTree = "<group>"; };
-		CE193BF8222BB61B002F670B /* KKColorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorListViewController.h; sourceTree = "<group>"; };
-		CE193BF9222BB61B002F670B /* KKColorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorListViewController.m; sourceTree = "<group>"; };
-		CE193BFC222BB61B002F670B /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
-		CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
-		CE193BFF222BB61B002F670B /* UIView+KKToolKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KKToolKitAdditions.h"; sourceTree = "<group>"; };
-		CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KKToolKitAdditions.m"; sourceTree = "<group>"; };
 		CE1CBAAF2322469200D3AE39 /* MyFontViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFontViewController.h; sourceTree = "<group>"; };
 		CE1CBAB02322469200D3AE39 /* MyFontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFontViewController.m; sourceTree = "<group>"; };
 		CE287A9E2265833500B6C517 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
@@ -741,11 +682,6 @@
 		CE9420AC2248908F00C10CD0 /* JudgeNetworkingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JudgeNetworkingVC.xib; sourceTree = "<group>"; };
 		CEC9EE002228DBEE006E2064 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		CEC9EE012228DBEE006E2064 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
-		CEC9EE31222931B8006E2064 /* YCMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuView.h; sourceTree = "<group>"; };
-		CEC9EE32222931B9006E2064 /* YCMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMenuView.m; sourceTree = "<group>"; };
-		CEC9EE35222932EE006E2064 /* MenuListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuListViewController.h; sourceTree = "<group>"; };
-		CEC9EE36222932EE006E2064 /* MenuListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuListViewController.m; sourceTree = "<group>"; };
-		CEC9EE37222932EE006E2064 /* MenuListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
 		CED3B8B22265F02A008988CE /* Eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eat.h; sourceTree = "<group>"; };
 		CED3B8B42265F185008988CE /* Man.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
 		CED3B8B52265F185008988CE /* Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
@@ -790,25 +726,14 @@
 		CEFA19DF226576D8002C245A /* message.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = message.json; sourceTree = "<group>"; };
 		CEFA19E12265775C002C245A /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		CEFA19E22265775C002C245A /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
-		D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		24C749C82EB3A42F00E99445 /* ObjectiveCTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ObjectiveCTests; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		24C749C42EB3A42F00E99445 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D220CB1217DBF8F00E3799F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC099A2DC0AF21D825EFE00 /* libPods-ObjectiveC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +745,7 @@
 			children = (
 				2498F0F62C66024D003E7566 /* CoreServices.framework */,
 				2498F0F42C660230003E7566 /* MobileCoreServices.framework */,
+				05FB0FED0ABAB202731FECCE /* libPods-ObjectiveC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1283,11 +1209,9 @@
 			isa = PBXGroup;
 			children = (
 				3D220CB6217DBF8F00E3799F /* ObjectiveC */,
-				BBEEFED4BB651D1A5F8E0205 /* Pods */,
-				24C749C82EB3A42F00E99445 /* ObjectiveCTests */,
 				01127D54518BDF1AF49EC6DC /* Frameworks */,
 				24075E352CA187530055274E /* ObjectiveC.app */,
-				24C749C72EB3A42F00E99445 /* ObjectiveCTests.xctest */,
+				95364C19E67F4C7150585DCD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1370,8 +1294,6 @@
 				3ACA4C1728D6FC82003169E4 /* checkbox */,
 				CEE43F582331E0A8008FA43C /* MJRefresh */,
 				CE7D202F2259E42B00DEE23E /* lottie */,
-				CE193BDC222B9636002F670B /* colorPicker */,
-				CEC9EE34222932CD006E2064 /* menulist */,
 				CEE30A6621E5ED5B00AD82FA /* AFNetworking */,
 				CE3D1E4521ABD35200015F2B /* share */,
 				3DB19B13217DC71E00CD9E24 /* masonry */,
@@ -1420,11 +1342,8 @@
 				3DB19B0B217DC59600CD9E24 /* WKWebViewVC.xib */,
 				3A63EE9D28B0E05700ABD1CD /* WKWebViewDelegateVC.h */,
 				3A63EE9E28B0E05700ABD1CD /* WKWebViewDelegateVC.m */,
-				3A2F7B442993D11500679555 /* WebViewJSCode2.h */,
-				3A2F7B452993D11500679555 /* WebViewJSCode2.m */,
-				3A2F7B462993D11500679555 /* WebViewJSCode2.xib */,
-				3A2F7B382993923400679555 /* WebViewJSCode.h */,
-				3A2F7B392993923400679555 /* WebViewJSCode.m */,
+				24CF803B2F5FF8C800BF4550 /* WebViewJSBridgeVC.h */,
+				24CF803C2F5FF8C800BF4550 /* WebViewJSBridgeVC.m */,
 			);
 			path = webview;
 			sourceTree = "<group>";
@@ -1543,13 +1462,14 @@
 			path = label;
 			sourceTree = "<group>";
 		};
-		BBEEFED4BB651D1A5F8E0205 /* Pods */ = {
+		95364C19E67F4C7150585DCD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */,
-				D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */,
+				70DC11059B75013F4BD97E9A /* Pods-ObjectiveC.debug.xcconfig */,
+				741D9B10EC3949D626B25A54 /* Pods-ObjectiveC.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		CE027745225075BC00BA7A88 /* Localizable */ = {
@@ -1610,101 +1530,6 @@
 				CE17E4E823548C2A004A7AA2 /* iWiBi-orange-icon@2x.png */,
 			);
 			path = change_app_icon;
-			sourceTree = "<group>";
-		};
-		CE193BDC222B9636002F670B /* colorPicker */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BDD222B971A002F670B /* ColorViewController.h */,
-				CE193BDE222B971A002F670B /* ColorViewController.m */,
-				CE193BE0222BB554002F670B /* Color2ViewController.h */,
-				CE193BE1222BB554002F670B /* Color2ViewController.m */,
-				CE193BE2222BB554002F670B /* Color2ViewController.xib */,
-			);
-			path = colorPicker;
-			sourceTree = "<group>";
-		};
-		CE193BE5222BB61B002F670B /* KKColorListPicker */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BE6222BB61B002F670B /* Schemes */,
-				CE193BE9222BB61B002F670B /* Cells */,
-				CE193BF0222BB61B002F670B /* Classes */,
-				CE193BF7222BB61B002F670B /* Controllers */,
-				CE193BFA222BB61B002F670B /* Categories */,
-			);
-			path = KKColorListPicker;
-			sourceTree = "<group>";
-		};
-		CE193BE6222BB61B002F670B /* Schemes */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BE7222BB61B002F670B /* colors_pantone.plist */,
-				CE193BE8222BB61B002F670B /* colors_crayola.plist */,
-			);
-			path = Schemes;
-			sourceTree = "<group>";
-		};
-		CE193BE9222BB61B002F670B /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BEA222BB61B002F670B /* KKColorsHeaderView.h */,
-				CE193BEB222BB61B002F670B /* KKColorCell.m */,
-				CE193BEC222BB61B002F670B /* KKColorCell.xib */,
-				CE193BED222BB61B002F670B /* KKColorsHeaderView.m */,
-				CE193BEE222BB61B002F670B /* KKColorCell.h */,
-				CE193BEF222BB61B002F670B /* KKColorsHeaderView.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		CE193BF0222BB61B002F670B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BF1222BB61B002F670B /* KKColorsSchemeType.h */,
-				CE193BF2222BB61B002F670B /* KKColor.h */,
-				CE193BF3222BB61B002F670B /* KKColorsLoader.m */,
-				CE193BF4222BB61B002F670B /* KKColorListPicker.h */,
-				CE193BF5222BB61B002F670B /* KKColorsLoader.h */,
-				CE193BF6222BB61B002F670B /* KKColor.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		CE193BF7222BB61B002F670B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BF8222BB61B002F670B /* KKColorListViewController.h */,
-				CE193BF9222BB61B002F670B /* KKColorListViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		CE193BFA222BB61B002F670B /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BFB222BB61B002F670B /* UIColor */,
-				CE193BFE222BB61B002F670B /* UIView */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		CE193BFB222BB61B002F670B /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BFC222BB61B002F670B /* UIColor+CustomColors.h */,
-				CE193BFD222BB61B002F670B /* UIColor+CustomColors.m */,
-			);
-			path = UIColor;
-			sourceTree = "<group>";
-		};
-		CE193BFE222BB61B002F670B /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				CE193BFF222BB61B002F670B /* UIView+KKToolKitAdditions.h */,
-				CE193C00222BB61B002F670B /* UIView+KKToolKitAdditions.m */,
-			);
-			path = UIView;
 			sourceTree = "<group>";
 		};
 		CE1CBAAE2322467900D3AE39 /* myfont */ = {
@@ -1871,10 +1696,8 @@
 		CE40E2D7221BE2B60072CF9E /* web */ = {
 			isa = PBXGroup;
 			children = (
-				24415EF52EE8269F00EB9C10 /* webdata.html */,
-				3A2F7B492993D1F700679555 /* show2.html */,
 				3AB2288D2934BB1900DCA181 /* pkg.html */,
-				3A2F7B3F29939B6100679555 /* show.html */,
+				24CF80402F5FFF0600BF4550 /* jsbridge.html */,
 			);
 			path = web;
 			sourceTree = "<group>";
@@ -1998,25 +1821,6 @@
 			path = judgeNetworking;
 			sourceTree = "<group>";
 		};
-		CEC9EE3022293193006E2064 /* YCMenuView */ = {
-			isa = PBXGroup;
-			children = (
-				CEC9EE31222931B8006E2064 /* YCMenuView.h */,
-				CEC9EE32222931B9006E2064 /* YCMenuView.m */,
-			);
-			path = YCMenuView;
-			sourceTree = "<group>";
-		};
-		CEC9EE34222932CD006E2064 /* menulist */ = {
-			isa = PBXGroup;
-			children = (
-				CEC9EE35222932EE006E2064 /* MenuListViewController.h */,
-				CEC9EE36222932EE006E2064 /* MenuListViewController.m */,
-				CEC9EE37222932EE006E2064 /* MenuListViewController.xib */,
-			);
-			path = menulist;
-			sourceTree = "<group>";
-		};
 		CEC9EE3A22294C71006E2064 /* other */ = {
 			isa = PBXGroup;
 			children = (
@@ -2046,8 +1850,6 @@
 		CECFB03521D38BD200CB737F /* navigation */ = {
 			isa = PBXGroup;
 			children = (
-				CE193BE5222BB61B002F670B /* KKColorListPicker */,
-				CEC9EE3022293193006E2064 /* YCMenuView */,
 				5F9921712597B081009F938C /* SceneDelegate.h */,
 				5F9921722597B081009F938C /* SceneDelegate.m */,
 				3D220CB7217DBF8F00E3799F /* AppDelegate.h */,
@@ -2217,29 +2019,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24C749C62EB3A42F00E99445 /* ObjectiveCTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24C749CF2EB3A42F00E99445 /* Build configuration list for PBXNativeTarget "ObjectiveCTests" */;
-			buildPhases = (
-				24C749C32EB3A42F00E99445 /* Sources */,
-				24C749C42EB3A42F00E99445 /* Frameworks */,
-				24C749C52EB3A42F00E99445 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				24C749CC2EB3A42F00E99445 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				24C749C82EB3A42F00E99445 /* ObjectiveCTests */,
-			);
-			name = ObjectiveCTests;
-			packageProductDependencies = (
-			);
-			productName = ObjectiveCTests;
-			productReference = 24C749C72EB3A42F00E99445 /* ObjectiveCTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		3D220CB3217DBF8F00E3799F /* ObjectiveC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D220CCA217DBF9000E3799F /* Build configuration list for PBXNativeTarget "ObjectiveC" */;
@@ -2268,10 +2047,6 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = my;
 				TargetAttributes = {
-					24C749C62EB3A42F00E99445 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 3D220CB3217DBF8F00E3799F;
-					};
 					3D220CB3217DBF8F00E3799F = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
@@ -2300,19 +2075,11 @@
 			projectRoot = "";
 			targets = (
 				3D220CB3217DBF8F00E3799F /* ObjectiveC */,
-				24C749C62EB3A42F00E99445 /* ObjectiveCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		24C749C52EB3A42F00E99445 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D220CB2217DBF8F00E3799F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2323,7 +2090,6 @@
 				2483AFA92C4E4934006F7868 /* FTPViewController.xib in Resources */,
 				3A65AC9B29ADD657003C4C92 /* NotificationVC.xib in Resources */,
 				CE17E4EF23548C2A004A7AA2 /* iWiBi-orange-blank@3x.png in Resources */,
-				CE193C01222BB61B002F670B /* colors_pantone.plist in Resources */,
 				CE4187A6228E71DC00A3A8ED /* paihangbang_anniu.png in Resources */,
 				CE17E4ED23548C2A004A7AA2 /* iWiBi-orange-icon@3x.png in Resources */,
 				241258E32A4956DE00FF0A01 /* CompressViewController.xib in Resources */,
@@ -2339,8 +2105,6 @@
 				CE027753225079A600BA7A88 /* Localizable.strings in Resources */,
 				CE17E4EA23548C2A004A7AA2 /* AppIcon-default@2x.png in Resources */,
 				CE757CD0237E6EC20039C29D /* zhiyi.ttf in Resources */,
-				CE193C04222BB61B002F670B /* KKColorCell.xib in Resources */,
-				24415EF62EE8269F00EB9C10 /* webdata.html in Resources */,
 				CE7D1BD22255C1F300DEE23E /* SpeechViewController.xib in Resources */,
 				3ABF6A2F2877585300CEE7F2 /* client.p12 in Resources */,
 				CE7D1D3F2257453300DEE23E /* rock_clash.wav in Resources */,
@@ -2353,6 +2117,7 @@
 				2476A37A2B356D220094CE90 /* CheckAppViewController.xib in Resources */,
 				CE7386EE2242508B004C7239 /* back02.mp3 in Resources */,
 				CE7D203B2259E4F700DEE23E /* water-loading.json in Resources */,
+				24CF80412F5FFF0600BF4550 /* jsbridge.html in Resources */,
 				3A15D32128A6A4E500C62036 /* ContactsViewController.xib in Resources */,
 				2478B2E02A406ACC0094C0DD /* PlistViewController.xib in Resources */,
 				CEFA19E0226576D8002C245A /* message.json in Resources */,
@@ -2363,7 +2128,6 @@
 				249E23422CA406AE0098DDDC /* GCD.md in Resources */,
 				3A65ACAB29AE037E003C4C92 /* CFObjectViewController.xib in Resources */,
 				3A9908B9292749C6009C139D /* HTTPS1WayViewController.xib in Resources */,
-				3A2F7B482993D11500679555 /* WebViewJSCode2.xib in Resources */,
 				CE4187A4228E715600A3A8ED /* music_off.png in Resources */,
 				CE757CCC237E6EC20039C29D /* miaowu.ttf in Resources */,
 				CE389CE9223DF3440099BD35 /* ClearCacheViewController.xib in Resources */,
@@ -2375,7 +2139,6 @@
 				3AB2288E2934BB1900DCA181 /* pkg.html in Resources */,
 				3D220CF0217DC20200E3799F /* VenderViewController.xib in Resources */,
 				2476A3422B33F42A0094CE90 /* ThreadViewController.xib in Resources */,
-				3A2F7B4A2993D1F700679555 /* show2.html in Resources */,
 				247192892F5414C10086DB80 /* Progress2VC.xib in Resources */,
 				3A2E7B9029CC091900408AC2 /* MyAlertViewController.xib in Resources */,
 				2498F0F32C65F627003E7566 /* DocumentPickerVC.xib in Resources */,
@@ -2389,7 +2152,6 @@
 				3ADD774F286AE5C300451603 /* DeviceIDViewController.xib in Resources */,
 				CE7165B6238001FD00D476C3 /* ModalViewController.xib in Resources */,
 				0212BA1E2859A847005822C8 /* SandboxViewController.xib in Resources */,
-				CE193BE4222BB554002F670B /* Color2ViewController.xib in Resources */,
 				CE389CF0223DF3F40099BD35 /* OtherViewController.xib in Resources */,
 				249E23442CA410840098DDDC /* Thread.md in Resources */,
 				24C10FBF2B24A92200F536A8 /* InstallViewController.xib in Resources */,
@@ -2397,7 +2159,6 @@
 				CE7D20342259E44900DEE23E /* LottieViewController.xib in Resources */,
 				CE7D203A2259E4F700DEE23E /* vcTransition2.json in Resources */,
 				3A9908BE292749F5009C139D /* HTTPSPing01ViewController.xib in Resources */,
-				CEC9EE39222932EE006E2064 /* MenuListViewController.xib in Resources */,
 				CE3B3954224CE91000CF5E61 /* GCDViewController.xib in Resources */,
 				3A154A2C28650C4600340F1C /* ButtonViewController.xib in Resources */,
 				CE3D1E1321A8186400015F2B /* test.mp4 in Resources */,
@@ -2418,7 +2179,6 @@
 				CEE30A6B21E5ED7500AD82FA /* AFNetworkingVC.xib in Resources */,
 				CE0277DC2250DB3B00BA7A88 /* OrientationVC.xib in Resources */,
 				2478B2EA2A4083BA0094C0DD /* PasteboardViewController.xib in Resources */,
-				3A2F7B4029939B6100679555 /* show.html in Resources */,
 				24D90A222AD6AE670072F1FD /* ProtobufViewController.xib in Resources */,
 				CE287AAF2265B70C00B6C517 /* test2.json in Resources */,
 				3A2F7C09299BCAB800679555 /* NSTimerViewController.xib in Resources */,
@@ -2437,8 +2197,6 @@
 				CE17E4F023548C2A004A7AA2 /* iWiBi-orange-blank@2x.png in Resources */,
 				3D220CE6217DC1E300E3799F /* SystemViewController.xib in Resources */,
 				3A2F7C14299CCC6500679555 /* RegularViewController.xib in Resources */,
-				CE193C06222BB61B002F670B /* KKColorsHeaderView.xib in Resources */,
-				CE193C02222BB61B002F670B /* colors_crayola.plist in Resources */,
 				CE2EF18A22D4446200C09B22 /* BrowerViewController.xib in Resources */,
 				CE757CCF237E6EC20039C29D /* yaoti.ttf in Resources */,
 				3AC6B3C228E99B74003C8103 /* SingletonViewController.xib in Resources */,
@@ -2468,13 +2226,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjectiveC/Pods-ObjectiveC-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2502,13 +2256,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		24C749C32EB3A42F00E99445 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D220CB0217DBF8F00E3799F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2518,7 +2265,6 @@
 				3AA56A8728AFCF2500940DEF /* SliderViewController.m in Sources */,
 				5F9921732597B082009F938C /* SceneDelegate.m in Sources */,
 				3A7F2BB729FC1B8E005DE73B /* SetViewController.m in Sources */,
-				CE193C03222BB61B002F670B /* KKColorCell.m in Sources */,
 				2459E2CC2DF7230700E56F91 /* AppInfoViewController.m in Sources */,
 				CEE43DDE2330F254008FA43C /* PolymorphismViewController.m in Sources */,
 				CED3B8D52266085A008988CE /* Dog2.m in Sources */,
@@ -2548,7 +2294,6 @@
 				CE34E748228BC3520042C323 /* NSURLSessionVC.m in Sources */,
 				5FF96AD92226E2430094DF79 /* CustomViewVC.m in Sources */,
 				3DB19AFE217DC4AB00CD9E24 /* LazyloadViewController.m in Sources */,
-				CE193BE3222BB554002F670B /* Color2ViewController.m in Sources */,
 				3ADD774E286AE5C300451603 /* DeviceIDViewController.m in Sources */,
 				CE287AA02265833500B6C517 /* TestModel.m in Sources */,
 				5FF96AC52226D0CB0094DF79 /* MyCollectionViewVC.m in Sources */,
@@ -2556,7 +2301,6 @@
 				CED3B95F22674A52008988CE /* PhotoViewController.m in Sources */,
 				CE287AA92265839900B6C517 /* PhoneModel.m in Sources */,
 				CEFA19E32265775C002C245A /* Message.m in Sources */,
-				CE193C09222BB61B002F670B /* KKColorListViewController.m in Sources */,
 				CE1CBAB12322469200D3AE39 /* MyFontViewController.m in Sources */,
 				3A15D32E28A6AD1800C62036 /* LJPeoplePickerDelegate.m in Sources */,
 				5FF96AE22226E2770094DF79 /* MyNibView.m in Sources */,
@@ -2580,21 +2324,16 @@
 				CED3B8B62265F185008988CE /* Man.m in Sources */,
 				2483AFA82C4E4934006F7868 /* FTPViewController.m in Sources */,
 				247192882F5414C10086DB80 /* Progress2VC.m in Sources */,
-				CE193C05222BB61B002F670B /* KKColorsHeaderView.m in Sources */,
 				3AAF126628DF0DA300A948C0 /* AlertViewController.m in Sources */,
 				CEC9EE022228DBEE006E2064 /* Common.m in Sources */,
 				3A65ACA129ADE9C6003C4C92 /* SimpleFouUse.m in Sources */,
 				CE3D1E0D21A7F1EB00015F2B /* MyVideoViewController.m in Sources */,
-				CE193BDF222B971A002F670B /* ColorViewController.m in Sources */,
-				CE193C07222BB61B002F670B /* KKColorsLoader.m in Sources */,
 				2476A3412B33F42A0094CE90 /* ThreadViewController.m in Sources */,
-				CE193C0A222BB61B002F670B /* UIColor+CustomColors.m in Sources */,
 				24DF13292C6F61D300B225E0 /* service.m in Sources */,
 				5FF96AEA2226F2200094DF79 /* PersonModel.m in Sources */,
 				24DF132C2C6F61D300B225E0 /* server.m in Sources */,
 				CE0277DB2250DB3B00BA7A88 /* OrientationVC.m in Sources */,
 				2471928F2F54208D0086DB80 /* TaskProgressView.m in Sources */,
-				3A2F7B472993D11500679555 /* WebViewJSCode2.m in Sources */,
 				CE2EF18922D4446200C09B22 /* BrowerViewController.m in Sources */,
 				3DB19B1D217DC71E00CD9E24 /* MasonryVC.m in Sources */,
 				CED3B8BF2265F3CF008988CE /* DelegateView.m in Sources */,
@@ -2608,7 +2347,6 @@
 				24075E3A2CA2CB6F0055274E /* ProgressViewDemoVC.m in Sources */,
 				CE80B8DE21B3FE8300E4748F /* MyManager.m in Sources */,
 				24C10FBE2B24A92200F536A8 /* InstallViewController.m in Sources */,
-				CE193C08222BB61B002F670B /* KKColor.m in Sources */,
 				3DB19B1E217DC71E00CD9E24 /* HUDViewController.m in Sources */,
 				3A9908B8292749C6009C139D /* HTTPS1WayViewController.m in Sources */,
 				2490C65D2B563EEA008E81D9 /* ZipUtil.m in Sources */,
@@ -2628,7 +2366,6 @@
 				CEE43F5C2331E0CA008FA43C /* MJRefreshViewController.m in Sources */,
 				3A4F100428E58FC500DF6FFE /* MMKVViewController.m in Sources */,
 				3A2E7B9329CC0EA700408AC2 /* MyAlertUtil.m in Sources */,
-				CEC9EE38222932EE006E2064 /* MenuListViewController.m in Sources */,
 				2483AF322C47B6C3006F7868 /* MyTip.m in Sources */,
 				3AEF9DCC28A038E700ACB99A /* MyNetworkViewController.m in Sources */,
 				CE389CE8223DF3440099BD35 /* ClearCacheViewController.m in Sources */,
@@ -2642,9 +2379,7 @@
 				3A9908C229274A0E009C139D /* HTTPS2WayViewController.m in Sources */,
 				3A65AC9A29ADD657003C4C92 /* NotificationVC.m in Sources */,
 				3A687335286B7E6C00951BEE /* SimulateIDFA.m in Sources */,
-				3A2F7B3B2993923400679555 /* WebViewJSCode.m in Sources */,
 				CE287AC82265C21E00B6C517 /* ContentModel.m in Sources */,
-				CE193C0B222BB61B002F670B /* UIView+KKToolKitAdditions.m in Sources */,
 				3DB19B20217DC71E00CD9E24 /* SDViewController.m in Sources */,
 				3A15D32D28A6AD1800C62036 /* NSString+LJExtension.m in Sources */,
 				CE7D1BE0225626C500DEE23E /* JumpAppViewController.m in Sources */,
@@ -2655,7 +2390,6 @@
 				3D220CF6217DC23C00E3799F /* MyTabBarController.m in Sources */,
 				CE287AA62265838500B6C517 /* DataModel.m in Sources */,
 				CE3B3953224CE91000CF5E61 /* GCDViewController.m in Sources */,
-				CEC9EE33222931B9006E2064 /* YCMenuView.m in Sources */,
 				CED3B8BC2265F1C1008988CE /* Fish.m in Sources */,
 				CE34E752228BF5820042C323 /* Reachability.m in Sources */,
 				CEE43DF22330F9DC008FA43C /* PineTree.m in Sources */,
@@ -2669,6 +2403,7 @@
 				24D90A502AD6D56D0072F1FD /* Person.pbobjc.m in Sources */,
 				CED3B8CF22660844008988CE /* Man2.m in Sources */,
 				3DB19B11217DC59600CD9E24 /* WKWebViewVC.m in Sources */,
+				24CF803E2F5FF8C800BF4550 /* WebViewJSBridgeVC.m in Sources */,
 				CE287AFB2265E77B00B6C517 /* DelegateViewController.m in Sources */,
 				2483AFB42C4E496A006F7868 /* WJFtpRequest.m in Sources */,
 				CE427A3C236FDAEA001A90B4 /* DownloadManager.m in Sources */,
@@ -2677,14 +2412,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		24C749CC2EB3A42F00E99445 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D220CB3217DBF8F00E3799F /* ObjectiveC */;
-			targetProxy = 24C749CB2EB3A42F00E99445 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE0277512250799E00BA7A88 /* InfoPlist.strings */ = {
@@ -2708,65 +2435,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		24C749CD2EB3A42F00E99445 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UKHRF32S6H;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.ab.ObjectiveCTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObjectiveC";
-			};
-			name = Debug;
-		};
-		24C749CE2EB3A42F00E99445 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UKHRF32S6H;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.ab.ObjectiveCTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObjectiveC";
-			};
-			name = Release;
-		};
 		3D220CC8217DBF9000E3799F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2881,7 +2549,7 @@
 		};
 		3D220CCB217DBF9000E3799F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E94860C7857D9655B0E2759 /* Pods-ObjectiveC.debug.xcconfig */;
+			baseConfigurationReference = 70DC11059B75013F4BD97E9A /* Pods-ObjectiveC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
@@ -2911,7 +2579,7 @@
 		};
 		3D220CCC217DBF9000E3799F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8CB2BE31910BF6BD19D6441 /* Pods-ObjectiveC.release.xcconfig */;
+			baseConfigurationReference = 741D9B10EC3949D626B25A54 /* Pods-ObjectiveC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
@@ -2942,15 +2610,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24C749CF2EB3A42F00E99445 /* Build configuration list for PBXNativeTarget "ObjectiveCTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24C749CD2EB3A42F00E99445 /* Debug */,
-				24C749CE2EB3A42F00E99445 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3D220CAF217DBF8E00E3799F /* Build configuration list for PBXProject "ObjectiveC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

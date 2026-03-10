@@ -14,22 +14,20 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Color-Picker-for-iOS (2.0)
   - lottie-ios (2.5.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.2.0)
-  - MMKV (1.2.14):
-    - MMKVCore (~> 1.2.14)
-  - MMKVCore (1.2.14)
-  - Protobuf (3.23.3)
+  - MMKV (1.2.16):
+    - MMKVCore (~> 1.2.16)
+  - MMKVCore (1.2.16)
+  - Protobuf (3.23.4)
   - SDAutoLayout (2.2.1)
   - SSZipArchive (2.4.3)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
-  - Color-Picker-for-iOS (= 2.0)
   - lottie-ios (= 2.5.0)
   - Masonry (= 1.1.0)
   - MBProgressHUD (~> 1.2.0)
@@ -43,7 +41,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
-    - Color-Picker-for-iOS
     - lottie-ios
     - Masonry
     - MBProgressHUD
@@ -57,18 +54,17 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
-  Color-Picker-for-iOS: 2988926c7a3ceb6f472d6c3c225cbc88d4be3635
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
-  MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
-  MMKVCore: 89f5c8a66bba2dcd551779dea4d412eeec8ff5bb
-  Protobuf: d9c3d7e5a3574aa6a5d521f2d9f733c76d294be8
+  MMKV: 784471ce430a2e2d16afef9053d63fab1b357d9e
+  MMKVCore: 9cfef4c48c6c46f66226fc2e4634d78490206a48
+  Protobuf: c6bc59bbab3d38a71c67f62d7cb7ca8f8ea4eca1
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 128861a9d530a626253b82e941d1350be5124f2f
+PODFILE CHECKSUM: 69d4a259b2d7e5450084a9c7582067d194b1a54d
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

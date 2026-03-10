@@ -27,12 +27,11 @@
     NSString *urlString = @"https://www.baidu.com";
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    //    NSLog(@"url :%@", request.URL.host);
     [self.webview loadRequest:request];
 }
 
 - (IBAction)loadLocalUrl:(UIButton *)sender {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"webdata" ofType:@"html"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jsbridge" ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webview loadRequest: request];
@@ -40,7 +39,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
